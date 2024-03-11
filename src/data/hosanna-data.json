@@ -1,0 +1,5154 @@
+[
+    {
+        "songName": "A-ba Chúa trên cao",
+        "category": "Ngợi khen thờ phượng: Tôn cao Chúa",
+        "id": "1",
+        "tone": "Am",
+        "timeSignature": "4/4"
+    },
+    {
+        "songName": "Tôn vinh Chiên Con",
+        "category": "Ngợi khen thờ phượng: Tôn cao Chúa",
+        "id": "2",
+        "tone": "G",
+        "timeSignature": "4/4"
+    },
+    {
+        "songName": "Cùng vui nhóm",
+        "category": "Truyền giảng hội chúng",
+        "id": "3",
+        "tone": "F",
+        "timeSignature": "4/4"
+    },
+    {
+        "songName": "Xin Cha hãy chiếu ánh sáng",
+        "category": "Ngợi khen thờ phượng: Xin Chúa hiện diện",
+        "id": "4",
+        "tone": "A",
+        "timeSignature": "4/4"
+    },
+    {
+        "songName": "Ngài là Vua",
+        "category": "Ngợi khen thờ phượng: Tôn cao Chúa",
+        "id": "5",
+        "tone": "G",
+        "timeSignature": "2/4"
+    },
+    {
+        "songName": "Điều cao quý nhất",
+        "category": "Ngợi khen thờ phượng: Dâng hiến - Đáp ứng",
+        "id": "6",
+        "tone": "D",
+        "timeSignature": "4/4"
+    },
+    {
+        "songName": "Kìa thật phước hạnh",
+        "category": "Truyền giảng hội chúng",
+        "id": "7",
+        "tone": "Dm",
+        "timeSignature": "4/4"
+    },
+    {
+        "songName": "Xin dâng",
+        "category": "Ngợi khen thờ phượng: Tôn cao Chúa",
+        "id": "8",
+        "tone": "F",
+        "timeSignature": "4/4"
+    },
+    {
+        "songName": "Bình an Vua",
+        "category": "Ngợi khen thờ phượng: Tôn cao Chúa",
+        "id": "9",
+        "tone": "A",
+        "timeSignature": "4/4"
+    },
+    {
+        "songName": "Tôn vinh Chúa trong mỗi lúc",
+        "category": "Ngợi khen thờ phượng: Tôn cao Chúa",
+        "id": "10",
+        "tone": "Dm",
+        "timeSignature": "4/4"
+    },
+    {
+        "songName": "Vì Thần Linh và Hội Thánh",
+        "category": "Truyền giảng hội chúng",
+        "id": "11",
+        "tone": "Gm",
+        "timeSignature": "4/4"
+    },
+    {
+        "songName": "Hosanna",
+        "category": "Ngợi khen thờ phượng: Tôn cao Chúa",
+        "id": "12",
+        "tone": "G",
+        "timeSignature": "4/4"
+    },
+    {
+        "songName": "Ngài thật là Vua đời đời",
+        "category": "Ngợi khen thờ phượng: Tôn cao Chúa",
+        "id": "13",
+        "tone": "Am",
+        "timeSignature": "4/4"
+    },
+    {
+        "songName": "Phước hạnh, phước hạnh",
+        "category": "Ngợi khen thờ phượng: Dâng hiến - Đáp ứng",
+        "id": "14",
+        "tone": "Dm",
+        "timeSignature": "4/4"
+    },
+    {
+        "songName": "Ha-lê-lu-gia, Ha-lê-lu-gia",
+        "category": "Truyền giảng hội chúng",
+        "id": "15",
+        "tone": "Em",
+        "timeSignature": "4/4"
+    },
+    {
+        "songName": "Nào cùng cất tiếng hoan ca",
+        "category": "Ngợi khen thờ phượng: Tôn cao Chúa",
+        "id": "16",
+        "tone": "E",
+        "timeSignature": "4/4"
+    },
+    {
+        "songName": "Hát như Đa-vít",
+        "category": "Ngợi khen cảm tạ",
+        "id": "17",
+        "tone": "Em",
+        "timeSignature": "4/4"
+    },
+    {
+        "songName": "Thi Thiên 150",
+        "category": "Ngợi khen thờ phượng: Tôn cao Chúa",
+        "id": "18",
+        "tone": "D",
+        "timeSignature": "4/4"
+    },
+    {
+        "songName": "Vua đời đời",
+        "category": "Ngợi khen thờ phượng: Tôn cao Chúa",
+        "id": "19",
+        "tone": "G",
+        "timeSignature": "4/4"
+    },
+    {
+        "songName": "Trọn tất cả sự đầy dẫy đến từ Chúa",
+        "category": "Ngợi khen thờ phượng: Tôn cao Chúa",
+        "id": "20",
+        "tone": "D",
+        "timeSignature": "4/4"
+    },
+    {
+        "songName": "Cám ơn Cha",
+        "category": "Ngợi khen cảm tạ",
+        "id": "21",
+        "tone": "D",
+        "timeSignature": "4/4"
+    },
+    {
+        "songName": "Thuộc duy Chúa sự vinh diệu",
+        "category": "Ngợi khen thờ phượng: Tôn cao Chúa",
+        "id": "22",
+        "tone": "C",
+        "timeSignature": "4/4"
+    },
+    {
+        "songName": "Thi Thiên 104:31-33",
+        "category": "Ngợi khen thờ phượng: Tôn cao Chúa",
+        "id": "23",
+        "tone": "F",
+        "timeSignature": "4/4"
+    },
+    {
+        "songName": "Hãy tôn vinh Danh Thánh Ngài",
+        "category": "Ngợi khen thờ phượng: Tôn cao Chúa",
+        "id": "24",
+        "tone": "A",
+        "timeSignature": "4/4"
+    },
+    {
+        "songName": "Ma-thi-ơ 18:20",
+        "category": "Truyền giảng hội chúng",
+        "id": "25",
+        "tone": "F",
+        "timeSignature": "4/4"
+    },
+    {
+        "songName": "Hỡi dân Chúa, dâng lời ca!",
+        "category": "Truyền giảng hội chúng",
+        "id": "26",
+        "tone": "Am",
+        "timeSignature": "4/4"
+    },
+    {
+        "songName": "Ngợi Vua trên muôn vua",
+        "category": "Ngợi khen thờ phượng: Tôn cao Chúa",
+        "id": "27",
+        "tone": "Fm",
+        "timeSignature": "4/4"
+    },
+    {
+        "songName": "Êm-ma-nu-ên",
+        "category": "Ngợi khen thờ phượng: Xin Chúa hiện diện",
+        "id": "28",
+        "tone": "C",
+        "timeSignature": "4/4"
+    },
+    {
+        "songName": "Nguyện cầu Cha",
+        "category": "Ngợi khen thờ phượng: Xin Chúa hiện diện",
+        "id": "29",
+        "tone": "F",
+        "timeSignature": "4/4"
+    },
+    {
+        "songName": "Con tôn cao Cha",
+        "category": "Ngợi khen thờ phượng: Tôn cao Chúa",
+        "id": "30",
+        "tone": "E",
+        "timeSignature": "4/4"
+    },
+    {
+        "songName": "Hãy ca tụng Chúa chúng ta",
+        "category": "Ngợi khen thờ phượng: Tôn cao Chúa",
+        "id": "31",
+        "tone": "G",
+        "timeSignature": "4/4"
+    },
+    {
+        "songName": "Jesus ơi! Con chính là tội nhân",
+        "category": "Ngợi khen thờ phượng: Sự ăn năn - Sự tha tội",
+        "id": "32",
+        "tone": "F",
+        "timeSignature": "3/4"
+    },
+    {
+        "songName": "Cùng nhau ta vui hoan ca",
+        "category": "Ngợi khen thờ phượng: Tôn cao Chúa",
+        "id": "33",
+        "tone": "D",
+        "timeSignature": "4/4"
+    },
+    {
+        "songName": "Hãy vỗ tay vui",
+        "category": "Ngợi khen thờ phượng: Tôn cao Chúa",
+        "id": "34",
+        "tone": "Em",
+        "timeSignature": "4/4"
+    },
+    {
+        "songName": "Cùng nhau ca khen ngợi Chúa",
+        "category": "Ngợi khen cảm tạ",
+        "id": "35",
+        "tone": "E",
+        "timeSignature": "4/4"
+    },
+    {
+        "songName": "Hướng về Jesus",
+        "category": "Ngợi khen cảm tạ",
+        "id": "36",
+        "tone": "F",
+        "timeSignature": "4/4"
+    },
+    {
+        "songName": "Hallelujah! Amen",
+        "category": "Ngợi khen thờ phượng: Tôn cao Chúa",
+        "id": "37",
+        "tone": "G",
+        "timeSignature": "4/4"
+    },
+    {
+        "songName": "Này ngày hôm nay",
+        "category": "Ngợi khen cảm tạ",
+        "id": "38",
+        "tone": "F",
+        "timeSignature": "4/4"
+    },
+    {
+        "songName": "Jesus, Jesus!",
+        "category": "Ngợi khen cảm tạ",
+        "id": "39",
+        "tone": "C",
+        "timeSignature": "4/4"
+    },
+    {
+        "songName": "Ê-sai 52:7",
+        "category": "Truyền giảng hội chúng",
+        "id": "40",
+        "tone": "Bb",
+        "timeSignature": "4/4"
+    },
+    {
+        "songName": "Cha ban thánh ca mới",
+        "category": "Ngợi khen cảm tạ",
+        "id": "41",
+        "tone": "Dm",
+        "timeSignature": "4/4"
+    },
+    {
+        "songName": "Càng thêm hơn từ Ngài",
+        "category": "Ngợi khen thờ phượng: Xin Chúa hiện diện",
+        "id": "42",
+        "tone": "G",
+        "timeSignature": "4/4"
+    },
+    {
+        "songName": "Còn nếu dân gọi bằng Danh Ta",
+        "category": "Ngợi khen thờ phượng: Sự ăn năn - Sự tha tội",
+        "id": "43",
+        "tone": "C#m",
+        "timeSignature": "4/4"
+    },
+    {
+        "songName": "Chính Chúa được tôn cao",
+        "category": "Ngợi khen thờ phượng: Tôn cao Chúa",
+        "id": "44",
+        "tone": "F",
+        "timeSignature": "3/4"
+    },
+    {
+        "songName": "Chính Chúa tại đây",
+        "category": "Ngợi khen thờ phượng: Tôn cao Chúa",
+        "id": "45",
+        "tone": "E",
+        "timeSignature": "4/4"
+    },
+    {
+        "songName": "Chúa Thánh đi ra trong năng quyền",
+        "category": "Ngợi khen cảm tạ",
+        "id": "46",
+        "tone": "Bm",
+        "timeSignature": "4/4"
+    },
+    {
+        "songName": "Chúng con đến cùng Cha",
+        "category": "Ngợi khen cảm tạ",
+        "id": "47",
+        "tone": "A",
+        "timeSignature": "4/4"
+    },
+    {
+        "songName": "Trong Danh Cứu Chúa quyền năng",
+        "category": "Ngợi khen cảm tạ",
+        "id": "48",
+        "tone": "F",
+        "timeSignature": "4/4"
+    },
+    {
+        "songName": "Múa, hát, vỗ tay",
+        "category": "Ngợi khen thờ phượng: Tôn cao Chúa",
+        "id": "49",
+        "tone": "D",
+        "timeSignature": "4/4"
+    },
+    {
+        "songName": "Trong Cha là sự sống tôi",
+        "category": "Ngợi khen thờ phượng: Tôn cao Chúa",
+        "id": "50",
+        "tone": "G",
+        "timeSignature": "4/4"
+    },
+    {
+        "songName": "Hãy tôn vinh Ngài",
+        "category": "Ngợi khen cảm tạ",
+        "id": "51",
+        "tone": "D",
+        "timeSignature": "4/4"
+    },
+    {
+        "songName": "Từ muôn phương",
+        "category": "Truyền giảng hội chúng",
+        "id": "52",
+        "tone": "A",
+        "timeSignature": "2/4"
+    },
+    {
+        "songName": "Nhà Cha thiêng liêng",
+        "category": "Ngợi khen cảm tạ",
+        "id": "53",
+        "tone": "D",
+        "timeSignature": "4/4"
+    },
+    {
+        "songName": "Con xin dâng lên",
+        "category": "Ngợi khen cảm tạ",
+        "id": "54",
+        "tone": "D",
+        "timeSignature": "4/4"
+    },
+    {
+        "songName": "Nước dâng rồi",
+        "category": "Ngợi khen thờ phượng: Xin Chúa hiện diện",
+        "id": "55",
+        "tone": "Em",
+        "timeSignature": "4/4"
+    },
+    {
+        "songName": "Con xin khiêm nhu",
+        "category": "Ngợi khen thờ phượng: Tôn cao Chúa",
+        "id": "56",
+        "tone": "Em",
+        "timeSignature": "3/4"
+    },
+    {
+        "songName": "Hallelujah! Tôn Chúa cao cả",
+        "category": "Ngợi khen thờ phượng: Tôn cao Chúa",
+        "id": "57",
+        "tone": "Em",
+        "timeSignature": "3/4"
+    },
+    {
+        "songName": "Todaraba",
+        "category": "Ngợi khen cảm tạ",
+        "id": "58",
+        "tone": "Em",
+        "timeSignature": "4/4"
+    },
+    {
+        "songName": "Hãy đến trước Chúa",
+        "category": "Truyền giảng hội chúng",
+        "id": "59",
+        "tone": "Dm",
+        "timeSignature": "6/8"
+    },
+    {
+        "songName": "Con muốn tôn Danh Chúa Cha",
+        "category": "Ngợi khen thờ phượng: Tôn cao Chúa",
+        "id": "60",
+        "tone": "G",
+        "timeSignature": "4/4"
+    },
+    {
+        "songName": "Khắp trên trời truyền rao",
+        "category": "Ngợi khen thờ phượng: Tôn cao Chúa",
+        "id": "61",
+        "tone": "G",
+        "timeSignature": "4/4"
+    },
+    {
+        "songName": "Hãy dọn đường cho Cứu Chúa",
+        "category": "Ngợi khen thờ phượng: Xin Chúa hiện diện",
+        "id": "62",
+        "tone": "G",
+        "timeSignature": "4/4"
+    },
+    {
+        "songName": "Quyền uy thay là Đức Chúa Trời chúng ta",
+        "category": "Ngợi khen thờ phượng: Tôn cao Chúa",
+        "id": "63",
+        "tone": "F#m",
+        "timeSignature": "4/4"
+    },
+    {
+        "songName": "Ngợi khen Cha suốt đời",
+        "category": "Ngợi khen thờ phượng: Tôn cao Chúa",
+        "id": "64",
+        "tone": "C",
+        "timeSignature": "4/4"
+    },
+    {
+        "songName": "Vào trong giây phút này",
+        "category": "Ngợi khen thờ phượng: Tôn cao Chúa",
+        "id": "65",
+        "tone": "D",
+        "timeSignature": "3/4"
+    },
+    {
+        "songName": "Tôn ngợi Danh Chúa Jesus",
+        "category": "Ngợi khen thờ phượng: Tôn cao Chúa",
+        "id": "66",
+        "tone": "F",
+        "timeSignature": "4/4"
+    },
+    {
+        "songName": "Khát khao dòng nước",
+        "category": "Ngợi khen thờ phượng: Xin Chúa hiện diện",
+        "id": "67",
+        "tone": "D",
+        "timeSignature": "4/4"
+    },
+    {
+        "songName": "An vui như con sông",
+        "category": "Ngợi khen thờ phượng: Xin Chúa hiện diện",
+        "id": "68",
+        "tone": "C",
+        "timeSignature": "4/4"
+    },
+    {
+        "songName": "Jesus, chúng con mến yêu",
+        "category": "Ngợi khen thờ phượng: Tôn cao Chúa",
+        "id": "69",
+        "tone": "C",
+        "timeSignature": "4/4"
+    },
+    {
+        "songName": "Cầu xin Cha đổi lòng",
+        "category": "Ngợi khen thờ phượng: Sự ăn năn - Sự tha tội",
+        "id": "70",
+        "tone": "C",
+        "timeSignature": "4/4"
+    },
+    {
+        "songName": "Jesus, tôn Cha muôn đời",
+        "category": "Ngợi khen thờ phượng: Xin Chúa hiện diện",
+        "id": "71",
+        "tone": "G",
+        "timeSignature": "4/4"
+    },
+    {
+        "songName": "Jesus, Jesus, thánh khiết thay",
+        "category": "Ngợi khen cảm tạ",
+        "id": "72",
+        "tone": "E",
+        "timeSignature": "4/4"
+    },
+    {
+        "songName": "Vinh diệu cao quí",
+        "category": "Ngợi khen thờ phượng: Tôn cao Chúa",
+        "id": "73",
+        "tone": "E",
+        "timeSignature": "4/4"
+    },
+    {
+        "songName": "Sự bình an trong Danh Jesus",
+        "category": "Ngợi khen cảm tạ",
+        "id": "74",
+        "tone": "G",
+        "timeSignature": "4/4"
+    },
+    {
+        "songName": "Jesus, ồ tuyệt vời thay Chúa tôi",
+        "category": "Ngợi khen cảm tạ",
+        "id": "75",
+        "tone": "F",
+        "timeSignature": "6/4"
+    },
+    {
+        "songName": "Đời sống từ chốn nước nguồn",
+        "category": "Ngợi khen thờ phượng: Xin Chúa hiện diện",
+        "id": "76",
+        "tone": "Em",
+        "timeSignature": "4/4"
+    },
+    {
+        "songName": "Nào ai đâu như Chúa",
+        "category": "Ngợi khen thờ phượng: Sự ăn năn - Sự tha tội",
+        "id": "77",
+        "tone": "Bm",
+        "timeSignature": "4/4"
+    },
+    {
+        "songName": "Cầu xin Cha hãy mở mắt con",
+        "category": "Ngợi khen thờ phượng: Xin Chúa hiện diện",
+        "id": "78",
+        "tone": "Dm",
+        "timeSignature": "4/4"
+    },
+    {
+        "songName": "Ngài chính là chốn nương thân",
+        "category": "Ngợi khen cảm tạ",
+        "id": "79",
+        "tone": "Am",
+        "timeSignature": "4/4"
+    },
+    {
+        "songName": "Chẳng bởi thế quyền",
+        "category": "Ngợi khen thờ phượng: Tôn cao Chúa",
+        "id": "80",
+        "tone": "Dm",
+        "timeSignature": "4/4"
+    },
+    {
+        "songName": "Hãy mau mở Kinh Thánh",
+        "category": "Truyền giảng hội chúng",
+        "id": "81",
+        "tone": "Dm",
+        "timeSignature": "4/4"
+    },
+    {
+        "songName": "Đức Chúa Trời nhân từ",
+        "category": "Ngợi khen thờ phượng: Tôn cao Chúa",
+        "id": "82",
+        "tone": "Am",
+        "timeSignature": "4/4"
+    },
+    {
+        "songName": "Jesus ban ánh sáng và tình yêu",
+        "category": "Ngợi khen cảm tạ",
+        "id": "83",
+        "tone": "Dm7",
+        "timeSignature": "4/4"
+    },
+    {
+        "songName": "Vua hằng còn muôn đời",
+        "category": "Ngợi khen thờ phượng: Tôn cao Chúa",
+        "id": "84",
+        "tone": "A",
+        "timeSignature": "4/4"
+    },
+    {
+        "songName": "Jesus - Danh trên muôn danh",
+        "category": "Ngợi khen thờ phượng: Dâng hiến - Đáp ứng",
+        "id": "85",
+        "tone": "D",
+        "timeSignature": "4/4"
+    },
+    {
+        "songName": "Jesus! Ngài là ánh sáng tuyệt vời",
+        "category": "Ngợi khen thờ phượng: Tôn cao Chúa",
+        "id": "86",
+        "tone": "D",
+        "timeSignature": "4/4"
+    },
+    {
+        "songName": "Vua trên muôn vua",
+        "category": "Ngợi khen thờ phượng: Dâng hiến - Đáp ứng",
+        "id": "87",
+        "tone": "Dm",
+        "timeSignature": "4/4"
+    },
+    {
+        "songName": "Cầu bình an cho Jerusalem",
+        "category": "Ngợi khen thờ phượng: Dâng hiến - Đáp ứng",
+        "id": "88",
+        "tone": "Dm",
+        "timeSignature": "4/4"
+    },
+    {
+        "songName": "Thánh thay, thánh thay, thánh thay",
+        "category": "Ngợi khen thờ phượng: Xin Chúa hiện diện",
+        "id": "89",
+        "tone": "C",
+        "timeSignature": "4/4"
+    },
+    {
+        "songName": "Jesus là tất cả cho con",
+        "category": "Ngợi khen cảm tạ",
+        "id": "90",
+        "tone": "D",
+        "timeSignature": "4/4"
+    },
+    {
+        "songName": "Thêm yêu thương, thêm năng lực",
+        "category": "Ngợi khen thờ phượng: Dâng hiến - Đáp ứng",
+        "id": "91",
+        "tone": "Em",
+        "timeSignature": "4/4"
+    },
+    {
+        "songName": "Hallelujah, Hallelujah, ngợi khen Chúa",
+        "category": "Ngợi khen thờ phượng: Tôn cao Chúa",
+        "id": "92",
+        "tone": "Am",
+        "timeSignature": "4/4"
+    },
+    {
+        "songName": "Lạy Cha Thánh con xin dâng Cha",
+        "category": "Ngợi khen thờ phượng: Tôn cao Chúa",
+        "id": "93",
+        "tone": "G",
+        "timeSignature": "4/4"
+    },
+    {
+        "songName": "Chúa mở cho lối đi",
+        "category": "Ngợi khen cảm tạ",
+        "id": "94",
+        "tone": "F",
+        "timeSignature": "4/4"
+    },
+    {
+        "songName": "Chúa đời con",
+        "category": "Ngợi khen cảm tạ",
+        "id": "95",
+        "tone": "F",
+        "timeSignature": "4/4"
+    },
+    {
+        "songName": "Xin Cha hiệp một",
+        "category": "Truyền giảng hội chúng",
+        "id": "96",
+        "tone": "G",
+        "timeSignature": "4/4"
+    },
+    {
+        "songName": "Ngài đã thắng",
+        "category": "Ngợi khen thờ phượng: Tôn cao Chúa",
+        "id": "97",
+        "tone": "C",
+        "timeSignature": "4/4"
+    },
+    {
+        "songName": "Giờ này quỳ bên chân Chúa",
+        "category": "Ngợi khen thờ phượng: Tôn cao Chúa",
+        "id": "98",
+        "tone": "F",
+        "timeSignature": "4/4"
+    },
+    {
+        "songName": "Nào ai như Chúa",
+        "category": "Ngợi khen cảm tạ",
+        "id": "99",
+        "tone": "Dm",
+        "timeSignature": "4/4"
+    },
+    {
+        "songName": "Jesus, mời Ngài đến nơi đây",
+        "category": "Ngợi khen thờ phượng: Xin Chúa hiện diện",
+        "id": "100",
+        "tone": "F",
+        "timeSignature": "4/4"
+    },
+    {
+        "songName": "Hỡi Chúa, mời Ngài đến nơi đây",
+        "category": "Ngợi khen thờ phượng: Xin Chúa hiện diện",
+        "id": "101",
+        "tone": "F",
+        "timeSignature": "4/4"
+    },
+    {
+        "songName": "Xin ý Chúa được nên",
+        "category": "Ngợi khen thờ phượng: Dâng hiến - Đáp ứng",
+        "id": "102",
+        "tone": "D",
+        "timeSignature": "4/4"
+    },
+    {
+        "songName": "Vòng tay yêu thương",
+        "category": "Ngợi khen cảm tạ",
+        "id": "103",
+        "tone": "G",
+        "timeSignature": "4/4"
+    },
+    {
+        "songName": "Jesus, Danh trên mọi danh",
+        "category": "Ngợi khen thờ phượng: Tôn cao Chúa",
+        "id": "104",
+        "tone": "A",
+        "timeSignature": "4/4"
+    },
+    {
+        "songName": "Xin Thánh Linh đến",
+        "category": "Ngợi khen thờ phượng: Xin Chúa hiện diện",
+        "id": "105",
+        "tone": "F",
+        "timeSignature": "3/4"
+    },
+    {
+        "songName": "Mau đến ca ngợi Danh Jesus",
+        "category": "Ngợi khen thờ phượng: Tôn cao Chúa",
+        "id": "106",
+        "tone": "E",
+        "timeSignature": "4/4"
+    },
+    {
+        "songName": "Từ sâu thẳm này",
+        "category": "Ngợi khen thờ phượng: Xin Chúa hiện diện",
+        "id": "107",
+        "tone": "Bm",
+        "timeSignature": "4/4"
+    },
+    {
+        "songName": "Nhã ca 1:4",
+        "category": "Ngợi khen thờ phượng: Dâng hiến - Đáp ứng",
+        "id": "108",
+        "tone": "Dm",
+        "timeSignature": "4/4"
+    },
+    {
+        "songName": "Lòng mừng vui!",
+        "category": "Ngợi khen cảm tạ",
+        "id": "109",
+        "tone": "Em",
+        "timeSignature": "4/4"
+    },
+    {
+        "songName": "Hallelujah, Jesus!",
+        "category": "Ngợi khen thờ phượng: Tôn cao Chúa",
+        "id": "110",
+        "tone": "C",
+        "timeSignature": "4/4"
+    },
+    {
+        "songName": "Thánh thay! Chúa ba ngôi",
+        "category": "Ngợi khen thờ phượng: Tôn cao Chúa",
+        "id": "111",
+        "tone": "D",
+        "timeSignature": "4/4"
+    },
+    {
+        "songName": "Thánh thay",
+        "category": "Ngợi khen thờ phượng: Tôn cao Chúa",
+        "id": "112",
+        "tone": "D",
+        "timeSignature": "4/4"
+    },
+    {
+        "songName": "Chúa Jesus phục sinh",
+        "category": "Thánh lễ Thương Khó - Phục Sinh",
+        "id": "113",
+        "tone": "D",
+        "timeSignature": "4/4"
+    },
+    {
+        "songName": "Cùng dâng câu chúc tán",
+        "category": "Ngợi khen cảm tạ",
+        "id": "114",
+        "tone": "G",
+        "timeSignature": "4/4"
+    },
+    {
+        "songName": "Không ai ngoài Jesus",
+        "category": "Ngợi khen cảm tạ",
+        "id": "115",
+        "tone": "G",
+        "timeSignature": "4/4"
+    },
+    {
+        "songName": "Cùng nhau ta đi lên đền Thánh cám ơn Cha",
+        "category": "Ngợi khen cảm tạ",
+        "id": "116",
+        "tone": "Am",
+        "timeSignature": "3/4"
+    },
+    {
+        "songName": "Thi Thiên 99:5",
+        "category": "Truyền giảng hội chúng",
+        "id": "117",
+        "tone": "D",
+        "timeSignature": "4/4"
+    },
+    {
+        "songName": "Ngợi tôn cao Danh Jesus",
+        "category": "Ngợi khen thờ phượng: Dâng hiến - Đáp ứng",
+        "id": "118",
+        "tone": "D",
+        "timeSignature": "4/4"
+    },
+    {
+        "songName": "Dòng nước sống",
+        "category": "Ngợi khen thờ phượng: Xin Chúa hiện diện",
+        "id": "119",
+        "tone": "G",
+        "timeSignature": "12/8"
+    },
+    {
+        "songName": "Thi Thiên 103",
+        "category": "Ngợi khen thờ phượng: Tôn cao Chúa",
+        "id": "120",
+        "tone": "F",
+        "timeSignature": "6/8"
+    },
+    {
+        "songName": "Kính mến Giê-hô-va",
+        "category": "Ngợi khen cảm tạ",
+        "id": "121",
+        "tone": "D",
+        "timeSignature": "4/4"
+    },
+    {
+        "songName": "Giê-xu! Chúc tôn Giê-xu",
+        "category": "Ngợi khen cảm tạ",
+        "id": "122",
+        "tone": "A",
+        "timeSignature": "4/4"
+    },
+    {
+        "songName": "Dòng huyết Chúa",
+        "category": "Ngợi khen thờ phượng: Sự ăn năn - Sự tha tội",
+        "id": "123",
+        "tone": "G",
+        "timeSignature": "4/4"
+    },
+    {
+        "songName": "Tôn vinh danh Giê-xu",
+        "category": "Ngợi khen thờ phượng: Tôn cao Chúa",
+        "id": "124",
+        "tone": "F",
+        "timeSignature": "4/4"
+    },
+    {
+        "songName": "Lu-ca 4:18-19",
+        "category": "Truyền giảng hội chúng",
+        "id": "125",
+        "tone": "Dm",
+        "timeSignature": "4/4"
+    },
+    {
+        "songName": "Đứng lên dân Chúa",
+        "category": "Truyền giảng hội chúng",
+        "id": "126",
+        "tone": "E",
+        "timeSignature": "4/4"
+    },
+    {
+        "songName": "Chúa đi trước chúng ta",
+        "category": "Truyền giảng hội chúng",
+        "id": "127",
+        "tone": "Bm",
+        "timeSignature": "4/4"
+    },
+    {
+        "songName": "Chúa chạm đến tôi",
+        "category": "Ngợi khen cảm tạ",
+        "id": "128",
+        "tone": "Eb",
+        "timeSignature": "3/4"
+    },
+    {
+        "songName": "Chúa phán đã xong rồi",
+        "category": "Ngợi khen thờ phượng: Tôn cao Chúa",
+        "id": "129",
+        "tone": "Dm",
+        "timeSignature": "4/4"
+    },
+    {
+        "songName": "Giê-xu là Cứu Chúa",
+        "category": "Ngợi khen thờ phượng: Tôn cao Chúa",
+        "id": "129a",
+        "tone": "Dm",
+        "timeSignature": "4/4"
+    },
+    {
+        "songName": "Đất nước hoang vu",
+        "category": "Ngợi khen cảm tạ",
+        "id": "130",
+        "tone": "Am",
+        "timeSignature": "4/4"
+    },
+    {
+        "songName": "Giê-xu là Đấng sống",
+        "category": "Thánh lễ Thương Khó - Phục Sinh",
+        "id": "131",
+        "tone": "Eb",
+        "timeSignature": "4/4"
+    },
+    {
+        "songName": "Giê-xu đắc thắng",
+        "category": "Ngợi khen cảm tạ",
+        "id": "132",
+        "tone": "E",
+        "timeSignature": "4/4"
+    },
+    {
+        "songName": "Đấng toàn năng tể trị",
+        "category": "Ngợi khen thờ phượng: Tôn cao Chúa",
+        "id": "133",
+        "tone": "E",
+        "timeSignature": "4/4"
+    },
+    {
+        "songName": "Ngài đã thắng cõi sự chết",
+        "category": "Ngợi khen thờ phượng: Tôn cao Chúa",
+        "id": "134",
+        "tone": "Dm",
+        "timeSignature": "4/4"
+    },
+    {
+        "songName": "Lòng này trông thấy",
+        "category": "Ngợi khen thờ phượng: Tôn cao Chúa",
+        "id": "135",
+        "tone": "G",
+        "timeSignature": "4/4"
+    },
+    {
+        "songName": "Chúa đến trong quyền năng",
+        "category": "Ngợi khen thờ phượng: Xin Chúa hiện diện",
+        "id": "136",
+        "tone": "G",
+        "timeSignature": "4/4"
+    },
+    {
+        "songName": "Không thần nào khác",
+        "category": "Ngợi khen thờ phượng: Xin Chúa hiện diện",
+        "id": "137",
+        "tone": "C",
+        "timeSignature": "4/4"
+    },
+    {
+        "songName": "Chúng con tự do",
+        "category": "Thánh lễ Thương Khó - Phục Sinh",
+        "id": "138",
+        "tone": "Am",
+        "timeSignature": "4/4"
+    },
+    {
+        "songName": "Ê-sai 6:8",
+        "category": "Truyền giảng hội chúng",
+        "id": "139",
+        "tone": "D",
+        "timeSignature": "4/4"
+    },
+    {
+        "songName": "Êm-ma-nu-ên! Hỡi Êm-ma-nu-ên",
+        "category": "Ngợi khen cảm tạ",
+        "id": "140",
+        "tone": "A",
+        "timeSignature": "4/4"
+    },
+    {
+        "songName": "Thi-thiên 57:8-9",
+        "category": "Ngợi khen thờ phượng: Tôn cao Chúa",
+        "id": "141",
+        "tone": "Dm",
+        "timeSignature": "4/4"
+    },
+    {
+        "songName": "Nê-hê-mi 8:10",
+        "category": "Ngợi khen cảm tạ",
+        "id": "142",
+        "tone": "E",
+        "timeSignature": "4/4"
+    },
+    {
+        "songName": "Giê-xu ban cho bài ca",
+        "category": "Ngợi khen cảm tạ",
+        "id": "143",
+        "tone": "D",
+        "timeSignature": "4/4"
+    },
+    {
+        "songName": "Chúa Nhân lành",
+        "category": "Ngợi khen cảm tạ",
+        "id": "144",
+        "tone": "Em",
+        "timeSignature": "4/4"
+    },
+    {
+        "songName": "Lòng nguyện tôn cao",
+        "category": "Ngợi khen thờ phượng: Tôn cao Chúa",
+        "id": "145",
+        "tone": "Bb",
+        "timeSignature": "4/4"
+    },
+    {
+        "songName": "Thêm vinh hiển Ngài",
+        "category": "Ngợi khen thờ phượng: Dâng hiến - Đáp ứng",
+        "id": "146",
+        "tone": "Bb",
+        "timeSignature": "4/4"
+    },
+    {
+        "songName": "Giê-xu con khát khao Ngài",
+        "category": "Ngợi khen thờ phượng: Xin Chúa hiện diện",
+        "id": "147",
+        "tone": "D",
+        "timeSignature": "4/4"
+    },
+    {
+        "songName": "Con dâng trong tay Ngài",
+        "category": "Ngợi khen cảm tạ",
+        "id": "148",
+        "tone": "A",
+        "timeSignature": "4/4"
+    },
+    {
+        "songName": "Xin hiệp nhất chúng con",
+        "category": "Truyền giảng hội chúng",
+        "id": "149",
+        "tone": "Bb",
+        "timeSignature": "6/8"
+    },
+    {
+        "songName": "Không danh nào khác",
+        "category": "Ngợi khen thờ phượng: Tôn cao Chúa",
+        "id": "150",
+        "tone": "D",
+        "timeSignature": "4/4"
+    },
+    {
+        "songName": "Giê-xu đang ở nơi đây",
+        "category": "Ngợi khen thờ phượng: Dâng hiến - Đáp ứng",
+        "id": "151",
+        "tone": "G",
+        "timeSignature": "4/4"
+    },
+    {
+        "songName": "Chúa vĩ đại",
+        "category": "Ngợi khen thờ phượng: Tôn cao Chúa",
+        "id": "152",
+        "tone": "C",
+        "timeSignature": "6/8"
+    },
+    {
+        "songName": "Nước sống Cứu thế đến",
+        "category": "Ngợi khen cảm tạ",
+        "id": "153",
+        "tone": "G",
+        "timeSignature": "4/4"
+    },
+    {
+        "songName": "Chúc tán Danh Vua Giê-xu",
+        "category": "Ngợi khen cảm tạ",
+        "id": "154",
+        "tone": "E",
+        "timeSignature": "4/4"
+    },
+    {
+        "songName": "Chỉ có Cha",
+        "category": "Ngợi khen cảm tạ",
+        "id": "155",
+        "tone": "G",
+        "timeSignature": "4/4"
+    },
+    {
+        "songName": "Con quỳ lạy trước ngôi",
+        "category": "Ngợi khen thờ phượng: Tôn cao Chúa",
+        "id": "156",
+        "tone": "G",
+        "timeSignature": "4/4"
+    },
+    {
+        "songName": "Lòng kính tôn cao",
+        "category": "Ngợi khen thờ phượng: Tôn cao Chúa",
+        "id": "157",
+        "tone": "G",
+        "timeSignature": "4/4"
+    },
+    {
+        "songName": "Sự thành tín Chúa rất lớn",
+        "category": "Ngợi khen cảm tạ",
+        "id": "158",
+        "tone": "C",
+        "timeSignature": "3/4"
+    },
+    {
+        "songName": "Hát Halelugia",
+        "category": "Ngợi khen thờ phượng: Tôn cao Chúa",
+        "id": "159",
+        "tone": "Dm",
+        "timeSignature": "4/4"
+    },
+    {
+        "songName": "Nào ai như Giê-xu",
+        "category": "Ngợi khen thờ phượng: Tôn cao Chúa",
+        "id": "160",
+        "tone": "Am",
+        "timeSignature": "4/4"
+    },
+    {
+        "songName": "Mời Thánh Linh ngự trị",
+        "category": "Ngợi khen thờ phượng: Xin Chúa hiện diện",
+        "id": "161",
+        "tone": "Bb",
+        "timeSignature": "3/4"
+    },
+    {
+        "songName": "Đứng lên chiến sĩ Giê-hô-va",
+        "category": "Truyền giảng hội chúng",
+        "id": "162",
+        "tone": "Dm",
+        "timeSignature": "4/4"
+    },
+    {
+        "songName": "Cất tiếng reo mừng Chúa",
+        "category": "Ngợi khen cảm tạ",
+        "id": "163",
+        "tone": "A",
+        "timeSignature": "4/4"
+    },
+    {
+        "songName": "Trông xem về vinh quang Thánh",
+        "category": "Ngợi khen thờ phượng: Tôn cao Chúa",
+        "id": "164",
+        "tone": "C",
+        "timeSignature": "4/4"
+    },
+    {
+        "songName": "Vinh hiển thuộc Chiên Con",
+        "category": "Ngợi khen thờ phượng: Tôn cao Chúa",
+        "id": "165",
+        "tone": "D",
+        "timeSignature": "4/4"
+    },
+    {
+        "songName": "Ta đây cùng con",
+        "category": "Ngợi khen thờ phượng: Dâng hiến - Đáp ứng",
+        "id": "166",
+        "tone": "Am",
+        "timeSignature": "4/4"
+    },
+    {
+        "songName": "Chiên Con được tôn làm Vua",
+        "category": "Ngợi khen thờ phượng: Tôn cao Chúa",
+        "id": "167",
+        "tone": "E",
+        "timeSignature": "4/4"
+    },
+    {
+        "songName": "Mùa gặt",
+        "category": "Ngợi khen thờ phượng: Dâng hiến - Đáp ứng",
+        "id": "168",
+        "tone": "Em",
+        "timeSignature": "4/4"
+    },
+    {
+        "songName": "Trận chiến thuộc về Chúa",
+        "category": "Truyền giảng hội chúng",
+        "id": "169",
+        "tone": "Em",
+        "timeSignature": "4/4"
+    },
+    {
+        "songName": "Hãy đến với Chúa",
+        "category": "Truyền giảng hội chúng",
+        "id": "170",
+        "tone": "D",
+        "timeSignature": "4/4"
+    },
+    {
+        "songName": "Halelugia",
+        "category": "Ngợi khen thờ phượng: Tôn cao Chúa",
+        "id": "171",
+        "tone": "A",
+        "timeSignature": "4/4"
+    },
+    {
+        "songName": "Bài ca Đắc thắng",
+        "category": "Ngợi khen thờ phượng: Tôn cao Chúa",
+        "id": "172",
+        "tone": "Bm",
+        "timeSignature": "4/4"
+    },
+    {
+        "songName": "Lời con ca tụng",
+        "category": "Ngợi khen cảm tạ",
+        "id": "173",
+        "tone": "Bb",
+        "timeSignature": "4/4"
+    },
+    {
+        "songName": "Hỡi người được mua chuộc",
+        "category": "Ngợi khen cảm tạ",
+        "id": "174",
+        "tone": "A",
+        "timeSignature": "4/4"
+    },
+    {
+        "songName": "Chúa gác sang bên",
+        "category": "Ngợi khen thờ phượng: Sự ăn năn - Sự tha tội",
+        "id": "175",
+        "tone": "G",
+        "timeSignature": "4/4"
+    },
+    {
+        "songName": "Dựng nên trong con",
+        "category": "Ngợi khen thờ phượng: Sự ăn năn - Sự tha tội",
+        "id": "176",
+        "tone": "G",
+        "timeSignature": "4/4"
+    },
+    {
+        "songName": "Giê-xu bây giờ con lại cùng Ngài",
+        "category": "Ngợi khen thờ phượng: Xin Chúa hiện diện",
+        "id": "177",
+        "tone": "Am",
+        "timeSignature": "4/4"
+    },
+    {
+        "songName": "Giê-hô-va Di-rê",
+        "category": "Ngợi khen thờ phượng: Dâng hiến - Đáp ứng",
+        "id": "178",
+        "tone": "Dm",
+        "timeSignature": "4/4"
+    },
+    {
+        "songName": "Trong danh Cứu Chúa Giê-xu",
+        "category": "Ngợi khen cảm tạ",
+        "id": "179",
+        "tone": "F",
+        "timeSignature": "4/4"
+    },
+    {
+        "songName": "Chúa thật tốt thay",
+        "category": "Ngợi khen cảm tạ",
+        "id": "180",
+        "tone": "D",
+        "timeSignature": "4/4"
+    },
+    {
+        "songName": "Ô! Huyết Giê-xu",
+        "category": "Ngợi khen thờ phượng: Sự ăn năn - Sự tha tội",
+        "id": "181",
+        "tone": "D",
+        "timeSignature": "12/8"
+    },
+    {
+        "songName": "Nhờ huyết báu Ngài",
+        "category": "Ngợi khen thờ phượng: Sự ăn năn - Sự tha tội",
+        "id": "182",
+        "tone": "A",
+        "timeSignature": "4/4"
+    },
+    {
+        "songName": "Tôn vinh Vua Giê-xu",
+        "category": "Ngợi khen thờ phượng: Tôn cao Chúa",
+        "id": "183",
+        "tone": "D",
+        "timeSignature": "4/4"
+    },
+    {
+        "songName": "Tình yêu bền vững của Chúa",
+        "category": "Ngợi khen thờ phượng: Dâng hiến - Đáp ứng",
+        "id": "184",
+        "tone": "D",
+        "timeSignature": "4/4"
+    },
+    {
+        "songName": "Xứng đáng thay Ngài",
+        "category": "Ngợi khen thờ phượng: Tôn cao Chúa",
+        "id": "185",
+        "tone": "D",
+        "timeSignature": "4/4"
+    },
+    {
+        "songName": "Tôi sẽ đến quỳ trước Ngài",
+        "category": "Ngợi khen cảm tạ",
+        "id": "186",
+        "tone": "C",
+        "timeSignature": "3/4"
+    },
+    {
+        "songName": "Ngài khiến tôi an nghỉ",
+        "category": "Ngợi khen cảm tạ",
+        "id": "187",
+        "tone": "Cm",
+        "timeSignature": "4/4"
+    },
+    {
+        "songName": "Danh Chúa được ngợi khen",
+        "category": "Ngợi khen thờ phượng: Tôn cao Chúa",
+        "id": "188",
+        "tone": "D",
+        "timeSignature": "4/4"
+    },
+    {
+        "songName": "Chúa Giê-hô-va",
+        "category": "Ngợi khen thờ phượng: Tôn cao Chúa",
+        "id": "189",
+        "tone": "C",
+        "timeSignature": "4/4"
+    },
+    {
+        "songName": "Xin Thần Linh đến trong con",
+        "category": "Ngợi khen thờ phượng: Xin Chúa hiện diện",
+        "id": "190",
+        "tone": "Ab",
+        "timeSignature": "3/4"
+    },
+    {
+        "songName": "Chúa xứng đáng thay",
+        "category": "Ngợi khen thờ phượng: Tôn cao Chúa",
+        "id": "191",
+        "tone": "G",
+        "timeSignature": "3/4"
+    },
+    {
+        "songName": "Nguyện tôn vinh Chúa",
+        "category": "Ngợi khen cảm tạ",
+        "id": "192",
+        "tone": "Dm",
+        "timeSignature": "4/4"
+    },
+    {
+        "songName": "Thờ phượng Ba Ngôi",
+        "category": "Ngợi khen thờ phượng: Tôn cao Chúa",
+        "id": "193",
+        "tone": "F",
+        "timeSignature": "4/4"
+    },
+    {
+        "songName": "Ngợi danh Giê-hô-va",
+        "category": "Ngợi khen thờ phượng: Tôn cao Chúa",
+        "id": "194",
+        "tone": "Cm",
+        "timeSignature": "4/4"
+    },
+    {
+        "songName": "Thi thiên 133",
+        "category": "Truyền giảng hội chúng",
+        "id": "195",
+        "tone": "Gm",
+        "timeSignature": "4/4"
+    },
+    {
+        "songName": "Hãy phó thác cho Đức Giê-hô-va",
+        "category": "Ngợi khen thờ phượng: Dâng hiến - Đáp ứng",
+        "id": "196",
+        "tone": "Em",
+        "timeSignature": "4/4"
+    },
+    {
+        "songName": "Ngài là Giê-hô-va",
+        "category": "Ngợi khen thờ phượng: Tôn cao Chúa",
+        "id": "197",
+        "tone": "Em",
+        "timeSignature": "4/4"
+    },
+    {
+        "songName": "Lạy Cha chúng con",
+        "category": "Ngợi khen thờ phượng: Sự ăn năn - Sự tha tội",
+        "id": "198",
+        "tone": "Em",
+        "timeSignature": "6/8"
+    },
+    {
+        "songName": "Hát cho Ngài",
+        "category": "Ngợi khen thờ phượng: Tôn cao Chúa",
+        "id": "199",
+        "tone": "Dm",
+        "timeSignature": "4/4"
+    },
+    {
+        "songName": "Ngài là Vua các vua",
+        "category": "Ngợi khen thờ phượng: Tôn cao Chúa",
+        "id": "200",
+        "tone": "G",
+        "timeSignature": "4/4"
+    },
+    {
+        "songName": "Hãy hát ngợi khen",
+        "category": "Ngợi khen thờ phượng: Tôn cao Chúa",
+        "id": "201",
+        "tone": "Bm",
+        "timeSignature": "4/4"
+    },
+    {
+        "songName": "Ca tụng Danh Chúa",
+        "category": "Ngợi khen thờ phượng: Tôn cao Chúa",
+        "id": "202",
+        "tone": "A",
+        "timeSignature": "4/4"
+    },
+    {
+        "songName": "Ngài luôn mở lối",
+        "category": "Ngợi khen cảm tạ",
+        "id": "203",
+        "tone": "F",
+        "timeSignature": "4/4"
+    },
+    {
+        "songName": "Đấng thành tín",
+        "category": "Ngợi khen cảm tạ",
+        "id": "204",
+        "tone": "D",
+        "timeSignature": "4/4"
+    },
+    {
+        "songName": "Lòng con hằng khao khát",
+        "category": "Ngợi khen cảm tạ",
+        "id": "205",
+        "tone": "G",
+        "timeSignature": "4/4"
+    },
+    {
+        "songName": "Dìu con đến gần Ngài",
+        "category": "Ngợi khen thờ phượng: Sự ăn năn - Sự tha tội",
+        "id": "206",
+        "tone": "A",
+        "timeSignature": "4/4"
+    },
+    {
+        "songName": "Chúa ơi! Con tìm kiếm Ngài",
+        "category": "Ngợi khen thờ phượng: Dâng hiến - Đáp ứng",
+        "id": "207",
+        "tone": "C",
+        "timeSignature": "4/4"
+    },
+    {
+        "songName": "Chốn vững an trong đời",
+        "category": "Ngợi khen thờ phượng: Xin Chúa hiện diện",
+        "id": "208",
+        "tone": "Cm",
+        "timeSignature": "4/4"
+    },
+    {
+        "songName": "Hà hơi trên con",
+        "category": "Ngợi khen thờ phượng: Xin Chúa hiện diện",
+        "id": "209",
+        "tone": "Eb",
+        "timeSignature": "4/4"
+    },
+    {
+        "songName": "Tất cả vinh dự",
+        "category": "Ngợi khen thờ phượng: Xin Chúa hiện diện",
+        "id": "210",
+        "tone": "Dm",
+        "timeSignature": "4/4"
+    },
+    {
+        "songName": "Con thờ phượng Cha",
+        "category": "Ngợi khen thờ phượng: Tôn cao Chúa",
+        "id": "211",
+        "tone": "G",
+        "timeSignature": "4/4"
+    },
+    {
+        "songName": "Chúa Đấng chữa lành",
+        "category": "Ngợi khen thờ phượng: Tôn cao Chúa",
+        "id": "212",
+        "tone": "C",
+        "timeSignature": "4/4"
+    },
+    {
+        "songName": "Việt Nam truyền giáo",
+        "category": "Truyền giảng hội chúng",
+        "id": "213",
+        "tone": "G",
+        "timeSignature": "3/4"
+    },
+    {
+        "songName": "Hallelujah, Tôn vinh Danh Chúa Israel",
+        "category": "Ngợi khen thờ phượng: Tôn cao Chúa",
+        "id": "214",
+        "tone": "Dm",
+        "timeSignature": "4/4"
+    },
+    {
+        "songName": "Khải huyền 4:8",
+        "category": "Ngợi khen thờ phượng: Tôn cao Chúa",
+        "id": "215",
+        "tone": "Am",
+        "timeSignature": "4/4"
+    },
+    {
+        "songName": "Thi thiên 135",
+        "category": "Ngợi khen thờ phượng: Tôn cao Chúa",
+        "id": "216",
+        "tone": "Gm",
+        "timeSignature": "4/4"
+    },
+    {
+        "songName": "Ma-la-chi 4:2",
+        "category": "Ngợi khen cảm tạ",
+        "id": "217",
+        "tone": "Em",
+        "timeSignature": "4/4"
+    },
+    {
+        "songName": "Bài ca dâng hiến",
+        "category": "Ngợi khen thờ phượng: Dâng hiến - Đáp ứng",
+        "id": "218",
+        "tone": "Am",
+        "timeSignature": "2/4"
+    },
+    {
+        "songName": "Đến trong nhà Ngài",
+        "category": "Truyền giảng hội chúng",
+        "id": "219",
+        "tone": "D",
+        "timeSignature": "4/4"
+    },
+    {
+        "songName": "Đến thờ phượng Chúa",
+        "category": "Truyền giảng hội chúng",
+        "id": "220",
+        "tone": "D",
+        "timeSignature": "4/4"
+    },
+    {
+        "songName": "Con chỉ mong tôn cao Danh Ngài",
+        "category": "Ngợi khen thờ phượng: Dâng hiến - Đáp ứng",
+        "id": "221",
+        "tone": "D",
+        "timeSignature": "4/4"
+    },
+    {
+        "songName": "Đến với Ngài",
+        "category": "Ngợi khen cảm tạ",
+        "id": "222",
+        "tone": "D",
+        "timeSignature": "4/4"
+    },
+    {
+        "songName": "Thi thiên 16",
+        "category": "Ngợi khen cảm tạ",
+        "id": "223",
+        "tone": "Dm",
+        "timeSignature": "6/8"
+    },
+    {
+        "songName": "Nguyện Chúa được tôn cao",
+        "category": "Ngợi khen cảm tạ",
+        "id": "224",
+        "tone": "G",
+        "timeSignature": "4/4"
+    },
+    {
+        "songName": "Sô-phô-ni 3",
+        "category": "Ngợi khen cảm tạ",
+        "id": "225",
+        "tone": "Am",
+        "timeSignature": "4/4"
+    },
+    {
+        "songName": "Hãy cất tiếng vui mừng",
+        "category": "Ngợi khen thờ phượng: Tôn cao Chúa",
+        "id": "226",
+        "tone": "Em",
+        "timeSignature": "4/4"
+    },
+    {
+        "songName": "Quyết dâng",
+        "category": "Ngợi khen thờ phượng: Xin Chúa hiện diện",
+        "id": "227",
+        "tone": "C",
+        "timeSignature": "4/4"
+    },
+    {
+        "songName": "Giê-xu, Vua muôn vua",
+        "category": "Ngợi khen cảm tạ",
+        "id": "228",
+        "tone": "Em",
+        "timeSignature": "4/4"
+    },
+    {
+        "songName": "Chiên Con tôn quý",
+        "category": "Ngợi khen cảm tạ",
+        "id": "229",
+        "tone": "G",
+        "timeSignature": "4/4"
+    },
+    {
+        "songName": "Xót thương từ Chúa",
+        "category": "Ngợi khen thờ phượng: Sự ăn năn - Sự tha tội",
+        "id": "230",
+        "tone": "D",
+        "timeSignature": "4/4"
+    },
+    {
+        "songName": "Thiên đàng trong lòng",
+        "category": "Ngợi khen cảm tạ",
+        "id": "231",
+        "tone": "D",
+        "timeSignature": "4/4"
+    },
+    {
+        "songName": "Bạn có thấy",
+        "category": "Thánh lễ Thương Khó - Phục Sinh",
+        "id": "232",
+        "tone": "C",
+        "timeSignature": "4/4"
+    },
+    {
+        "songName": "Khắp núi non cao, biển cả mênh mông",
+        "category": "Ngợi khen cảm tạ",
+        "id": "233",
+        "tone": "E",
+        "timeSignature": "4/4"
+    },
+    {
+        "songName": "Điều Chúa làm trong con",
+        "category": "Thánh lễ Thương Khó - Phục Sinh",
+        "id": "234",
+        "tone": "C",
+        "timeSignature": "3/4"
+    },
+    {
+        "songName": "Khắp Thiên đàng",
+        "category": "Ngợi khen thờ phượng: Tôn cao Chúa",
+        "id": "235",
+        "tone": "C",
+        "timeSignature": "4/4"
+    },
+    {
+        "songName": "Trước Ngôi thương xót Chúa",
+        "category": "Ngợi khen thờ phượng: Tôn cao Chúa",
+        "id": "236",
+        "tone": "D",
+        "timeSignature": "4/4"
+    },
+    {
+        "songName": "Chợt nhìn núi đồi cao",
+        "category": "Ngợi khen thờ phượng: Dâng hiến - Đáp ứng",
+        "id": "237",
+        "tone": "C",
+        "timeSignature": "4/4"
+    },
+    {
+        "songName": "Chúa thật vĩ đại",
+        "category": "Ngợi khen thờ phượng: Tôn cao Chúa",
+        "id": "238",
+        "tone": "D",
+        "timeSignature": "4/4"
+    },
+    {
+        "songName": "Thánh thay Chúa",
+        "category": "Ngợi khen thờ phượng: Tôn cao Chúa",
+        "id": "239",
+        "tone": "C",
+        "timeSignature": "4/4"
+    },
+    {
+        "songName": "Tôi sẽ mãi ca ngợi",
+        "category": "Ngợi khen thờ phượng: Tôn cao Chúa",
+        "id": "240",
+        "tone": "Bm",
+        "timeSignature": "4/4"
+    },
+    {
+        "songName": "Hallelujah - Adonai",
+        "category": "Ngợi khen thờ phượng: Tôn cao Chúa",
+        "id": "241",
+        "tone": "Am",
+        "timeSignature": "2/4"
+    },
+    {
+        "songName": "Vỗ tay lên",
+        "category": "Ngợi khen thờ phượng: Tôn cao Chúa",
+        "id": "243",
+        "tone": "D",
+        "timeSignature": "4/4"
+    },
+    {
+        "songName": "Hỡi Vua của muôn đời",
+        "category": "Ngợi khen thờ phượng: Tôn cao Chúa",
+        "id": "243",
+        "tone": "Dm",
+        "timeSignature": "4/4"
+    },
+    {
+        "songName": "Hosanna",
+        "category": "Ngợi khen cảm tạ",
+        "id": "244",
+        "tone": "E",
+        "timeSignature": "4/4"
+    },
+    {
+        "songName": "Jehovah, Đấng toàn năng",
+        "category": "Ngợi khen cảm tạ",
+        "id": "245",
+        "tone": "G",
+        "timeSignature": "4/4"
+    },
+    {
+        "songName": "Thần Linh Cha ở đây",
+        "category": "Ngợi khen thờ phượng: Xin Chúa hiện diện",
+        "id": "246",
+        "tone": "D",
+        "timeSignature": "4/4"
+    },
+    {
+        "songName": "Lạ thay ân hồng Chúa",
+        "category": "Ngợi khen cảm tạ",
+        "id": "247",
+        "tone": "G",
+        "timeSignature": "3/4"
+    },
+    {
+        "songName": "Vĩ đại thay là Chúa",
+        "category": "Ngợi khen cảm tạ",
+        "id": "248",
+        "tone": "D",
+        "timeSignature": "4/4"
+    },
+    {
+        "songName": "Tin sẽ thấy",
+        "category": "Truyền giảng hội chúng",
+        "id": "249",
+        "tone": "D",
+        "timeSignature": "3/4"
+    },
+    {
+        "songName": "Bàn chân đẹp",
+        "category": "Truyền giảng hội chúng",
+        "id": "250",
+        "tone": "C",
+        "timeSignature": "4/4"
+    },
+    {
+        "songName": "Nguyện cầu Cha",
+        "category": "Ngợi khen cảm tạ",
+        "id": "251",
+        "tone": "Em",
+        "timeSignature": "4/4"
+    },
+    {
+        "songName": "Xin tẩy sạch lòng con",
+        "category": "Ngợi khen thờ phượng: Sự ăn năn - Sự tha tội",
+        "id": "252",
+        "tone": "E",
+        "timeSignature": "4/4"
+    },
+    {
+        "songName": "Cầu xin Chúa mở mắt con",
+        "category": "Ngợi khen thờ phượng: Xin Chúa hiện diện",
+        "id": "253",
+        "tone": "E",
+        "timeSignature": "6/4"
+    },
+    {
+        "songName": "Hãy cùng nhau lên núi Si-ôn",
+        "category": "Truyền giảng hội chúng",
+        "id": "254",
+        "tone": "D",
+        "timeSignature": "4/4"
+    },
+    {
+        "songName": "Thi thiên 37:5",
+        "category": "Ngợi khen thờ phượng: Dâng hiến - Đáp ứng",
+        "id": "255",
+        "tone": "Dm",
+        "timeSignature": "4/4"
+    },
+    {
+        "songName": "Jesus là Cứu Chúa",
+        "category": "Ngợi khen cảm tạ",
+        "id": "256",
+        "tone": "Em",
+        "timeSignature": "4/4"
+    },
+    {
+        "songName": "XIN THẦN LINH ĐẾN",
+        "category": "Ngợi khen thờ phượng: Xin Chúa hiện diện",
+        "id": 1,
+        "tone": "Em",
+        "timeSignature": "2/4"
+    },
+    {
+        "songName": "TRỌN CẢ TẤM LÒNG",
+        "category": "Ngợi khen thờ phượng: Xin Chúa hiện diện",
+        "id": 2,
+        "tone": "G",
+        "timeSignature": "4/4"
+    },
+    {
+        "songName": "KHÁT KHAO DÒNG NƯỚC",
+        "category": "Ngợi khen thờ phượng: Xin Chúa hiện diện",
+        "id": 3,
+        "tone": "D",
+        "timeSignature": "4/4"
+    },
+    {
+        "songName": "LỬA PHỤC HƯNG",
+        "category": "Ngợi khen thờ phượng: Xin Chúa hiện diện",
+        "id": 4,
+        "tone": "A",
+        "timeSignature": "4/4"
+    },
+    {
+        "songName": "CHÚA ĐANG HIỆN DIỆN NƠI ĐÂY",
+        "category": "Ngợi khen thờ phượng: Xin Chúa hiện diện",
+        "id": 5,
+        "tone": "D",
+        "timeSignature": "4/4"
+    },
+    {
+        "songName": "XIN THẦN LINH NGỰ ĐẾN",
+        "category": "Ngợi khen thờ phượng: Xin Chúa hiện diện",
+        "id": 6,
+        "tone": "Bb",
+        "timeSignature": "3/4"
+    },
+    {
+        "songName": "CHẠM LÒNG CON",
+        "category": "Ngợi khen thờ phượng: Xin Chúa hiện diện",
+        "id": 7,
+        "tone": "C",
+        "timeSignature": "4/4"
+    },
+    {
+        "songName": "HỠI CHÚA! MỜI NGÀI NGỰ ĐẾN",
+        "category": "Ngợi khen thờ phượng: Xin Chúa hiện diện",
+        "id": 8,
+        "tone": "F",
+        "timeSignature": "4/4"
+    },
+    {
+        "songName": "CON TIN NƠI NGÀI",
+        "category": "Ngợi khen thờ phượng: Xin Chúa hiện diện",
+        "id": 9,
+        "tone": "D",
+        "timeSignature": "4/4"
+    },
+    {
+        "songName": "THIÊN CHÚA NGỰ",
+        "category": "Ngợi khen thờ phượng: Xin Chúa hiện diện",
+        "id": 10,
+        "tone": "D",
+        "timeSignature": "4/4"
+    },
+    {
+        "songName": "VÀO CỬA NGÀI VỚI LỜI CẢM TẠ",
+        "category": "Ngợi khen thờ phượng: Tôn cao Chúa",
+        "id": 11,
+        "tone": "Am",
+        "timeSignature": "6/8"
+    },
+    {
+        "songName": "CÙNG CHÚC TÔN CHÚA",
+        "category": "Ngợi khen thờ phượng: Tôn cao Chúa",
+        "id": 12,
+        "tone": "G",
+        "timeSignature": "4/4"
+    },
+    {
+        "songName": "NGÀI ĐÁNG ĐƯỢC NGỢI KHEN",
+        "category": "Ngợi khen thờ phượng: Tôn cao Chúa",
+        "id": 13,
+        "tone": "C",
+        "timeSignature": "4/4"
+    },
+    {
+        "songName": "HIỆP LẠI TRONG ÂN ĐIỂN",
+        "category": "Ngợi khen thờ phượng: Tôn cao Chúa",
+        "id": 14,
+        "tone": "Eb",
+        "timeSignature": "4/4"
+    },
+    {
+        "songName": "XIN CHA KHIẾN HIỆP MỘT",
+        "category": "Ngợi khen thờ phượng: Tôn cao Chúa",
+        "id": 15,
+        "tone": "F",
+        "timeSignature": "2/2"
+    },
+    {
+        "songName": "ĐOÀN DÂN GIAO ƯỚC",
+        "category": "Ngợi khen thờ phượng: Tôn cao Chúa",
+        "id": 16,
+        "tone": "C",
+        "timeSignature": "4/4"
+    },
+    {
+        "songName": "CÙNG HỌP NHAU",
+        "category": "Ngợi khen thờ phượng: Tôn cao Chúa",
+        "id": 17,
+        "tone": "A",
+        "timeSignature": "4/4"
+    },
+    {
+        "songName": "KẾT CHÚNG CON LÀM MỘT",
+        "category": "Ngợi khen thờ phượng: Tôn cao Chúa",
+        "id": 18,
+        "tone": "F",
+        "timeSignature": "4/4"
+    },
+    {
+        "songName": "CON CHỈ MONG TÔN CAO DANH NGÀI",
+        "category": "Ngợi khen thờ phượng: Tôn cao Chúa",
+        "id": 19,
+        "tone": "D",
+        "timeSignature": "4/4"
+    },
+    {
+        "songName": "HA-LÊ-LU-GIA CẢM TẠ CHÚA",
+        "category": "Ngợi khen thờ phượng: Tôn cao Chúa",
+        "id": 20,
+        "tone": "C",
+        "timeSignature": "4/4"
+    },
+    {
+        "songName": "ĐẾN TÔN THỜ CHÚA",
+        "category": "Ngợi khen thờ phượng: Tôn cao Chúa",
+        "id": 21,
+        "tone": "F",
+        "timeSignature": "4/4"
+    },
+    {
+        "songName": "CHÚC TÁN DANH CHÚA",
+        "category": "Ngợi khen thờ phượng: Tôn cao Chúa",
+        "id": 22,
+        "tone": "Eb",
+        "timeSignature": "4/4"
+    },
+    {
+        "songName": "DÂNG CHÚA LỜI SUY TÔN",
+        "category": "Ngợi khen thờ phượng: Tôn cao Chúa",
+        "id": 23,
+        "tone": "F",
+        "timeSignature": "4/4"
+    },
+    {
+        "songName": "HÁT VÌ GIÊ-XU",
+        "category": "Ngợi khen thờ phượng: Tôn cao Chúa",
+        "id": 24,
+        "tone": "D",
+        "timeSignature": "4/4"
+    },
+    {
+        "songName": "HIỆP MỘT",
+        "category": "Ngợi khen thờ phượng: Tôn cao Chúa",
+        "id": 25,
+        "tone": "G",
+        "timeSignature": "4/4"
+    },
+    {
+        "songName": "NGUYỆN DANH CHÚA LUÔN ĐƯỢC TÔN CAO",
+        "category": "Ngợi khen thờ phượng: Tôn cao Chúa",
+        "id": 26,
+        "tone": "G",
+        "timeSignature": "4/4"
+    },
+    {
+        "songName": "HÁT LÊN HA-LÊ-LU-GIA",
+        "category": "Ngợi khen thờ phượng: Tôn cao Chúa",
+        "id": 27,
+        "tone": "Cm",
+        "timeSignature": "4/4"
+    },
+    {
+        "songName": "NGÀI LÀ VUA TRÊN MUÔN LOÀI",
+        "category": "Ngợi khen thờ phượng: Tôn cao Chúa",
+        "id": 28,
+        "tone": "Bb",
+        "timeSignature": "4/4"
+    },
+    {
+        "songName": "HA-LÊ-LU-GIA TÔN CAO CHÚA",
+        "category": "Ngợi khen thờ phượng: Tôn cao Chúa",
+        "id": 29,
+        "tone": "Bb",
+        "timeSignature": "6/8"
+    },
+    {
+        "songName": "NGÀI LÀ CHÚA",
+        "category": "Ngợi khen thờ phượng: Tôn cao Chúa",
+        "id": 30,
+        "tone": "D",
+        "timeSignature": "2/4"
+    },
+    {
+        "songName": "TOÀN NĂNG THAY CHÚA",
+        "category": "Ngợi khen thờ phượng: Tôn cao Chúa",
+        "id": 31,
+        "tone": "C",
+        "timeSignature": "4/4"
+    },
+    {
+        "songName": "NGÀI ĐƯỢC TÔN CAO",
+        "category": "Ngợi khen thờ phượng: Tôn cao Chúa",
+        "id": 32,
+        "tone": "F",
+        "timeSignature": "6/8"
+    },
+    {
+        "songName": "TÔN VINH CHA",
+        "category": "Ngợi khen thờ phượng: Tôn cao Chúa",
+        "id": 33,
+        "tone": "C",
+        "timeSignature": "4/4"
+    },
+    {
+        "songName": "CHÚC TÔN CHÚA",
+        "category": "Ngợi khen thờ phượng: Tôn cao Chúa",
+        "id": 34,
+        "tone": "Dm",
+        "timeSignature": "4/4"
+    },
+    {
+        "songName": "BÀI CA NGỢI KHEN",
+        "category": "Ngợi khen thờ phượng: Tôn cao Chúa",
+        "id": 35,
+        "tone": "Fm",
+        "timeSignature": "4/4"
+    },
+    {
+        "songName": "VÌ CHÚA TOÀN NĂNG",
+        "category": "Ngợi khen thờ phượng: Tôn cao Chúa",
+        "id": 36,
+        "tone": "C",
+        "timeSignature": "4/4"
+    },
+    {
+        "songName": "TÔN CAO DANH GIÊ-XU",
+        "category": "Ngợi khen thờ phượng: Tôn cao Chúa",
+        "id": 37,
+        "tone": "G",
+        "timeSignature": "4/4"
+    },
+    {
+        "songName": "CHÚA CHÍ THÁNH",
+        "category": "Ngợi khen thờ phượng: Tôn cao Chúa",
+        "id": 38,
+        "tone": "F",
+        "timeSignature": "3/4"
+    },
+    {
+        "songName": "CHÚA XỨNG ĐÁNG THAY",
+        "category": "Ngợi khen thờ phượng: Tôn cao Chúa",
+        "id": 39,
+        "tone": "Ab",
+        "timeSignature": "3/4"
+    },
+    {
+        "songName": "GIÊ-HÔ-VA NI-SI",
+        "category": "Ngợi khen thờ phượng: Tôn cao Chúa",
+        "id": 40,
+        "tone": "C",
+        "timeSignature": "4/4"
+    },
+    {
+        "songName": "CHÚNG CON YÊU NGÀI",
+        "category": "Ngợi khen thờ phượng: Tôn cao Chúa",
+        "id": 41,
+        "tone": "F",
+        "timeSignature": "4/4"
+    },
+    {
+        "songName": "DANH QUÝ TRỌNG",
+        "category": "Ngợi khen thờ phượng: Tôn cao Chúa",
+        "id": 42,
+        "tone": "Ab",
+        "timeSignature": "4/4"
+    },
+    {
+        "songName": "NGỢI KHEN DANH CHA THÁNH",
+        "category": "Ngợi khen thờ phượng: Tôn cao Chúa",
+        "id": 43,
+        "tone": "Ab",
+        "timeSignature": "4/4"
+    },
+    {
+        "songName": "CA NGỢI CHÚA",
+        "category": "Ngợi khen thờ phượng: Tôn cao Chúa",
+        "id": 44,
+        "tone": "C",
+        "timeSignature": "4/4"
+    },
+    {
+        "songName": "NHÌN LÊN CHA THÁNH",
+        "category": "Ngợi khen thờ phượng: Tôn cao Chúa",
+        "id": 45,
+        "tone": "C",
+        "timeSignature": "4/4"
+    },
+    {
+        "songName": "TÔN VINH CHÚA MUÔN ĐỜI",
+        "category": "Ngợi khen thờ phượng: Tôn cao Chúa",
+        "id": 46,
+        "tone": "Bb",
+        "timeSignature": "4/4"
+    },
+    {
+        "songName": "TÔI SẼ NGỢI CA",
+        "category": "Ngợi khen thờ phượng: Tôn cao Chúa",
+        "id": 47,
+        "tone": "F",
+        "timeSignature": "4/4"
+    },
+    {
+        "songName": "VUA SẼ ĐẾN",
+        "category": "Ngợi khen thờ phượng: Tôn cao Chúa",
+        "id": 48,
+        "tone": "G",
+        "timeSignature": "4/4"
+    },
+    {
+        "songName": "HÁT CHO NGÀI",
+        "category": "Ngợi khen thờ phượng: Tôn cao Chúa",
+        "id": 49,
+        "tone": "Dm",
+        "timeSignature": "4/4"
+    },
+    {
+        "songName": "LỚN BẤY DUY NGÀI",
+        "category": "Ngợi khen thờ phượng: Tôn cao Chúa",
+        "id": 50,
+        "tone": "A",
+        "timeSignature": "4/4"
+    },
+    {
+        "songName": "VỚI CẢ TRÁI TIM",
+        "category": "Ngợi khen thờ phượng: Tôn cao Chúa",
+        "id": 51,
+        "tone": "Dm",
+        "timeSignature": "4/4"
+    },
+    {
+        "songName": "VUA CÁC VUA",
+        "category": "Ngợi khen thờ phượng: Tôn cao Chúa",
+        "id": 52,
+        "tone": "Em",
+        "timeSignature": "2/4"
+    },
+    {
+        "songName": "GIÊ-XU ĐẸP THAY DANH NGÀI",
+        "category": "Ngợi khen thờ phượng: Tôn cao Chúa",
+        "id": 53,
+        "tone": "F",
+        "timeSignature": "6/8"
+    },
+    {
+        "songName": "DANH CAO QUÝ",
+        "category": "Ngợi khen thờ phượng: Tôn cao Chúa",
+        "id": 54,
+        "tone": "C",
+        "timeSignature": "4/4"
+    },
+    {
+        "songName": "DÂNG CHÚA LỜI NGỢI CA",
+        "category": "Ngợi khen thờ phượng: Tôn cao Chúa",
+        "id": 55,
+        "tone": "A",
+        "timeSignature": "4/4"
+    },
+    {
+        "songName": "SUY TÔN CHÚA NĂNG QUYỀN",
+        "category": "Ngợi khen thờ phượng: Tôn cao Chúa",
+        "id": 56,
+        "tone": "G",
+        "timeSignature": "4/4"
+    },
+    {
+        "songName": "NGỢI CA TÌNH YÊU THIÊN CHÚA",
+        "category": "Ngợi khen thờ phượng: Tôn cao Chúa",
+        "id": 57,
+        "tone": "D",
+        "timeSignature": "4/4"
+    },
+    {
+        "songName": "HÁT KHEN GIÊ-XU",
+        "category": "Ngợi khen thờ phượng: Tôn cao Chúa",
+        "id": 58,
+        "tone": "F",
+        "timeSignature": "4/4"
+    },
+    {
+        "songName": "VINH QUANG VUA GIÊ-XU",
+        "category": "Ngợi khen thờ phượng: Tôn cao Chúa",
+        "id": 59,
+        "tone": "G",
+        "timeSignature": "4/4"
+    },
+    {
+        "songName": "VUI MỪNG CA HÁT",
+        "category": "Ngợi khen thờ phượng: Tôn cao Chúa",
+        "id": 60,
+        "tone": "G",
+        "timeSignature": "4/4"
+    },
+    {
+        "songName": "TÌNH YÊU LỚN LAO",
+        "category": "Ngợi khen thờ phượng: Tôn cao Chúa",
+        "id": 61,
+        "tone": "G",
+        "timeSignature": "4/4"
+    },
+    {
+        "songName": "GIÊ-XU CON SUY TÔN NGÀI",
+        "category": "Ngợi khen thờ phượng: Tôn cao Chúa",
+        "id": 62,
+        "tone": "G",
+        "timeSignature": "4/4"
+    },
+    {
+        "songName": "VINH DIỆU CHIÊN CON",
+        "category": "Ngợi khen thờ phượng: Tôn cao Chúa",
+        "id": 63,
+        "tone": "E",
+        "timeSignature": "4/4"
+    },
+    {
+        "songName": "TÔN THỜ BA NGÔI",
+        "category": "Ngợi khen thờ phượng: Tôn cao Chúa",
+        "id": 64,
+        "tone": "F",
+        "timeSignature": "4/4"
+    },
+    {
+        "songName": "DÂNG LỜI TÁN DƯƠNG",
+        "category": "Ngợi khen thờ phượng: Tôn cao Chúa",
+        "id": 65,
+        "tone": "A",
+        "timeSignature": "4/4"
+    },
+    {
+        "songName": "CHÚA ĐÁNG NGỢI",
+        "category": "Ngợi khen thờ phượng: Tôn cao Chúa",
+        "id": 66,
+        "tone": "F",
+        "timeSignature": "4/4"
+    },
+    {
+        "songName": "LẠY CHA YÊU THƯƠNG",
+        "category": "Ngợi khen thờ phượng: Tôn cao Chúa",
+        "id": 67,
+        "tone": "F",
+        "timeSignature": "4/4"
+    },
+    {
+        "songName": "QUỲ NƠI CHÂN CHÚA",
+        "category": "Ngợi khen thờ phượng: Tôn cao Chúa",
+        "id": 68,
+        "tone": "D",
+        "timeSignature": "3/4"
+    },
+    {
+        "songName": "HÃY ĐẾN VỚI NGÀI",
+        "category": "Ngợi khen thờ phượng: Tôn cao Chúa",
+        "id": 69,
+        "tone": "F",
+        "timeSignature": "4/4"
+    },
+    {
+        "songName": "CẤT TIẾNG CA VANG",
+        "category": "Ngợi khen thờ phượng: Tôn cao Chúa",
+        "id": 70,
+        "tone": "G",
+        "timeSignature": "2/4"
+    },
+    {
+        "songName": "LỜI TẠ ƠN CHÚA",
+        "category": "Ngợi khen thờ phượng: Tôn cao Chúa",
+        "id": 71,
+        "tone": "A",
+        "timeSignature": "4/4"
+    },
+    {
+        "songName": "CÙNG ĐI TRONG CUNG VUA THÁNH",
+        "category": "Ngợi khen thờ phượng: Tôn cao Chúa",
+        "id": 72,
+        "tone": "Am",
+        "timeSignature": "4/4"
+    },
+    {
+        "songName": "DÂNG LÊN VUA THÁNH",
+        "category": "Ngợi khen thờ phượng: Tôn cao Chúa",
+        "id": 73,
+        "tone": "C",
+        "timeSignature": "4/4"
+    },
+    {
+        "songName": "TÔN CAO DANH CHÚA",
+        "category": "Ngợi khen thờ phượng: Tôn cao Chúa",
+        "id": 74,
+        "tone": "C",
+        "timeSignature": "4/4"
+    },
+    {
+        "songName": "NGỢI KHEN GIÊ-XU",
+        "category": "Ngợi khen thờ phượng: Tôn cao Chúa",
+        "id": 75,
+        "tone": "Dm",
+        "timeSignature": "4/4"
+    },
+    {
+        "songName": "NHƯNG TRƯỚC HẾT",
+        "category": "Ngợi khen thờ phượng: Tôn cao Chúa",
+        "id": 76,
+        "tone": "F",
+        "timeSignature": "2/2"
+    },
+    {
+        "songName": "CHÚA VĨ ĐẠI",
+        "category": "Ngợi khen thờ phượng: Tôn cao Chúa",
+        "id": 77,
+        "tone": "Eb",
+        "timeSignature": "4/4"
+    },
+    {
+        "songName": "TỤNG NGỢI CHÚA THÁNH",
+        "category": "Ngợi khen thờ phượng: Tôn cao Chúa",
+        "id": 78,
+        "tone": "G",
+        "timeSignature": "4/4"
+    },
+    {
+        "songName": "NGÀI THẬT TỐT THAY",
+        "category": "Ngợi khen thờ phượng: Tôn cao Chúa",
+        "id": 79,
+        "tone": "G",
+        "timeSignature": "4/4"
+    },
+    {
+        "songName": "CUNG KÍNH TÔN VINH",
+        "category": "Ngợi khen thờ phượng: Tôn cao Chúa",
+        "id": 80,
+        "tone": "Em",
+        "timeSignature": "4/4"
+    },
+    {
+        "songName": "CA NGỢI CHÚA TÔI",
+        "category": "Ngợi khen thờ phượng: Tôn cao Chúa",
+        "id": 81,
+        "tone": "D",
+        "timeSignature": "3/4"
+    },
+    {
+        "songName": "VƯỢT TRÊN TẤT CẢ",
+        "category": "Ngợi khen thờ phượng: Tôn cao Chúa",
+        "id": 82,
+        "tone": "G",
+        "timeSignature": "4/4"
+    },
+    {
+        "songName": "LÒNG CON TÔN KÍNH CHA",
+        "category": "Ngợi khen thờ phượng: Tôn cao Chúa",
+        "id": 83,
+        "tone": "A",
+        "timeSignature": "4/4"
+    },
+    {
+        "songName": "HÁT HA-LÊ-LU-GIA",
+        "category": "Ngợi khen thờ phượng: Tôn cao Chúa",
+        "id": 84,
+        "tone": "F",
+        "timeSignature": "4/4"
+    },
+    {
+        "songName": "TRỌN ĐỜI CA NGỢI CHÚA",
+        "category": "Ngợi khen thờ phượng: Tôn cao Chúa",
+        "id": 85,
+        "tone": "C",
+        "timeSignature": "4/4"
+    },
+    {
+        "songName": "CA NGỢI CHIÊN CON",
+        "category": "Ngợi khen thờ phượng: Tôn cao Chúa",
+        "id": 86,
+        "tone": "A",
+        "timeSignature": "4/4"
+    },
+    {
+        "songName": "TÔN VINH CỨU CHÚA",
+        "category": "Ngợi khen thờ phượng: Tôn cao Chúa",
+        "id": 87,
+        "tone": "Eb",
+        "timeSignature": "4/4"
+    },
+    {
+        "songName": "THÁNH THAY! THÁNH THAY! THÁNH THAY!",
+        "category": "Ngợi khen thờ phượng: Tôn cao Chúa",
+        "id": 88,
+        "tone": "C",
+        "timeSignature": "4/4"
+    },
+    {
+        "songName": "CÔNG VIỆC TAY CHÚA",
+        "category": "Ngợi khen thờ phượng: Tôn cao Chúa",
+        "id": 89,
+        "tone": "A",
+        "timeSignature": "4/4"
+    },
+    {
+        "songName": "MAU CÙNG ĐẾN TÔN THỜ CHÚA",
+        "category": "Ngợi khen thờ phượng: Tôn cao Chúa",
+        "id": 90,
+        "tone": "D",
+        "timeSignature": "4/4"
+    },
+    {
+        "songName": "CÙNG ĐẾN DÂNG LỜI SUY TÔN",
+        "category": "Ngợi khen thờ phượng: Tôn cao Chúa",
+        "id": 91,
+        "tone": "F",
+        "timeSignature": "4/4"
+    },
+    {
+        "songName": "CHÚC TÔN THIÊN CHÚA CAO VỜI",
+        "category": "Ngợi khen thờ phượng: Tôn cao Chúa",
+        "id": 92,
+        "tone": "F",
+        "timeSignature": "6/8"
+    },
+    {
+        "songName": "ĐẾN CÙNG CHA",
+        "category": "Ngợi khen thờ phượng: Tôn cao Chúa",
+        "id": 93,
+        "tone": "F",
+        "timeSignature": "6/8"
+    },
+    {
+        "songName": "CHIÊN TRỜI XỨNG ĐÁNG THAY",
+        "category": "Ngợi khen thờ phượng: Tôn cao Chúa",
+        "id": 94,
+        "tone": "Bb",
+        "timeSignature": "4/4"
+    },
+    {
+        "songName": "NGUYỆN TÔN VINH CHÚA",
+        "category": "Ngợi khen thờ phượng: Tôn cao Chúa",
+        "id": 95,
+        "tone": "F",
+        "timeSignature": "4/4"
+    },
+    {
+        "songName": "TÂM CON",
+        "category": "Ngợi khen thờ phượng: Tôn cao Chúa",
+        "id": 96,
+        "tone": "A",
+        "timeSignature": "4/4"
+    },
+    {
+        "songName": "THỜ TÔN CHÚA CHÍ CAO",
+        "category": "Ngợi khen thờ phượng: Tôn cao Chúa",
+        "id": 97,
+        "tone": "F",
+        "timeSignature": "4/4"
+    },
+    {
+        "songName": "HÔ-SA-NA",
+        "category": "Ngợi khen thờ phượng: Tôn cao Chúa",
+        "id": 98,
+        "tone": "G",
+        "timeSignature": "4/4"
+    },
+    {
+        "songName": "CA NGỢI CHÚA",
+        "category": "Ngợi khen thờ phượng: Tôn cao Chúa",
+        "id": 99,
+        "tone": "C",
+        "timeSignature": "4/4"
+    },
+    {
+        "songName": "VUI TRONG DANH GIÊ-XU",
+        "category": "Ngợi khen thờ phượng: Tôn cao Chúa",
+        "id": 100,
+        "tone": "Dm",
+        "timeSignature": "4/4"
+    },
+    {
+        "songName": "CHÚA VINH HIỂN",
+        "category": "Ngợi khen thờ phượng: Tôn cao Chúa",
+        "id": 101,
+        "tone": "A",
+        "timeSignature": "4/4"
+    },
+    {
+        "songName": "XIN CHA BAN CHO THÊM DẦU",
+        "category": "Ngợi khen thờ phượng: Tôn cao Chúa",
+        "id": 102,
+        "tone": "D",
+        "timeSignature": "4/4"
+    },
+    {
+        "songName": "NGUYỆN CHÚA ĐƯỢC TÔN CAO",
+        "category": "Ngợi khen thờ phượng: Tôn cao Chúa",
+        "id": 103,
+        "tone": "Bb",
+        "timeSignature": "4/4"
+    },
+    {
+        "songName": "TÔN VINH CHÚA",
+        "category": "Ngợi khen thờ phượng: Tôn cao Chúa",
+        "id": 104,
+        "tone": "F",
+        "timeSignature": "4/4"
+    },
+    {
+        "songName": "THỜ TÔN CHÚA NHÂN TỪ",
+        "category": "Ngợi khen thờ phượng: Tôn cao Chúa",
+        "id": 105,
+        "tone": "C",
+        "timeSignature": "3/4"
+    },
+    {
+        "songName": "CÙNG CHÚC TÔN NGÀI",
+        "category": "Ngợi khen thờ phượng: Tôn cao Chúa",
+        "id": 106,
+        "tone": "F",
+        "timeSignature": "4/4"
+    },
+    {
+        "songName": "HÁT NHƯ ĐA-VÍT",
+        "category": "Ngợi khen thờ phượng: Tôn cao Chúa",
+        "id": 107,
+        "tone": "Em",
+        "timeSignature": "4/4"
+    },
+    {
+        "songName": "CHÚA BAN BÌNH AN",
+        "category": "Ngợi khen thờ phượng: Sự ăn năn - Sự tha tội",
+        "id": 108,
+        "tone": "Eb",
+        "timeSignature": "4/4"
+    },
+    {
+        "songName": "PHỤC HƯNG",
+        "category": "Ngợi khen thờ phượng: Sự ăn năn - Sự tha tội",
+        "id": 109,
+        "tone": "F",
+        "timeSignature": "4/4"
+    },
+    {
+        "songName": "ĐỨC THÁNH LINH",
+        "category": "Ngợi khen thờ phượng: Sự ăn năn - Sự tha tội",
+        "id": 110,
+        "tone": "F",
+        "timeSignature": "2/4"
+    },
+    {
+        "songName": "LỜI KHẨN NGUYỆN",
+        "category": "Ngợi khen thờ phượng: Sự ăn năn - Sự tha tội",
+        "id": 111,
+        "tone": "C",
+        "timeSignature": "4/4"
+    },
+    {
+        "songName": "TÂM HỒN TRONG TRẮNG",
+        "category": "Ngợi khen thờ phượng: Sự ăn năn - Sự tha tội",
+        "id": 112,
+        "tone": "F",
+        "timeSignature": "4/4"
+    },
+    {
+        "songName": "BÀI CA ĂN NĂN",
+        "category": "Ngợi khen thờ phượng: Sự ăn năn - Sự tha tội",
+        "id": 113,
+        "tone": "Ab",
+        "timeSignature": "4/4"
+    },
+    {
+        "songName": "XIN THẦN LINH CHÚA ĐẾN",
+        "category": "Ngợi khen thờ phượng: Sự ăn năn - Sự tha tội",
+        "id": 114,
+        "tone": "G",
+        "timeSignature": "4/4"
+    },
+    {
+        "songName": "BÀI CA NGUYỆN CẦU",
+        "category": "Ngợi khen thờ phượng: Sự ăn năn - Sự tha tội",
+        "id": 115,
+        "tone": "Cm",
+        "timeSignature": "4/4"
+    },
+    {
+        "songName": "CẦU XIN CHA ĐỔI LÒNG",
+        "category": "Ngợi khen thờ phượng: Sự ăn năn - Sự tha tội",
+        "id": 116,
+        "tone": "C",
+        "timeSignature": "4/4"
+    },
+    {
+        "songName": "XIN THA THỨ",
+        "category": "Ngợi khen thờ phượng: Sự ăn năn - Sự tha tội",
+        "id": 117,
+        "tone": "D",
+        "timeSignature": "4/4"
+    },
+    {
+        "songName": "DÂNG HIẾN",
+        "category": "Ngợi khen thờ phượng: Sự ăn năn - Sự tha tội",
+        "id": 118,
+        "tone": "Eb",
+        "timeSignature": "4/4"
+    },
+    {
+        "songName": "XIN TẨY SẠCH LÒNG CON",
+        "category": "Ngợi khen thờ phượng: Sự ăn năn - Sự tha tội",
+        "id": 119,
+        "tone": "F",
+        "timeSignature": "4/4"
+    },
+    {
+        "songName": "XIN THÁNH LINH PHỤC HƯNG",
+        "category": "Ngợi khen thờ phượng: Sự ăn năn - Sự tha tội",
+        "id": 120,
+        "tone": "G",
+        "timeSignature": "4/4"
+    },
+    {
+        "songName": "NĂNG QUYỀN TÌNH YÊU",
+        "category": "Ngợi khen thờ phượng: Sự ăn năn - Sự tha tội",
+        "id": 121,
+        "tone": "G",
+        "timeSignature": "4/4"
+    },
+    {
+        "songName": "DÂNG TRỌN CHO GIÊ-XU",
+        "category": "Ngợi khen thờ phượng: Sự ăn năn - Sự tha tội",
+        "id": 122,
+        "tone": "F",
+        "timeSignature": "3/4"
+    },
+    {
+        "songName": "KHÔNG AI NGOÀI CHÚA",
+        "category": "Ngợi khen thờ phượng: Sự ăn năn - Sự tha tội",
+        "id": 123,
+        "tone": "F",
+        "timeSignature": "4/4"
+    },
+    {
+        "songName": "BÀI CA TÂM LINH",
+        "category": "Ngợi khen thờ phượng: Dâng hiến - Đáp ứng",
+        "id": 124,
+        "tone": "D",
+        "timeSignature": "4/4"
+    },
+    {
+        "songName": "GẦN CHÚA HƠN",
+        "category": "Ngợi khen thờ phượng: Dâng hiến - Đáp ứng",
+        "id": 125,
+        "tone": "Am",
+        "timeSignature": "4/4"
+    },
+    {
+        "songName": "NGƯỜI TÔI YÊU MẾN",
+        "category": "Ngợi khen thờ phượng: Dâng hiến - Đáp ứng",
+        "id": 126,
+        "tone": "D",
+        "timeSignature": "4/4"
+    },
+    {
+        "songName": "TRUYỀN RAO DANH THÁNH",
+        "category": "Ngợi khen thờ phượng: Dâng hiến - Đáp ứng",
+        "id": 127,
+        "tone": "F",
+        "timeSignature": "4/4"
+    },
+    {
+        "songName": "QUYẾT RAO TIN LÀNH",
+        "category": "Ngợi khen thờ phượng: Dâng hiến - Đáp ứng",
+        "id": 128,
+        "tone": "Bb",
+        "timeSignature": "4/4"
+    },
+    {
+        "songName": "BƯỚC TRONG ĐƯỜNG CHÚA",
+        "category": "Ngợi khen thờ phượng: Dâng hiến - Đáp ứng",
+        "id": 129,
+        "tone": "C",
+        "timeSignature": "4/4"
+    },
+    {
+        "songName": "BIẾT GIÊ-XU VÀ TRUYỀN BÁ DANH NGÀI",
+        "category": "Ngợi khen thờ phượng: Dâng hiến - Đáp ứng",
+        "id": 130,
+        "tone": "C",
+        "timeSignature": "2/4"
+    },
+    {
+        "songName": "TUỔI XUÂN DÂNG CHÚA",
+        "category": "Ngợi khen thờ phượng: Dâng hiến - Đáp ứng",
+        "id": 131,
+        "tone": "G",
+        "timeSignature": "4/4"
+    },
+    {
+        "songName": "CA KHEN ƠN GIÊ-XU",
+        "category": "Ngợi khen thờ phượng: Dâng hiến - Đáp ứng",
+        "id": 132,
+        "tone": "Bb",
+        "timeSignature": "4/4"
+    },
+    {
+        "songName": "CON YÊU NGÀI",
+        "category": "Ngợi khen thờ phượng: Dâng hiến - Đáp ứng",
+        "id": 133,
+        "tone": "D",
+        "timeSignature": "4/4"
+    },
+    {
+        "songName": "LÊN ĐƯỜNG",
+        "category": "Ngợi khen thờ phượng: Dâng hiến - Đáp ứng",
+        "id": 134,
+        "tone": "G",
+        "timeSignature": "4/4"
+    },
+    {
+        "songName": "SỐNG HẦU VIỆC",
+        "category": "Ngợi khen thờ phượng: Dâng hiến - Đáp ứng",
+        "id": 135,
+        "tone": "Eb",
+        "timeSignature": "4/4"
+    },
+    {
+        "songName": "ĐẾN VỚI CHÚA TAY TRẮNG THÔI SAO?",
+        "category": "Ngợi khen thờ phượng: Dâng hiến - Đáp ứng",
+        "id": 136,
+        "tone": "D",
+        "timeSignature": "6/8"
+    },
+    {
+        "songName": "GIÊ-XU CHỌN TÔI",
+        "category": "Ngợi khen thờ phượng: Dâng hiến - Đáp ứng",
+        "id": 137,
+        "tone": "D",
+        "timeSignature": "4/4"
+    },
+    {
+        "songName": "TIẾN BƯỚC VỚI CHÚA",
+        "category": "Ngợi khen thờ phượng: Dâng hiến - Đáp ứng",
+        "id": 138,
+        "tone": "F",
+        "timeSignature": "4/4"
+    },
+    {
+        "songName": "BÀI HÁT SAI ĐI",
+        "category": "Ngợi khen thờ phượng: Dâng hiến - Đáp ứng",
+        "id": 139,
+        "tone": "Am",
+        "timeSignature": "4/4"
+    },
+    {
+        "songName": "BỞI THẦN TA",
+        "category": "Ngợi khen thờ phượng: Dâng hiến - Đáp ứng",
+        "id": 140,
+        "tone": "C",
+        "timeSignature": "4/4"
+    },
+    {
+        "songName": "CHA KÍNH YÊU",
+        "category": "Ngợi khen thờ phượng: Dâng hiến - Đáp ứng",
+        "id": 141,
+        "tone": "A",
+        "timeSignature": "3/4"
+    },
+    {
+        "songName": "TÔI ƯỚC MƠ LÀ VIÊN THAN HỒNG",
+        "category": "Ngợi khen thờ phượng: Dâng hiến - Đáp ứng",
+        "id": 142,
+        "tone": "A",
+        "timeSignature": "4/4"
+    },
+    {
+        "songName": "LÊN ĐƯỜNG ĐI",
+        "category": "Ngợi khen thờ phượng: Dâng hiến - Đáp ứng",
+        "id": 143,
+        "tone": "C",
+        "timeSignature": "2/4"
+    },
+    {
+        "songName": "XIN CHÚA SAI TÔI",
+        "category": "Ngợi khen thờ phượng: Dâng hiến - Đáp ứng",
+        "id": 144,
+        "tone": "G",
+        "timeSignature": "4/4"
+    },
+    {
+        "songName": "DÂNG CHÚA ĐỜI CON",
+        "category": "Ngợi khen thờ phượng: Dâng hiến - Đáp ứng",
+        "id": 145,
+        "tone": "C",
+        "timeSignature": "4/4"
+    },
+    {
+        "songName": "NGÀI BAN CHO THÊM ƠN",
+        "category": "Ngợi khen thờ phượng: Dâng hiến - Đáp ứng",
+        "id": 146,
+        "tone": "D",
+        "timeSignature": "3/4"
+    },
+    {
+        "songName": "ƠN CHÚA DẪY ĐẦY",
+        "category": "Ngợi khen thờ phượng: Dâng hiến - Đáp ứng",
+        "id": 147,
+        "tone": "C",
+        "timeSignature": "4/4"
+    },
+    {
+        "songName": "HÃY ĐI CHÚA ĐANG GỌI",
+        "category": "Ngợi khen thờ phượng: Dâng hiến - Đáp ứng",
+        "id": 148,
+        "tone": "G",
+        "timeSignature": "4/4"
+    },
+    {
+        "songName": "MUỐI VÀ ÁNH SÁNG",
+        "category": "Ngợi khen thờ phượng: Dâng hiến - Đáp ứng",
+        "id": 149,
+        "tone": "F",
+        "timeSignature": "4/4"
+    },
+    {
+        "songName": "NGUYỆN ĐƯA DẮT BAO NGƯỜI ĐẾN NGÀI",
+        "category": "Ngợi khen thờ phượng: Dâng hiến - Đáp ứng",
+        "id": 150,
+        "tone": "F",
+        "timeSignature": "3/4"
+    },
+    {
+        "songName": "TÂM GIAO VỚI GIÊ-XU",
+        "category": "Ngợi khen thờ phượng: Dâng hiến - Đáp ứng",
+        "id": 151,
+        "tone": "F",
+        "timeSignature": "4/4"
+    },
+    {
+        "songName": "LỜI NGUYỆN",
+        "category": "Ngợi khen thờ phượng: Dâng hiến - Đáp ứng",
+        "id": 152,
+        "tone": "F",
+        "timeSignature": "4/4"
+    },
+    {
+        "songName": "XÂY DỰNG HẰNG NGÀY",
+        "category": "Ngợi khen thờ phượng: Dâng hiến - Đáp ứng",
+        "id": 153,
+        "tone": "F",
+        "timeSignature": "4/4"
+    },
+    {
+        "songName": "DÂNG CHÚA",
+        "category": "Ngợi khen thờ phượng: Dâng hiến - Đáp ứng",
+        "id": 154,
+        "tone": "C",
+        "timeSignature": "4/4"
+    },
+    {
+        "songName": "ĐỜI CON",
+        "category": "Ngợi khen thờ phượng: Dâng hiến - Đáp ứng",
+        "id": 155,
+        "tone": "G",
+        "timeSignature": "3/4"
+    },
+    {
+        "songName": "MƠ ƯỚC HẦU VIỆC CHÚA",
+        "category": "Ngợi khen thờ phượng: Dâng hiến - Đáp ứng",
+        "id": 156,
+        "tone": "E",
+        "timeSignature": "4/4"
+    },
+    {
+        "songName": "THEO CHÚA",
+        "category": "Ngợi khen thờ phượng: Dâng hiến - Đáp ứng",
+        "id": 157,
+        "tone": "D",
+        "timeSignature": "4/4"
+    },
+    {
+        "songName": "XIN NGỰ TÂM CON",
+        "category": "Ngợi khen thờ phượng: Dâng hiến - Đáp ứng",
+        "id": 158,
+        "tone": "D",
+        "timeSignature": "6/8"
+    },
+    {
+        "songName": "LỜI CHÚA",
+        "category": "Ngợi khen thờ phượng: Dâng hiến - Đáp ứng",
+        "id": 159,
+        "tone": "Eb",
+        "timeSignature": "4/4"
+    },
+    {
+        "songName": "LÒNG NGUYỆN THEO GIÊ-XU",
+        "category": "Ngợi khen thờ phượng: Dâng hiến - Đáp ứng",
+        "id": 160,
+        "tone": "C",
+        "timeSignature": "2/2"
+    },
+    {
+        "songName": "DÂNG LÊN CHÚA CHÍNH CON",
+        "category": "Ngợi khen thờ phượng: Dâng hiến - Đáp ứng",
+        "id": 161,
+        "tone": "C",
+        "timeSignature": "3/4"
+    },
+    {
+        "songName": "SẴN LÒNG HẦU VIỆC",
+        "category": "Ngợi khen thờ phượng: Dâng hiến - Đáp ứng",
+        "id": 162,
+        "tone": "F",
+        "timeSignature": "4/4"
+    },
+    {
+        "songName": "NHƯ Ý CHA",
+        "category": "Ngợi khen thờ phượng: Dâng hiến - Đáp ứng",
+        "id": 163,
+        "tone": "F",
+        "timeSignature": "4/4"
+    },
+    {
+        "songName": "LỜI NGUYỆN CẦU",
+        "category": "Ngợi khen thờ phượng: Dâng hiến - Đáp ứng",
+        "id": 164,
+        "tone": "G",
+        "timeSignature": "4/4"
+    },
+    {
+        "songName": "QUYẾT ĐEM CHIÊN LẠC TRỞ VỀ",
+        "category": "Ngợi khen thờ phượng: Dâng hiến - Đáp ứng",
+        "id": 165,
+        "tone": "D",
+        "timeSignature": "3/4"
+    },
+    {
+        "songName": "YÊU TA CHĂNG?",
+        "category": "Ngợi khen thờ phượng: Dâng hiến - Đáp ứng",
+        "id": 166,
+        "tone": "Eb",
+        "timeSignature": "3/4"
+    },
+    {
+        "songName": "XIN CHO ĐI ĐƯỜNG NGÀI",
+        "category": "Ngợi khen thờ phượng: Dâng hiến - Đáp ứng",
+        "id": 167,
+        "tone": "F",
+        "timeSignature": "3/4"
+    },
+    {
+        "songName": "SẴN SÀNG",
+        "category": "Ngợi khen thờ phượng: Dâng hiến - Đáp ứng",
+        "id": 168,
+        "tone": "G",
+        "timeSignature": "2/4"
+    },
+    {
+        "songName": "GẦN BÊN CHÚA CÀNG HƠN",
+        "category": "Ngợi khen thờ phượng: Dâng hiến - Đáp ứng",
+        "id": 169,
+        "tone": "Bb",
+        "timeSignature": "2/4"
+    },
+    {
+        "songName": "BÊN CHÚA NHÂN HIỀN",
+        "category": "Ngợi khen cảm tạ",
+        "id": 170,
+        "tone": "Bb",
+        "timeSignature": "4/4"
+    },
+    {
+        "songName": "CHÚA LUÔN MỞ LỐI",
+        "category": "Ngợi khen cảm tạ",
+        "id": 171,
+        "tone": "G",
+        "timeSignature": "2/4"
+    },
+    {
+        "songName": "CHÚA SỐNG TRONG TÔI",
+        "category": "Ngợi khen cảm tạ",
+        "id": 172,
+        "tone": "C",
+        "timeSignature": "4/4"
+    },
+    {
+        "songName": "ĐỒNG HÀNH",
+        "category": "Ngợi khen cảm tạ",
+        "id": 173,
+        "tone": "F",
+        "timeSignature": "4/4"
+    },
+    {
+        "songName": "SUY TƯ BÊN CHÚA",
+        "category": "Ngợi khen cảm tạ",
+        "id": 174,
+        "tone": "C",
+        "timeSignature": "4/4"
+    },
+    {
+        "songName": "BÊN TÔI LÀ CHÚA GIÊ-XU",
+        "category": "Ngợi khen cảm tạ",
+        "id": 175,
+        "tone": "G",
+        "timeSignature": "4/4"
+    },
+    {
+        "songName": "BÌNH AN TRONG GIÊ-XU",
+        "category": "Ngợi khen cảm tạ",
+        "id": 176,
+        "tone": "C",
+        "timeSignature": "2/4"
+    },
+    {
+        "songName": "BƯỚC VỚI CHÚA YÊU THƯƠNG",
+        "category": "Ngợi khen cảm tạ",
+        "id": 177,
+        "tone": "D",
+        "timeSignature": "4/4"
+    },
+    {
+        "songName": "TÌNH YÊU BỀN VỮNG",
+        "category": "Ngợi khen cảm tạ",
+        "id": 178,
+        "tone": "F",
+        "timeSignature": "4/4"
+    },
+    {
+        "songName": "CẢM TẠ CHÚA",
+        "category": "Ngợi khen cảm tạ",
+        "id": 179,
+        "tone": "G",
+        "timeSignature": "3/4"
+    },
+    {
+        "songName": "CÙNG TIẾN BƯỚC",
+        "category": "Ngợi khen cảm tạ",
+        "id": 180,
+        "tone": "Dm",
+        "timeSignature": "2/4"
+    },
+    {
+        "songName": "CHIM HOA VÀ NGƯỜI",
+        "category": "Ngợi khen cảm tạ",
+        "id": 181,
+        "tone": "F",
+        "timeSignature": "3/4"
+    },
+    {
+        "songName": "CHÍNH GIÊ-XU",
+        "category": "Ngợi khen cảm tạ",
+        "id": 182,
+        "tone": "G",
+        "timeSignature": "4/4"
+    },
+    {
+        "songName": "THỎA LÒNG",
+        "category": "Ngợi khen cảm tạ",
+        "id": 183,
+        "tone": "D",
+        "timeSignature": "4/4"
+    },
+    {
+        "songName": "VINH QUANG HA-LÊ-LU-GIA",
+        "category": "Ngợi khen cảm tạ",
+        "id": 184,
+        "tone": "Bb",
+        "timeSignature": "4/4"
+    },
+    {
+        "songName": "BÀI CA CẢM TẠ",
+        "category": "Ngợi khen cảm tạ",
+        "id": 185,
+        "tone": "C",
+        "timeSignature": "4/4"
+    },
+    {
+        "songName": "MỘT NGÀY TƯƠI MỚI",
+        "category": "Ngợi khen cảm tạ",
+        "id": 186,
+        "tone": "Eb",
+        "timeSignature": "4/4"
+    },
+    {
+        "songName": "TÌNH ÁI CHÚA TÔI",
+        "category": "Ngợi khen cảm tạ",
+        "id": 187,
+        "tone": "F",
+        "timeSignature": "3/4"
+    },
+    {
+        "songName": "LÀM CON VUA THÁNH",
+        "category": "Ngợi khen cảm tạ",
+        "id": 188,
+        "tone": "F",
+        "timeSignature": "3/4"
+    },
+    {
+        "songName": "NGUỒN HY VỌNG CỦA CON",
+        "category": "Ngợi khen cảm tạ",
+        "id": 189,
+        "tone": "A",
+        "timeSignature": "4/4"
+    },
+    {
+        "songName": "ƠN LẠ LÙNG",
+        "category": "Ngợi khen cảm tạ",
+        "id": 190,
+        "tone": "G",
+        "timeSignature": "3/4"
+    },
+    {
+        "songName": "PHÚT SUY TƯ",
+        "category": "Ngợi khen cảm tạ",
+        "id": 191,
+        "tone": "C",
+        "timeSignature": "3/4"
+    },
+    {
+        "songName": "ĐẶT NIỀM TIN NƠI CHÚA",
+        "category": "Ngợi khen cảm tạ",
+        "id": 192,
+        "tone": "Am",
+        "timeSignature": "4/4"
+    },
+    {
+        "songName": "TRONG CHA",
+        "category": "Ngợi khen cảm tạ",
+        "id": 193,
+        "tone": "G",
+        "timeSignature": "2/4"
+    },
+    {
+        "songName": "HÃY ĐẾM CÁC PHƯỚC ƠN CHÚA BAN",
+        "category": "Ngợi khen cảm tạ",
+        "id": 194,
+        "tone": "C",
+        "timeSignature": "4/4"
+    },
+    {
+        "songName": "CHÚA ĐEM AN VUI CHO TÔI",
+        "category": "Ngợi khen cảm tạ",
+        "id": 195,
+        "tone": "Eb",
+        "timeSignature": "2/4"
+    },
+    {
+        "songName": "LỜI NGUYỆN KÍNH YÊU",
+        "category": "Ngợi khen cảm tạ",
+        "id": 196,
+        "tone": "C",
+        "timeSignature": "4/4"
+    },
+    {
+        "songName": "BÀN TAY MANG DẤU ĐINH",
+        "category": "Ngợi khen cảm tạ",
+        "id": 197,
+        "tone": "F",
+        "timeSignature": "4/4"
+    },
+    {
+        "songName": "Ý NGHĨA CUỐC SỐNG",
+        "category": "Ngợi khen cảm tạ",
+        "id": 198,
+        "tone": "D",
+        "timeSignature": "4/4"
+    },
+    {
+        "songName": "NGÀI LÀ MUÔN NHU CẦU TÔI",
+        "category": "Ngợi khen cảm tạ",
+        "id": 199,
+        "tone": "F",
+        "timeSignature": "4/4"
+    },
+    {
+        "songName": "VUI BÊN CHÚA",
+        "category": "Ngợi khen cảm tạ",
+        "id": 200,
+        "tone": "F",
+        "timeSignature": "4/4"
+    },
+    {
+        "songName": "THẦM TẠ ƠN CHÚA",
+        "category": "Ngợi khen cảm tạ",
+        "id": 201,
+        "tone": "G",
+        "timeSignature": "4/4"
+    },
+    {
+        "songName": "NGÀI LÀ VẦNG ĐÀ",
+        "category": "Ngợi khen cảm tạ",
+        "id": 202,
+        "tone": "G",
+        "timeSignature": "2/4"
+    },
+    {
+        "songName": "VÌ NGÀI TÔI HÁT",
+        "category": "Ngợi khen cảm tạ",
+        "id": 203,
+        "tone": "Eb",
+        "timeSignature": "3/4"
+    },
+    {
+        "songName": "GIÊ-XU CỨU TÔI",
+        "category": "Ngợi khen cảm tạ",
+        "id": 204,
+        "tone": "Bb",
+        "timeSignature": "6/4"
+    },
+    {
+        "songName": "ĐƯỢC THA THỨ",
+        "category": "Ngợi khen cảm tạ",
+        "id": 205,
+        "tone": "F",
+        "timeSignature": "4/4"
+    },
+    {
+        "songName": "TÌNH CHÚA VĨNH HẰNG",
+        "category": "Ngợi khen cảm tạ",
+        "id": 206,
+        "tone": "A",
+        "timeSignature": "4/4"
+    },
+    {
+        "songName": "MỪNG VUI MỖI NGÀY",
+        "category": "Ngợi khen cảm tạ",
+        "id": 207,
+        "tone": "F",
+        "timeSignature": "4/4"
+    },
+    {
+        "songName": "CHÚA VẪN BÊN TÔI",
+        "category": "Ngợi khen cảm tạ",
+        "id": 208,
+        "tone": "C",
+        "timeSignature": "4/4"
+    },
+    {
+        "songName": "NGÀY ĐÊM NGUYỆN CẦU",
+        "category": "Ngợi khen cảm tạ",
+        "id": 209,
+        "tone": "D",
+        "timeSignature": "3/4"
+    },
+    {
+        "songName": "GIÂY PHÚT NGỢI CA",
+        "category": "Ngợi khen cảm tạ",
+        "id": 210,
+        "tone": "C",
+        "timeSignature": "3/4"
+    },
+    {
+        "songName": "NGỢI KHEN VÌ ĐƯỢC CỨU",
+        "category": "Ngợi khen cảm tạ",
+        "id": 211,
+        "tone": "D",
+        "timeSignature": "4/4"
+    },
+    {
+        "songName": "SỐNG VỚI CHÚA",
+        "category": "Ngợi khen cảm tạ",
+        "id": 212,
+        "tone": "G",
+        "timeSignature": "4/4"
+    },
+    {
+        "songName": "TRẦN THẾ CHẲNG PHẢI QUÊ HƯƠNG",
+        "category": "Ngợi khen cảm tạ",
+        "id": 213,
+        "tone": "G",
+        "timeSignature": "2/4"
+    },
+    {
+        "songName": "TRỌN ĐỜI NGỢI KHEN",
+        "category": "Ngợi khen cảm tạ",
+        "id": 214,
+        "tone": "F",
+        "timeSignature": "4/4"
+    },
+    {
+        "songName": "VỮNG TIẾN",
+        "category": "Ngợi khen cảm tạ",
+        "id": 215,
+        "tone": "Em",
+        "timeSignature": "4/4"
+    },
+    {
+        "songName": "ÁI TỪ CỨU TÔI",
+        "category": "Ngợi khen cảm tạ",
+        "id": 216,
+        "tone": "Bb",
+        "timeSignature": "6/8"
+    },
+    {
+        "songName": "CA KHÚC TÂM LINH",
+        "category": "Ngợi khen cảm tạ",
+        "id": 217,
+        "tone": "D",
+        "timeSignature": "3/4"
+    },
+    {
+        "songName": "GIÊ-XU, CHÍNH NGÀI",
+        "category": "Ngợi khen cảm tạ",
+        "id": 218,
+        "tone": "A",
+        "timeSignature": "4/4"
+    },
+    {
+        "songName": "LỜI CẢM TẠ",
+        "category": "Ngợi khen cảm tạ",
+        "id": 219,
+        "tone": "E",
+        "timeSignature": "4/4"
+    },
+    {
+        "songName": "LỜI TẠ ƠN CHÚA",
+        "category": "Ngợi khen cảm tạ",
+        "id": 220,
+        "tone": "F",
+        "timeSignature": "4/4"
+    },
+    {
+        "songName": "DÂNG LÊN CHA",
+        "category": "Ngợi khen cảm tạ",
+        "id": 221,
+        "tone": "Dm",
+        "timeSignature": "3/4"
+    },
+    {
+        "songName": "GIÊ_XU LÀ CHÚA",
+        "category": "Ngợi khen cảm tạ",
+        "id": 222,
+        "tone": "C",
+        "timeSignature": "4/4"
+    },
+    {
+        "songName": "CHÚA THÁNH MUÔN ĐỜI",
+        "category": "Ngợi khen cảm tạ",
+        "id": 223,
+        "tone": "C",
+        "timeSignature": "4/4"
+    },
+    {
+        "songName": "GIÊ-XU BÊN TÔI",
+        "category": "Ngợi khen cảm tạ",
+        "id": 224,
+        "tone": "Ab",
+        "timeSignature": "4/4"
+    },
+    {
+        "songName": "CHÚA BIẾT LÒNG CON",
+        "category": "Ngợi khen cảm tạ",
+        "id": 225,
+        "tone": "Ab",
+        "timeSignature": "4/4"
+    },
+    {
+        "songName": "TRAO DÂNG CHO CHÚA",
+        "category": "Ngợi khen cảm tạ",
+        "id": 226,
+        "tone": "E",
+        "timeSignature": "4/4"
+    },
+    {
+        "songName": "NGUYỆN XIN THÁNH LINH CHÚA",
+        "category": "Ngợi khen cảm tạ",
+        "id": 227,
+        "tone": "Dm",
+        "timeSignature": "4/4"
+    },
+    {
+        "songName": "ĐI VỚI GIÊ-XU",
+        "category": "Ngợi khen cảm tạ",
+        "id": 228,
+        "tone": "G",
+        "timeSignature": "4/4"
+    },
+    {
+        "songName": "ĐIỀU KỲ DIỆU",
+        "category": "Ngợi khen cảm tạ",
+        "id": 229,
+        "tone": "G",
+        "timeSignature": "2/4"
+    },
+    {
+        "songName": "HÁY HÁT LÊN",
+        "category": "Ngợi khen cảm tạ",
+        "id": 230,
+        "tone": "G",
+        "timeSignature": "4/4"
+    },
+    {
+        "songName": "ƠN CHÚA LÒNG GHI SÂU",
+        "category": "Ngợi khen cảm tạ",
+        "id": 231,
+        "tone": "F",
+        "timeSignature": "4/4"
+    },
+    {
+        "songName": "BƯỚC VỚI GIÊ-XU",
+        "category": "Ngợi khen cảm tạ",
+        "id": 232,
+        "tone": "G",
+        "timeSignature": "4/4"
+    },
+    {
+        "songName": "BIẾT NGÀI LÀ CHÚA",
+        "category": "Ngợi khen cảm tạ",
+        "id": 233,
+        "tone": "Bb",
+        "timeSignature": "3/4"
+    },
+    {
+        "songName": "GIÊ-HÔ-VA DI-RÊ",
+        "category": "Ngợi khen cảm tạ",
+        "id": 234,
+        "tone": "Em",
+        "timeSignature": "4/4"
+    },
+    {
+        "songName": "ĐƯỜNG ĐI CÓ CHÚA",
+        "category": "Ngợi khen cảm tạ",
+        "id": 235,
+        "tone": "G",
+        "timeSignature": "4/4"
+    },
+    {
+        "songName": "CHÚA ĐỨNG BÊN TA",
+        "category": "Ngợi khen cảm tạ",
+        "id": 236,
+        "tone": "Eb",
+        "timeSignature": "4/4"
+    },
+    {
+        "songName": "TÂM HỒN BÌNH AN",
+        "category": "Ngợi khen cảm tạ",
+        "id": 237,
+        "tone": "F",
+        "timeSignature": "2/4"
+    },
+    {
+        "songName": "ĐẤNG CỨU CHUỘC TÔI",
+        "category": "Ngợi khen cảm tạ",
+        "id": 238,
+        "tone": "Cm",
+        "timeSignature": "4/4"
+    },
+    {
+        "songName": "CHÚA LUÔN TUYỆT VỜI",
+        "category": "Ngợi khen cảm tạ",
+        "id": 239,
+        "tone": "C",
+        "timeSignature": "4/4"
+    },
+    {
+        "songName": "THỎA VUI TRONG CHÚA",
+        "category": "Ngợi khen cảm tạ",
+        "id": 240,
+        "tone": "Dm",
+        "timeSignature": "4/4"
+    },
+    {
+        "songName": "TẠ ƠN CHÚA",
+        "category": "Ngợi khen cảm tạ",
+        "id": 241,
+        "tone": "A",
+        "timeSignature": "4/4"
+    },
+    {
+        "songName": "THÂN NHẤT TRÊN ĐỜI",
+        "category": "Ngợi khen cảm tạ",
+        "id": 242,
+        "tone": "Không rõ",
+        "timeSignature": "Không rõ"
+    },
+    {
+        "songName": "NHƯ CÁNH CHIM BAY LÊN",
+        "category": "Ngợi khen cảm tạ",
+        "id": 243,
+        "tone": "Không rõ",
+        "timeSignature": "Không rõ"
+    },
+    {
+        "songName": "TÌNH YÊU VỮNG BỀN",
+        "category": "Ngợi khen cảm tạ",
+        "id": 244,
+        "tone": "Không rõ",
+        "timeSignature": "Không rõ"
+    },
+    {
+        "songName": "CON TIN CHA",
+        "category": "Ngợi khen cảm tạ",
+        "id": 245,
+        "tone": "Không rõ",
+        "timeSignature": "Không rõ"
+    },
+    {
+        "songName": "ÁNH SÁNG TÌNH YÊU",
+        "category": "Ngợi khen cảm tạ",
+        "id": 246,
+        "tone": "Không rõ",
+        "timeSignature": "Không rõ"
+    },
+    {
+        "songName": "NIỀM VUI TRONG CHÚA",
+        "category": "Ngợi khen cảm tạ",
+        "id": 247,
+        "tone": "Không rõ",
+        "timeSignature": "Không rõ"
+    },
+    {
+        "songName": "TRONG VÒNG TAY CHA",
+        "category": "Ngợi khen cảm tạ",
+        "id": 248,
+        "tone": "Không rõ",
+        "timeSignature": "Không rõ"
+    },
+    {
+        "songName": "ÁNH SÁNG CHO ĐỜI",
+        "category": "Truyền giảng hội chúng",
+        "id": 249,
+        "tone": "Không rõ",
+        "timeSignature": "Không rõ"
+    },
+    {
+        "songName": "CHÚA LÀ TÌNH YÊU",
+        "category": "Truyền giảng hội chúng",
+        "id": 250,
+        "tone": "Không rõ",
+        "timeSignature": "Không rõ"
+    },
+    {
+        "songName": "CHUNG NIỀM TIN",
+        "category": "Truyền giảng hội chúng",
+        "id": 251,
+        "tone": "Không rõ",
+        "timeSignature": "Không rõ"
+    },
+    {
+        "songName": "TA SỐNG BẰNG GÌ",
+        "category": "Truyền giảng hội chúng",
+        "id": 252,
+        "tone": "Không rõ",
+        "timeSignature": "Không rõ"
+    },
+    {
+        "songName": "VÌ SAO TÔI CA NGỢI",
+        "category": "Truyền giảng hội chúng",
+        "id": 253,
+        "tone": "Không rõ",
+        "timeSignature": "Không rõ"
+    },
+    {
+        "songName": "NẾU KHI NÀO",
+        "category": "Truyền giảng hội chúng",
+        "id": 254,
+        "tone": "Không rõ",
+        "timeSignature": "Không rõ"
+    },
+    {
+        "songName": "GIÊ-HÔ-VA, ĐẤNG DẮT CHĂN HỒN TÔI",
+        "category": "Truyền giảng hội chúng",
+        "id": 255,
+        "tone": "Không rõ",
+        "timeSignature": "Không rõ"
+    },
+    {
+        "songName": "TÌNH CHÚA BAO LA",
+        "category": "Truyền giảng hội chúng",
+        "id": 256,
+        "tone": "Không rõ",
+        "timeSignature": "Không rõ"
+    },
+    {
+        "songName": "NGHỈ AN BÊN GIÊ-XU",
+        "category": "Truyền giảng hội chúng",
+        "id": 257,
+        "tone": "Không rõ",
+        "timeSignature": "Không rõ"
+    },
+    {
+        "songName": "CHÚA VẪN YÊU THƯƠNG",
+        "category": "Truyền giảng hội chúng",
+        "id": 258,
+        "tone": "Không rõ",
+        "timeSignature": "Không rõ"
+    },
+    {
+        "songName": "CHÚA YÊU THẾ GIAN",
+        "category": "Truyền giảng hội chúng",
+        "id": 259,
+        "tone": "Không rõ",
+        "timeSignature": "Không rõ"
+    },
+    {
+        "songName": "ĐỪNG HOANG PHÍ THÁNG NĂM DÀI",
+        "category": "Truyền giảng hội chúng",
+        "id": 260,
+        "tone": "Không rõ",
+        "timeSignature": "Không rõ"
+    },
+    {
+        "songName": "GẶP GỠ CHÚA GIÊ-XU",
+        "category": "Truyền giảng hội chúng",
+        "id": 261,
+        "tone": "Không rõ",
+        "timeSignature": "Không rõ"
+    },
+    {
+        "songName": "TRƯỚC KHI RẠNG ĐÔNG",
+        "category": "Truyền giảng hội chúng",
+        "id": 262,
+        "tone": "Không rõ",
+        "timeSignature": "Không rõ"
+    },
+    {
+        "songName": "HÃY ĐẾN VỚI CHA",
+        "category": "Truyền giảng hội chúng",
+        "id": 263,
+        "tone": "Không rõ",
+        "timeSignature": "Không rõ"
+    },
+    {
+        "songName": "CHÚA ĐANG GỌI",
+        "category": "Truyền giảng hội chúng",
+        "id": 264,
+        "tone": "Không rõ",
+        "timeSignature": "Không rõ"
+    },
+    {
+        "songName": "BẠN DÀNH CHỖ CHO GIÊ-XU CHƯA?",
+        "category": "Truyền giảng hội chúng",
+        "id": 265,
+        "tone": "Không rõ",
+        "timeSignature": "Không rõ"
+    },
+    {
+        "songName": "CHÚA LO CHO TA CHĂNG?",
+        "category": "Truyền giảng hội chúng",
+        "id": 266,
+        "tone": "Không rõ",
+        "timeSignature": "Không rõ"
+    },
+    {
+        "songName": "CHÚA ĐANG MONG CHỜ",
+        "category": "Truyền giảng hội chúng",
+        "id": 267,
+        "tone": "Không rõ",
+        "timeSignature": "Không rõ"
+    },
+    {
+        "songName": "NGÀI LÀ AI?",
+        "category": "Truyền giảng hội chúng",
+        "id": 268,
+        "tone": "Không rõ",
+        "timeSignature": "Không rõ"
+    },
+    {
+        "songName": "NGUỒN AN BÌNH",
+        "category": "Truyền giảng hội chúng",
+        "id": 269,
+        "tone": "Không rõ",
+        "timeSignature": "Không rõ"
+    },
+    {
+        "songName": "TÔI BIẾT ĐẤNG NẮM GIỮ TƯƠNG LAI",
+        "category": "Truyền giảng hội chúng",
+        "id": 270,
+        "tone": "Không rõ",
+        "timeSignature": "Không rõ"
+    },
+    {
+        "songName": "KHI GIÊ-XU VÔ LÒNG",
+        "category": "Truyền giảng hội chúng",
+        "id": 271,
+        "tone": "Không rõ",
+        "timeSignature": "Không rõ"
+    },
+    {
+        "songName": "VINH QUANG THUỘC ĐỨC CHÚA TRỜI",
+        "category": "Truyền giảng hội chúng",
+        "id": 272,
+        "tone": "Không rõ",
+        "timeSignature": "Không rõ"
+    },
+    {
+        "songName": "BIẾN ĐỔI HẾT MỌI ĐIỀU",
+        "category": "Truyền giảng hội chúng",
+        "id": 273,
+        "tone": "Không rõ",
+        "timeSignature": "Không rõ"
+    },
+    {
+        "songName": "GIÊ-XU LÀ…",
+        "category": "Truyền giảng hội chúng",
+        "id": 274,
+        "tone": "Không rõ",
+        "timeSignature": "Không rõ"
+    },
+    {
+        "songName": "GIÊ-XU NGUỒN NƯỚC SỐNG",
+        "category": "Truyền giảng hội chúng",
+        "id": 275,
+        "tone": "Không rõ",
+        "timeSignature": "Không rõ"
+    },
+    {
+        "songName": "ĐẾN VỚI NGÀI",
+        "category": "Truyền giảng hội chúng",
+        "id": 276,
+        "tone": "Không rõ",
+        "timeSignature": "Không rõ"
+    },
+    {
+        "songName": "TIẾNG ÊM DỊU",
+        "category": "Truyền giảng hội chúng",
+        "id": 277,
+        "tone": "Không rõ",
+        "timeSignature": "Không rõ"
+    },
+    {
+        "songName": "TRONG TAY CHÚA",
+        "category": "Truyền giảng hội chúng",
+        "id": 278,
+        "tone": "Không rõ",
+        "timeSignature": "Không rõ"
+    },
+    {
+        "songName": "DÃ TRÀNG SE CÁT",
+        "category": "Truyền giảng hội chúng",
+        "id": 279,
+        "tone": "Không rõ",
+        "timeSignature": "Không rõ"
+    },
+    {
+        "songName": "TIẾNG GIÊ-XU",
+        "category": "Truyền giảng hội chúng",
+        "id": 280,
+        "tone": "Không rõ",
+        "timeSignature": "Không rõ"
+    },
+    {
+        "songName": "NÊN HÃY ĂN NĂN HIỆN NAY",
+        "category": "Truyền giảng hội chúng",
+        "id": 281,
+        "tone": "Không rõ",
+        "timeSignature": "Không rõ"
+    },
+    {
+        "songName": "CON ĐƯỜNG DUY NHẤT",
+        "category": "Truyền giảng hội chúng",
+        "id": 282,
+        "tone": "Không rõ",
+        "timeSignature": "Không rõ"
+    },
+    {
+        "songName": "NGUỒN TÌNH YÊU",
+        "category": "Truyền giảng hội chúng",
+        "id": 283,
+        "tone": "Không rõ",
+        "timeSignature": "Không rõ"
+    },
+    {
+        "songName": "HÃY TIN NHẬN",
+        "category": "Truyền giảng hội chúng",
+        "id": 284,
+        "tone": "Không rõ",
+        "timeSignature": "Không rõ"
+    },
+    {
+        "songName": "KÌA CỬA CỨU RỖI",
+        "category": "Truyền giảng hội chúng",
+        "id": 285,
+        "tone": "Không rõ",
+        "timeSignature": "Không rõ"
+    },
+    {
+        "songName": "CHỈ TIN NƠI NGÀI",
+        "category": "Truyền giảng hội chúng",
+        "id": 286,
+        "tone": "Không rõ",
+        "timeSignature": "Không rõ"
+    },
+    {
+        "songName": "GIÊ-XU KÊU GỌI MỌI NGƯỜI",
+        "category": "Truyền giảng hội chúng",
+        "id": 287,
+        "tone": "Không rõ",
+        "timeSignature": "Không rõ"
+    },
+    {
+        "songName": "NIỀM VUI MỚI",
+        "category": "Đơn ca kêu gọi",
+        "id": 288,
+        "tone": "Không rõ",
+        "timeSignature": "Không rõ"
+    },
+    {
+        "songName": "TÌNH YÊU CHÚA DÀNH CHO TÔI",
+        "category": "Đơn ca kêu gọi",
+        "id": 289,
+        "tone": "Không rõ",
+        "timeSignature": "Không rõ"
+    },
+    {
+        "songName": "ĐỜI NGƯỜI",
+        "category": "Đơn ca kêu gọi",
+        "id": 290,
+        "tone": "Không rõ",
+        "timeSignature": "Không rõ"
+    },
+    {
+        "songName": "NHƯ CON CHIÊN ĐI LẠC",
+        "category": "Đơn ca kêu gọi",
+        "id": 291,
+        "tone": "Không rõ",
+        "timeSignature": "Không rõ"
+    },
+    {
+        "songName": "HƯỚNG TÂM LÊN",
+        "category": "Đơn ca kêu gọi",
+        "id": 292,
+        "tone": "Không rõ",
+        "timeSignature": "Không rõ"
+    },
+    {
+        "songName": "LỜI NGUYỆN CẦU",
+        "category": "Đơn ca kêu gọi",
+        "id": 293,
+        "tone": "Không rõ",
+        "timeSignature": "Không rõ"
+    },
+    {
+        "songName": "NIỀM TIN CHÂN LÝ",
+        "category": "Đơn ca kêu gọi",
+        "id": 294,
+        "tone": "Không rõ",
+        "timeSignature": "Không rõ"
+    },
+    {
+        "songName": "ĐẾN VỚI GIÊ-XU",
+        "category": "Đơn ca kêu gọi",
+        "id": 295,
+        "tone": "Không rõ",
+        "timeSignature": "Không rõ"
+    },
+    {
+        "songName": "TIẾNG GỌI",
+        "category": "Đơn ca kêu gọi",
+        "id": 296,
+        "tone": "Không rõ",
+        "timeSignature": "Không rõ"
+    },
+    {
+        "songName": "TRỞ VỀ",
+        "category": "Đơn ca kêu gọi",
+        "id": 297,
+        "tone": "Không rõ",
+        "timeSignature": "Không rõ"
+    },
+    {
+        "songName": "ĐẾN VỚI CHÚA",
+        "category": "Đơn ca kêu gọi",
+        "id": 298,
+        "tone": "Không rõ",
+        "timeSignature": "Không rõ"
+    },
+    {
+        "songName": "NẾU BẠN ĐÁNH MẤT CHÚA GIÊ-XU",
+        "category": "Đơn ca kêu gọi",
+        "id": 299,
+        "tone": "Không rõ",
+        "timeSignature": "Không rõ"
+    },
+    {
+        "songName": "TÌNH YÊU CHÚA",
+        "category": "Đơn ca kêu gọi",
+        "id": 300,
+        "tone": "Không rõ",
+        "timeSignature": "Không rõ"
+    },
+    {
+        "songName": "HÃY ĐẾN BẾN CHA",
+        "category": "Đơn ca kêu gọi",
+        "id": 301,
+        "tone": "Không rõ",
+        "timeSignature": "Không rõ"
+    },
+    {
+        "songName": "CHÚA VẪN ĐỢI CHỜ",
+        "category": "Đơn ca kêu gọi",
+        "id": 302,
+        "tone": "Không rõ",
+        "timeSignature": "Không rõ"
+    },
+    {
+        "songName": "NGÀI ĐÃ CỨU TÔI",
+        "category": "Đơn ca kêu gọi",
+        "id": 303,
+        "tone": "Không rõ",
+        "timeSignature": "Không rõ"
+    },
+    {
+        "songName": "CON ĐƯỜNG SỰ SỐNG",
+        "category": "Đơn ca kêu gọi",
+        "id": 304,
+        "tone": "Không rõ",
+        "timeSignature": "Không rõ"
+    },
+    {
+        "songName": "KHI CÓ GIÊ-XU",
+        "category": "Đơn ca kêu gọi",
+        "id": 305,
+        "tone": "Không rõ",
+        "timeSignature": "Không rõ"
+    },
+    {
+        "songName": "CHÚA GÁNH THAY TÔI",
+        "category": "Đơn ca kêu gọi",
+        "id": 306,
+        "tone": "Không rõ",
+        "timeSignature": "Không rõ"
+    },
+    {
+        "songName": "QUAY VỀ BÊN CHÚA",
+        "category": "Đơn ca kêu gọi",
+        "id": 307,
+        "tone": "Không rõ",
+        "timeSignature": "Không rõ"
+    },
+    {
+        "songName": "TRỞ VỀ BÊN CHA DẤU YÊU",
+        "category": "Đơn ca kêu gọi",
+        "id": 308,
+        "tone": "Không rõ",
+        "timeSignature": "Không rõ"
+    },
+    {
+        "songName": "KHÚC TÂM CA",
+        "category": "Đơn ca kêu gọi",
+        "id": 309,
+        "tone": "Không rõ",
+        "timeSignature": "Không rõ"
+    },
+    {
+        "songName": "TÌNH YÊU DIỄM TUYỆT",
+        "category": "Đơn ca kêu gọi",
+        "id": 310,
+        "tone": "Không rõ",
+        "timeSignature": "Không rõ"
+    },
+    {
+        "songName": "GIÊ-XU, ĐẤNG DUY NHẤT TÔI CẦN",
+        "category": "Đơn ca kêu gọi",
+        "id": 311,
+        "tone": "Không rõ",
+        "timeSignature": "Không rõ"
+    },
+    {
+        "songName": "ĐIỀU TÔI THẤU HIỂU",
+        "category": "Đơn ca kêu gọi",
+        "id": 312,
+        "tone": "Không rõ",
+        "timeSignature": "Không rõ"
+    },
+    {
+        "songName": "MỪNG SINH NHẬT GIÊ-XU",
+        "category": "Thánh ca Giáng Sinh",
+        "id": 313,
+        "tone": "Không rõ",
+        "timeSignature": "Không rõ"
+    },
+    {
+        "songName": "GIÁNG SINH ĐÃ VỀ",
+        "category": "Thánh ca Giáng Sinh",
+        "id": 314,
+        "tone": "Không rõ",
+        "timeSignature": "Không rõ"
+    },
+    {
+        "songName": "KHI CHÚA VÀO ĐỜI",
+        "category": "Thánh ca Giáng Sinh",
+        "id": 315,
+        "tone": "Không rõ",
+        "timeSignature": "Không rõ"
+    },
+    {
+        "songName": "VUI MÙA GIÁNG SINH",
+        "category": "Thánh ca Giáng Sinh",
+        "id": 316,
+        "tone": "Không rõ",
+        "timeSignature": "Không rõ"
+    },
+    {
+        "songName": "CHỜ MÙA ĐÔNG ĐẾN",
+        "category": "Thánh ca Giáng Sinh",
+        "id": 317,
+        "tone": "Không rõ",
+        "timeSignature": "Không rõ"
+    },
+    {
+        "songName": "Ô! NÔ-ÊN LẠI VỀ",
+        "category": "Thánh ca Giáng Sinh",
+        "id": 318,
+        "tone": "Không rõ",
+        "timeSignature": "Không rõ"
+    },
+    {
+        "songName": "BÌNH AN CHO LOÀI NGƯỜI",
+        "category": "Thánh ca Giáng Sinh",
+        "id": 319,
+        "tone": "Không rõ",
+        "timeSignature": "Không rõ"
+    },
+    {
+        "songName": "CHÚA GIÊ-XU LÂM PHÀM",
+        "category": "Thánh ca Giáng Sinh",
+        "id": 320,
+        "tone": "Không rõ",
+        "timeSignature": "Không rõ"
+    },
+    {
+        "songName": "HUYỀN DIỆU ĐÊM THÁNH",
+        "category": "Thánh ca Giáng Sinh",
+        "id": 321,
+        "tone": "Không rõ",
+        "timeSignature": "Không rõ"
+    },
+    {
+        "songName": "CÙNG HÁT LÊN HA-LÊ-LU-GIA",
+        "category": "Thánh ca Giáng Sinh",
+        "id": 322,
+        "tone": "Không rõ",
+        "timeSignature": "Không rõ"
+    },
+    {
+        "songName": "MÓN QUÀ VÔ GIÁ",
+        "category": "Thánh ca Giáng Sinh",
+        "id": 323,
+        "tone": "Không rõ",
+        "timeSignature": "Không rõ"
+    },
+    {
+        "songName": "VÌ YÊU NHÂN THẾ",
+        "category": "Thánh ca Giáng Sinh",
+        "id": 324,
+        "tone": "Không rõ",
+        "timeSignature": "Không rõ"
+    },
+    {
+        "songName": "CA KHÚC GIÁNG SINH",
+        "category": "Thánh ca Giáng Sinh",
+        "id": 325,
+        "tone": "Không rõ",
+        "timeSignature": "Không rõ"
+    },
+    {
+        "songName": "THAY ĐỔI",
+        "category": "Thánh ca Giáng Sinh",
+        "id": 326,
+        "tone": "Không rõ",
+        "timeSignature": "Không rõ"
+    },
+    {
+        "songName": "MỪNG CHÚA GIÁNG SINH",
+        "category": "Thánh ca Giáng Sinh",
+        "id": 327,
+        "tone": "Không rõ",
+        "timeSignature": "Không rõ"
+    },
+    {
+        "songName": "CA KHÚC GIÁNG SINH",
+        "category": "Thánh ca Giáng Sinh",
+        "id": 328,
+        "tone": "Không rõ",
+        "timeSignature": "Không rõ"
+    },
+    {
+        "songName": "GIÊ-XU, CHÚA BÌNH AN",
+        "category": "Thánh ca Giáng Sinh",
+        "id": 329,
+        "tone": "Không rõ",
+        "timeSignature": "Không rõ"
+    },
+    {
+        "songName": "ẤY TIN VUI CHO NGƯỜI",
+        "category": "Thánh ca Giáng Sinh",
+        "id": 330,
+        "tone": "Không rõ",
+        "timeSignature": "Không rõ"
+    },
+    {
+        "songName": "TÌNH YÊU CHÚA TÔI",
+        "category": "Thánh lễ Thương Khó - Phục Sinh",
+        "id": 331,
+        "tone": "Không rõ",
+        "timeSignature": "Không rõ"
+    },
+    {
+        "songName": "CON ĐƯỜNG CHÚA ĐI QUA",
+        "category": "Thánh lễ Thương Khó - Phục Sinh",
+        "id": 332,
+        "tone": "Không rõ",
+        "timeSignature": "Không rõ"
+    },
+    {
+        "songName": "CHA YÊU THƯƠNG",
+        "category": "Thánh lễ Thương Khó - Phục Sinh",
+        "id": 333,
+        "tone": "Không rõ",
+        "timeSignature": "Không rõ"
+    },
+    {
+        "songName": "CHÚA YÊU TRẦN THẾ",
+        "category": "Thánh lễ Thương Khó - Phục Sinh",
+        "id": 334,
+        "tone": "Không rõ",
+        "timeSignature": "Không rõ"
+    },
+    {
+        "songName": "NƠI GÔ-THA",
+        "category": "Thánh lễ Thương Khó - Phục Sinh",
+        "id": 335,
+        "tone": "Không rõ",
+        "timeSignature": "Không rõ"
+    },
+    {
+        "songName": "ĐAU THƯƠNG TIÊU MẤT NƠI GÔ-GÔ-THA",
+        "category": "Thánh lễ Thương Khó - Phục Sinh",
+        "id": 336,
+        "tone": "Không rõ",
+        "timeSignature": "Không rõ"
+    },
+    {
+        "songName": "ĐỒI VẮNG",
+        "category": "Thánh lễ Thương Khó - Phục Sinh",
+        "id": 337,
+        "tone": "Không rõ",
+        "timeSignature": "Không rõ"
+    },
+    {
+        "songName": "TÌNH YÊU CHÚA",
+        "category": "Thánh lễ Thương Khó - Phục Sinh",
+        "id": 338,
+        "tone": "Không rõ",
+        "timeSignature": "Không rõ"
+    },
+    {
+        "songName": "ĐỒI GÔ-GÔ-THA CHỐN XƯA",
+        "category": "Thánh lễ Thương Khó - Phục Sinh",
+        "id": 339,
+        "tone": "Không rõ",
+        "timeSignature": "Không rõ"
+    },
+    {
+        "songName": "GÔ-GÔ-THA",
+        "category": "Thánh lễ Thương Khó - Phục Sinh",
+        "id": 340,
+        "tone": "Không rõ",
+        "timeSignature": "Không rõ"
+    },
+    {
+        "songName": "CHIỀU TRÊN ĐỒI GÔ-GÔ-THA",
+        "category": "Thánh lễ Thương Khó - Phục Sinh",
+        "id": 341,
+        "tone": "Không rõ",
+        "timeSignature": "Không rõ"
+    },
+    {
+        "songName": "TÔN VINH CHÚA TÌNH YÊU",
+        "category": "Thánh lễ Thương Khó - Phục Sinh",
+        "id": 342,
+        "tone": "Không rõ",
+        "timeSignature": "Không rõ"
+    },
+    {
+        "songName": "VÌ AI?",
+        "category": "Thánh lễ Thương Khó - Phục Sinh",
+        "id": 343,
+        "tone": "Không rõ",
+        "timeSignature": "Không rõ"
+    },
+    {
+        "songName": "TÌNH YÊU BIẾN ĐỔI",
+        "category": "Thánh lễ Thương Khó - Phục Sinh",
+        "id": 344,
+        "tone": "Không rõ",
+        "timeSignature": "Không rõ"
+    },
+    {
+        "songName": "CHÚA CAO QUÝ",
+        "category": "Thánh lễ Thương Khó - Phục Sinh",
+        "id": 345,
+        "tone": "Không rõ",
+        "timeSignature": "Không rõ"
+    },
+    {
+        "songName": "CHÚA SỐNG LẠI VINH QUANG RỒI",
+        "category": "Thánh lễ Thương Khó - Phục Sinh",
+        "id": 346,
+        "tone": "Không rõ",
+        "timeSignature": "Không rõ"
+    },
+    {
+        "songName": "GIÊ-XU ĐẤNG SỐNG",
+        "category": "Thánh lễ Thương Khó - Phục Sinh",
+        "id": 347,
+        "tone": "Không rõ",
+        "timeSignature": "Không rõ"
+    },
+    {
+        "songName": "GIÊ-XU ĐẤNG SỐNG",
+        "category": "Thánh lễ Thương Khó - Phục Sinh",
+        "id": 348,
+        "tone": "Không rõ",
+        "timeSignature": "Không rõ"
+    },
+    {
+        "songName": "CHÚA HẰNG SỐNG",
+        "category": "Thánh lễ Thương Khó - Phục Sinh",
+        "id": 349,
+        "tone": "Không rõ",
+        "timeSignature": "Không rõ"
+    },
+    {
+        "songName": "VÌ GIÊ-XU SỐNG",
+        "category": "Thánh lễ Thương Khó - Phục Sinh",
+        "id": 350,
+        "tone": "Không rõ",
+        "timeSignature": "Không rõ"
+    },
+    {
+        "songName": "LÚC ANH NGUYỆN CẦU",
+        "category": "Thông công - Sinh hoạt",
+        "id": 351,
+        "tone": "Không rõ",
+        "timeSignature": "Không rõ"
+    },
+    {
+        "songName": "TRONG ƠN CHÚA",
+        "category": "Thông công - Sinh hoạt",
+        "id": 352,
+        "tone": "Không rõ",
+        "timeSignature": "Không rõ"
+    },
+    {
+        "songName": "GẶP CHÚA",
+        "category": "Thông công - Sinh hoạt",
+        "id": 353,
+        "tone": "Không rõ",
+        "timeSignature": "Không rõ"
+    },
+    {
+        "songName": "VUI CA LÊN",
+        "category": "Thông công - Sinh hoạt",
+        "id": 354,
+        "tone": "Không rõ",
+        "timeSignature": "Không rõ"
+    },
+    {
+        "songName": "HÃY THẮP SÁNG LÊN",
+        "category": "Thông công - Sinh hoạt",
+        "id": 355,
+        "tone": "Không rõ",
+        "timeSignature": "Không rõ"
+    },
+    {
+        "songName": "YÊU THƯƠNG",
+        "category": "Thông công - Sinh hoạt",
+        "id": 356,
+        "tone": "Không rõ",
+        "timeSignature": "Không rõ"
+    },
+    {
+        "songName": "QUÂY QUẦN BÊN CHÚA",
+        "category": "Thông công - Sinh hoạt",
+        "id": 357,
+        "tone": "Không rõ",
+        "timeSignature": "Không rõ"
+    },
+    {
+        "songName": "NỐI KẾT",
+        "category": "Thông công - Sinh hoạt",
+        "id": 358,
+        "tone": "Không rõ",
+        "timeSignature": "Không rõ"
+    },
+    {
+        "songName": "ĐÈN SÁNG – MUỐI MẶN",
+        "category": "Thông công - Sinh hoạt",
+        "id": 359,
+        "tone": "Không rõ",
+        "timeSignature": "Không rõ"
+    },
+    {
+        "songName": "TAY TRONG TAY",
+        "category": "Thông công - Sinh hoạt",
+        "id": 360,
+        "tone": "Không rõ",
+        "timeSignature": "Không rõ"
+    },
+    {
+        "songName": "NGUYỆN TÌNH YÊU CHÚA",
+        "category": "Thông công - Sinh hoạt",
+        "id": 361,
+        "tone": "Không rõ",
+        "timeSignature": "Không rõ"
+    },
+    {
+        "songName": "ĐỪNG ĐỂ NGÀY MAI",
+        "category": "Thông công - Sinh hoạt",
+        "id": 362,
+        "tone": "Không rõ",
+        "timeSignature": "Không rõ"
+    },
+    {
+        "songName": "ANH VÀ TÔI",
+        "category": "Thông công - Sinh hoạt",
+        "id": 363,
+        "tone": "Không rõ",
+        "timeSignature": "Không rõ"
+    },
+    {
+        "songName": "MỘT CON CHIM ÉN",
+        "category": "Thông công - Sinh hoạt",
+        "id": 364,
+        "tone": "Không rõ",
+        "timeSignature": "Không rõ"
+    },
+    {
+        "songName": "XIN CHO NHAU",
+        "category": "Thông công - Sinh hoạt",
+        "id": 365,
+        "tone": "Không rõ",
+        "timeSignature": "Không rõ"
+    },
+    {
+        "songName": "CHIA TAY MÙA HÈ",
+        "category": "Thông công - Sinh hoạt",
+        "id": 366,
+        "tone": "Không rõ",
+        "timeSignature": "Không rõ"
+    },
+    {
+        "songName": "TRÊN ĐƯỜNG HẸP CỦA CHÚA",
+        "category": "Thông công - Sinh hoạt",
+        "id": 367,
+        "tone": "Không rõ",
+        "timeSignature": "Không rõ"
+    },
+    {
+        "songName": "HẰNG CHIẾU",
+        "category": "Thông công - Sinh hoạt",
+        "id": 368,
+        "tone": "Không rõ",
+        "timeSignature": "Không rõ"
+    },
+    {
+        "songName": "GIÚP AI ĐANG BĂN KHOĂN",
+        "category": "Thông công - Sinh hoạt",
+        "id": 369,
+        "tone": "Không rõ",
+        "timeSignature": "Không rõ"
+    },
+    {
+        "songName": "THANH NIÊN TIN LÀNH",
+        "category": "Thông công - Sinh hoạt",
+        "id": 370,
+        "tone": "Không rõ",
+        "timeSignature": "Không rõ"
+    },
+    {
+        "songName": "NGÀY MỚI",
+        "category": "Hôn nhân - Hôn lễ",
+        "id": 371,
+        "tone": "Không rõ",
+        "timeSignature": "Không rõ"
+    },
+    {
+        "songName": "CHUNG MỘT NHỊP ĐÀN",
+        "category": "Hôn nhân - Hôn lễ",
+        "id": 372,
+        "tone": "Không rõ",
+        "timeSignature": "Không rõ"
+    },
+    {
+        "songName": "SỐNG YÊU THƯƠNG",
+        "category": "Hôn nhân - Hôn lễ",
+        "id": 373,
+        "tone": "Không rõ",
+        "timeSignature": "Không rõ"
+    },
+    {
+        "songName": "ĐẸP Ý NGÀI",
+        "category": "Hôn nhân - Hôn lễ",
+        "id": 374,
+        "tone": "Không rõ",
+        "timeSignature": "Không rõ"
+    },
+    {
+        "songName": "NHƯ THUỞ BAN ĐẦU",
+        "category": "Hôn nhân - Hôn lễ",
+        "id": 375,
+        "tone": "Không rõ",
+        "timeSignature": "Không rõ"
+    },
+    {
+        "songName": "KHÚC TÌNH CA NGÀY CƯỚI",
+        "category": "Hôn nhân - Hôn lễ",
+        "id": 376,
+        "tone": "Không rõ",
+        "timeSignature": "Không rõ"
+    },
+    {
+        "songName": "NGUYỆN CẦU CHO CHA MẸ",
+        "category": "Phụ mẫu",
+        "id": 377,
+        "tone": "Không rõ",
+        "timeSignature": "Không rõ"
+    },
+    {
+        "songName": "CẢM ƠN CHA MẸ",
+        "category": "Phụ mẫu",
+        "id": 378,
+        "tone": "Không rõ",
+        "timeSignature": "Không rõ"
+    },
+    {
+        "songName": "MẸ YÊU",
+        "category": "Phụ mẫu",
+        "id": 379,
+        "tone": "Không rõ",
+        "timeSignature": "Không rõ"
+    },
+    {
+        "songName": "XUÂN TRONG TÔI",
+        "category": "Thánh ca mừng năm mới",
+        "id": 380,
+        "tone": "Không rõ",
+        "timeSignature": "Không rõ"
+    },
+    {
+        "songName": "MỪNG XUÂN",
+        "category": "Thánh ca mừng năm mới",
+        "id": 381,
+        "tone": "Không rõ",
+        "timeSignature": "Không rõ"
+    },
+    {
+        "songName": "GIÊ-XU LÀ MÙA XUÂN",
+        "category": "Thánh ca mừng năm mới",
+        "id": 382,
+        "tone": "Không rõ",
+        "timeSignature": "Không rõ"
+    },
+    {
+        "songName": "XUÂN MỚI SỨC SỐNG MỚI",
+        "category": "Thánh ca mừng năm mới",
+        "id": 383,
+        "tone": "Không rõ",
+        "timeSignature": "Không rõ"
+    },
+    {
+        "songName": "XUÂN ĐẾN BÊN NHÀ",
+        "category": "Thánh ca mừng năm mới",
+        "id": 384,
+        "tone": "Không rõ",
+        "timeSignature": "Không rõ"
+    },
+    {
+        "songName": "GIÊ-XU NGUỒN VUI XUÂN",
+        "category": "Thánh ca mừng năm mới",
+        "id": 385,
+        "tone": "Không rõ",
+        "timeSignature": "Không rõ"
+    },
+    {
+        "songName": "XUÂN AN LÀNH",
+        "category": "Thánh ca mừng năm mới",
+        "id": 386,
+        "tone": "Không rõ",
+        "timeSignature": "Không rõ"
+    },
+    {
+        "songName": "CHÚA XUÂN",
+        "category": "Thánh ca mừng năm mới",
+        "id": 387,
+        "tone": "Không rõ",
+        "timeSignature": "Không rõ"
+    },
+    {
+        "songName": "Nhân lên",
+        "category": "Ngợi khen thờ phượng: Dâng hiến - Đáp ứng",
+        "id": 1,
+        "tone": "D",
+        "timeSignature": "4/4"
+    },
+    {
+        "songName": "Mọi suy tôn thuộc Vua",
+        "category": "Ngợi khen thờ phượng: Tôn cao Chúa",
+        "id": 2,
+        "tone": "G",
+        "timeSignature": "4/4"
+    },
+    {
+        "songName": "Hát cho người hầu việc Chúa",
+        "category": "Ngợi khen cảm tạ",
+        "id": 3,
+        "tone": "Am",
+        "timeSignature": "4/4"
+    },
+    {
+        "songName": "Việc Chúa làm",
+        "category": "Ngợi khen cảm tạ",
+        "id": 4,
+        "tone": "G",
+        "timeSignature": "4/4"
+    },
+    {
+        "songName": "Bởi Ta yêu con",
+        "category": "Đơn ca kêu gọi",
+        "id": 5,
+        "tone": "C",
+        "timeSignature": "4/4"
+    },
+    {
+        "songName": "Thánh Linh quyền năng",
+        "category": "Ngợi khen thờ phượng: Xin Chúa hiện diện",
+        "id": 6,
+        "tone": "G",
+        "timeSignature": "4/4"
+    },
+    {
+        "songName": "Cháy lên lửa Linh",
+        "category": "Ngợi khen thờ phượng: Dâng hiến - Đáp ứng",
+        "id": 7,
+        "tone": "Bm",
+        "timeSignature": "4/4"
+    },
+    {
+        "songName": "Bước đi trong khải tượng",
+        "category": "Ngợi khen thờ phượng: Dâng hiến - Đáp ứng",
+        "id": 8,
+        "tone": "G",
+        "timeSignature": "4/4"
+    },
+    {
+        "songName": "Sứ mạng",
+        "category": "Ngợi khen thờ phượng: Dâng hiến - Đáp ứng",
+        "id": 9,
+        "tone": "F",
+        "timeSignature": "4/4"
+    },
+    {
+        "songName": "Bước vào nơi Chí Thánh",
+        "category": "Ngợi khen thờ phượng: Tôn cao Chúa",
+        "id": 10,
+        "tone": "Em",
+        "timeSignature": "4/4"
+    },
+    {
+        "songName": "Chào Chúa Thánh Linh",
+        "category": "Ngợi khen thờ phượng: Xin Chúa hiện diện",
+        "id": 11,
+        "tone": "F",
+        "timeSignature": "2/4"
+    },
+    {
+        "songName": "Muôn thu không đổi thay",
+        "category": "Ngợi khen thờ phượng: Tôn cao Chúa",
+        "id": 12,
+        "tone": "Bm",
+        "timeSignature": "4/4"
+    },
+    {
+        "songName": "Giê-xu Vua trị vì",
+        "category": "Ngợi khen thờ phượng: Tôn cao Chúa",
+        "id": 13,
+        "tone": "D",
+        "timeSignature": "4/4"
+    },
+    {
+        "songName": "Giê-xu, yêu Ngài hơn cả mọi điều",
+        "category": "Ngợi khen thờ phượng: Tôn cao Chúa",
+        "id": 14,
+        "tone": "D",
+        "timeSignature": "4/4"
+    },
+    {
+        "songName": "Giê-xu muôn đời",
+        "category": "Ngợi khen cảm tạ",
+        "id": 15,
+        "tone": "G",
+        "timeSignature": "4/4"
+    },
+    {
+        "songName": "Chúng con đây",
+        "category": "Không rõ",
+        "id": 16,
+        "tone": "F",
+        "timeSignature": "4/4"
+    },
+    {
+        "songName": "Với tất cả vinh quang",
+        "category": "Ngợi khen thờ phượng: Tôn cao Chúa",
+        "id": 17,
+        "tone": "G",
+        "timeSignature": "4/4"
+    },
+    {
+        "songName": "Diệu thay là Chúa ta",
+        "category": "Ngợi khen thờ phượng: Tôn cao Chúa",
+        "id": 18,
+        "tone": "G",
+        "timeSignature": "4/4"
+    },
+    {
+        "songName": "Chúa được tôn cao",
+        "category": "Ngợi khen thờ phượng: Tôn cao Chúa",
+        "id": 19,
+        "tone": "C",
+        "timeSignature": "4/4"
+    },
+    {
+        "songName": "Lòng sướng vui chúc tán",
+        "category": "Ngợi khen cảm tạ",
+        "id": 20,
+        "tone": "A ",
+        "timeSignature": "4/4"
+    },
+    {
+        "songName": "Duy Chúa đáng ca ngợi",
+        "category": "Ngợi khen thờ phượng: Tôn cao Chúa",
+        "id": 21,
+        "tone": "C",
+        "timeSignature": "4/4"
+    },
+    {
+        "songName": "Vượt trên tất cả",
+        "category": "Thánh lễ Thương Khó - Phục Sinh",
+        "id": 22,
+        "tone": "D/E",
+        "timeSignature": "4/4"
+    },
+    {
+        "songName": "Diễm tình ca",
+        "category": "Hôn nhân - Hôn lễ",
+        "id": 23,
+        "tone": "G",
+        "timeSignature": "4/4"
+    },
+    {
+        "songName": "Yêu thương và hiệp một",
+        "category": "Thông công - Sinh hoạt",
+        "id": 24,
+        "tone": "C",
+        "timeSignature": "2/4"
+    },
+    {
+        "songName": "Thanh niên truyền giáo",
+        "category": "Truyền giảng hội chúng",
+        "id": 25,
+        "tone": "G",
+        "timeSignature": "4/4"
+    },
+    {
+        "songName": "Giọt nước mắt cho những linh hồn",
+        "category": "Ngợi khen thờ phượng: Xin Chúa hiện diện",
+        "id": 26,
+        "tone": "Dm",
+        "timeSignature": "4/4"
+    },
+    {
+        "songName": "Quyền năng cứu rỗi",
+        "category": "Thánh lễ Thương Khó - Phục Sinh",
+        "id": 27,
+        "tone": "D",
+        "timeSignature": "4/4"
+    },
+    {
+        "songName": "Thần Linh của Chúa",
+        "category": "Ngợi khen thờ phượng: Xin Chúa hiện diện",
+        "id": 28,
+        "tone": "Em",
+        "timeSignature": "4/4"
+    },
+    {
+        "songName": "Nguyện cầu Thánh Linh Ngài",
+        "category": "Ngợi khen thờ phượng: Xin Chúa hiện diện",
+        "id": 29,
+        "tone": "G",
+        "timeSignature": "4/4"
+    },
+    {
+        "songName": "Đứng vào nơi sứt mẻ",
+        "category": "Ngợi khen thờ phượng: Xin Chúa hiện diện",
+        "id": 30,
+        "tone": "G",
+        "timeSignature": "4/4"
+    },
+    {
+        "songName": "Tôi cảm ơn Cứu Chúa của tôi",
+        "category": "Ngợi khen cảm tạ",
+        "id": 31,
+        "tone": "A",
+        "timeSignature": "4/4"
+    },
+    {
+        "songName": "Ca khen danh Giê-hô-va",
+        "category": "Ngợi khen thờ phượng: Tôn cao Chúa",
+        "id": 32,
+        "tone": "Dm",
+        "timeSignature": "2/4"
+    },
+    {
+        "songName": "Chỉ có một Chúa Thánh Linh",
+        "category": "Ngợi khen thờ phượng: Xin Chúa hiện diện",
+        "id": 33,
+        "tone": "Em",
+        "timeSignature": "2/4"
+    },
+    {
+        "songName": "Cho đến mãi mãi",
+        "category": "Ngợi khen thờ phượng: Sự ăn năn - Sự tha tội",
+        "id": 34,
+        "tone": "A",
+        "timeSignature": "4/4"
+    },
+    {
+        "songName": "Rao ra năm bình an",
+        "category": "Truyền giảng hội chúng",
+        "id": 35,
+        "tone": "A",
+        "timeSignature": "4/4"
+    },
+    {
+        "songName": "Ngàn lời chúc tán",
+        "category": "Ngợi khen thờ phượng: Xin Chúa hiện diện",
+        "id": 36,
+        "tone": "C",
+        "timeSignature": "4/4"
+    },
+    {
+        "songName": "Đấng sống muôn đời (Vui thay...)",
+        "category": "Ngợi khen thờ phượng: Tôn cao Chúa",
+        "id": 37,
+        "tone": "E",
+        "timeSignature": "4/4"
+    },
+    {
+        "songName": "Con khao khát Ngài",
+        "category": "Ngợi khen thờ phượng: Xin Chúa hiện diện",
+        "id": 38,
+        "tone": "Em",
+        "timeSignature": "4/4"
+    },
+    {
+        "songName": "Phước cho nhân loại",
+        "category": "Thánh ca Giáng Sinh",
+        "id": 39,
+        "tone": "C",
+        "timeSignature": "2/4"
+    },
+    {
+        "songName": "Tiệc Thánh",
+        "category": "Thánh lễ Tiệc Thánh",
+        "id": 40,
+        "tone": "Am",
+        "timeSignature": "6/8"
+    },
+    {
+        "songName": "Bởi ân điển Ngài",
+        "category": "Ngợi khen cảm tạ",
+        "id": 41,
+        "tone": "C/D",
+        "timeSignature": "4/4"
+    },
+    {
+        "songName": "Lòng yêu Chúa biết bao",
+        "category": "Ngợi khen cảm tạ",
+        "id": 42,
+        "tone": "G",
+        "timeSignature": "4/4"
+    },
+    {
+        "songName": "Chúc tôn Vua vinh hiển (Cửa đời đời...)",
+        "category": "Ngợi khen thờ phượng: Tôn cao Chúa",
+        "id": 43,
+        "tone": "Em",
+        "timeSignature": "4/4"
+    },
+    {
+        "songName": "Hỡi các dân",
+        "category": "Ngợi khen thờ phượng: Tôn cao Chúa",
+        "id": 44,
+        "tone": "Am",
+        "timeSignature": "4/4"
+    },
+    {
+        "songName": "Bài ca ngợi khen (Hãy giơ tay lên...)",
+        "category": "Ngợi khen thờ phượng: Tôn cao Chúa",
+        "id": 45,
+        "tone": "Em",
+        "timeSignature": "4/4"
+    },
+    {
+        "songName": "Ngợi khen Chúa đời đời (Sức mới đến từ...)",
+        "category": "Ngợi khen thờ phượng: Tôn cao Chúa",
+        "id": 46,
+        "tone": "G",
+        "timeSignature": "4/4"
+    },
+    {
+        "songName": "Trong nơi Chí Thánh",
+        "category": "Ngợi khen thờ phượng: Tôn cao Chúa",
+        "id": 47,
+        "tone": "F/G",
+        "timeSignature": "4/4"
+    },
+    {
+        "songName": "Vì duy chính Chúa",
+        "category": "Ngợi khen thờ phượng: Tôn cao Chúa",
+        "id": 48,
+        "tone": "G",
+        "timeSignature": "4/4"
+    },
+    {
+        "songName": "Bình đất vỡ tan",
+        "category": "Ngợi khen thờ phượng: Sự ăn năn - Sự tha tội",
+        "id": 49,
+        "tone": "Dm",
+        "timeSignature": "4/4"
+    },
+    {
+        "songName": "Ngài là Giê-xu",
+        "category": "Ngợi khen thờ phượng: Tôn cao Chúa",
+        "id": 50,
+        "tone": "Am",
+        "timeSignature": "4/4"
+    },
+    {
+        "songName": "Tôi sẽ ngợi ca",
+        "category": "Ngợi khen cảm tạ",
+        "id": 51,
+        "tone": "F",
+        "timeSignature": "4/4"
+    },
+    {
+        "songName": "Ơn càng thêm ơn",
+        "category": "Ngợi khen cảm tạ",
+        "id": 52,
+        "tone": "F",
+        "timeSignature": "4/4"
+    },
+    {
+        "songName": "Lời trái tim",
+        "category": "Hôn nhân - Hôn lễ",
+        "id": 53,
+        "tone": "G",
+        "timeSignature": "4/4"
+    },
+    {
+        "songName": "Bài ca mừng đôi lứa",
+        "category": "Hôn nhân - Hôn lễ",
+        "id": 54,
+        "tone": "C",
+        "timeSignature": "4/4"
+    },
+    {
+        "songName": "Cảm ơn em đã đến",
+        "category": "Hôn nhân - Hôn lễ",
+        "id": 55,
+        "tone": "C",
+        "timeSignature": "4/4"
+    },
+    {
+        "songName": "Không gian tươi sáng",
+        "category": "Hôn nhân - Hôn lễ",
+        "id": 56,
+        "tone": "G",
+        "timeSignature": "3/4"
+    },
+    {
+        "songName": "Được phước và được yêu",
+        "category": "Ngợi khen cảm tạ",
+        "id": 57,
+        "tone": "G",
+        "timeSignature": "4/4"
+    },
+    {
+        "songName": "Hỡi môn đồ trung tín",
+        "category": "Truyền giảng hội chúng",
+        "id": 58,
+        "tone": "A",
+        "timeSignature": "4/4"
+    },
+    {
+        "songName": "Giê-hô-va sẽ xây Giê-ru-sa-lem",
+        "category": "Ngợi khen thờ phượng: Tôn cao Chúa",
+        "id": 59,
+        "tone": "Bm",
+        "timeSignature": "4/4"
+    },
+    {
+        "songName": "Thánh Linh tuôn tràn nơi đây",
+        "category": "Ngợi khen thờ phượng: Xin Chúa hiện diện",
+        "id": 60,
+        "tone": "A",
+        "timeSignature": "4/4"
+    },
+    {
+        "songName": "Ta hi sinh vì con hết",
+        "category": "Thánh lễ Tiệc Thánh",
+        "id": 61,
+        "tone": "C",
+        "timeSignature": "6/8"
+    },
+    {
+        "songName": "Hát khen Giê-xu",
+        "category": "Ngợi khen thờ phượng: Tôn cao Chúa",
+        "id": 62,
+        "tone": "Bm",
+        "timeSignature": "4/4"
+    },
+    {
+        "songName": "Thi Thiên 150",
+        "category": "Ngợi khen thờ phượng: Tôn cao Chúa",
+        "id": 63,
+        "tone": "Bm",
+        "timeSignature": "4/4"
+    },
+    {
+        "songName": "Này chàng trai của cha",
+        "category": "Phụ mẫu",
+        "id": 64,
+        "tone": "C",
+        "timeSignature": "4/4"
+    },
+    {
+        "songName": "Xây nhà trên đá",
+        "category": "Thông công - Sinh hoạt",
+        "id": 65,
+        "tone": "G",
+        "timeSignature": "4/4"
+    },
+    {
+        "songName": "Sống trong ý Chúa ",
+        "category": "Đơn ca trải lòng",
+        "id": 66,
+        "tone": "C",
+        "timeSignature": "3/4"
+    },
+    {
+        "songName": "Đấng sống muôn đời",
+        "category": "Ngợi khen thờ phượng: Tôn cao Chúa",
+        "id": 67,
+        "tone": "A",
+        "timeSignature": "4/4"
+    },
+    {
+        "songName": "Hát cho người tôi yêu",
+        "category": "Hôn nhân - Hôn lễ",
+        "id": 68,
+        "tone": "G",
+        "timeSignature": "4/4"
+    },
+    {
+        "songName": "Ân điển",
+        "category": "Ngợi khen cảm tạ",
+        "id": 69,
+        "tone": "Bb",
+        "timeSignature": "4/4"
+    },
+    {
+        "songName": "Nào ai như Giê-xu",
+        "category": "Ngợi khen thờ phượng: Tôn cao Chúa",
+        "id": 70,
+        "tone": "G",
+        "timeSignature": "4/4"
+    },
+    {
+        "songName": "Hát khen Giê-xu",
+        "category": "Ngợi khen thờ phượng: Tôn cao Chúa",
+        "id": 71,
+        "tone": "Bm",
+        "timeSignature": "4/4"
+    },
+    {
+        "songName": "Ngài là Chúa của con",
+        "category": "Ngợi khen cảm tạ",
+        "id": 72,
+        "tone": "A",
+        "timeSignature": "4/4"
+    },
+    {
+        "songName": "Chúa Đấng chiến thắng",
+        "category": "Ngợi khen thờ phượng: Tôn cao Chúa",
+        "id": 73,
+        "tone": "Am",
+        "timeSignature": "4/4"
+    },
+    {
+        "songName": "Đấng mở đường",
+        "category": "Ngợi khen thờ phượng: Tôn cao Chúa",
+        "id": 74,
+        "tone": "Bm",
+        "timeSignature": "4/4"
+    },
+    {
+        "songName": "Đấng sống muôn đời",
+        "category": "Ngợi khen thờ phượng: Tôn cao Chúa",
+        "id": 75,
+        "tone": "D",
+        "timeSignature": "4/4"
+    },
+    {
+        "songName": "Trong danh Chúa Giê-xu",
+        "category": "Ngợi khen thờ phượng: Tôn cao Chúa",
+        "id": 76,
+        "tone": "Dm",
+        "timeSignature": "4/4"
+    },
+    {
+        "songName": "Cứu Chúa hạ sinh",
+        "category": "Thánh ca Giáng Sinh",
+        "id": 77,
+        "tone": "Am",
+        "timeSignature": "2/4"
+    },
+    {
+        "songName": "Phước cho nhân loại",
+        "category": "Thánh ca Giáng Sinh",
+        "id": 78,
+        "tone": "C",
+        "timeSignature": "2/4"
+    },
+    {
+        "songName": "Bài ca máng cỏ",
+        "category": "Thánh ca Giáng Sinh",
+        "id": 79,
+        "tone": "D",
+        "timeSignature": "3/4"
+    },
+    {
+        "songName": "Đêm yên lặng",
+        "category": "Thánh ca Giáng Sinh",
+        "id": 80,
+        "tone": "C",
+        "timeSignature": "6/8"
+    },
+    {
+        "songName": "Vì yêu Ngài đến",
+        "category": "Thánh ca Giáng Sinh",
+        "id": 81,
+        "tone": "E",
+        "timeSignature": "4/4"
+    },
+    {
+        "songName": "Đêm thánh",
+        "category": "Thánh ca Giáng Sinh",
+        "id": 82,
+        "tone": "C",
+        "timeSignature": "4/4"
+    },
+    {
+        "songName": "Con Ma-ri là Chúa tôi",
+        "category": "Thánh ca Giáng Sinh",
+        "id": 83,
+        "tone": "G",
+        "timeSignature": "4/4"
+    },
+    {
+        "songName": "Món quà",
+        "category": "Thánh ca Giáng Sinh",
+        "id": 84,
+        "tone": "C",
+        "timeSignature": "4/4"
+    },
+    {
+        "songName": "Tình yêu vững bền",
+        "category": "Hôn nhân - Hôn lễ",
+        "id": 85,
+        "tone": "F",
+        "timeSignature": "4/4"
+    },
+    {
+        "songName": "Mừng duyên lứa đôi",
+        "category": "Hôn nhân - Hôn lễ",
+        "id": 86,
+        "tone": "C",
+        "timeSignature": "4/4"
+    },
+    {
+        "songName": "Lời chúc cho hai người yêu nhau",
+        "category": "Hôn nhân - Hôn lễ",
+        "id": 87,
+        "tone": "C",
+        "timeSignature": "4/4"
+    },
+    {
+        "songName": "Hát mừng hôn lễ",
+        "category": "Hôn nhân - Hôn lễ",
+        "id": 88,
+        "tone": "C",
+        "timeSignature": "4/4"
+    },
+    {
+        "songName": "Đừng sợ hãi, chỉ tin mà thôi",
+        "category": "Đơn ca trải lòng",
+        "id": 89,
+        "tone": "D",
+        "timeSignature": "3/4"
+    },
+    {
+        "songName": "Bài ca mừng đôi lứa",
+        "category": "Hôn nhân - Hôn lễ",
+        "id": 90,
+        "tone": "C",
+        "timeSignature": "4/4"
+    },
+    {
+        "songName": "Tiệc thánh",
+        "category": "Thánh lễ Tiệc Thánh",
+        "id": 91,
+        "tone": "Am",
+        "timeSignature": "6/8"
+    },
+    {
+        "songName": "Nầy ngày hôm nay",
+        "category": "Ngợi khen cảm tạ",
+        "id": 92,
+        "tone": "Không rõ",
+        "timeSignature": "Không rõ"
+    }
+]

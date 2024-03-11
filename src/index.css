@@ -11,3 +11,100 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.header{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.dark-mode{
+  background-color: black;
+}
+
+.dark-mode h1, .dark-mode p{
+  color: white;
+} 
+
+.dark-mode .song {
+  color:white;
+  background-color: rgb(78, 78, 78);
+}
+
+.container{
+  max-width: 960px;
+  margin-right: auto;
+  margin-left: auto;
+  padding-right: 15px;
+  padding-left: 15px;
+  min-height: 100vh;
+}
+
+.dropdown{
+  margin-bottom: 1rem;
+  background-color: rgb(233, 233, 233);
+  border-radius: 10px;
+  padding: 7px;
+  cursor: pointer;
+}
+
+.song-list{
+  display: grid;
+  grid-gap: 1rem;
+  /* grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); */
+}
+
+.song {
+  background-color: rgb(220, 220, 220);
+  border-radius: 10px;
+  padding: 1rem;
+  min-height: 70px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; 
+}
+
+.song-footer {
+  display: flex;
+  flex-direction: column;
+  align-items: right;
+  justify-content: space-between;
+}
+
+.song-header {
+  display: flex;
+  flex-direction: row;
+  align-items: right;
+  justify-content: space-between;
+}
+
+.search {
+  display: flex;
+  align-items: center;
+  background-color: rgb(233, 233, 233);
+  border-radius: 10px;
+  padding: 5px;
+  margin-bottom: 1.5em;
+}
+
+.button-mode {
+  background-color: rgb(233, 233, 233);
+  border-radius: 10px;
+  padding: 10px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+}
+
+.button-mode:hover {
+  background-color: rgb(180, 180, 180);
+}
+
+.search-input {
+  border: none;
+  background-color: rgb(233, 233, 233);
+  width: 100%; 
+}
+
+.search-input:focus{
+  outline: none;
+}
