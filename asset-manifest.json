@@ -1,15 +1,13 @@
 {
   "files": {
-    "main.css": "/AnDDoanf.github.io/App-Worship-songs-collection/static/css/main.d4da3c04.css",
-    "main.js": "/AnDDoanf.github.io/App-Worship-songs-collection/static/js/main.727a4b16.js",
-    "static/js/453.08711460.chunk.js": "/AnDDoanf.github.io/App-Worship-songs-collection/static/js/453.08711460.chunk.js",
-    "index.html": "/AnDDoanf.github.io/App-Worship-songs-collection/index.html",
-    "main.d4da3c04.css.map": "/AnDDoanf.github.io/App-Worship-songs-collection/static/css/main.d4da3c04.css.map",
-    "main.727a4b16.js.map": "/AnDDoanf.github.io/App-Worship-songs-collection/static/js/main.727a4b16.js.map",
-    "453.08711460.chunk.js.map": "/AnDDoanf.github.io/App-Worship-songs-collection/static/js/453.08711460.chunk.js.map"
+    "main.css": "/App-Worship-songs-collection/static/css/main.d4da3c04.css",
+    "main.js": "/App-Worship-songs-collection/static/js/main.b5ccf72e.js",
+    "index.html": "/App-Worship-songs-collection/index.html",
+    "main.d4da3c04.css.map": "/App-Worship-songs-collection/static/css/main.d4da3c04.css.map",
+    "main.b5ccf72e.js.map": "/App-Worship-songs-collection/static/js/main.b5ccf72e.js.map"
   },
   "entrypoints": [
     "static/css/main.d4da3c04.css",
-    "static/js/main.727a4b16.js"
+    "static/js/main.b5ccf72e.js"
   ]
 }
