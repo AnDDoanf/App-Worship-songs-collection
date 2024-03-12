@@ -577,7 +577,7 @@
         "songName": "Jesus ban ánh sáng và tình yêu",
         "category": "Ngợi khen cảm tạ",
         "id": "83",
-        "tone": "Dm7",
+        "tone": "Dm",
         "timeSignature": "4/4"
     },
     {
@@ -4644,7 +4644,7 @@
         "songName": "Lòng sướng vui chúc tán",
         "category": "Ngợi khen cảm tạ",
         "id": 20,
-        "tone": "A ",
+        "tone": "A",
         "timeSignature": "4/4"
     },
     {
@@ -4658,7 +4658,7 @@
         "songName": "Vượt trên tất cả",
         "category": "Thánh lễ Thương Khó - Phục Sinh",
         "id": 22,
-        "tone": "D/E",
+        "tone": "D",
         "timeSignature": "4/4"
     },
     {
@@ -4791,7 +4791,7 @@
         "songName": "Bởi ân điển Ngài",
         "category": "Ngợi khen cảm tạ",
         "id": 41,
-        "tone": "C/D",
+        "tone": "C",
         "timeSignature": "4/4"
     },
     {
@@ -4833,7 +4833,7 @@
         "songName": "Trong nơi Chí Thánh",
         "category": "Ngợi khen thờ phượng: Tôn cao Chúa",
         "id": 47,
-        "tone": "F/G",
+        "tone": "G",
         "timeSignature": "4/4"
     },
     {

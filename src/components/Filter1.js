@@ -1,5 +1,5 @@
 import React from 'react';
-import { useState, useEffect } from 'react';
+import { useState } from 'react';
 
 const Filter1 = ({ handleFilter1 }) => {
     const optionsFilter1 = [
@@ -19,10 +19,11 @@ const Filter1 = ({ handleFilter1 }) => {
                     "Thánh lễ Tiệc Thánh",
                     "Thánh ca cho Tang lễ",
                     "Đơn ca trải lòng"];
+    
     const [myValue, setMyValue] = useState('');
 
     return (
-        <div>
+        <div className='filter-column1'>
           <p>Lọc theo chủ đề:</p>
           <select className='dropdown' onChange={(e) => handleFilter1(e.target.value)} defaultValue={myValue}>
             <option value=''>Tất cả</option>

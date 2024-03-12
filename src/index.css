@@ -26,7 +26,7 @@ code {
   color: white;
 } 
 
-.dark-mode .song {
+.dark-mode .song, .dark-mode .button-mode{
   color:white;
   background-color: rgb(78, 78, 78);
 }
@@ -40,11 +40,37 @@ code {
   min-height: 100vh;
 }
 
+
+.filter-column1 {
+  float: left;
+  width: 40%;
+}
+
+.filter-column2 {
+  float: left;
+  width: 30%;
+}
+
+.filter-column1 p, .filter-column2 p {
+  margin-top: 0;
+  margin-bottom: 5px;
+}
+
+.filter-row {
+  display: flex;
+}
+
+.filter-row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
 .dropdown{
   margin-bottom: 1rem;
   background-color: rgb(233, 233, 233);
   border-radius: 10px;
-  padding: 7px;
+  padding: 5px;
   cursor: pointer;
 }
 
@@ -58,7 +84,7 @@ code {
   background-color: rgb(220, 220, 220);
   border-radius: 10px;
   padding: 1rem;
-  min-height: 70px;
+  min-height: 60px;
   display: flex;
   flex-direction: column;
   justify-content: space-between; 
@@ -107,4 +133,31 @@ code {
 
 .search-input:focus{
   outline: none;
+}
+
+@media only screen and (max-width: 800px) {
+  .header h1 {
+    font-size: 175%;
+  }
+
+  .filter-row{
+    display: flex;
+    flex-direction: column;
+  }
+  .search {
+    margin-bottom: 1em;
+  }
+
+  .filter-column1, .filter-column2 {
+    width: 100vw;
+  }
+}
+
+@media only screen and (max-width: 560px) {
+  .song-header {
+    display: flex;
+    flex-direction: column;
+    align-items: right;
+    justify-content: space-between;
+  }
 }

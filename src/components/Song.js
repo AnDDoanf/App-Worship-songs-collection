@@ -8,8 +8,8 @@ const Song = ({songName, category, id, tone, timeSignature}) => {
                 <small>{category}</small>
             </div>
             <div className='song-footer'>
-                <small>Tone: {tone}</small>
-                <small>Nhịp: {timeSignature}</small>
+                <small>Tone {tone}</small>
+                <small>Nhịp {timeSignature}</small>
                 {/* <MdDeleteForever className='delete-icon' size='1.3em'/> */}
             </div>
         </div>
