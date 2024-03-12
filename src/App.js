@@ -7,7 +7,6 @@ import Filter1 from "./components/Filter1";
 import Filter2 from "./components/Filter2";
 import Filter3 from "./components/Filter3";
 
-
 function App() {
   const [songs, setSongs] = useState(data)
   const [searchText, setSearchText] = useState('')

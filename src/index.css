@@ -104,6 +104,10 @@ code {
   justify-content: space-between;
 }
 
+.song-header b:hover{
+  cursor: pointer;
+}
+
 .search {
   display: flex;
   align-items: center;
@@ -119,6 +123,11 @@ code {
   padding: 10px;
   transition-duration: 0.4s;
   cursor: pointer;
+}
+
+.image-box {
+  width: 700px;
+  height: auto;
 }
 
 .button-mode:hover {
@@ -153,6 +162,41 @@ code {
   }
 }
 
+.popup {
+  position:fixed;
+  width: 100vw;
+  top: 0;
+  left: 0;
+  display: flex;
+  overflow-y: auto;
+}
+
+.image-box {
+  overflow-y: auto;
+  position: relative;
+  margin:auto;
+  height: max-content;
+}
+
+.popup-inner {
+  max-height: 100vh;
+  position: fixed;
+  width: 60%;
+  display:contents;
+  min-width: 700px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.popup-inner .close-popup {
+  position: relative;
+  margin-top: 10px;
+  width: 100px;
+  height: 40px;
+  top:5%;
+  right: 35%;
+}
+
 @media only screen and (max-width: 560px) {
   .song-header {
     display: flex;
@@ -161,3 +205,4 @@ code {
     justify-content: space-between;
   }
 }
+
