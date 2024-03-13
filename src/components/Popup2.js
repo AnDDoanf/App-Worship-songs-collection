@@ -2,7 +2,7 @@ import React from 'react'
 import { FiXCircle } from "react-icons/fi";
 
 function PrintLine(props) {
-    return <p>{ props.text.replace('\'', "").replace('\'', "") }</p>;
+    return <p style={{color:"black"}}>{ props.text.replace('\'', "").replace('\'', "") }</p>;
 }
 
 function Popup2(props) {
