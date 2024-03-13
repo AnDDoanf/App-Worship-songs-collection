@@ -144,6 +144,47 @@ code {
   outline: none;
 }
 
+.popup {
+  position:fixed;
+  overflow: scroll;
+  width: 100vw;
+  top: 0;
+  height: 100%;
+  left: 0;
+}
+
+.image-box {
+  position:relative;
+  margin:auto;
+  width: 100%;
+  height:fit-content;
+}
+
+.popup-inner {
+  position: relative;
+  top: 0;
+  margin: auto;
+  left: auto;
+  right: auto;
+  width: 50%;
+  flex-direction: column;
+  align-content: center;
+}
+
+.popup-inner .close-popup {
+  position: fixed;
+  margin-top: 10px;
+  width: 100px;
+  height: 40px;
+  top:0;
+  right: 26%;
+}
+
+.popup-inner .close-popup:hover{
+  opacity: 0.7;
+  cursor: pointer;
+}
+
 @media only screen and (max-width: 800px) {
   .header h1 {
     font-size: 175%;
@@ -160,42 +201,16 @@ code {
   .filter-column1, .filter-column2 {
     width: 100vw;
   }
+
+  .popup-inner {
+    width: 65%;
+  }
+  
+  .popup-inner .close-popup {
+    right: 20%;
+  }
 }
 
-.popup {
-  position:fixed;
-  width: 100vw;
-  top: 0;
-  left: 0;
-  display: flex;
-  overflow-y: auto;
-}
-
-.image-box {
-  overflow-y: auto;
-  position: relative;
-  margin:auto;
-  height: max-content;
-}
-
-.popup-inner {
-  max-height: 100vh;
-  position: fixed;
-  width: 60%;
-  display:contents;
-  min-width: 700px;
-  margin-right: auto;
-  margin-left: auto;
-}
-
-.popup-inner .close-popup {
-  position: relative;
-  margin-top: 10px;
-  width: 100px;
-  height: 40px;
-  top:5%;
-  right: 35%;
-}
 
 @media only screen and (max-width: 560px) {
   .song-header {
@@ -203,6 +218,13 @@ code {
     flex-direction: column;
     align-items: right;
     justify-content: space-between;
+  }
+
+  .popup-inner {
+    width: 100%;
+  }
+  .popup-inner .close-popup {
+    right: 10px;
   }
 }
 
