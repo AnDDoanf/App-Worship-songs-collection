@@ -118,6 +118,7 @@ code {
 .song-footer-col3 {
   /* width: 50%; */
   align-items: right;
+  z-index: 1;
 }
 
 
