@@ -2,9 +2,13 @@ import React from 'react';
 import { useState } from 'react';
 
 const Filter2 = ({ handleFilter2 }) => {
-    const optionsFilter2 = ['C',
-        'G', 'A', 'D', 'Am', 'F', 'Em', 'E', 'Dm', 'Gm','Fm', 'Bb',
-        'C#m', 'Bm', 'F#m', 'Dm', 'Eb', 'Cm', 'Ab'];
+    const optionsFilter2 = ['C', 'C#', 'Cm', 'C#m',
+                            'D', 'D#', 'Dm', 'D#m',
+                            'E', 'Em',
+                            'F', 'F#', 'Fm', 'F#m',
+                            'G', 'Gm', 'G#m',
+                            'Ab', 'A', 'Am', 'A#m',
+                            'Bb', 'B', 'Bm'];
     
     const [myValue, setMyValue] = useState('');
 

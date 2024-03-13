@@ -2,10 +2,10 @@ import { useState } from "react";
 import SongList from "./components/SongList";
 import Search from "./components/Search";
 import Header from "./components/Header";
-import data from "./data/hosanna-data.json";
 import Filter1 from "./components/Filter1";
 import Filter2 from "./components/Filter2";
 import Filter3 from "./components/Filter3";
+import data from "./data/song-data.json"
 
 function App() {
   const [songs, setSongs] = useState(data)

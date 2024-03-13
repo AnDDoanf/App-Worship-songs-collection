@@ -1,12 +1,12 @@
 import React from 'react'
+import { FiXCircle } from "react-icons/fi";
 
 function Popup(props) {
   return (props.trigger) ? (
     <div className='popup'>
-      <div className='popup-inner'>
-        {/* {props.children} */}
+      <div className='popup-sheet'>
         <img className='image-box' src={require('../data/page0.jpg')} />
-        <button className='close-popup' onClick={() => props.setTrigger(false)}>Close</button>
+        <FiXCircle className='close-popup' onClick={() => props.setTrigger(false)}/>
       </div>
     </div>
   ) : ""
