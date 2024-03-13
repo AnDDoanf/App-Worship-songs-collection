@@ -320,5 +320,10 @@ code {
   .popup-lyric .close-popup{
     opacity: 0.4;
   }
+  
+  .image-box {
+    width: 100%;
+    height: auto;
+  }
 }
 
