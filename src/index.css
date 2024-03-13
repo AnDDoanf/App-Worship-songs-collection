@@ -95,12 +95,11 @@ code {
 .song-footer {
   display: flex;
   flex-direction: row;
-  align-items: right;
   justify-content: space-between;
 }
 
 .song-footer-col1 {
-  width: 90%;
+  width: 45%;
   margin-bottom: 1rem;
   display: flex;
   flex-direction: column;
@@ -109,14 +108,15 @@ code {
 }
 
 .song-footer-col2 {
-  width: 20%;
+  width: 12.5%;
   display: flex;
   justify-content: space-between;
   margin-right: 10px;
+  float: left;
 }
 
 .song-footer-col3 {
-  width: 50%;
+  /* width: 50%; */
   align-items: right;
 }
 
@@ -177,6 +177,7 @@ code {
   top: 0;
   height: 100%;
   left: 0;
+  z-index: 10;
 }
 
 .popup-sheet {
@@ -206,7 +207,7 @@ code {
   margin-top: 2rem;
   left: auto;
   right: auto;
-  width: 40%;
+  width: 60%;
   flex-direction: column;
   align-content: center;
   background-color: white;
@@ -220,9 +221,13 @@ code {
   width: 60px;
   height: auto;
   top:7%;
-  right: 27%;
+  right: 25.2%;
   border-radius: 50%;
   color: rgb(78, 78, 78)
+}
+
+.popup-lyric .close-popup {
+  right: 16%;
 }
 
 .popup-sheet .close-popup:hover, .popup-lyric .close-popup:hover{
@@ -251,19 +256,30 @@ code {
     width: 100vw;
   }
 
-  .popup-sheet {
+  .popup-sheet, .popup-lyric {
     width: 65%;
   }
-  
-  .popup-sheet .close-popup {
-    right: 20%;
+
+  .popup-sheet .close-popup{
+    right: 18%;
     width: 55px;
+    height: auto;
+  }
+
+  .popup-lyric .close-popup {
+    right: 14%;
+    width: 50px;
     height: auto;
   }
 }
 
 
 @media only screen and (max-width: 560px) {
+
+  .song {
+    min-height: 100px;
+  }
+
   .song-header {
     display: flex;
     flex-direction: column;
@@ -271,17 +287,37 @@ code {
     justify-content: space-between;
   }
 
+  .song-footer {
+    display: flex;
+    flex-direction: column;
+  }
+
   .song-footer-col2 {
-    width: 50%;
+    width: 35%;
+    margin-bottom: 10px;
+  }
+
+  .song-footer-col3 {
+    margin-bottom: 10px;
   }
 
   .popup-sheet {
     width: 100%;
   }
-  .popup-sheet .close-popup {
-    right: 10px;
-    width: 50px;
+
+  .popup-lyric {
+    padding-left: 10px;
+    width: 100%;
+  }
+
+  .popup-sheet .close-popup, .popup-lyric .close-popup {
+    right: 5px;
+    width: 40px;
     height: auto;
+  }
+
+  .popup-lyric .close-popup{
+    opacity: 0.4;
   }
 }
 

@@ -1,4 +1,3 @@
-import { MdDeleteForever} from 'react-icons/md'
 import Popup from "./Popup.js";
 import Popup2 from './Popup2.js';
 import { useState } from 'react';
@@ -20,14 +19,13 @@ const Song = (props) => {
                 <div className='song-footer-col2'>
                     <button className='button-mode' onClick={() => setButtonPopup(true)}>Sheet</button>
                     <button className='button-mode' onClick={() => setButtonPopup2(true)}>Lyric</button>
-                    {/* <button className='button-mode'>Chords</button> */}
                 </div>
                 <div className='song-footer-col3'>
                     <AudioPlayer audio={props.audio}/>
                 </div>
             </div>
-        <Popup data={props.songName} trigger={buttonPopup} setTrigger={setButtonPopup}></Popup>
-        <Popup2 lyric={props.lyric} trigger={buttonPopup2} setTrigger={setButtonPopup2}></Popup2>
+            <Popup image={props.image} trigger={buttonPopup} setTrigger={setButtonPopup}></Popup>
+            <Popup2 lyric={props.lyric} trigger={buttonPopup2} setTrigger={setButtonPopup2}></Popup2>
         </div>
     )
 }
