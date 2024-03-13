@@ -1,14 +1,14 @@
 {
   "files": {
-    "main.css": "/App-Worship-songs-collection/static/css/main.8f45c210.css",
+    "main.css": "/App-Worship-songs-collection/static/css/main.1512a099.css",
     "main.js": "/App-Worship-songs-collection/static/js/main.41102a0e.js",
     "static/media/page0.jpg": "/App-Worship-songs-collection/static/media/page0.8aa4a3b41e09418d4a8d.jpg",
     "index.html": "/App-Worship-songs-collection/index.html",
-    "main.8f45c210.css.map": "/App-Worship-songs-collection/static/css/main.8f45c210.css.map",
+    "main.1512a099.css.map": "/App-Worship-songs-collection/static/css/main.1512a099.css.map",
     "main.41102a0e.js.map": "/App-Worship-songs-collection/static/js/main.41102a0e.js.map"
   },
   "entrypoints": [
-    "static/css/main.8f45c210.css",
+    "static/css/main.1512a099.css",
     "static/js/main.41102a0e.js"
   ]
 }
