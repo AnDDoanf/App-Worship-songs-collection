@@ -1,4 +1,3 @@
-import React, { useState } from 'react'
 import { FiXCircle } from "react-icons/fi";
 
 function PrintLine(props) {

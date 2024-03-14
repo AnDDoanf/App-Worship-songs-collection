@@ -26,6 +26,10 @@ code {
   color: white;
 } 
 
+.dark-mode .popup-lyric{
+  color: black;
+}
+
 .dark-mode .song, .dark-mode .button-mode{
   color:white;
   background-color: rgb(78, 78, 78);
@@ -85,6 +89,9 @@ code {
   content: "";
   display: table;
   clear: both;
+}
+.popup-sheet .popup-lyric {
+  width: 100%;
 }
 
 .dropdown{
@@ -308,6 +315,10 @@ code {
     right: 18%;
     width: 55px;
     height: auto;
+  }
+
+  .popup-sheet .popup-lyric {
+    margin-top:-20px;
   }
 
   .popup-lyric .close-popup {

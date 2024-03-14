@@ -4,9 +4,9 @@ import Search from "./Search";
 import Filter1 from "./Filter1";
 import Filter2 from "./Filter2";
 import Filter3 from "./Filter3";
-import data from "../data/song-data.json"
+import data from "../data/song3-data.json"
 
-const TVCHHComponent = () => {
+function BaihattudoComponent() {
   const [songs, setSongs] = useState(data)
   const [searchText, setSearchText] = useState('')
   const [filter1, setFilter1] = useState('')
@@ -30,4 +30,4 @@ const TVCHHComponent = () => {
   );
 }
 
-export default TVCHHComponent;
+export default BaihattudoComponent
