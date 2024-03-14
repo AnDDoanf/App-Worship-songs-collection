@@ -20,7 +20,8 @@ const TVCHHComponent = () => {
           <Filter2 handleFilter2={setFilter2}/>
           <Filter3 handleFilter3={setFilter3}/>
         </div>
-        <SongList songs={songs.filter((song)=>song.songName.toLocaleLowerCase().includes(searchText.toLocaleLowerCase()) 
+        <SongList songs={songs.filter((song)=>song.songName.toLocaleLowerCase().includes(searchText.toLocaleLowerCase())
+          || song.lyric.toLocaleLowerCase().includes(searchText.toLocaleLowerCase())
           && song.category.toLocaleLowerCase().includes(filter1.toLocaleLowerCase()) 
           && song.tone.toLocaleLowerCase().includes(filter2.toLocaleLowerCase())
           && song.timeSignature.toLocaleLowerCase().includes(filter3.toLocaleLowerCase()))}/>

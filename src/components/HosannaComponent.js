@@ -5,7 +5,7 @@ import Search from "./Search";
 import Filter1 from "./Filter1";
 import Filter2 from "./Filter2";
 import Filter3 from "./Filter3";
-import data from "../data/song-data.json"
+import data from "../data/song2-data.json"
 
 function HosannaComponent() {
     const [songs, setSongs] = useState(data)
