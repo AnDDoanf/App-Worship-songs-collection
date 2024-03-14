@@ -280,7 +280,7 @@ code {
   }
 
   .song-footer-col2 {
-    width: 30%;
+    width: 20%;
   }
 
   .filter-row{
@@ -329,11 +329,16 @@ code {
   .song-footer {
     display: flex;
     flex-direction: column;
+    align-items: center;
   }
 
   .song-footer-col2 {
-    width: 35%;
+    width: 90%;
     margin-bottom: 10px;
+  }
+
+  .song-footer-col2 .button-mode {
+    width: 140px;
   }
 
   .song-footer-col3 {
