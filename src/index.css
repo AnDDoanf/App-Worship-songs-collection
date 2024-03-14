@@ -40,6 +40,27 @@ code {
   min-height: 100vh;
 }
 
+.collection-menu {
+  display: flex	;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.menu-item {
+  width: 30%;
+  text-align: center;
+  padding: 10px;
+  margin-bottom: 20px;
+  background-color: rgb(233, 233, 233);
+  border: 2px solid rgb(220, 220, 220);
+  border-radius: 5px;
+}
+
+.menu-item:hover {
+  background-color: rgb(180, 180, 180);
+  cursor: pointer;
+}
 
 .filter-column1 {
   float: left;
@@ -239,6 +260,23 @@ code {
 @media only screen and (max-width: 850px) {
   .header h1 {
     font-size: 175%;
+  }
+
+  .collection-menu {
+    display: flex	;
+    flex-direction: column;
+    align-items: center;
+    padding: auto;
+    width: 96%;
+    margin: auto;
+  }
+
+  .menu-item {
+    width: 100%;
+    text-align: center;
+    height: 15px;
+    background-color: rgb(233, 233, 233);
+    margin-bottom: 5px;
   }
 
   .song-footer-col2 {
