@@ -299,7 +299,6 @@ code {
   .song-footer-col2 {
     width: 20%;
   }
-
   .filter-row{
     display: flex;
     flex-direction: column;
@@ -359,6 +358,13 @@ code {
   .song-footer-col1 {
     width: 100vw;
     text-align: left;
+  }
+
+  .song-footer-col2 {
+    margin-left: -2rem;
+  }
+  .song-footer-col3 {
+    margin-left: -2rem;
   }
 
   .song-header {
