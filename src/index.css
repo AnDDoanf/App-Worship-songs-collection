@@ -336,6 +336,11 @@ code {
     padding: 0;
   }
 
+  .collection-menu {
+    width: 100%;
+    margin: 0px
+  }
+
   .song {
     width:max-content;
     min-height: 100px;
