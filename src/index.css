@@ -313,7 +313,7 @@ code {
 
   .popup-sheet .close-popup{
     right: 18%;
-    top: 13%;
+    top: 18%;
     width: 55px;
     height: auto;
   }
@@ -332,8 +332,14 @@ code {
 
 @media only screen and (max-width: 560px) {
 
+  .container {
+    padding: 0;
+  }
+
   .song {
+    width:max-content;
     min-height: 100px;
+    margin: 0px;
   }
 
   .song-footer-col1 {
