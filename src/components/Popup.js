@@ -14,10 +14,10 @@ function Popup(props) {
       <div className='popup-lyric'>No Sheet available</div>
     ) : (hasComma ? (
           splitString.map((image, index) => (
-            <img className='image-box' key={index} src={gallery[image]} alt="Image" />
+            <img loading='lazy' className='image-box' key={index} src={gallery[image]} alt="Image" />
           ))
           ) : (
-          <img className='image-box' src={gallery[props.image]} alt="Image" />
+          <img loading='lazy' className='image-box' src={gallery[props.image]} alt="Image" />
     ))
   }
 
