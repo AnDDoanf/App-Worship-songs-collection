@@ -313,6 +313,7 @@ code {
 
   .popup-sheet .close-popup{
     right: 18%;
+    top: 13%;
     width: 55px;
     height: auto;
   }
