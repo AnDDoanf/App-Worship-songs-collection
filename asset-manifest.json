@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/App-Worship-songs-collection/static/css/main.a7e1e551.css",
+    "main.css": "/App-Worship-songs-collection/static/css/main.023f0b6b.css",
     "main.js": "/App-Worship-songs-collection/static/js/main.6a68b17d.js",
     "static/media/H137_page0.jpg": "/App-Worship-songs-collection/static/media/H137_page0.f5dcca36f203df983aae.jpg",
     "static/media/H162_page0.jpg": "/App-Worship-songs-collection/static/media/H162_page0.978b01efde0d9684385b.jpg",
@@ -808,11 +808,11 @@
     "static/media/T175_page1.jpg": "/App-Worship-songs-collection/static/media/T175_page1.15d7e8fb775e1523128f.jpg",
     "static/media/T111_page1.jpg": "/App-Worship-songs-collection/static/media/T111_page1.19edad9631c37867daaa.jpg",
     "index.html": "/App-Worship-songs-collection/index.html",
-    "main.a7e1e551.css.map": "/App-Worship-songs-collection/static/css/main.a7e1e551.css.map",
+    "main.023f0b6b.css.map": "/App-Worship-songs-collection/static/css/main.023f0b6b.css.map",
     "main.6a68b17d.js.map": "/App-Worship-songs-collection/static/js/main.6a68b17d.js.map"
   },
   "entrypoints": [
-    "static/css/main.a7e1e551.css",
+    "static/css/main.023f0b6b.css",
     "static/js/main.6a68b17d.js"
   ]
 }
