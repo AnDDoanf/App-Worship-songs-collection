@@ -21,6 +21,7 @@ function BaihattudoComponent() {
           <Filter3 handleFilter3={setFilter3}/>
         </div>
         <SongList songs={songs.filter((song)=>(song.songName.toLocaleLowerCase().includes(searchText.toLocaleLowerCase()) 
+          || song.id.toLocaleLowerCase().includes(searchText.toLocaleLowerCase())
           || song.lyric.toLocaleLowerCase().includes(searchText.toLocaleLowerCase()))
           && song.category.toLocaleLowerCase().includes(filter1.toLocaleLowerCase()) 
           && song.tone.toLocaleLowerCase().includes(filter2.toLocaleLowerCase())
