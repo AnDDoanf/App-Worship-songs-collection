@@ -4,7 +4,7 @@ import HosannaComponent from './components/HosannaComponent';
 import BaihattudoComponent from './components/BaihattudoComponent';
 import ThanhcaxanhComponent from './components/ThanhcaxanhComponent';
 import Header from './components/Header';
-
+import ScrollToTop from './components/ScrollToTop';
 function App() {
   const [mode, setMode] = useState(false)
   const [showTVCHHComponent, setShowTVCHHComponent] = useState(true);
@@ -29,6 +29,7 @@ function App() {
         {showTVCHHComponent && <TVCHHComponent />}
         {showHosannaComponent && <HosannaComponent />}
         {showBaihattudoComponent && <BaihattudoComponent />}
+        <ScrollToTop/>
       </div>
     </div>
   );
