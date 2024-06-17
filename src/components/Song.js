@@ -8,7 +8,7 @@ const Song = (props) => {
     return(
         <div className='song'>
             <div className='song-header'>
-                <b>{props.songName}</b>
+                <b>{props.id}. {props.songName}</b>
                 <small>{props.category}</small>
             </div>
             <div className='song-footer'>
