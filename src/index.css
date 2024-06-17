@@ -12,6 +12,10 @@ code {
     monospace;
 }
 
+#root {
+  overflow-x: hidden;
+}
+
 .header{
   display: flex;
   align-items: center;
@@ -104,6 +108,7 @@ code {
 }
 
 .song-list{
+  width:100%;
   display: grid;
   grid-gap: 1rem;
   /* grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); */
@@ -333,6 +338,8 @@ code {
 @media only screen and (max-width: 560px) {
 
   .container {
+    width: 100%;
+    max-width: 100%;
     padding: 0;
   }
 
