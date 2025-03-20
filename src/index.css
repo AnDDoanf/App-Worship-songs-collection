@@ -190,6 +190,10 @@ code {
   background-color: rgb(180, 180, 180);
 }
 
+input[type="text"] {
+  font-size: inherit;
+}
+
 .search-input {
   border: none;
   background-color: rgb(233, 233, 233);
