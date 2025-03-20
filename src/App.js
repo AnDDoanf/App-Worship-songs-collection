@@ -21,6 +21,7 @@ function App() {
     <div className={`${mode && 'dark-mode'}`}>
       <div className="container">
         <Header handleMode={setMode} />
+        <p className="fontSize:10px">1.001</p>
         <div className='collection-menu'>
           <div className='menu-item' onClick={() => handleToggleComponent(1)}>Tôn vinh Chúa Hằng Hữu</div>
           <div className='menu-item' onClick={() => handleToggleComponent(2)}>Hosanna Việt Nam</div>
