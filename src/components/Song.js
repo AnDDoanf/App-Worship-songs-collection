@@ -17,8 +17,8 @@ const Song = (props) => {
                     <small>Nhịp {props.timeSignature}</small>
                 </div>
                 <div className='song-footer-col2'>
-                    <button className='button-mode' onClick={() => setButtonPopup(true)}>Sheet</button>
-                    <button className='button-mode' onClick={() => setButtonPopup2(true)}>Lyric</button>
+                    <button className='button-mode song-button' onClick={() => setButtonPopup(true)}>Sheet</button>
+                    <button className='button-mode song-button' onClick={() => setButtonPopup2(true)}>Lyric</button>
                 </div>
                 <div className='song-footer-col3'>
                     <AudioPlayer audio={props.audio}/>

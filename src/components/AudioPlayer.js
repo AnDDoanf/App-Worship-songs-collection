@@ -13,7 +13,7 @@ function AudioPlayer(props) {
 
   return (
     <div>
-      {!audioLoaded && <button className='button-mode' style={{width:'280px'}} onClick={togglePlay}>Audio</button>}
+      {!audioLoaded && <button className='button-mode audio-button' onClick={togglePlay}>Audio</button>}
       {audioLoaded && (
         <div>
           <audio src={props.audio} controls={true} autoPlay={false} />

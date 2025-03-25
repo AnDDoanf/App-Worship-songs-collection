@@ -17,7 +17,7 @@ function App() {
     <div className={`${mode && 'dark-mode'}`}>
       <div className="container">
         <Header handleMode={setMode} />
-        <p className="fontSize:10px">1.0012</p>
+        <p className="fontSize:10px">1.0013</p>
         <div className="collection-menu">
           <div 
             className={`menu-item ${activeComponent === 1 ? 'active' : ''}`} 
