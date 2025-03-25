@@ -1,0 +1,77 @@
+.chord-tool-container {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    font-family: Arial, sans-serif;
+}
+
+.lyrics-input {
+    width: 100%;
+    height: 100px;
+    padding: 10px;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.process-button,
+.export-button {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.process-button:hover,
+.export-button:hover {
+    background-color: #0056b3;
+}
+
+.lyrics-display {
+    margin-top: 20px;
+    padding: 10px;
+    background: white;
+    /* border-radius: 5px;
+    border: 1px solid #ddd; */
+}
+
+.line-container {
+    margin-bottom: 15px;
+}
+
+.word-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.word-group {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.chord-input {
+    width: 30px;
+    padding: 5px;
+    border: 0px solid #aaa;
+    border-bottom: 2px solid #aaa;
+    text-align: center;
+    font-size: 14px;
+}
+
+.word-text {
+    font-size: 16px;
+    font-weight: bold;
+    margin-top: 5px;
+}

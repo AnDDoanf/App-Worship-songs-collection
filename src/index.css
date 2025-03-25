@@ -63,11 +63,20 @@ code {
   background-color: rgb(233, 233, 233);
   border: 2px solid rgb(220, 220, 220);
   border-radius: 5px;
+  transition: all 0.3s ease;
 }
 
 .menu-item:hover {
   background-color: rgb(180, 180, 180);
   cursor: pointer;
+}
+
+.menu-item.active {
+  color: white;
+  background-color: rgb(78, 78, 78);
+  box-shadow: 0px 0px 10px 2px white;
+  font-weight: bold;
+  border-radius: 5px;
 }
 
 .filter-column1 {

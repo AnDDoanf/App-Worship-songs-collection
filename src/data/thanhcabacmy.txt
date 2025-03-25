@@ -1,510 +1,510 @@
-href="/index.php?title=Nguy%E1%BB%87n_T%E1%BB%A5ng_M%E1%BB%B9_Ch%C3%BAa_Linh_N%C4%83ng" title="Nguyện Tụng Mỹ Chúa Linh Năng"> Tụng Mỹ Chúa Linh Năng</a></li>
-href="/index.php?title=K%C3%ADnh_Th%C3%A1nh_V%C6%B0%C6%A1ng_K%C3%ADp_Ng%E1%BB%B1_Lai" title="Kính Thánh Vương Kíp Ngự Lai"> Thánh Vương Ngự Lai</a></li>
-href="/index.php?title=T%C3%B4n_Vinh_Ch%C3%A2n_Th%E1%BA%A7n" title="Tôn Vinh Chân Thần">Tôn Vinh Chân Thần</a></li>
-href="/index.php?title=Ha-l%C3%AA-lu-gia!_Vinh_Danh_Ng%C3%A0i!" title="Ha-lê-lu-gia! Vinh Danh Ngài!"> Vinh Danh Ngài</a></li>
-href="/index.php?title=Ph%C6%B0%E1%BB%9Bc_Nguy%C3%AAn_T%E1%BB%AB_Tr%E1%BB%9Di" title="Phước Nguyên Từ Trời"> Nguồn Ơn Phước</a></li>
-href="/index.php?title=Th%C3%A1nh_Thay!_Th%C3%A1nh_Thay!_Th%C3%A1nh_Thay!" title="Thánh Thay! Thánh Thay! Thánh Thay!"> Thánh Thay, Thánh Thay, Thánh Thay</a></li>
-href="/index.php?title=H%E1%BB%93n_Ta_H%E1%BA%B1ng_Khen_Ch%C3%BAa" title="Hồn Ta Hằng Khen Chúa"> Tâm Hồn Ca Ngợi</a></li>
-href="/index.php?title=T%C3%B4n_Vinh_Ba_Ng%C3%B4i_%C4%90%E1%BB%A9c_Ch%C3%BAa_Tr%E1%BB%9Di" title="Tôn Vinh Ba Ngôi Đức Chúa Trời"> Tôn Vinh Ba Ngôi</a></li>
-href="/index.php?title=Kh%C3%A1_Ng%E1%BB%A3i_Khen_Ch%C3%BAa" title="Khá Ngợi Khen Chúa"> Ngợi Tôn Chúa</a></li>
-href="/index.php?title=Vinh_Quang_Thu%E1%BB%99c_V%E1%BB%81_%C4%90%E1%BB%A9c_Ch%C3%BAa_Tr%E1%BB%9Di" title="Vinh Quang Thuộc Về Đức Chúa Trời"> Vinh Quang Thuộc Chúa</a></li>
-href="/index.php?title=Ch%C3%BAa_K%E1%BB%B3_Di%E1%BB%87u" title="Chúa Kỳ Diệu">Chúa Kỳ Diệu</a></li>
-href="/index.php?title=To%C3%A0n_Th%E1%BA%BF_Gi%E1%BB%9Bi_Ca_Ng%E1%BB%A3i" title="Toàn Thế Giới Ca Ngợi">Toàn Thế Giới Ca Ngợi</a></li>
-href="/index.php?title=Ng%E1%BB%A3i_Gi%C3%AA-h%C3%B4-va_Th%C3%A1nh_%C4%90%E1%BA%BF" title="Ngợi Giê-hô-va Thánh Đế"> Tụng Ngợi Thánh Đế</a></li>
-href="/index.php?title=Ch%C3%BAa_V%E1%BB%91n_B%E1%BB%A9c_Th%C3%A0nh_Ki%C3%AAn_C%E1%BB%91" title="Chúa Vốn Bức Thành Kiên Cố"> Bức Thành Kiên Cố</a></li>
-href="/index.php?title=Ch%C3%BAc_T%C3%B4n_Vua_Thi%C3%AAn_Cung" title="Chúc Tôn Vua Thiên Cung">Chúc Tôn Vua Thiên Cung</a></li>
-href="/index.php?title=S%E1%BB%B1_Th%C3%A0nh_T%C3%ADn_Ch%C3%BAa_R%E1%BA%A5t_L%E1%BB%9Bn" title="Sự Thành Tín Chúa Rất Lớn"> Thánh Chúa Thành Tín</a></li>
-href="/index.php?title=Ngu%E1%BB%93n_C%E1%BB%A9u_Gi%C3%BAp" title="Nguồn Cứu Giúp">Nguồn Cứu Giúp</a></li>
-href="/index.php?title=Khi_Xem_Mu%C3%B4n_V%E1%BA%ADt_-_How_Great_Thou_Art" title="Khi Xem Muôn Vật - How Great Thou Art"> Thánh Chúa Siêu Việt</a></li>
-href="/index.php?title=L%C3%AAn_%C4%90%E1%BB%81n_Th%C3%A1nh" title="Lên Đền Thánh">Lên Đền Thánh</a></li>
-href="/index.php?title=Ch%C3%BAa" title="Chúa">Chúa</a></li>
-href="/index.php?title=T%C3%B4n_Ng%E1%BB%A3i_%C4%90%E1%BA%A5ng_T%E1%BA%A1o_H%C3%B3a" title="Tôn Ngợi Đấng Tạo Hóa">Tôn Ngợi Đấng Tạo Hóa</a></li>
-href="/index.php?title=T%C3%ACnh_Y%C3%AAu_Ch%C3%BAa" title="Tình Yêu Chúa">Tình Yêu Chúa</a></li>
-href="/index.php?title=Vui_M%E1%BB%ABng_Tung_H%C3%B4_Ch%C3%BAa" title="Vui Mừng Tung Hô Chúa"> Vui Mừng Chúa Là Vua</a></li>
-href="/index.php?title=Vui_M%E1%BB%ABng_Tung_H%C3%B4_Ch%C3%BAa" title="Vui Mừng Tung Hô Chúa"> Vui Mừng Tán Dương</a></li>
-href="/index.php?title=Thi_Thi%C3%AAn_121" title="Thi Thiên 121"> Ngước Mắt Lên Đồi</a></li>
-href="/index.php?title=Ng%E1%BB%A3i_Danh_Gi%C3%AA-xu_R%E1%BA%A5t_Oai_Quy%E1%BB%81n" title="Ngợi Danh Giê-xu Rất Oai Quyền"> Tung Hô Danh Chúa</a></li>
-href="/index.php?title=Ch%C3%BAc_Cho_%C4%90%E1%BA%A5ng_Ng%E1%BB%93i_Tr%C3%AAn_Ng%C3%B4i" title="Chúc Cho Đấng Ngồi Trên Ngôi"> Đấng Ngồi Trên Ngôi</a></li>
-href="/index.php?title=Gi%C3%AA-xu_%C4%90%E1%BA%B9p_Thay" title="Giê-xu Đẹp Thay">Jesus Tuyệt Vời</a></li>
-href="/index.php?title=Hi%E1%BA%BFn_V%C6%B0%C6%A1ng_Mi%E1%BB%87n" title="Hiến Vương Miện">Hiến Vương Miện</a></li>
-href="/index.php?title=V%C3%AC_Sao_T%C3%B4i_Ca_Ng%E1%BB%A3i%3F" title="Vì Sao Tôi Ca Ngợi?">Vì Sao Tôi Ca Ngợi?</a></li>
-href="/index.php?title=Danh_Ch%C3%BAa_Jesus" title="Danh Chúa Jesus">Danh Chúa Jesus</a></li>
-href="/index.php?title=T%C3%B4n_Vinh_Ch%C3%BAa_T%C3%B4i" title="Tôn Vinh Chúa Tôi">Tôn Vinh Chúa Tôi</a></li>
-href="/index.php?title=Ng%E1%BB%A3i_Khen_%C4%90%E1%BA%A5ng_Qu%C3%A2n_L%C3%A2m_Mu%C3%B4n_%C4%90%E1%BB%9Di" title="Ngợi Khen Đấng Quân Lâm Muôn Đời"> Ngợi Ca Danh Oai Nghi</a></li>
-href="/index.php?title=Reo_Vang_H%C3%B4-sa-na" title="Reo Vang Hô-sa-na">Reo Vang Hô-sa-na</a></li>
-href="/index.php?title=M%E1%BB%99t_Ng%C3%A0y" title="Một Ngày">Một Ngày</a></li>
-href="/index.php?title=Ha-l%C3%AA-lu-gia" title="Ha-lê-lu-gia">Ha-lê-lu-gia</a></li>
-href="/index.php?title=Ng%E1%BB%A3i_Danh_Gi%C3%AA-xu" title="Ngợi Danh Giê-xu"> Ngợi Ca Jêsus</a></li>
-href="/index.php?title=C%C3%A1m_%C6%A0n_Ng%C3%A0i" title="Cám Ơn Ngài">Cám Ơn Ngài</a></li>
-href="/index.php?title=%C6%A0n_Gi%C3%AA-xu_Cao_S%C3%A2u_L%E1%BA%AFm_Thay" title="Ơn Giê-xu Cao Sâu Lắm Thay"> Ơn Cao Sâu</a></li>
-href="/index.php?title=C%E1%BA%A7n_J%C3%AAsus_H%C6%A1n" title="Cần Jêsus Hơn">Cần Jêsus Hơn</a></li>
-href="/index.php?title=Ng%C3%A0y_Ng%C3%A0y_Ng%E1%BB%A3i_Danh_Ch%C3%BAa_Hi%E1%BB%83n_Vinh" title="Ngày Ngày Ngợi Danh Chúa Hiển Vinh"> Ca Ngợi Chúa Đêm Ngày</a></li>
-href="/index.php?title=Kh%C3%BAc_H%C3%A1t_T%C3%A2m_Linh" title="Khúc Hát Tâm Linh">Khúc Hát Tâm Linh</a></li>
-href="/index.php?title=Danh_Ng%C3%A0i_L%C3%A0_J%C3%AAsus" title="Danh Ngài Là Jêsus">Danh Ngài Là Jêsus</a></li>
-href="/index.php?title=Ch%C3%BAa_Gi%C3%AA-xu_L%C3%A2m_Ph%C3%A0m" title="Chúa Giê-xu Lâm Phàm"> Chúa Jêsus Lâm Phàm</a></li>
-href="/index.php?title=Ch%C3%BAa_Mu%C3%B4n_Thu" title="Chúa Muôn Thu">Chúa Muôn Thu</a></li>
-href="/index.php?title=Ca_Ng%E1%BB%A3i_V%C3%AC_%C4%90%C6%B0%E1%BB%A3c_C%E1%BB%A9u" title="Ca Ngợi Vì Được Cứu">Ca Ngợi Vì Được Cứu</a></li>
-href="/index.php?title=T%C3%ACnh_Y%C3%AAu_Gi%C3%AA-xu" title="Tình Yêu Giê-xu"> Tình Yêu Jêsus</a></li>
-href="/index.php?title=T%C3%B4i_Kh%C3%B4ng_Th%E1%BB%83_Bi%E1%BA%BFt" title="Tôi Không Thể Biết">Tôi Không Thể Biết</a></li>
-href="/index.php?title=Kh%C3%BAc_Ca_Mang_Danh_J%C3%AAsus" title="Khúc Ca Mang Danh Jêsus">Khúc Ca Mang Danh Jêsus</a></li>
-href="/index.php?title=Ch%C3%BAa_Th%C3%A1nh_Vinh_Quang" title="Chúa Thánh Vinh Quang">Chúa Thánh Vinh Quang</a></li>
-href="/index.php?title=Ch%C3%BAa_S%E1%BB%91ng_L%E1%BA%A1i_Vinh_Quang_R%E1%BB%93i" title="Chúa Sống Lại Vinh Quang Rồi"> Chúa Sống Vinh Quang</a></li>
-href="/index.php?title=T%C3%B4n_Vinh_Vua_J%C3%AAsus" title="Tôn Vinh Vua Jêsus">Tôn Vinh Vua Jêsus</a></li>
-href="/index.php?title=Y%C3%AAu_Th%C6%B0%C6%A1ng_%C4%90%E1%BB%9Di_%C4%90%E1%BB%9Di" title="Yêu Thương Đời Đời">Yêu Thương Đời Đời</a></li>
-href="/index.php?title=T%C3%B4n_Cao_Danh_Ch%C3%BAa" title="Tôn Cao Danh Chúa">Tôn Cao Danh Chúa</a></li>
-href="/index.php?title=Danh_Tr%C3%AAn_Mu%C3%B4n_Danh" title="Danh Trên Muôn Danh">Danh Trên Muôn Danh</a></li>
-href="/index.php?title=%C3%81nh_S%C3%A1ng_T%C3%ACnh_Y%C3%AAu" title="Ánh Sáng Tình Yêu">Ánh Sáng Tình Yêu</a></li>
-href="/index.php?title=Ti%E1%BA%BFng_N%C3%B3i_Trong_T%C3%A2m_H%E1%BB%93n_T%C3%B4i" title="Tiếng Nói Trong Tâm Hồn Tôi">Tiếng Nói Trong Tâm Hồn Tôi</a></li>
-href="/index.php?title=Ca_Ng%E1%BB%A3i_Ch%C3%BAa_T%C3%B4i" title="Ca Ngợi Chúa Tôi">Ca Ngợi Chúa Tôi</a></li>
-href="/index.php?title=D%C3%A2ng_Ng%C3%A0n_Ti%E1%BA%BFng_Tung_H%C3%B4" title="Dâng Ngàn Tiếng Tung Hô">Dâng Ngàn Tiếng Tung Hô</a></li>
-href="/index.php?title=Ng%C3%A0i_L%C3%A0_Vua" title="Ngài Là Vua">Ngài Là Vua</a></li>
-href="/index.php?title=Bi%E1%BA%BFt_Gi%C3%AA-xu_V%C3%A0_Truy%E1%BB%81n_B%C3%A1_Danh_Ng%C3%A0i" title="Biết Giê-xu Và Truyền Bá Danh Ngài"> Yêu Jêsus</a></li>
-href="/index.php?title=Ng%C3%A0i_L%C3%A0_Ai%3F" title="Ngài Là Ai?">Ngài Là Ai?</a></li>
-href="/index.php?title=Vua_Mu%C3%B4n_Vua" title="Vua Muôn Vua">Vua Muôn Vua</a></li>
-href="/index.php?title=Thi%C3%AAn_Th%E1%BA%A7n_H%C3%B2a_Ca" title="Thiên Thần Hòa Ca"> Thiên Binh Vang Tiếng Hát</a></li>
-href="/index.php?title=Ni%E1%BB%81m_Vui_Cho_Tr%E1%BA%A7n_Gian" title="Niềm Vui Cho Trần Gian"> Phước Cho Nhân Loại</a></li>
-href="/index.php?title=C%C3%B9ng_%C4%90%E1%BA%BFn_Th%E1%BB%9D_Ch%C3%BAa" title="Cùng Đến Thờ Chúa"> Môn Đồ Trung Tín</a></li>
-href="/index.php?title=Tho%E1%BA%A1t_%C4%90%E1%BA%BFn_%C4%90%C3%AAm_N%E1%BB%8D" title="Thoạt Đến Đêm Nọ"> Giữa Đêm Yên Tịnh</a></li>
-href="/index.php?title=K%E1%BB%B7_Nguy%C3%AAn_Thanh_B%C3%ACnh" title="Kỷ Nguyên Thanh Bình">Kỷ Nguyên Thanh Bình</a></li>
-href="/index.php?title=K%C3%ADp_%C4%90%E1%BA%BFn_T%C3%B4n_Th%E1%BB%9D" title="Kíp Đến Tôn Thờ"> Đến Tôn Thờ</a></li>
-href="/index.php?title=B%C3%A0i_Ca_M%C3%A1ng_C%E1%BB%8F" title="Bài Ca Máng Cỏ"> Trong Máng Chiên</a></li>
-href="/index.php?title=%C4%90%C3%AAm_Y%C3%AAn_L%E1%BA%B7ng" title="Đêm Yên Lặng">Đêm Yên Lặng</a></li>
-href="/index.php?title=H%E1%BB%A1i_B%E1%BA%BFt-l%C3%AA-hem_Nh%E1%BB%8F_B%C3%A9" title="Hỡi Bết-lê-hem Nhỏ Bé"> Bết-lê-hem Nhỏ Bé</a></li>
-href="/index.php?title=Kh%C3%B4ng_Ch%E1%BB%97_Trong_Qu%C3%A1n" title="Không Chỗ Trong Quán"> Không Chổ Trong Quán</a></li>
-href="/index.php?title=%C4%90%C3%AAm_Th%C3%A1nh" title="Đêm Thánh">Đêm Thánh</a></li>
-href="/index.php?title=Ca_Ch%C3%BAc_Gi%C3%A1ng_Sinh" title="Ca Chúc Giáng Sinh">Ca Chúc Giáng Sinh</a></li>
-href="/index.php?title=%C4%90%C3%AAm_Ch%C3%BAa_Tr%E1%BB%9Di_Ban_%C6%A0n_L%C3%A0nh" title="Đêm Chúa Trời Ban Ơn Lành"> Đêm Ơn Lành</a></li>
-href="/index.php?title=%C4%90%E1%BA%A5ng_Th%C3%A1nh_L%C3%A2m_Ph%C3%A0m" title="Đấng Thánh Lâm Phàm">Đấng Thánh Lâm Phàm</a></li>
-href="/index.php?title=Thi%C3%AAn_%C4%90%C3%A0ng_Chung_Vui" title="Thiên Đàng Chung Vui"> Niềm Vui Thiên Đàng</a></li>
-href="/index.php?title=N%C3%B4-%C3%AAn_%C4%90%E1%BA%A7u_Ti%C3%AAn" title="Nô-ên Đầu Tiên">Nô-ên Đầu Tiên</a></li>
-href="/index.php?title=Nghe_Xa_Xa_%C4%90i%E1%BB%87u_Th%E1%BA%A7n_Ca" title="Nghe Xa Xa Điệu Thần Ca"> Điệu Thần Ca</a></li>
-href="/index.php?title=Ha-l%C3%AA-lu-gia!_J%C3%AAsus_%C4%90%E1%BA%BFn" title="Ha-lê-lu-gia! Jêsus Đến">Ha-lê-lu-gia! Jêsus Đến</a></li>
-href="/index.php?title=Em-ma-nu-%C3%AAn" title="Em-ma-nu-ên">Em-ma-nu-ên</a></li>
-href="/index.php?title=Ch%C3%BAa_%C4%90%E1%BA%BFn_D%C6%B0%C6%A1ng_Tr%E1%BA%A7n" title="Chúa Đến Dương Trần">Chúa Đến Dương Trần</a></li>
-href="/index.php?title=Vua_Mi%E1%BB%81n_%C4%90%C3%B4ng" title="Vua Miền Đông">Vua Miền Đông</a></li>
-href="/index.php?title=Ti%E1%BA%BFng_H%C3%A1t_Thi%C3%AAn_Binh" title="Tiếng Hát Thiên Binh">Tiếng Hát Thiên Binh</a></li>
-href="/index.php?title=T%C3%ACnh_Y%C3%AAu_Thi%C3%AAn_Ch%C3%BAa" title="Tình Yêu Thiên Chúa">Tình Yêu Thiên Chúa</a></li>
-href="/index.php?title=%C4%90%C3%AAm_N%C3%B4-%C3%AAn_T%C6%B0ng_B%E1%BB%ABng" title="Đêm Nô-ên Tưng Bừng">Đêm Nô-ên Tưng Bừng</a></li>
-href="/index.php?title=B%C3%A0i_Ca_M%C3%A1ng_C%E1%BB%8F" title="Bài Ca Máng Cỏ"> Bài Ca Máng Cỏ</a></li>
-href="/index.php?title=%C4%90%C3%AAm_%C4%90%C3%B4ng_X%C6%B0a" title="Đêm Đông Xưa">Đêm Đông Xưa</a></li>
-href="/index.php?title=B%C3%ACnh_An_Cho_Lo%C3%A0i_Ng%C6%B0%E1%BB%9Di" title="Bình An Cho Loài Người">Bình An Cho Loài Người</a></li>
-href="/index.php?title=Ch%E1%BA%B3ng_C%C3%B3_Ai_Nh%C6%B0_Jesus" title="Chẳng Có Ai Như Jesus"> Không Ai Khác</a></li>
-href="/index.php?title=H%C3%B4m_Qua,_Ng%C3%A0y_Nay,_Cho_%C4%90%E1%BA%BFn_%C4%90%E1%BB%9Di_%C4%90%E1%BB%9Di" title="Hôm Qua, Ngày Nay, Cho Đến Đời Đời"> Chúa Bất Biến</a></li>
-href="/index.php?title=Ng%C6%B0%E1%BB%9Di_Kh%C3%A1ch_L%E1%BA%A1_Ga-li-l%C3%AA" title="Người Khách Lạ Ga-li-lê">Người Khách Lạ Ga-li-lê</a></li>
-href="/index.php?title=Cung_%C4%90i%E1%BB%87n_B%E1%BA%B1ng_Ng%C3%A0" title="Cung Điện Bằng Ngà">Cung Điện Bằng Ngà</a></li>
-href="/index.php?title=Jesus_Kh%C3%B4ng_%C4%90%E1%BB%95i_D%E1%BB%9Di" title="Jesus Không Đổi Dời"> Chúa Không Đổi Thay</a></li>
-href="/index.php?title=T%C3%ACnh_Ch%C3%BAa_Bao_La" title="Tình Chúa Bao La">Tình Chúa Bao La</a></li>
-href="/index.php?title=Ta_Hy_Sinh_V%C3%AC_Con" title="Ta Hy Sinh Vì Con"> Hi Sinh Vì Con</a></li>
-href="/index.php?title=Nh%C3%ACn_C%C3%A2y_Th%E1%BA%ADp_T%E1%BB%B1" title="Nhìn Cây Thập Tự"> Nhìn Thập Tự</a></li>
-href="/index.php?title=Khuya_Nay_Tr%C3%AAn_%C4%90%E1%BB%89nh_N%C3%BAi_%C3%94-li-ve" title="Khuya Nay Trên Đỉnh Núi Ô-li-ve"> Trên Đỉnh Ô-li-ve</a></li>
-href="/index.php?title=Gh%E1%BA%BFt-s%C3%AA-ma-n%C3%AA" title="Ghết-sê-ma-nê">Ghết-sê-ma-nê</a></li>
-href="/index.php?title=Nh%C6%B0_Chi%C3%AAn_%C4%90i_L%E1%BA%A1c" title="Như Chiên Đi Lạc">Như Chiên Đi Lạc</a></li>
-href="/index.php?title=Gi%E1%BB%9D_%C4%90%C6%B0%E1%BB%A3c_Chi%C3%AAm_Ng%C6%B0%E1%BB%A1ng_Th%E1%BA%ADp_Gi%C3%A1" title="Giờ Được Chiêm Ngưỡng Thập Giá"> Chiêm Ngưỡng Thập Giá</a></li>
-href="/index.php?title=Ch%C3%BAa_Mang_Th%E1%BA%ADp_H%C3%ACnh" title="Chúa Mang Thập Hình">Chúa Mang Thập Hình</a></li>
-href="/index.php?title=Nguy%E1%BB%81n_D%C3%ACu_L%C3%AAn_G%C3%B4-g%C3%B4-tha" title="Nguyền Dìu Lên Gô-gô-tha"> Lên Gô-gô-tha</a></li>
-href="/index.php?title=G%C3%B4-g%C3%B4-tha" title="Gô-gô-tha">Gô-gô-tha</a></li>
-href="/index.php?title=Ng%E1%BB%A3i_Khen_D%C3%B2ng_Huy%E1%BA%BFt" title="Ngợi Khen Dòng Huyết"> Ca Ngợi Dòng Huyết Báu</a></li>
-href="/index.php?title=H%C3%A3y_Tin" title="Hãy Tin">Hãy Tin</a></li>
-href="/index.php?title=G%E1%BA%A7n_Th%E1%BA%ADp_T%E1%BB%B1" title="Gần Thập Tự"> Gần Thập Tự Hơn</a></li>
-href="/index.php?title=N%C6%A1i_Th%E1%BA%ADp_T%E1%BB%B1_Gi%C3%A1" title="Nơi Thập Tự Giá"> Sông Tình Yêu</a></li>
-href="/index.php?title=Nhi%E1%BB%81u_Khi_T%C3%B4i_Nh%E1%BB%9B_V%E1%BB%81" title="Nhiều Khi Tôi Nhớ Về">Nhiều Khi Tôi Nhớ Về</a></li>
-href="/index.php?title=Tr%C3%AAn_%C4%90%E1%BB%93i_Cao" title="Trên Đồi Cao">Trên Đồi Cao</a></li>
-href="/index.php?title=N%C6%A1i_Ch%C3%A2n_Th%E1%BA%ADp_T%E1%BB%B1" title="Nơi Chân Thập Tự">Nơi Chân Thập Tự</a></li>
-href="/index.php?title=Christ_Ph%E1%BB%A5c_Sinh" title="Christ Phục Sinh"> Chúa Phục Sinh</a></li>
-href="/index.php?title=Ng%C3%A0y_Nay_Ch%C3%BAa_Ph%E1%BB%A5c_Sinh" title="Ngày Nay Chúa Phục Sinh"> Chúa Phục Sinh Hôm Nay</a></li>
-href="/index.php?title=Ch%C3%BAa_Oai_Quy%E1%BB%81n_Ph%E1%BB%A5c_Sanh" title="Chúa Oai Quyền Phục Sanh"> Chúa Oai Quyền Phục Sinh</a></li>
-href="/index.php?title=Jesus_Ch%C3%A2n_Ch%C3%BAa_L%E1%BA%A1i_S%E1%BB%91ng" title="Jesus Chân Chúa Lại Sống"> Chúa Sống Lại</a></li>
-href="/index.php?title=Tr%C3%AAn_%C4%90%C6%B0%E1%BB%9Dng_Em-mau" title="Trên Đường Em-mau">Trên Đường Em-mau</a></li>
-href="/index.php?title=Ng%C3%A0i_S%E1%BB%91ng" title="Ngài Sống"> Chúa Sống</a></li>
-href="/index.php?title=Ch%C3%BAa_Kh%C3%B4ng_%E1%BB%9E_N%C6%A1i_M%E1%BB%99_N%E1%BA%A7y" title="Chúa Không Ở Nơi Mộ Nầy"> Mộ Trống</a></li>
-href="/index.php?title=V%C3%AC_Gi%C3%AA-xu_S%E1%BB%91ng" title="Vì Giê-xu Sống"> Vì Jêsus Sống</a></li>
-href="/index.php?title=K%C3%ACa!_Nh%C3%ACn_Vua_Th%C4%83ng_Thi%C3%AAn" title="Kìa! Nhìn Vua Thăng Thiên"> Nhìn Vua Thăng Thiên</a></li>
-href="/index.php?title=T%C3%B4n_Vinh_Jesus" title="Tôn Vinh Jesus"> Tôn Vinh Jêsus</a></li>
-href="/index.php?title=Vinh_Di%E1%BB%87u_Ch%C3%BAa_Ph%E1%BB%A5c_Sinh" title="Vinh Diệu Chúa Phục Sinh">Vinh Diệu Chúa Phục Sinh</a></li>
-href="/index.php?title=Jesus_Quang_L%C3%A2m" title="Jesus Quang Lâm"> Jêsus Quang Lâm</a></li>
-href="/index.php?title=Ch%C3%BAa_T%C3%A1i_L%C3%A2m" title="Chúa Tái Lâm">Chúa Tái Lâm</a></li>
-href="/index.php?title=K%C3%ACa!_Ch%C3%BAa_%C4%90%E1%BA%BFn" title="Kìa! Chúa Đến"> Kìa Chúa Đến!</a></li>
-href="/index.php?title=Ng%C3%A0y_Nay_Ch%C3%BAa_%C4%90%E1%BA%BFn_Th%C3%AC_Sao%3F" title="Ngày Nay Chúa Đến Thì Sao?"> Nếu Chúa Đến Hôm Nay?</a></li>
-href="/index.php?title=M%C3%A0n_S%C6%B0%C6%A1ng_Ti%C3%AAu_Tan" title="Màn Sương Tiêu Tan">Màn Sương Tiêu Tan</a></li>
-href="/index.php?title=Ch%C3%BAa_K%C3%ADp_%C4%90%E1%BA%BFn" title="Chúa Kíp Đến">Chúa Kíp Đến</a></li>
-href="/index.php?title=Tia_S%C3%A1ng_Ban_Mai" title="Tia Sáng Ban Mai">Tia Sáng Ban Mai</a></li>
-href="/index.php?title=K%C3%ACa!_Th%E1%BA%A7n_Y%C3%AAn_%E1%BB%A6i_Gi%C3%A1ng_Lai" title="Kìa! Thần Yên Ủi Giáng Lai"> Thần Yên Ủi</a></li>
-href="/index.php?title=Th%C3%A1nh_Linh_D%E1%BA%ABn_D%E1%BA%AFt" title="Thánh Linh Dẫn Dắt">Thánh Linh Dẫn Dắt</a></li>
-href="/index.php?title=%C4%90%E1%BA%A7y_L%C3%B2ng_T%C3%B4i" title="Đầy Lòng Tôi">Đầy Lòng Tôi</a></li>
-href="/index.php?title=B%C3%A0i_Ca_T%C3%A2m_Linh" title="Bài Ca Tâm Linh">Bài Ca Tâm Linh</a></li>
-href="/index.php?title=Th%C3%A1nh_Linh_Ng%E1%BB%B1_V%C3%A0o_L%C3%B2ng" title="Thánh Linh Ngự Vào Lòng">Thánh Linh Ngự Vào Lòng</a></li>
-href="/index.php?title=Gi%C3%B3_Th%C3%A1nh_Linh" title="Gió Thánh Linh">Gió Thánh Linh</a></li>
-href="/index.php?title=H%C3%A0_H%C6%A1i_Linh" title="Hà Hơi Linh"> Hà Hơi Linh Thần</a></li>
-href="/index.php?title=Xin_Th%E1%BA%A7n_Linh_C%E1%BA%A3m_H%C3%B3a" title="Xin Thần Linh Cảm Hóa"> Thần Linh Cảm Hóa</a></li>
-href="/index.php?title=Th%C3%A1nh_Linh_H%E1%BA%B1ng_S%E1%BB%91ng" title="Thánh Linh Hằng Sống">Thánh Linh Hằng Sống</a></li>
-href="/index.php?title=An_B%C3%ACnh_Trong_Ch%C3%BAa" title="An Bình Trong Chúa">An Bình Trong Chúa</a></li>
-href="/index.php?title=Jesus!_%C4%90%E1%BB%A9ng_Tr%C6%B0%E1%BB%9Bc_C%E1%BB%ADa" title="Jesus! Đứng Trước Cửa"> Trước Cửa Tâm Hồn</a></li>
-href="/index.php?title=Ch%C3%BAa_%C3%94i!_T%C3%B4i_L%E1%BA%A1i_Ngay!" title="Chúa Ôi! Tôi Lại Ngay!"> Tiếng Chúa Gọi</a></li>
-href="/index.php?title=Nh%C3%ACn_L%C3%AAn_J%C3%AAsus" title="Nhìn Lên Jêsus">Nhìn Lên Jêsus</a></li>
-href="/index.php?title=Huy%E1%BA%BFt_Ch%C3%BAa_M%E1%BA%A7u_Nhi%E1%BB%87m_Bi%E1%BA%BFt_Bao" title="Huyết Chúa Mầu Nhiệm Biết Bao"> Huyết Chúa Mầu Nhiệm</a></li>
-href="/index.php?title=Ng%C3%A0i_V%E1%BB%B1c_T%C3%B4i" title="Ngài Vực Tôi"> Thoát Chốn Tội Tình</a></li>
-href="/index.php?title=Ch%C3%BAa_%C4%90o%C3%A1i_Th%C6%B0%C6%A1ng" title="Chúa Đoái Thương">Chúa Đoái Thương</a></li>
-href="/index.php?title=L%C4%83n_Xa" title="Lăn Xa">Lăn Xa</a></li>
-href="/index.php?title=Ti%E1%BA%BFng_Chu%C3%B4ng_L%C3%B2ng" title="Tiếng Chuông Lòng">Tiếng Chuông Lòng</a></li>
-href="/index.php?title=C%C3%B3_Jesus_Ph%E1%BA%A7n_T%C3%B4i_Th%E1%BB%8Fa_R%E1%BB%93i" title="Có Jesus Phần Tôi Thỏa Rồi"> Phần Vui Thỏa</a></li>
-href="/index.php?title=Jesus_Ng%E1%BB%B1_C%C3%B9ng,_%E1%BA%A4y_N%C6%A1i_Thi%C3%AAn_Cung" title="Jesus Ngự Cùng, Ấy Nơi Thiên Cung"> Chúa Ngự Tâm Hồn</a></li>
-href="/index.php?title=%C4%90%E1%BB%9Di_T%C3%B4i_Nay_%C4%90%C6%B0%E1%BB%A3c_%C4%90%E1%BB%95i_Thay" title="Đời Tôi Nay Được Đổi Thay"> Chúa Đến Trong Lòng</a></li>
-href="/index.php?title=N%C3%A0y_L%C3%A0_Truy%E1%BB%87n_K%C3%BD_T%C3%B4i" title="Này Là Truyện Ký Tôi"> Tiếng Hát Của Tôi</a></li>
-href="/index.php?title=T%C3%A2m_Linh_T%C3%B4i,_An_Ninh_Thay" title="Tâm Linh Tôi, An Ninh Thay"> Tâm Hồn Yên Ninh</a></li>
-href="/index.php?title=H%E1%BA%B1ng_N%C6%B0%C6%A1ng_Trong_Ch%C3%BAa_Mu%C3%B4n_%C4%90%E1%BB%9Di" title="Hằng Nương Trong Chúa Muôn Đời"> Nương Trong Chúa</a></li>
-href="/index.php?title=Tay_Ch%C3%BAa_N%E1%BA%AFm_T%C3%B4i" title="Tay Chúa Nắm Tôi">Tay Chúa Nắm Tôi</a></li>
-href="/index.php?title=B%C6%B0%E1%BB%9Bc_V%E1%BB%9Bi_Ch%C3%BAa_Y%C3%AAu_Thu%C6%A1ng" title="Bước Với Chúa Yêu Thuơng"> Bước Với Chúa Yêu Thương</a></li>
-href="/index.php?title=M%E1%BB%ABng_Vui!_Thanh_Ni%C3%AAn_Ta_H%C3%A1t" title="Mừng Vui! Thanh Niên Ta Hát"> Mừng Vui Hát Vang</a></li>
-href="/index.php?title=S%E1%BB%B1_S%E1%BB%91ng_M%E1%BB%9Bi" title="Sự Sống Mới">Sự Sống Mới</a></li>
-href="/index.php?title=L%C3%B2ng_T%C3%B4i_Vui_V%E1%BA%BB" title="Lòng Tôi Vui Vẻ"> Lòng Vui Vẻ</a></li>
-href="/index.php?title=Vui_M%E1%BB%ABng_Ca_H%C3%A1t" title="Vui Mừng Ca Hát">Vui Mừng Ca Hát</a></li>
-href="/index.php?title=%C6%A0n_L%E1%BA%A1_L%C3%B9ng" title="Ơn Lạ Lùng">Ơn Lạ Lùng</a></li>
-href="/index.php?title=L%C3%B2ng_Th%C3%A1i_An" title="Lòng Thái An">Lòng Thái An</a></li>
-href="/index.php?title=%C4%90%E1%BB%9Di_%C4%90%E1%BA%B9p_T%C6%B0%C6%A1i" title="Đời Đẹp Tươi">Đời Đẹp Tươi</a></li>
-href="/index.php?title=S%E1%BB%B1_B%C3%ACnh_An" title="Sự Bình An">Sự Bình An</a></li>
-href="/index.php?title=B%C6%B0%E1%BB%9Bc_Tr%C3%AAn_Thi%C3%AAn_Tr%C3%ACnh" title="Bước Trên Thiên Trình">Bước Trên Thiên Trình</a></li>
-href="/index.php?title=Trong_Tay_Ch%C3%BAa" title="Trong Tay Chúa">Trong Tay Chúa</a></li>
-href="/index.php?title=%C4%90%E1%BB%9Di_T%E1%BB%B1_Do" title="Đời Tự Do">Đời Tự Do</a></li>
-href="/index.php?title=Ch%C3%BAa_%C4%90em_An_Vui_Cho_T%C3%B4i" title="Chúa Đem An Vui Cho Tôi">Chúa Đem An Vui Cho Tôi</a></li>
-href="/index.php?title=S%E1%BB%91ng_Vui_Th%E1%BB%8Fa" title="Sống Vui Thỏa">Sống Vui Thỏa</a></li>
-href="/index.php?title=Vui_B%C3%AAn_Ch%C3%BAa" title="Vui Bên Chúa">Vui Bên Chúa</a></li>
-href="/index.php?title=B%C3%A0i_Ca_Trong_T%C3%A2m" title="Bài Ca Trong Tâm">Bài Ca Trong Tâm</a></li>
-href="/index.php?title=Khi_J%C3%AAsus_Ng%E1%BB%B1_V%C3%A0o_L%C3%B2ng" title="Khi Jêsus Ngự Vào Lòng">Khi Jêsus Ngự Vào Lòng</a></li>
-href="/index.php?title=T%C3%B4i_L%C3%A0_Chi%C3%AAn_C%E1%BB%A7a_Ch%C3%BAa" title="Tôi Là Chiên Của Chúa"> Chiên Của Chúa</a></li>
-href="/index.php?title=%C4%90i_Trong_H%C3%A2n_Hoan" title="Đi Trong Hân Hoan">Đi Trong Hân Hoan</a></li>
-href="/index.php?title=T%C3%B4n_Vinh_Cha" title="Tôn Vinh Cha">Tôn Vinh Cha</a></li>
-href="/index.php?title=M%E1%BB%99t_Ng%C3%A0y_T%C6%B0%C6%A1i_M%E1%BB%9Bi" title="Một Ngày Tươi Mới">Một Ngày Tươi Mới</a></li>
-href="/index.php?title=G%E1%BA%B7p_%C4%90%C6%B0%E1%BB%A3c_Thi%E1%BA%BFt_H%E1%BB%AFu" title="Gặp Được Thiết Hữu"> Gặp Thiết Hữu</a></li>
-href="/index.php?title=Nguy%E1%BB%87n_C%E1%BA%A7u" title="Nguyện Cầu">Nguyện Cầu</a></li>
-href="/index.php?title=Linh_%C3%82m_Giai_%C4%90i%E1%BB%87u" title="Linh Âm Giai Điệu"> Giai Điệu Trong Tâm Hồn</a></li>
-href="/index.php?title=Nguy%E1%BB%87n_C%C3%A0ng_Y%C3%AAu_Th%C6%B0%C6%A1ng_Christ" title="Nguyện Càng Yêu Thương Christ"> Yêu Thương Chúa Thêm</a></li>
-href="/index.php?title=Th%E1%BA%ADt_H%E1%BA%A1nh_Vinh_Thay!" title="Thật Hạnh Vinh Thay!"> Bước Đi Vinh Diệu</a></li>
-href="/index.php?title=C%C3%A0ng_Y%C3%AAu_Ch%C3%BAa_H%C6%A1n" title="Càng Yêu Chúa Hơn"> Yêu Chúa Hơn</a></li>
-href="/index.php?title=K%C3%ACa!_L%C3%B2ng_Y%C3%AAu_Th%C6%B0%C6%A1ng_Ch%C3%BAa_Phi_Th%C6%B0%E1%BB%9Dng" title="Kìa! Lòng Yêu Thương Chúa Phi Thường"> Ái Tâm Chúa</a></li>
-href="/index.php?title=%C3%94i_T%C3%ACnh_Th%C6%B0%C6%A1ng" title="Ôi Tình Thương"> Tình Thương Cứu Chúa</a></li>
-href="/index.php?title=%C3%82n_H%E1%BB%93ng_C%E1%BB%A9u_%C3%82n" title="Ân Hồng Cứu Ân"> Hồng Ân Cứu Chuộc</a></li>
-href="/index.php?title=%C6%A0n_S%C3%A2u" title="Ơn Sâu">Ơn Sâu</a></li>
-href="/index.php?title=%C3%82n_%C4%90i%E1%BB%83n" title="Ân Điển">Ân Điển</a></li>
-href="/index.php?title=L%C3%B2ng_Lu%C3%B4n_T%C6%B0%E1%BB%9Fng_Con_Tr%E1%BB%9Di" title="Lòng Luôn Tưởng Con Trời"> Con Trời Thương Thế Gian</a></li>
-href="/index.php?title=%C4%90%E1%BB%A9c_Tin,_Tr%C3%B4ng_C%E1%BA%ADy,_Y%C3%AAu_Th%C6%B0%C6%A1ng" title="Đức Tin, Trông Cậy, Yêu Thương"> Lòng Tin Yêu</a></li>
-href="/index.php?title=Jesus_Y%C3%AAu_T%C3%B4i" title="Jesus Yêu Tôi"> Jêsus Yêu Tôi</a></li>
-href="/index.php?title=Gi%C3%AA-xu_H%E1%BA%B1ng_Y%C3%AAu_M%E1%BA%BFn_T%C3%B4i" title="Giê-xu Hằng Yêu Mến Tôi"> Jêsus Yêu Mến Tôi</a></li>
-href="/index.php?title=Thu%E1%BB%99c_Jesus_Th%E1%BB%8Fa_Vui" title="Thuộc Jesus Thỏa Vui"> Thỏa Vui Thuộc Chúa</a></li>
-href="/index.php?title=N%E1%BA%BFu_C%C3%B3_C%E1%BA%A3_Th%E1%BA%BF_Gian" title="Nếu Có Cả Thế Gian"> Dù Có Cả Trần Gian</a></li>
-href="/index.php?title=M%E1%BA%BFn_Y%C3%AAu_J%C3%AAsus" title="Mến Yêu Jêsus">Mến Yêu Jêsus</a></li>
-href="/index.php?title=H%C3%A3y_%C4%90%E1%BA%BFm_C%C3%A1c_%C6%A0n_Ph%C6%B0%E1%BB%9Bc_Ch%C3%BAa_Ban" title="Hãy Đếm Các Ơn Phước Chúa Ban"> Đếm Phước Chúa Ban</a></li>
-href="/index.php?title=L%E1%BA%BD_S%E1%BB%91ng_%C4%90%E1%BB%9Di_T%C3%B4i" title="Lẽ Sống Đời Tôi">Lẽ Sống Đời Tôi</a></li>
-href="/index.php?title=%C4%90i%E1%BB%81u_N%C3%A0y_Th%E1%BA%ADt_Sao" title="Điều Này Thật Sao">Điều Này Thật Sao</a></li>
-href="/index.php?title=V%E1%BB%AFng_Tin_N%C6%A1i_Ch%C3%BAa" title="Vững Tin Nơi Chúa">Vững Tin Nơi Chúa</a></li>
-href="/index.php?title=T%C3%ACnh_Y%C3%AAu_Mu%C3%B4n_%C4%90%E1%BB%9Di" title="Tình Yêu Muôn Đời">Tình Yêu Muôn Đời</a></li>
-href="/index.php?title=T%E1%BB%AB_Nay_Thu%E1%BB%99c_Ch%C3%BAa" title="Từ Nay Thuộc Chúa">Từ Nay Thuộc Chúa</a></li>
-href="/index.php?title=Con_Thu%E1%BB%99c_V%E1%BB%81_Ta" title="Con Thuộc Về Ta">Con Thuộc Về Ta</a></li>
-href="/index.php?title=Th%C3%A0_C%C3%B3_J%C3%AAsus" title="Thà Có Jêsus">Thà Có Jêsus</a></li>
-href="/index.php?title=Gi%E1%BB%9D_D%E1%BB%8Bu_%C3%8Am" title="Giờ Dịu Êm">Giờ Dịu Êm</a></li>
-href="/index.php?title=Lo_Bi%E1%BB%87t_Gi%E1%BB%9D_N%C3%AAn_Th%C3%A1nh_Ra" title="Lo Biệt Giờ Nên Thánh Ra"> Giờ Thánh</a></li>
-href="/index.php?title=Gi%C3%AA-xu_L%C3%A0_B%E1%BA%A1n_Th%E1%BA%ADt" title="Giê-xu Là Bạn Thật"> Jêsus Là Bạn Thật</a></li>
-href="/index.php?title=Ch%C3%BAa_%C3%94i,_Xin_%C4%90%E1%BB%ABng_L%C3%ACa_T%C3%B4i" title="Chúa Ôi, Xin Đừng Lìa Tôi"> Xin Dừng Chân</a></li>
-href="/index.php?title=%C3%94i_Ch%C3%BAa_%C4%90%E1%BA%A5ng_T%C3%B4i_C%E1%BA%A7n_Lu%C3%B4n" title="Ôi Chúa Đấng Tôi Cần Luôn"> Cần Chúa Luôn</a></li>
-href="/index.php?title=Mau_Th%C6%B0a_V%E1%BB%9Bi_Jesus" title="Mau Thưa Với Jesus"> Thưa Với Jêsus</a></li>
-href="/index.php?title=Ban_Mai_V%E1%BB%9Bi_Gi%C3%AA-Xu" title="Ban Mai Với Giê-Xu"> Buổi Mai Với Jêsus</a></li>
-href="/index.php?title=Xin_V%C3%B4_T%C3%A2m_H%E1%BB%93n" title="Xin Vô Tâm Hồn"> Xin Vào Tâm Hồn</a></li>
-href="/index.php?title=D%E1%BB%A9c_D%E1%BA%A5y_Ch%C3%BAng_T%C3%B4i_Lu%C3%B4n" title="Dức Dấy Chúng Tôi Luôn"> Phục Hưng Tâm Hồn</a></li>
-href="/index.php?title=T%C3%B4n_Vinh_Christ" title="Tôn Vinh Christ"> Tôn Vinh Chúa Chí Tôn</a></li>
-href="/index.php?title=Ch%C3%A8o_Ra" title="Chèo Ra"> Ra Khơi</a></li>
-href="/index.php?title=T%C3%A2m_H%E1%BB%93n_T%C3%B4i_%C4%90ang_Ch%C3%A1y" title="Tâm Hồn Tôi Đang Cháy"> Tâm Hồn Bùng Cháy</a></li>
-href="/index.php?title=Nguy%E1%BB%81n_Cung_Hi%E1%BA%BFn_Ch%C3%BAa_C%E1%BA%A3_%C4%90%E1%BB%9Di_T%C3%B4i" title="Nguyền Cung Hiến Chúa Cả Đời Tôi"> Cung Hiến Cuộc Đời</a></li>
-href="/index.php?title=Duy_Ch%C3%ADnh_Ng%C3%A0i" title="Duy Chính Ngài"> Chính Ngài</a></li>
-href="/index.php?title=T%C3%B4i_Nguy%E1%BB%87n_D%C3%A2ng_T%E1%BA%A5t_Sanh" title="Tôi Nguyện Dâng Tất Sanh"> Tận Hiến</a></li>
-href="/index.php?title=Hi%E1%BB%87n_T%C3%B4i_Nghe_R%C3%B5_Ti%E1%BA%BFng_C%E1%BB%A9u_Ch%C3%BAa_K%C3%AAu" title="Hiện Tôi Nghe Rõ Tiếng Cứu Chúa Kêu"> Tiếng Chúa Hướng Dẫn</a></li>
-href="/index.php?title=Ta_Theo_%C3%9D_Ch%C3%BAa_Ch%C6%B0a%3F" title="Ta Theo Ý Chúa Chưa?"> Theo Ý Chúa</a></li>
-href="/index.php?title=Nghe_Ti%E1%BA%BFng_Gi%C3%AA-xu_Tuy%C3%AAn" title="Nghe Tiếng Giê-xu Tuyên"> Lại Gần Hơn</a></li>
-href="/index.php?title=Nguy%E1%BB%87n_%C4%90%E1%BB%9Di_T%C3%B4i_D%C3%A2ng_Ch%C3%BAa" title="Nguyện Đời Tôi Dâng Chúa"> Dâng Chúa Thủy Chung</a></li>
-href="/index.php?title=L%C3%AAn_Ch%E1%BB%91n_Cao_H%C6%A1n" title="Lên Chốn Cao Hơn"> Chốn Cao Hơn</a></li>
-href="/index.php?title=%C6%AF%E1%BB%9Bc_Ao_Nh%C3%ACn_Jesus" title="Ước Ao Nhìn Jesus"> Ước Ao Nhìn Jêsus</a></li>
-href="/index.php?title=Gi%C3%AA-xu_T%C3%B4i_%C4%90%E1%BA%BFn" title="Giê-xu Tôi Đến"> Đến Theo Chúa</a></li>
-href="/index.php?title=C%C6%A1n_M%C6%B0a_Ph%C6%B0%E1%BB%9Bc_L%C3%A0nh" title="Cơn Mưa Phước Lành">Cơn Mưa Phước Lành</a></li>
-href="/index.php?title=Tr%C3%B4ng_Mong_Thi%C3%AAn_%C3%82n" title="Trông Mong Thiên Ân"> Chờ Mong Thiên Ân</a></li>
-href="/index.php?title=Quy%E1%BA%BFt_S%E1%BB%91ng_Cho_Christ" title="Quyết Sống Cho Christ"> Sống Cho Chúa</a></li>
-href="/index.php?title=Khi_Ch%C3%BAa_V%C3%B4_L%C3%B2ng" title="Khi Chúa Vô Lòng">Khi Chúa Vô Lòng</a></li>
-href="/index.php?title=Nguy%E1%BB%87n_Theo_%C3%9D_Cha" title="Nguyện Theo Ý Cha"> Theo Ý Cha</a></li>
-href="/index.php?title=Bi%E1%BA%BFt_Nhi%E1%BB%81u_H%C6%A1n_V%E1%BB%81_Gi%C3%AA-xu" title="Biết Nhiều Hơn Về Giê-xu"> Biết Chúa Tận Tường</a></li>
-href="/index.php?title=Danh_Y_%C4%90%E1%BB%99c_Nh%E1%BA%A5t" title="Danh Y Độc Nhất">Danh Y Độc Nhất</a></li>
-href="/index.php?title=Di%E1%BB%87u_Vinh_Thay_B%C3%ACnh_An!" title="Diệu Vinh Thay Bình An!"> Bình An Diệu Kỳ</a></li>
-href="/index.php?title=Mau_D%C3%A2ng_Cho_Ch%C3%BAa_Bao_%C4%90i%E1%BB%81u_T%E1%BB%91t_Nh%E1%BA%A5t" title="Mau Dâng Cho Chúa Bao Điều Tốt Nhất"> Dâng Điều Tốt Nhất</a></li>
-href="/index.php?title=Hi%E1%BA%BFn_C%E1%BA%A3_Th%E1%BA%A3y_Cho_Ng%C3%A0i" title="Hiến Cả Thảy Cho Ngài"> Tận Hiến Cho Chúa</a></li>
-href="/index.php?title=Nh%C3%ACn_Vua_Vinh_Hi%E1%BB%83n" title="Nhìn Vua Vinh Hiển">Nhìn Vua Vinh Hiển</a></li>
-href="/index.php?title=V%C3%A2ng_Theo_Ch%C3%BAa" title="Vâng Theo Chúa">Vâng Theo Chúa</a></li>
-href="/index.php?title=T%E1%BA%A5t_C%E1%BA%A3_Cho_J%C3%AAsus" title="Tất Cả Cho Jêsus">Tất Cả Cho Jêsus</a></li>
-href="/index.php?title=Tr%C3%B4ng_Mong_%C6%A0n_Ch%C3%AD_Cao" title="Trông Mong Ơn Chí Cao"> Trông Mong Thiên Ân</a></li>
-href="/index.php?title=Ng%C3%A0y_C%E1%BB%A9u_Ch%C3%BAa_B%C6%B0%E1%BB%9Bc_%C4%90%E1%BA%BFn" title="Ngày Cứu Chúa Bước Đến">Ngày Cứu Chúa Bước Đến</a></li>
-href="/index.php?title=G%E1%BA%A7n_L%C3%B2ng_T%E1%BB%AB_%C3%81i_Ch%C3%BAa_Cha" title="Gần Lòng Từ Ái Chúa Cha"> Gần Lòng Từ Ái</a></li>
-href="/index.php?title=%C4%90%E1%BA%BFn_B%C3%AAn_D%C3%B2ng_S%C3%B4ng" title="Đến Bên Dòng Sông">Đến Bên Dòng Sông</a></li>
-href="/index.php?title=Kh%C3%A1t_Khao_D%C3%B2ng_N%C6%B0%E1%BB%9Bc" title="Khát Khao Dòng Nước">Khát Khao Dòng Nước</a></li>
-href="/index.php?title=Luy%E1%BB%87n_L%C3%B2ng_Con" title="Luyện Lòng Con">Luyện Lòng Con</a></li>
-href="/index.php?title=Xin_M%E1%BB%9F_M%E1%BA%AFt_Con" title="Xin Mở Mắt Con"> Xin Mở Mắt Chúng Con</a></li>
-href="/index.php?title=L%C3%B2ng_%C6%AF%E1%BB%9Bc_Mong" title="Lòng Ước Mong"> Như Ý Cha</a></li>
-href="/index.php?title=Ch%E1%BB%91n_N%C6%B0%C6%A1ng_Th%C3%A2n" title="Chốn Nương Thân">Chốn Nương Thân</a></li>
-href="/index.php?title=T%C3%A2m_H%E1%BB%93n_Trong_Tr%E1%BA%AFng" title="Tâm Hồn Trong Trắng">Tâm Hồn Trong Trắng</a></li>
-href="/index.php?title=Khi_Ch%C3%BAa_Chinh_Ph%E1%BB%A5c_T%C3%B4i" title="Khi Chúa Chinh Phục Tôi">Khi Chúa Chinh Phục Tôi</a></li>
-href="/index.php?title=N%C6%B0%C6%A1ng_M%C3%ACnh_Trong_C%C3%A1nh_Ch%C3%BAa" title="Nương Mình Trong Cánh Chúa"> Nương Cánh Chúa</a></li>
-href="/index.php?title=%C4%90%E1%BB%A9ng_Tr%C3%AAn_L%E1%BB%9Di_H%E1%BB%A9a" title="Đứng Trên Lời Hứa"> Dựa Trên Lời Hứa</a></li>
-href="/index.php?title=V%E1%BA%A7ng_%C4%90%C3%A1_Mu%C3%B4n_%C4%90%E1%BB%9Di" title="Vầng Đá Muôn Đời">Vầng Đá Muôn Đời</a></li>
-href="/index.php?title=C%C3%A0ng_G%E1%BA%A7n_Ch%C3%BAa_H%C6%A1n" title="Càng Gần Chúa Hơn"> Gần Chúa Hơn</a></li>
-href="/index.php?title=G%E1%BA%A7n_Th%E1%BA%ADp_T%E1%BB%B1" title="Gần Thập Tự">Gần Thập Tự</a></li>
-href="/index.php?title=Jesus_%C4%90%E1%BA%A5ng_H%E1%BA%B1ng_Y%C3%AAu_Th%C6%B0%C6%A1ng_T%C3%B4i" title="Jesus Đấng Hằng Yêu Thương Tôi"> Chúa Yêu Thương Tôi</a></li>
-href="/index.php?title=Tin_C%E1%BA%ADy_V%C3%A2ng_L%E1%BB%9Di" title="Tin Cậy Vâng Lời">Tin Cậy Vâng Lời</a></li>
-href="/index.php?title=B%E1%BB%9Fi_Bi%E1%BA%BFt_%C4%90%E1%BA%A5ng_T%C3%B4i_%C4%90ang_Tin" title="Bởi Biết Đấng Tôi Đang Tin"> Tôi Biết Đấng Tôi Tin</a></li>
-href="/index.php?title=Christ_N%E1%BA%AFm_T%C3%B4i_Th%E1%BA%ADt_Ch%E1%BA%B7t" title="Christ Nắm Tôi Thật Chặt"> Chúa Nắm Tôi</a></li>
-href="/index.php?title=Neo_T%C3%B4i_Ch%E1%BA%AFc,_R%E1%BA%A5t_Ch%E1%BA%AFc" title="Neo Tôi Chắc, Rất Chắc"> Chiếc Neo Vững Chắc</a></li>
-href="/index.php?title=%C4%90%E1%BB%ABng_S%E1%BB%A3" title="Đừng Sợ">Đừng Sợ</a></li>
-href="/index.php?title=H%E1%BB%93n_T%C3%B4i_Ch%E1%BB%89_Quy%E1%BA%BFt_Neo_Trong_Huy%E1%BA%BFt_Jesus" title="Hồn Tôi Chỉ Quyết Neo Trong Huyết Jesus"> Nương Trên Jêsus</a></li>
-href="/index.php?title=Th%E1%BB%8Fa_Th%C3%ADch_Thay_Tin_C%E1%BA%ADy_Ch%C3%BAa_Jesus" title="Thỏa Thích Thay Tin Cậy Chúa Jesus"> Tin Cậy Chúa Jêsus</a></li>
-href="/index.php?title=Ch%E1%BB%97_H%C3%B3c_%C4%90%C3%A1_V%E1%BB%AFng_An" title="Chỗ Hóc Đá Vững An"> Hốc Đá Vững An</a></li>
-href="/index.php?title=Trao_Cho_Ch%C3%BAa" title="Trao Cho Chúa">Trao Cho Chúa</a></li>
-href="/index.php?title=Lo_G%C3%AC" title="Lo Gì">Lo Gì</a></li>
-href="/index.php?title=Con_S%C3%B4ng_Th%C3%A1i_An" title="Con Sông Thái An"> Dòng Sông Thái An</a></li>
-href="/index.php?title=N%C6%A1i_%E1%BA%A8n_N%C3%BAp_L%C3%BAc_Phong_Ba" title="Nơi Ẩn Núp Lúc Phong Ba"> Nơi Ẩn Nấp Lúc Phong Ba</a></li>
-href="/index.php?title=Vi%E1%BB%87c_Chi_Ch%C3%BAa_Kh%C3%B4ng_Th%E1%BB%83_L%C3%A0m" title="Việc Chi Chúa Không Thể Làm"> Không Ai Bằng Chúa</a></li>
-href="/index.php?title=N%C6%B0%C6%A1ng_C%C3%A1nh_V%C4%A9nh_Sinh" title="Nương Cánh Vĩnh Sinh"> Cánh Vĩnh Sinh</a></li>
-href="/index.php?title=Xin_Cho_Con_%C4%90i_%C4%90%C6%B0%E1%BB%9Dng_Ng%C3%A0i" title="Xin Cho Con Đi Đường Ngài"> Đi Đường Ngài</a></li>
-href="/index.php?title=Ch%C3%BAa_L%C3%A0_T%E1%BA%A5t_C%E1%BA%A3" title="Chúa Là Tất Cả">Chúa Là Tất Cả</a></li>
-href="/index.php?title=L%C3%B2ng_C%E1%BB%A9_Y%C3%AAn_L%E1%BA%B7ng" title="Lòng Cứ Yên Lặng">Lòng Cứ Yên Lặng</a></li>
-href="/index.php?title=C%E1%BB%A9u_Ch%C3%BAa_Si%C3%AAu_Vi%E1%BB%87t" title="Cứu Chúa Siêu Việt">Cứu Chúa Siêu Việt</a></li>
-href="/index.php?title=Ch%C3%BAa_Gi%E1%BA%A5u_T%C3%B4i" title="Chúa Giấu Tôi"> Chúa Che Giấu Tôi</a></li>
-href="/index.php?title=Lu%C3%B4n_M%E1%BB%97i_Ph%C3%BAt" title="Luôn Mỗi Phút">Luôn Mỗi Phút</a></li>
-href="/index.php?title=Gi%C3%AA-h%C3%B4-va!_Xin_D%E1%BA%AFt_T%C3%B4i" title="Giê-hô-va! Xin Dắt Tôi"> Xin Chúa Dẫn Dắt</a></li>
-href="/index.php?title=Ch%C3%BAa_S%E1%BA%BD_Lo_Toan" title="Chúa Sẽ Lo Toan">Chúa Sẽ Lo Toan</a></li>
-href="/index.php?title=Quanh_%C4%90%C3%AAm_Lu%C3%B4n_Ng%C3%A0y" title="Quanh Đêm Luôn Ngày"> Dòng Bình Tịnh</a></li>
-href="/index.php?title=Ngu%E1%BB%93n_An_B%C3%ACnh" title="Nguồn An Bình">Nguồn An Bình</a></li>
-href="/index.php?title=Ch%C3%BAa_H%C6%B0%E1%BB%9Bng_D%E1%BA%ABn" title="Chúa Hướng Dẫn">Chúa Hướng Dẫn</a></li>
-href="/index.php?title=M%E1%BA%AFt_Ta_H%E1%BA%B1ng_%C4%90%C6%B0a_D%E1%BA%AFt_Ng%C6%B0%C6%A1i" title="Mắt Ta Hằng Đưa Dắt Ngươi"> Lời Hứa Quí Báu</a></li>
-href="/index.php?title=Jesus_H%E1%BA%B1ng_%E1%BB%9E_B%C3%AAn_T%C3%B4i" title="Jesus Hằng Ở Bên Tôi"> Chúa Ở Bên Tôi</a></li>
-href="/index.php?title=Ph%C6%B0%E1%BB%9Bc_Thay_Trong_L%C3%B2ng" title="Phước Thay Trong Lòng"> Chúa Dìu Dắt Tôi</a></li>
-href="/index.php?title=Ch%C3%A2n_Ch%C3%BAa_H%E1%BA%B1ng_Nh%E1%BB%9B_%C4%90%E1%BA%BFn_T%C3%B4i" title="Chân Chúa Hằng Nhớ Đến Tôi"> Chúa Nhớ Đến Tôi</a></li>
-href="/index.php?title=Chim_S%E1%BA%BB_M%E1%BA%AFt_Ch%C3%BAa_V%E1%BA%ABn_Ch%C3%BA_V%C3%A0o" title="Chim Sẻ Mắt Chúa Vẫn Chú Vào"> Chúa Biết Từng Cánh Chim</a></li>
-href="/index.php?title=Gi%C3%AA-xu_Nh%C6%B0_Ng%C6%B0%E1%BB%9Di_Ch%C4%83n_Chi%C3%AAn_D%C4%83t_T%C3%B4i" title="Giê-xu Như Người Chăn Chiên Dăt Tôi"> Người Chăn Dẫn Dắt</a></li>
-href="/index.php?title=C%E1%BA%A7u_Xin_Ch%C3%BAa_%C4%90%C6%B0a_L%E1%BB%91i_T%C3%B4i" title="Cầu Xin Chúa Đưa Lối Tôi"> Xin Dắt Đưa Tôi</a></li>
-href="/index.php?title=B%C3%AAn_Kia_B%C3%B3ng_M%E1%BB%9D" title="Bên Kia Bóng Mờ">Bên Kia Bóng Mờ</a></li>
-href="/index.php?title=Gi%C3%AA-h%C3%B4-va_%C4%90%E1%BA%A5ng_D%E1%BA%AFt_Ch%C4%83n_H%E1%BB%93n_T%C3%B4i" title="Giê-hô-va Đấng Dắt Chăn Hồn Tôi"> Đấng Chăn Hồn Tôi</a></li>
-href="/index.php?title=B%C3%AAn_T%C3%B4i_L%C3%A0_Ch%C3%BAa_J%C3%AAsus" title="Bên Tôi Là Chúa Jêsus">Bên Tôi Là Chúa Jêsus</a></li>
-href="/index.php?title=%C4%90i_V%E1%BB%9Bi_Ch%C3%BAa" title="Đi Với Chúa">Đi Với Chúa</a></li>
-href="/index.php?title=Tr%C6%B0%E1%BB%9Bc_Khi_R%E1%BA%A1ng_%C4%90%C3%B4ng" title="Trước Khi Rạng Đông"> Trước Rạng Đông</a></li>
-href="/index.php?title=Danh_Qu%C3%AD_Tr%E1%BB%8Dng" title="Danh Quí Trọng">Danh Quí Trọng</a></li>
-href="/index.php?title=An_T%C3%A2m_B%C3%AAn_Ch%C3%BAa" title="An Tâm Bên Chúa">An Tâm Bên Chúa</a></li>
-href="/index.php?title=Xin_S%E1%BB%91ng_Cho_Ch%C3%BAa_J%C3%AAsus" title="Xin Sống Cho Chúa Jêsus">Xin Sống Cho Chúa Jêsus</a></li>
-href="/index.php?title=Ng%C3%A0i_Bi%E1%BA%BFt_R%C3%B5" title="Ngài Biết Rõ">Ngài Biết Rõ</a></li>
-href="/index.php?title=Ch%C3%BAa_D%E1%BA%ABn_%C4%90%C6%B0a_%C4%90%E1%BB%9Di_T%C3%B4i" title="Chúa Dẫn Đưa Đời Tôi"> Chúa Dẫn Đưa Tôi</a></li>
-href="/index.php?title=Chim,_Hoa_V%C3%A0_Ng%C6%B0%E1%BB%9Di" title="Chim, Hoa Và Người">Chim, Hoa Và Người</a></li>
-href="/index.php?title=Christ_Hi%E1%BB%83u_R%C3%B5_T%C3%A2m_Tr%E1%BA%A1ng" title="Christ Hiểu Rõ Tâm Trạng"> Chúa Hiểu Tâm Trạng</a></li>
-href="/index.php?title=Ta_B%C6%B0%E1%BB%9Bc_L%C3%AAn_Si-%C3%B4n" title="Ta Bước Lên Si-ôn"> Bước Lên Si-ôn</a></li>
-href="/index.php?title=T%E1%BB%99i_L%E1%BB%97i_C%E1%BA%A5t_Xa" title="Tội Lỗi Cất Xa">Tội Lỗi Cất Xa</a></li>
-href="/index.php?title=%C4%90i_T%E1%BB%ABng_B%C6%B0%E1%BB%9Bc" title="Đi Từng Bước">Đi Từng Bước</a></li>
-href="/index.php?title=D%C6%B0%C6%A1ng_Quang_Thi%C3%AAn_Qu%E1%BB%91c" title="Dương Quang Thiên Quốc">Dương Quang Thiên Quốc</a></li>
-href="/index.php?title=B%C3%A0n_Tay_Mang_D%E1%BA%A5u_%C4%90inh" title="Bàn Tay Mang Dấu Đinh"> Bàn Tay Mang Dấu Dinh</a></li>
-href="/index.php?title=Ng%C3%A0i_C%E1%BB%A9u_T%C3%B4i" title="Ngài Cứu Tôi">Ngài Cứu Tôi</a></li>
-href="/index.php?title=V%E1%BB%81_Nh%C3%A0_Ch%C3%BAa" title="Về Nhà Chúa">Về Nhà Chúa</a></li>
-href="/index.php?title=Ph%C6%B0%E1%BB%9Bc_H%E1%BA%A1nh_V%C3%A0_Th%C6%B0%C6%A1ng_X%C3%B3t_S%E1%BA%BD_Theo_T%C3%B4i" title="Phước Hạnh Và Thương Xót Sẽ Theo Tôi"> Mỗi Quãng Đường</a></li>
-href="/index.php?title=T%C3%B4i_Bi%E1%BA%BFt_%C4%90%E1%BA%A5ng_N%E1%BA%AFm_T%C6%B0%C6%A1ng_Lai_M%C3%ACnh" title="Tôi Biết Đấng Nắm Tương Lai Mình"> Đấng Nắm Giữ Tương Lai</a></li>
-href="/index.php?title=%C4%90i_V%E1%BB%9Bi_J%C3%AAsus" title="Đi Với Jêsus">Đi Với Jêsus</a></li>
-href="/index.php?title=Tr%C3%AAn_%C4%90%E1%BB%93i_Ho%C3%A0ng_H%C3%B4n" title="Trên Đồi Hoàng Hôn">Trên Đồi Hoàng Hôn</a></li>
-href="/index.php?title=%C4%90%C6%B0%E1%BB%9Dng_L%E1%BB%91i_Ch%C3%BAa" title="Đường Lối Chúa">Đường Lối Chúa</a></li>
-href="/index.php?title=Tr%E1%BA%A7n_Th%E1%BA%BF_Ch%E1%BA%B3ng_Ph%E1%BA%A3i_Qu%C3%AA_H%C6%B0%C6%A1ng" title="Trần Thế Chẳng Phải Quê Hương"> Quê Hương Thiên Quốc</a></li>
-href="/index.php?title=Nguy%E1%BB%87n_Theo_J%C3%AAsus" title="Nguyện Theo Jêsus">Nguyện Theo Jêsus</a></li>
-href="/index.php?title=T%C3%ACnh_Y%C3%AAu_V%E1%BB%AFng_B%E1%BB%81n" title="Tình Yêu Vững Bền">Tình Yêu Vững Bền</a></li>
-href="/index.php?title=Nguy%E1%BB%81n_Theo_B%C6%B0%E1%BB%9Bc_Ch%C3%A2n_Ng%C6%B0%E1%BB%9Di" title="Nguyền Theo Bước Chân Người">Nguyền Theo Bước Chân Người</a></li>
-href="/index.php?title=Ch%C3%BAa_H%E1%BA%B1ng_Ch%C4%83n_Gi%E1%BB%AF_T%C3%B4i" title="Chúa Hằng Chăn Giữ Tôi"> Chúa Hằng Chăn Giữ</a></li>
-href="/index.php?title=H%E1%BA%B1ng_Ng%C3%A0y_T%C3%B4i_Ti%E1%BA%BFn_B%C6%B0%E1%BB%9Bc_V%E1%BB%9Bi_Ch%C3%BAa" title="Hằng Ngày Tôi Tiến Bước Với Chúa"> Tiến Bước Với Chúa</a></li>
-href="/index.php?title=H%C3%A3y_%C4%90i_Khi_Ch%C3%BAa_%C4%90ang_G%E1%BB%8Di" title="Hãy Đi Khi Chúa Đang Gọi"> Chúa Đang Gọi</a></li>
-href="/index.php?title=Ph%C6%B0%E1%BB%9Bc_%C3%82m_Jesus_Mu%C3%B4n_Thu%E1%BB%9F_C%C3%B2n_Nguy%C3%AAn" title="Phước Âm Jesus Muôn Thuở Còn Nguyên"> Phúc Âm Muôn Thuở</a></li>
-href="/index.php?title=Ta_Th%E1%BA%AFng_Nh%E1%BB%9D_%C4%90%E1%BB%A9c_Tin" title="Ta Thắng Nhờ Đức Tin"> Thắng Nhờ Đức Tin</a></li>
-href="/index.php?title=Ng%E1%BA%AFm_Jesus_%C4%90%E1%BB%ABng_Xao" title="Ngắm Jesus Đừng Xao"> Ngắm Jêsus</a></li>
-href="/index.php?title=Tinh_Binh_Gi%C3%AA-xu_Ti%E1%BA%BFn_L%C3%AAn" title="Tinh Binh Giê-xu Tiến Lên"> Tinh Binh Jêsus</a></li>
-href="/index.php?title=H%C6%B0_Kh%C3%B4ng" title="Hư Không">Hư Không</a></li>
-href="/index.php?title=Tinh_Binh_C%E1%BB%A7a_Qu%C3%A2n_Th%E1%BA%ADp_T%E1%BB%B1_Mau_%C4%90%E1%BB%A9ng_L%C3%AAn" title="Tinh Binh Của Quân Thập Tự Mau Đứng Lên"> Tinh Binh Thập Tự</a></li>
-href="/index.php?title=S%E1%BA%B5n_S%C3%A0ng" title="Sẵn Sàng">Sẵn Sàng</a></li>
-href="/index.php?title=T%E1%BA%A1i_Ch%E1%BB%91n_Tr%E1%BA%ADn_Ti%E1%BB%81n" title="Tại Chốn Trận Tiền"> Tại Trận Tiền</a></li>
-href="/index.php?title=Trung,_Th%C3%A0nh,_T%C3%ADn,_Ngh%C4%A9a" title="Trung, Thành, Tín, Nghĩa">Trung, Thành, Tín, Nghĩa</a></li>
-href="/index.php?title=S%E1%BB%A9c_L%E1%BB%B1c_T%E1%BB%AB_Ch%C3%BAa" title="Sức Lực Từ Chúa">Sức Lực Từ Chúa</a></li>
-href="/index.php?title=V%E1%BA%B9n_L%C3%B2ng_Trung_T%C3%ADn" title="Vẹn Lòng Trung Tín">Vẹn Lòng Trung Tín</a></li>
-href="/index.php?title=Ch%E1%BB%8Dn_%C4%90%E1%BB%A9ng_B%C3%AAn_Ng%C3%A0i" title="Chọn Đứng Bên Ngài">Chọn Đứng Bên Ngài</a></li>
-href="/index.php?title=Khi_B%C3%ACnh_Minh_%C4%90%E1%BA%BFn" title="Khi Bình Minh Đến">Khi Bình Minh Đến</a></li>
-href="/index.php?title=%C4%90%E1%BB%9Di_Con" title="Đời Con">Đời Con</a></li>
-href="/index.php?title=%C4%90%E1%BA%BFn_V%E1%BB%9Bi_Ch%C3%BAa_Tay_Tr%E1%BA%AFng_Th%C3%B4i_Sao" title="Đến Với Chúa Tay Trắng Thôi Sao"> Có Gì Dâng Chúa</a></li>
-href="/index.php?title=Ch%C3%BAa_Jesus_Con_H%E1%BB%A9a_Theo_Ng%C3%A0i" title="Chúa Jesus Con Hứa Theo Ngài"> Con Hứa Theo Ngài</a></li>
-href="/index.php?title=Khi_Ban_Mai_%C4%90%E1%BA%BFn" title="Khi Ban Mai Đến">Khi Ban Mai Đến</a></li>
-href="/index.php?title=Ch%C3%BAa_V%E1%BB%9Bi_T%C3%B4i" title="Chúa Với Tôi">Chúa Với Tôi</a></li>
-href="/index.php?title=N%C3%A0o_%C4%90i_L%C3%AAn_%C4%90o%C3%A0n_Qu%C3%A2n_Th%C3%A1nh" title="Nào Đi Lên Đoàn Quân Thánh"> Nào Đi Lên</a></li>
-href="/index.php?title=B%C3%A0n_Tay_D%C3%A2ng_L%C3%AAn" title="Bàn Tay Dâng Lên">Bàn Tay Dâng Lên</a></li>
-href="/index.php?title=Tri%E1%BB%81u_Thi%C3%AAn_Vinh_Hi%E1%BB%83n" title="Triều Thiên Vinh Hiển">Triều Thiên Vinh Hiển</a></li>
-href="/index.php?title=M%E1%BA%B7t_G%E1%BA%B7p_M%E1%BA%B7t" title="Mặt Gặp Mặt"> Mặt Đối Mặt</a></li>
-href="/index.php?title=Vinh_Thay_Cho_T%C3%B4i" title="Vinh Thay Cho Tôi"> Niềm Vinh Hạnh</a></li>
-href="/index.php?title=B%C3%AAn_Kia_Ho%C3%A0ng_H%C3%B4n" title="Bên Kia Hoàng Hôn">Bên Kia Hoàng Hôn</a></li>
-href="/index.php?title=Khi_Ch%C3%BAa_T%C3%A1i_L%C3%A2m" title="Khi Chúa Tái Lâm"> Giờ Xướng Danh</a></li>
-href="/index.php?title=Qua_%C4%90%E1%BB%9Di_S%E1%BA%BD_%C4%90%E1%BA%BFn_%C4%90%C3%A2u%3F" title="Qua Đời Sẽ Đến Đâu?">Qua Đời Sẽ Đến Đâu?</a></li>
-href="/index.php?title=B%E1%BA%A5t_D%E1%BA%A1_Th%C3%A0nh" title="Bất Dạ Thành">Bất Dạ Thành</a></li>
-href="/index.php?title=Ch%C3%BAng_Ta_S%E1%BA%BD_G%E1%BA%B7p_Nhau_B%C3%AAn_S%C3%B4ng_V%C3%A0ng" title="Chúng Ta Sẽ Gặp Nhau Bên Sông Vàng"> Chung Nhóm Ở Thiên Hà</a></li>
-href="/index.php?title=Mi%E1%BB%81n_Vinh_Hi%E1%BB%83n" title="Miền Vinh Hiển">Miền Vinh Hiển</a></li>
-href="/index.php?title=N%C6%A1i_V%C4%A9nh_Ph%C6%B0%E1%BB%9Bc" title="Nơi Vĩnh Phước"> Nơi Vĩnh Phúc</a></li>
-href="/index.php?title=%C4%90o%E1%BA%A1n_Thi%C3%AAn_Ca" title="Đoạn Thiên Ca"> Khúc Thiên Ca</a></li>
-href="/index.php?title=L%C3%A0m_Con_Vua_Th%C3%A1nh_Tr%C3%AAn_Tr%E1%BB%9Di" title="Làm Con Vua Thánh Trên Trời"> Làm Con Vua Thánh</a></li>
-href="/index.php?title=N%C6%B0%E1%BB%9Bc_%C4%90%E1%BB%A9c_Ch%C3%BAa_Tr%E1%BB%9Di" title="Nước Đức Chúa Trời"> Vương Quốc Rạng Ngời</a></li>
-href="/index.php?title=L%C3%B2ng_T%C3%B4i_Y%C3%AAu_Gi%C3%A1o_H%E1%BB%99i" title="Lòng Tôi Yêu Giáo Hội"> Lòng Yêu Giáo Hội</a></li>
-href="/index.php?title=N%E1%BB%81n_H%E1%BB%99i_Th%C3%A1nh_Tr%C3%AAn_B%C3%A0n_Th%E1%BA%A1ch_Ki%C3%AAn_C%E1%BB%91" title="Nền Hội Thánh Trên Bàn Thạch Kiên Cố"> Nền Hội Thánh</a></li>
-href="/index.php?title=M%E1%BB%99t_Jesus" title="Một Jesus"> Chúa Duy Nhất</a></li>
-href="/index.php?title=%C4%90%E1%BB%93ng_C%E1%BB%8F_Thi%C3%AAn_Th%C6%B0%E1%BB%A3ng" title="Đồng Cỏ Thiên Thượng">Đồng Cỏ Thiên Thượng</a></li>
-href="/index.php?title=C%C3%B9ng_H%E1%BB%8Dp_Nhau" title="Cùng Họp Nhau">Cùng Họp Nhau</a></li>
-href="/index.php?title=Qu%C3%A2y_Qu%E1%BA%A7n_B%C3%AAn_Ch%C3%BAa" title="Quây Quần Bên Chúa">Quây Quần Bên Chúa</a></li>
-href="/index.php?title=B%C3%A0i_Ca_Hi%E1%BB%87p_M%E1%BB%99t" title="Bài Ca Hiệp Một"> Bài Ca Hiệp Nhất </a></li>
-href="/index.php?title=L%E1%BB%9Di_Ch%C3%BAa_V%E1%BB%AFng_L%E1%BA%ADp" title="Lời Chúa Vững Lập">Lời Chúa Vững Lập</a></li>
-href="/index.php?title=L%E1%BB%9Di_Cha" title="Lời Cha">Lời Cha</a></li>
-href="/index.php?title=L%E1%BB%9Di_D%E1%BB%8Bu_D%C3%A0ng" title="Lời Dịu Dàng">Lời Dịu Dàng</a></li>
-href="/index.php?title=Th%C3%A1nh_Kinh_%C3%82m_Nh%E1%BA%A1c" title="Thánh Kinh Âm Nhạc"> Âm Nhạc Kinh Thánh</a></li>
-href="/index.php?title=Xin_Ch%C3%BAa_M%E1%BB%9F_M%E1%BA%AFt" title="Xin Chúa Mở Mắt">Xin Chúa Mở Mắt</a></li>
-href="/index.php?title=Ch%C3%BAa_L%C3%A0_V%E1%BA%A7ng_%C4%90%C3%A1" title="Chúa Là Vầng Đá">Chúa Là Vầng Đá</a></li>
-href="/index.php?title=L%E1%BB%9Di_Ch%C3%BAa." title="Lời Chúa.">Lời Chúa.</a></li>
-href="/index.php?title=L%E1%BA%AFng_Nghe_Ti%E1%BA%BFng_Ch%C3%BAa" title="Lắng Nghe Tiếng Chúa">Lắng Nghe Tiếng Chúa</a></li>
-href="/index.php?title=Ng%C3%A0y_Vui_V%E1%BA%BB" title="Ngày Vui Vẻ"> Ngày Vui</a></li>
-href="/index.php?title=Vi%C3%AAn_Ng%E1%BB%8Dc_%C4%90%E1%BA%B9p_R%C3%B2ng" title="Viên Ngọc Đẹp Ròng"> Viên Ngọc Đẹp</a></li>
-href="/index.php?title=Ch%C3%BAc_M%E1%BB%ABng_H%C3%B4n_L%E1%BB%85" title="Chúc Mừng Hôn Lễ">Chúc Mừng Hôn Lễ</a></li>
-href="/index.php?title=Nguy%E1%BB%87n_C%E1%BA%A7u_Cho_%C4%90%C3%B4i_L%E1%BB%A9a" title="Nguyện Cầu Cho Đôi Lứa">Nguyện Cầu Cho Đôi Lứa</a></li>
-href="/index.php?title=Ti%E1%BB%87c_Th%C3%A1nh" title="Tiệc Thánh">Tiệc Thánh</a></li>
-href="/index.php?title=Kh%C3%BAc_T%C3%ACnh_Ca_Ng%C3%A0y_C%C6%B0%E1%BB%9Bi" title="Khúc Tình Ca Ngày Cưới">Khúc Tình Ca Ngày Cưới</a></li>
-href="/index.php?title=B%C3%A0i_C%E1%BA%A7u_Nguy%E1%BB%87n_Chung" title="Bài Cầu Nguyện Chung">Bài Cầu Nguyện Chung</a></li>
-href="/index.php?title=Ng%C3%A0i_Ban_Cho_Th%C3%AAm_%C6%A0n" title="Ngài Ban Cho Thêm Ơn"> Chúa Ban Thêm Ơn</a></li>
-href="/index.php?title=Th%E1%BA%ADp_T%E1%BB%B1_X%C6%B0a_-_The_Old_Rugged_Cross" title="Thập Tự Xưa - The Old Rugged Cross"> Thập Tự Xưa</a></li>
-href="/index.php?title=Nh%C3%A0_Tr%C3%AAn_Tr%E1%BB%9Di" title="Nhà Trên Trời">Nhà Trên Trời</a></li>
-href="/index.php?title=%C4%90%E1%BA%A5ng_Ch%C4%83n_Hi%E1%BB%81n_L%C3%A0nh" title="Đấng Chăn Hiền Lành"> Đấng Chăn Lành</a></li>
-href="/index.php?title=T%C3%B4i_D%E1%BA%A7u_Nh%E1%BB%8F" title="Tôi Dầu Nhỏ"> Em Dầu Nhỏ</a></li>
-href="/index.php?title=L%C3%B2ng_Em_Vui" title="Lòng Em Vui">Lòng Em Vui</a></li>
-href="/index.php?title=M%E1%BB%99t_Tia_S%C3%A1ng" title="Một Tia Sáng">Một Tia Sáng</a></li>
-href="/index.php?title=Ch%C3%A2u_B%C3%A1u_Vua_Jesus_Christ" title="Châu Báu Vua Jesus Christ"> Châu Báu Vua Jêsus</a></li>
-href="/index.php?title=Thanh_Xu%C3%A2n_Ca_Kh%C3%BAc" title="Thanh Xuân Ca Khúc"> Ca Khúc Thanh Xuân</a></li>
-href="/index.php?title=%C3%81nh_S%C3%A1ng_Cho_%C4%90%E1%BB%9Di" title="Ánh Sáng Cho Đời">Ánh Sáng Cho Đời</a></li>
-href="/index.php?title=Vinh_Quang,_Vinh_Quang!" title="Vinh Quang, Vinh Quang!"> Chúa Vinh Quang</a></li>
-href="/index.php?title=Lo_L%C3%A0m_Vi%E1%BB%87c_Mau_-_%C4%90%C3%AAm_%C4%90%E1%BA%BFn_K%C3%ACa!" title="Lo Làm Việc Mau - Đêm Đến Kìa!"> Đêm Đến</a></li>
-href="/index.php?title=G%C3%A1nh_L%C3%BAa_V%E1%BB%81" title="Gánh Lúa Về">Gánh Lúa Về</a></li>
-href="/index.php?title=Ca_Kh%C3%BAc_B%C3%ACnh_An" title="Ca Khúc Bình An">Ca Khúc Bình An</a></li>
-href="/index.php?title=H%C3%A3y_Chi%E1%BA%BFu_Gi%E1%BB%91ng_H%C3%A3y_%C4%90%C4%83ng" title="Hãy Chiếu Giống Hãy Đăng"> Ánh Sáng Hải Đăng</a></li>
-href="/index.php?title=D%E1%BA%AFt_V%E1%BB%81_Ch%C3%BAa" title="Dắt Về Chúa"> Đưa Về Chúa</a></li>
-href="/index.php?title=B%C3%A1o_Tin_L%C3%A0nh" title="Báo Tin Lành"> Rao Tin Lành</a></li>
-href="/index.php?title=Xin_Ch%C3%BAa_Sai" title="Xin Chúa Sai"> Xin Chúa Sai Con</a></li>
-href="/index.php?title=Quy%E1%BA%BFt_Rao_Tin_L%C3%A0nh" title="Quyết Rao Tin Lành"> Rao Phúc Âm</a></li>
-href="/index.php?title=%C4%90%E1%BB%95i_M%E1%BB%9Bi_T%C3%A2m_T%C3%B4i" title="Đổi Mới Tâm Tôi">Đổi Mới Tâm Tôi</a></li>
-href="/index.php?title=Nguy%E1%BB%87n_T%C3%B4i_L%C3%A0m_Ngu%E1%BB%93n_Ph%C6%B0%E1%BB%9Bc" title="Nguyện Tôi Làm Nguồn Phước"> Mong Làm Nguồn Phước</a></li>
-href="/index.php?title=J%C3%AAsus_C%E1%BB%A9u_T%C3%B4i" title="Jêsus Cứu Tôi">Jêsus Cứu Tôi</a></li>
-href="/index.php?title=Mau_Chi%E1%BA%BFu_Ra" title="Mau Chiếu Ra"> Ánh Sáng Phúc Âm</a></li>
-href="/index.php?title=Hoa_Hu%E1%BB%87_Trong_Tr%C5%A9ng" title="Hoa Huệ Trong Trũng">Hoa Huệ Trong Trũng</a></li>
-href="/index.php?title=Nh%E1%BB%9D_Huy%E1%BA%BFt_Ch%C3%BAa" title="Nhờ Huyết Chúa">Nhờ Huyết Chúa</a></li>
-href="/index.php?title=Ng%E1%BB%A3i_Khen_Ch%C3%BAa_%C4%90%C3%A3_Chu%E1%BB%99c_T%C3%B4i" title="Ngợi Khen Chúa Đã Chuộc Tôi"> Ngợi Ca Cứu Chúa</a></li>
-href="/index.php?title=%C4%90au_Th%C6%B0%C6%A1ng_Ti%C3%AAu_M%E1%BA%A5t_N%C6%A1i_G%C3%B4-g%C3%B4-tha" title="Đau Thương Tiêu Mất Nơi Gô-gô-tha"> Đau Thương Tan Biến</a></li>
-href="/index.php?title=B%C3%A2y_Gi%E1%BB%9D_T%C3%B4i_Tin" title="Bây Giờ Tôi Tin">Bây Giờ Tôi Tin</a></li>
-href="/index.php?title=N%C6%A1i_G%C3%B4-g%C3%B4-tha" title="Nơi Gô-gô-tha">Nơi Gô-gô-tha</a></li>
-href="/index.php?title=Vinh_Thay_Danh_Jesus" title="Vinh Thay Danh Jesus"> Vinh Danh Chúa</a></li>
-href="/index.php?title=Con_S%C3%B4ng_T%E1%BA%A9y_U%E1%BA%BF" title="Con Sông Tẩy Uế"> Con Sông Thanh Tẩy</a></li>
-href="/index.php?title=%C3%81nh_Th%C3%A1i_D%C6%B0%C6%A1ng_N%E1%BA%A7y" title="Ánh Thái Dương Nầy"> Ánh Thái Dương</a></li>
-href="/index.php?title=T%E1%BB%AB_L%C3%BAc_Ch%C3%ADnh_T%C3%B4i_%C4%90%C6%B0%E1%BB%A3c_C%E1%BB%A9u" title="Từ Lúc Chính Tôi Được Cứu"> Từ Lúc Được Cứu</a></li>
-href="/index.php?title=%C3%81i_T%E1%BB%AB_C%E1%BB%A9u_T%C3%B4i" title="Ái Từ Cứu Tôi"> Ái Từ Chúa</a></li>
-href="/index.php?title=Khi_Jesus_Qua" title="Khi Jesus Qua"> Khi Jêsus Qua</a></li>
-href="/index.php?title=Chuy%E1%BB%87n_T%C3%B4i_Th%C3%ADch_X%C6%B0%E1%BB%9Bng_Ca" title="Chuyện Tôi Thích Xướng Ca">Chuyện Tôi Thích Xướng Ca</a></li>
-href="/index.php?title=T%C3%ACnh_Y%C3%AAu_Tr%E1%BB%9Di" title="Tình Yêu Trời">Tình Yêu Trời</a></li>
-href="/index.php?title=T%C3%B4i_Kh%C3%B4ng_C%C3%B4_%C4%90%C6%A1n" title="Tôi Không Cô Đơn">Tôi Không Cô Đơn</a></li>
-href="/index.php?title=T%E1%BA%ADn_Trong_T%C3%A2m_H%E1%BB%93n" title="Tận Trong Tâm Hồn">Tận Trong Tâm Hồn</a></li>
-href="/index.php?title=Vinh_Quang_Tr%E1%BB%9Di" title="Vinh Quang Trời">Vinh Quang Trời</a></li>
-href="/index.php?title=Ch%C3%ADnh_J%C3%AAsus" title="Chính Jêsus">Chính Jêsus</a></li>
-href="/index.php?title=%C3%81nh_S%C3%A1ng_C%E1%BB%A7a_Th%E1%BA%BF_Gi%E1%BB%9Bi" title="Ánh Sáng Của Thế Giới"> Ánh Sáng Thế Giới</a></li>
-href="/index.php?title=K%C3%ACa,_Ch%C3%ADn_M%C6%B0%C6%A1i_Ch%C3%ADn_Chi%C3%AAn" title="Kìa, Chín Mươi Chín Chiên"> Con Chiên Lạc</a></li>
-href="/index.php?title=Jesus_Ti%E1%BA%BFp_Nghinh_T%E1%BB%99i_Nh%C3%A2n" title="Jesus Tiếp Nghinh Tội Nhân"> Vui Đón Tội Nhân</a></li>
-href="/index.php?title=Gi%C3%AA-xu_K%C3%AAu_G%E1%BB%8Di_M%E1%BB%8Di_Ng%C6%B0%E1%BB%9Di" title="Giê-xu Kêu Gọi Mọi Người"> Lời Kêu Gọi</a></li>
-href="/index.php?title=Ch%C3%BAa_Y%C3%AAu_Thi%E1%BA%BFt_Tha" title="Chúa Yêu Thiết Tha">Chúa Yêu Thiết Tha</a></li>
-href="/index.php?title=Ch%E1%BB%89_Tin_N%C6%A1i_Ng%C3%A0i" title="Chỉ Tin Nơi Ngài"> Chỉ Tin Nơi Chúa</a></li>
-href="/index.php?title=%C4%90%E1%BB%9Di_Ng%C6%B0%E1%BB%9Di_Ng%E1%BA%AFn_Ng%E1%BB%A7i" title="Đời Người Ngắn Ngủi"> Cuộc Đời Ngắn Ngủi</a></li>
-href="/index.php?title=D%E1%BA%A7u_%C3%81c_Khi%C3%AAn_%C4%90%E1%BB%8F_Nh%C6%B0_%C4%90%C6%A1n_H%E1%BB%93ng" title="Dầu Ác Khiên Đỏ Như Đơn Hồng"> Tâm Linh Trong Trắng</a></li>
-href="/index.php?title=N%C3%AAn_H%C3%A3y_%C4%82n_N%C4%83n_Hi%E1%BB%87n_Nay" title="Nên Hãy Ăn Năn Hiện Nay"> Lời Mời</a></li>
-href="/index.php?title=Mau_%C4%90%E1%BA%BFn_Theo_Gi%C3%AA-xu" title="Mau Đến Theo Giê-xu"> Đến Theo Jêsus</a></li>
-href="/index.php?title=T%C3%B4i_Nguy%E1%BB%87n_%C4%90%E1%BA%BFn_Li%E1%BB%81n" title="Tôi Nguyện Đến Liền"> Đến Với Chiên Con</a></li>
-href="/index.php?title=K%C3%ACa!_C%E1%BB%ADa_C%E1%BB%A9u_R%E1%BB%97i" title="Kìa! Cửa Cứu Rỗi"> Cửa Cứu Rỗi</a></li>
-href="/index.php?title=Quy%E1%BB%81n_Trong_Huy%E1%BA%BFt_Ch%C3%BAa_Gi%C3%AA-xu" title="Quyền Trong Huyết Chúa Giê-xu"> Quyền Trong Huyết</a></li>
-href="/index.php?title=Huy%E1%BA%BFt_Chi%C3%AAn_Con_B%C3%B4i_S%E1%BA%A1ch_L%C3%B2ng" title="Huyết Chiên Con Bôi Sạch Lòng"> Huyết Chiên Con</a></li>
-href="/index.php?title=K%E1%BB%B3_Di%E1%BB%87u_Thay,_Christ_Chu%E1%BB%99c_T%C3%B4i" title="Kỳ Diệu Thay, Christ Chuộc Tôi"> Cứu Chúa Kỳ Diệu</a></li>
-href="/index.php?title=Ha-l%C3%AA-lu-gia!_Ng%E1%BB%A3i_Khen_Th%E1%BA%ADp_T%E1%BB%B1" title="Ha-lê-lu-gia! Ngợi Khen Thập Tự"> Ca Ngợi Thập Tự</a></li>
-href="/index.php?title=Ng%C6%B0%C6%A1i_Y%C3%AAu_Ta_Ch%C4%83ng%3F" title="Ngươi Yêu Ta Chăng?">Ngươi Yêu Ta Chăng?</a></li>
-href="/index.php?title=Danh_L%E1%BA%A1_L%C3%B9ng" title="Danh Lạ Lùng">Danh Lạ Lùng</a></li>
-href="/index.php?title=H%E1%BB%A1i_Nh%E1%BB%AFng_K%E1%BA%BB_M%E1%BB%87t_M%E1%BB%8Fi" title="Hỡi Những Kẻ Mệt Mỏi"> Gọi Kẻ Nhọc Nhằn</a></li>
-href="/index.php?title=V%C3%AC_Anh_T%C3%B4i_C%E1%BB%A9_K%C3%AAu_N%C3%A0i" title="Vì Anh Tôi Cứ Kêu Nài"> Cầu Nguyện Cho Anh</a></li>
-href="/index.php?title=Xin_Ch%C3%BAa_Sai_T%C3%B4i" title="Xin Chúa Sai Tôi">Xin Chúa Sai Tôi</a></li>
-href="/index.php?title=H%C3%A3y_Theo_Ta" title="Hãy Theo Ta">Hãy Theo Ta</a></li>
-href="/index.php?title=Mong_B%E1%BA%A1n_Quay_V%E1%BB%81" title="Mong Bạn Quay Về">Mong Bạn Quay Về</a></li>
-href="/index.php?title=%C4%90%E1%BB%A9c_Ch%C3%BAa_Tr%E1%BB%9Di_Y%C3%AAu_Th%C6%B0%C6%A1ng_Th%E1%BA%BF_Gian" title="Đức Chúa Trời Yêu Thương Thế Gian"> Chúa Yêu Thế Gian</a></li>
-href="/index.php?title=Tr%E1%BB%9F_V%E1%BB%81" title="Trở Về">Trở Về</a></li>
-href="/index.php?title=Ch%E1%BB%89_V%C3%AC_T%E1%BB%99i_T%C3%B4i" title="Chỉ Vì Tội Tôi"> Vì Tội Tôi</a></li>
-href="/index.php?title=Ti%E1%BA%BFng_Gi%C3%AA-xu" title="Tiếng Giê-xu"> Tiếng Chúa</a></li>
-href="/index.php?title=Ngu%E1%BB%93n_T%C3%ACnh_Y%C3%AAu" title="Nguồn Tình Yêu">Nguồn Tình Yêu</a></li>
-href="/index.php?title=V%E1%BB%81_G%E1%BA%A5p_L%C3%AAn" title="Về Gấp Lên">Về Gấp Lên</a></li>
-href="/index.php?title=Chi%C3%AAn_L%E1%BA%A1c_Tr%E1%BB%9F_V%E1%BB%81" title="Chiên Lạc Trở Về">Chiên Lạc Trở Về</a></li>
-href="/index.php?title=Loan_Tin_M%E1%BB%ABng" title="Loan Tin Mừng">Loan Tin Mừng</a></li>
-href="/index.php?title=Ch%C3%BAa_%C4%90%C3%A3_T%E1%BB%9Bi" title="Chúa Đã Tới"> Yêu Là Khi</a></li>
-href="/index.php?title=%C4%90%C6%B0a_Ng%C6%B0%E1%BB%9Di_%C4%90%E1%BA%BFn_Tin_Ch%C3%BAa" title="Đưa Người Đến Tin Chúa"> Đưa Người Đến Chúa</a></li>
-href="/index.php?title=Vi%E1%BB%87t_Nam_Ca" title="Việt Nam Ca"> Mảnh Đất Quê Hương</a></li>
-href="/index.php?title=Xin_Cha_%C4%90%C6%B0a_Anh" title="Xin Cha Đưa Anh"> Xin Cha Dẫn Đưa</a></li>
-href="/index.php?title=Ph%C3%BAt_Nguy%E1%BB%87n_C%E1%BA%A7u" title="Phút Nguyện Cầu"> Lúc Anh Nguyện Cầu</a></li>
-href="/index.php?title=C%E1%BA%A7u_Ch%C3%BAa_%E1%BB%9E_B%C3%AAn_T%C3%B4i_Ho%C3%A0i" title="Cầu Chúa Ở Bên Tôi Hoài"> Xin Chúa Ở Bên Con</a></li>
-href="/index.php?title=Ca_Kh%C3%BAc_Xanh" title="Ca Khúc Xanh">Ca Khúc Xanh</a></li>
-href="/index.php?title=T%C3%B4n_Th%E1%BB%9D_Cha_Th%C3%A1nh" title="Tôn Thờ Cha Thánh">Tôn Thờ Cha Thánh</a></li>
-href="/index.php?title=D%C3%A2ng_Cha_%C4%90%C3%B3a_Hoa_L%C3%B2ng" title="Dâng Cha Đóa Hoa Lòng">Dâng Cha Đóa Hoa Lòng</a></li>
-href="/index.php?title=Ng%E1%BB%A3i_Ca_%C6%A0n_Th%C6%B0%C6%A1ng_X%C3%B3t" title="Ngợi Ca Ơn Thương Xót">Ngợi Ca Ơn Thương Xót</a></li>
-href="/index.php?title=Nh%C3%ACn_L%C3%AAn_Cha_Th%C3%A1nh" title="Nhìn Lên Cha Thánh">Nhìn Lên Cha Thánh</a></li>
-href="/index.php?title=%C6%A0n_Y%C3%AAu_Th%C6%B0%C6%A1ng_T%E1%BB%AB_Cha" title="Ơn Yêu Thương Từ Cha">Ơn Yêu Thương Từ Cha</a></li>
-href="/index.php?title=Ch%C3%BAc_T%C3%B4n_Ch%C3%BAa" title="Chúc Tôn Chúa">Chúc Tôn Chúa</a></li>
-href="/index.php?title=Th%C3%A0nh_K%C3%ADnh_Ca_Ng%E1%BB%A3i" title="Thành Kính Ca Ngợi">Thành Kính Ca Ngợi</a></li>
-href="/index.php?title=L%E1%BB%9Di_T%E1%BA%A1_%C6%A0n" title="Lời Tạ Ơn">Lời Tạ Ơn</a></li>
-href="/index.php?title=T%C3%B4n_Vinh_Danh_Ch%C3%BAa" title="Tôn Vinh Danh Chúa">Tôn Vinh Danh Chúa</a></li>
-href="/index.php?title=L%E1%BA%A1y_Cha_Y%C3%AAu_Th%C6%B0%C6%A1ng" title="Lạy Cha Yêu Thương">Lạy Cha Yêu Thương</a></li>
-href="/index.php?title=H%C3%B4-sa-na" title="Hô-sa-na">Hô-sa-na</a></li>
-href="/index.php?title=D%C3%A2ng_L%E1%BB%9Di_T%C3%A1n_D%C6%B0%C6%A1ng" title="Dâng Lời Tán Dương">Dâng Lời Tán Dương</a></li>
-href="/index.php?title=D%C3%A2ng_L%C3%AAn_Cha" title="Dâng Lên Cha">Dâng Lên Cha</a></li>
-href="/index.php?title=Trong_Gi%C3%A2y_Ph%C3%BAt_N%C3%A0y" title="Trong Giây Phút Này">Trong Giây Phút Này</a></li>
-href="/index.php?title=Ch%C3%BAa_Oai_Quy%E1%BB%81n" title="Chúa Oai Quyền">Chúa Oai Quyền</a></li>
-href="/index.php?title=D%C3%A2ng_Hi%E1%BA%BFn" title="Dâng Hiến">Dâng Hiến</a></li>
-href="/index.php?title=Ca_Ng%E1%BB%A3i_Ch%C3%BAa" title="Ca Ngợi Chúa">Ca Ngợi Chúa</a></li>
-href="/index.php?title=Vinh_Quang_R%E1%BA%A1ng_Ng%E1%BB%9Di" title="Vinh Quang Rạng Ngời">Vinh Quang Rạng Ngời</a></li>
-href="/index.php?title=L%E1%BB%9Di_Con_Ca_T%E1%BB%A5ng" title="Lời Con Ca Tụng">Lời Con Ca Tụng</a></li>
-href="/index.php?title=H%C6%B0%E1%BB%9Bng_L%C3%AAn_Ch%C3%BAa" title="Hướng Lên Chúa">Hướng Lên Chúa</a></li>
-href="/index.php?title=Cha_Cao_Qu%C3%AD" title="Cha Cao Quí">Cha Cao Quí</a></li>
-href="/index.php?title=T%C3%ACnh_Y%C3%AAu_Mu%C3%B4n_Thu" title="Tình Yêu Muôn Thu">Tình Yêu Muôn Thu</a></li>
-href="/index.php?title=D%C3%A2ng_L%E1%BB%9Di_Suy_T%C3%B4n" title="Dâng Lời Suy Tôn">Dâng Lời Suy Tôn</a></li>
-href="/index.php?title=Thi_Thi%C3%AAn_86" title="Thi Thiên 86">Thi Thiên 86</a></li>
-href="/index.php?title=H%C3%A1t_Ha-l%C3%AA-lu-gia" title="Hát Ha-lê-lu-gia">Hát Ha-lê-lu-gia</a></li>
-href="/index.php?title=L%E1%BB%9Di_Nguy%E1%BB%87n_K%C3%ADnh_Y%C3%AAu" title="Lời Nguyện Kính Yêu">Lời Nguyện Kính Yêu</a></li>
-href="/index.php?title=N%C6%A1i_%E1%BA%A8n_Tr%C3%BA_Mu%C3%B4n_%C4%90%E1%BB%9Di" title="Nơi Ẩn Trú Muôn Đời">Nơi Ẩn Trú Muôn Đời</a></li>
-href="/index.php?title=D%C3%A2ng_L%E1%BB%9Di_C%E1%BA%A3m_T%E1%BA%A1" title="Dâng Lời Cảm Tạ">Dâng Lời Cảm Tạ</a></li>
-href="/index.php?title=N%C3%A0y_Anh_Th%E1%BA%A5y_Kh%C3%B4ng" title="Này Anh Thấy Không">Này Anh Thấy Không</a></li>
-href="/index.php?title=Ph%C3%BAt_Suy_T%C6%B0" title="Phút Suy Tư">Phút Suy Tư</a></li>
-href="/index.php?title=%C4%90%E1%BB%93i_V%E1%BA%AFng" title="Đồi Vắng">Đồi Vắng</a></li>
-href="/index.php?title=D%C3%A2ng_Tr%E1%BB%8Dn_Cho_J%C3%AAsus" title="Dâng Trọn Cho Jêsus">Dâng Trọn Cho Jêsus</a></li>
-href="/index.php?title=M%E1%BB%ABng_Xu%C3%A2n" title="Mừng Xuân">Mừng Xuân</a></li>
-href="/index.php?title=Chuy%E1%BB%87n_Gi%C3%A1ng_Sinh" title="Chuyện Giáng Sinh">Chuyện Giáng Sinh</a></li>
-href="/index.php?title=Ni%E1%BB%81m_Vui" title="Niềm Vui">Niềm Vui</a></li>
-href="/index.php?title=Xu%C3%A2n_%C4%90%E1%BA%BFn_B%C3%AAn_Nh%C3%A0" title="Xuân Đến Bên Nhà">Xuân Đến Bên Nhà</a></li>
-href="/index.php?title=H%C3%A3y_Tin,_%C4%90%E1%BB%ABng_S%E1%BB%A3!" title="Hãy Tin, Đừng Sợ!">Hãy Tin, Đừng Sợ!</a></li>
-href="/index.php?title=Ti%E1%BA%BFng_G%C3%B5_C%E1%BB%ADa" title="Tiếng Gõ Cửa">Tiếng Gõ Cửa</a></li>
-href="/index.php?title=Khi_Ch%C3%BAa_Y%C3%AAn_L%E1%BA%B7ng_Nh%C3%ACn" title="Khi Chúa Yên Lặng Nhìn">Khi Chúa Yên Lặng Nhìn</a></li>
-href="/index.php?title=D%C3%B9_Mai_Sau" title="Dù Mai Sau">Dù Mai Sau</a></li>
-href="/index.php?title=Khi_T%C3%B4i_Qu%E1%BB%B3_N%C6%A1i_Ch%C3%A2n_Ch%C3%BAa" title="Khi Tôi Quỳ Nơi Chân Chúa">Khi Tôi Quỳ Nơi Chân Chúa</a></li>
-href="/index.php?title=L%E1%BB%9Di_Nguy%E1%BB%87n_Chi%E1%BB%81u" title="Lời Nguyện Chiều">Lời Nguyện Chiều</a></li>
-href="/index.php?title=Thi_Thi%C3%AAn_90" title="Thi Thiên 90">Thi Thiên 90</a></li>
-href="/index.php?title=T%C3%B4i_%C6%AF%E1%BB%9Bc_M%C6%A1_L%C3%A0_Vi%C3%AAn_Than_H%E1%BB%93ng" title="Tôi Ước Mơ Là Viên Than Hồng">Tôi Ước Mơ Là Viên Than Hồng</a></li>
-href="/index.php?title=B%C3%AAn_Cha" title="Bên Cha">Bên Cha</a></li>
-href="/index.php?title=Hang_B%C3%AA-lem" title="Hang Bê-lem">Hang Bê-lem</a></li>
-href="/index.php?title=%C4%90%C3%AAm_Vui_Tr%E1%BA%A7n_Th%E1%BA%BF" title="Đêm Vui Trần Thế">Đêm Vui Trần Thế</a></li>
-href="/index.php?title=Ng%C6%B0%E1%BB%9Di_%C4%90%C3%A3_%C4%90%E1%BA%BFn" title="Người Đã Đến">Người Đã Đến</a></li>
-href="/index.php?title=B%C6%B0%E1%BB%9Bc_Ng%C6%B0%E1%BB%9Di_%C4%90i_Qua" title="Bước Người Đi Qua">Bước Người Đi Qua</a></li>
-href="/index.php?title=J%C3%AAsus" title="Jêsus">Jêsus</a></li>
-href="/index.php?title=V%C3%B9ng_%C4%90%E1%BB%93i_Xa_%E1%BA%A4y" title="Vùng Đồi Xa Ấy">Vùng Đồi Xa Ấy</a></li>
-href="/index.php?title=L%E1%BB%9Di_Ch%C3%BAa" title="Lời Chúa">Lời Chúa</a></li>
-href="/index.php?title=Gi%C3%B2ng_S%C3%B4ng_Tr%C6%B0%E1%BB%9Dng_Sinh" title="Giòng Sông Trường Sinh">Giòng Sông Trường Sinh</a></li>
-href="/index.php?title=T%C3%B4n_Vinh" title="Tôn Vinh">Tôn Vinh</a></li>
-href="/index.php?title=N%E1%BA%AFm_Ch%E1%BA%B7t_L%E1%BB%9Di_H%E1%BB%A9a" title="Nắm Chặt Lời Hứa">Nắm Chặt Lời Hứa</a></li>
-href="/index.php?title=R%E1%BB%93i_Ng%C3%A0y_S%E1%BA%BD_Tr%C3%B4i_Qua" title="Rồi Ngày Sẽ Trôi Qua">Rồi Ngày Sẽ Trôi Qua</a></li>
-href="/index.php?title=V%E1%BB%AFng_B%C6%B0%E1%BB%9Bc_%C4%90i_Tr%C3%AAn_Kh%E1%BB%95_%C4%90au" title="Vững Bước Đi Trên Khổ Đau">Vững Bước Đi Trên Khổ Đau</a></li>
-href="/index.php?title=Ca_Kh%C3%BAc_T%E1%BA%A1_%C6%A0n_T%C3%B4n_Vinh" title="Ca Khúc Tạ Ơn Tôn Vinh">Ca Khúc Tạ Ơn Tôn Vinh</a></li>
-href="/index.php?title=Gi%C3%AA-xu_B%C3%AAn_T%C3%B4i" title="Giê-xu Bên Tôi"> Jêsus Bên Tôi</a></li>
+index.php?title=Nguy%E1%BB%87n_T%E1%BB%A5ng_M%E1%BB%B9_Ch%C3%BAa_Linh_N%C4%83ng" title="Nguyện Tụng Mỹ Chúa Linh Năng"> Tụng Mỹ Chúa Linh Năng</a></li>
+index.php?title=K%C3%ADnh_Th%C3%A1nh_V%C6%B0%C6%A1ng_K%C3%ADp_Ng%E1%BB%B1_Lai" title="Kính Thánh Vương Kíp Ngự Lai"> Thánh Vương Ngự Lai</a></li>
+index.php?title=T%C3%B4n_Vinh_Ch%C3%A2n_Th%E1%BA%A7n" title="Tôn Vinh Chân Thần">Tôn Vinh Chân Thần</a></li>
+index.php?title=Ha-l%C3%AA-lu-gia!_Vinh_Danh_Ng%C3%A0i!" title="Ha-lê-lu-gia! Vinh Danh Ngài!"> Vinh Danh Ngài</a></li>
+index.php?title=Ph%C6%B0%E1%BB%9Bc_Nguy%C3%AAn_T%E1%BB%AB_Tr%E1%BB%9Di" title="Phước Nguyên Từ Trời"> Nguồn Ơn Phước</a></li>
+index.php?title=Th%C3%A1nh_Thay!_Th%C3%A1nh_Thay!_Th%C3%A1nh_Thay!" title="Thánh Thay! Thánh Thay! Thánh Thay!"> Thánh Thay, Thánh Thay, Thánh Thay</a></li>
+index.php?title=H%E1%BB%93n_Ta_H%E1%BA%B1ng_Khen_Ch%C3%BAa" title="Hồn Ta Hằng Khen Chúa"> Tâm Hồn Ca Ngợi</a></li>
+index.php?title=T%C3%B4n_Vinh_Ba_Ng%C3%B4i_%C4%90%E1%BB%A9c_Ch%C3%BAa_Tr%E1%BB%9Di" title="Tôn Vinh Ba Ngôi Đức Chúa Trời"> Tôn Vinh Ba Ngôi</a></li>
+index.php?title=Kh%C3%A1_Ng%E1%BB%A3i_Khen_Ch%C3%BAa" title="Khá Ngợi Khen Chúa"> Ngợi Tôn Chúa</a></li>
+index.php?title=Vinh_Quang_Thu%E1%BB%99c_V%E1%BB%81_%C4%90%E1%BB%A9c_Ch%C3%BAa_Tr%E1%BB%9Di" title="Vinh Quang Thuộc Về Đức Chúa Trời"> Vinh Quang Thuộc Chúa</a></li>
+index.php?title=Ch%C3%BAa_K%E1%BB%B3_Di%E1%BB%87u" title="Chúa Kỳ Diệu">Chúa Kỳ Diệu</a></li>
+index.php?title=To%C3%A0n_Th%E1%BA%BF_Gi%E1%BB%9Bi_Ca_Ng%E1%BB%A3i" title="Toàn Thế Giới Ca Ngợi">Toàn Thế Giới Ca Ngợi</a></li>
+index.php?title=Ng%E1%BB%A3i_Gi%C3%AA-h%C3%B4-va_Th%C3%A1nh_%C4%90%E1%BA%BF" title="Ngợi Giê-hô-va Thánh Đế"> Tụng Ngợi Thánh Đế</a></li>
+index.php?title=Ch%C3%BAa_V%E1%BB%91n_B%E1%BB%A9c_Th%C3%A0nh_Ki%C3%AAn_C%E1%BB%91" title="Chúa Vốn Bức Thành Kiên Cố"> Bức Thành Kiên Cố</a></li>
+index.php?title=Ch%C3%BAc_T%C3%B4n_Vua_Thi%C3%AAn_Cung" title="Chúc Tôn Vua Thiên Cung">Chúc Tôn Vua Thiên Cung</a></li>
+index.php?title=S%E1%BB%B1_Th%C3%A0nh_T%C3%ADn_Ch%C3%BAa_R%E1%BA%A5t_L%E1%BB%9Bn" title="Sự Thành Tín Chúa Rất Lớn"> Thánh Chúa Thành Tín</a></li>
+index.php?title=Ngu%E1%BB%93n_C%E1%BB%A9u_Gi%C3%BAp" title="Nguồn Cứu Giúp">Nguồn Cứu Giúp</a></li>
+index.php?title=Khi_Xem_Mu%C3%B4n_V%E1%BA%ADt_-_How_Great_Thou_Art" title="Khi Xem Muôn Vật - How Great Thou Art"> Thánh Chúa Siêu Việt</a></li>
+index.php?title=L%C3%AAn_%C4%90%E1%BB%81n_Th%C3%A1nh" title="Lên Đền Thánh">Lên Đền Thánh</a></li>
+index.php?title=Ch%C3%BAa" title="Chúa">Chúa</a></li>
+index.php?title=T%C3%B4n_Ng%E1%BB%A3i_%C4%90%E1%BA%A5ng_T%E1%BA%A1o_H%C3%B3a" title="Tôn Ngợi Đấng Tạo Hóa">Tôn Ngợi Đấng Tạo Hóa</a></li>
+index.php?title=T%C3%ACnh_Y%C3%AAu_Ch%C3%BAa" title="Tình Yêu Chúa">Tình Yêu Chúa</a></li>
+index.php?title=Vui_M%E1%BB%ABng_Tung_H%C3%B4_Ch%C3%BAa" title="Vui Mừng Tung Hô Chúa"> Vui Mừng Chúa Là Vua</a></li>
+index.php?title=Vui_M%E1%BB%ABng_Tung_H%C3%B4_Ch%C3%BAa" title="Vui Mừng Tung Hô Chúa"> Vui Mừng Tán Dương</a></li>
+index.php?title=Thi_Thi%C3%AAn_121" title="Thi Thiên 121"> Ngước Mắt Lên Đồi</a></li>
+index.php?title=Ng%E1%BB%A3i_Danh_Gi%C3%AA-xu_R%E1%BA%A5t_Oai_Quy%E1%BB%81n" title="Ngợi Danh Giê-xu Rất Oai Quyền"> Tung Hô Danh Chúa</a></li>
+index.php?title=Ch%C3%BAc_Cho_%C4%90%E1%BA%A5ng_Ng%E1%BB%93i_Tr%C3%AAn_Ng%C3%B4i" title="Chúc Cho Đấng Ngồi Trên Ngôi"> Đấng Ngồi Trên Ngôi</a></li>
+index.php?title=Gi%C3%AA-xu_%C4%90%E1%BA%B9p_Thay" title="Giê-xu Đẹp Thay">Jesus Tuyệt Vời</a></li>
+index.php?title=Hi%E1%BA%BFn_V%C6%B0%C6%A1ng_Mi%E1%BB%87n" title="Hiến Vương Miện">Hiến Vương Miện</a></li>
+index.php?title=V%C3%AC_Sao_T%C3%B4i_Ca_Ng%E1%BB%A3i%3F" title="Vì Sao Tôi Ca Ngợi?">Vì Sao Tôi Ca Ngợi?</a></li>
+index.php?title=Danh_Ch%C3%BAa_Jesus" title="Danh Chúa Jesus">Danh Chúa Jesus</a></li>
+index.php?title=T%C3%B4n_Vinh_Ch%C3%BAa_T%C3%B4i" title="Tôn Vinh Chúa Tôi">Tôn Vinh Chúa Tôi</a></li>
+index.php?title=Ng%E1%BB%A3i_Khen_%C4%90%E1%BA%A5ng_Qu%C3%A2n_L%C3%A2m_Mu%C3%B4n_%C4%90%E1%BB%9Di" title="Ngợi Khen Đấng Quân Lâm Muôn Đời"> Ngợi Ca Danh Oai Nghi</a></li>
+index.php?title=Reo_Vang_H%C3%B4-sa-na" title="Reo Vang Hô-sa-na">Reo Vang Hô-sa-na</a></li>
+index.php?title=M%E1%BB%99t_Ng%C3%A0y" title="Một Ngày">Một Ngày</a></li>
+index.php?title=Ha-l%C3%AA-lu-gia" title="Ha-lê-lu-gia">Ha-lê-lu-gia</a></li>
+index.php?title=Ng%E1%BB%A3i_Danh_Gi%C3%AA-xu" title="Ngợi Danh Giê-xu"> Ngợi Ca Jêsus</a></li>
+index.php?title=C%C3%A1m_%C6%A0n_Ng%C3%A0i" title="Cám Ơn Ngài">Cám Ơn Ngài</a></li>
+index.php?title=%C6%A0n_Gi%C3%AA-xu_Cao_S%C3%A2u_L%E1%BA%AFm_Thay" title="Ơn Giê-xu Cao Sâu Lắm Thay"> Ơn Cao Sâu</a></li>
+index.php?title=C%E1%BA%A7n_J%C3%AAsus_H%C6%A1n" title="Cần Jêsus Hơn">Cần Jêsus Hơn</a></li>
+index.php?title=Ng%C3%A0y_Ng%C3%A0y_Ng%E1%BB%A3i_Danh_Ch%C3%BAa_Hi%E1%BB%83n_Vinh" title="Ngày Ngày Ngợi Danh Chúa Hiển Vinh"> Ca Ngợi Chúa Đêm Ngày</a></li>
+index.php?title=Kh%C3%BAc_H%C3%A1t_T%C3%A2m_Linh" title="Khúc Hát Tâm Linh">Khúc Hát Tâm Linh</a></li>
+index.php?title=Danh_Ng%C3%A0i_L%C3%A0_J%C3%AAsus" title="Danh Ngài Là Jêsus">Danh Ngài Là Jêsus</a></li>
+index.php?title=Ch%C3%BAa_Gi%C3%AA-xu_L%C3%A2m_Ph%C3%A0m" title="Chúa Giê-xu Lâm Phàm"> Chúa Jêsus Lâm Phàm</a></li>
+index.php?title=Ch%C3%BAa_Mu%C3%B4n_Thu" title="Chúa Muôn Thu">Chúa Muôn Thu</a></li>
+index.php?title=Ca_Ng%E1%BB%A3i_V%C3%AC_%C4%90%C6%B0%E1%BB%A3c_C%E1%BB%A9u" title="Ca Ngợi Vì Được Cứu">Ca Ngợi Vì Được Cứu</a></li>
+index.php?title=T%C3%ACnh_Y%C3%AAu_Gi%C3%AA-xu" title="Tình Yêu Giê-xu"> Tình Yêu Jêsus</a></li>
+index.php?title=T%C3%B4i_Kh%C3%B4ng_Th%E1%BB%83_Bi%E1%BA%BFt" title="Tôi Không Thể Biết">Tôi Không Thể Biết</a></li>
+index.php?title=Kh%C3%BAc_Ca_Mang_Danh_J%C3%AAsus" title="Khúc Ca Mang Danh Jêsus">Khúc Ca Mang Danh Jêsus</a></li>
+index.php?title=Ch%C3%BAa_Th%C3%A1nh_Vinh_Quang" title="Chúa Thánh Vinh Quang">Chúa Thánh Vinh Quang</a></li>
+index.php?title=Ch%C3%BAa_S%E1%BB%91ng_L%E1%BA%A1i_Vinh_Quang_R%E1%BB%93i" title="Chúa Sống Lại Vinh Quang Rồi"> Chúa Sống Vinh Quang</a></li>
+index.php?title=T%C3%B4n_Vinh_Vua_J%C3%AAsus" title="Tôn Vinh Vua Jêsus">Tôn Vinh Vua Jêsus</a></li>
+index.php?title=Y%C3%AAu_Th%C6%B0%C6%A1ng_%C4%90%E1%BB%9Di_%C4%90%E1%BB%9Di" title="Yêu Thương Đời Đời">Yêu Thương Đời Đời</a></li>
+index.php?title=T%C3%B4n_Cao_Danh_Ch%C3%BAa" title="Tôn Cao Danh Chúa">Tôn Cao Danh Chúa</a></li>
+index.php?title=Danh_Tr%C3%AAn_Mu%C3%B4n_Danh" title="Danh Trên Muôn Danh">Danh Trên Muôn Danh</a></li>
+index.php?title=%C3%81nh_S%C3%A1ng_T%C3%ACnh_Y%C3%AAu" title="Ánh Sáng Tình Yêu">Ánh Sáng Tình Yêu</a></li>
+index.php?title=Ti%E1%BA%BFng_N%C3%B3i_Trong_T%C3%A2m_H%E1%BB%93n_T%C3%B4i" title="Tiếng Nói Trong Tâm Hồn Tôi">Tiếng Nói Trong Tâm Hồn Tôi</a></li>
+index.php?title=Ca_Ng%E1%BB%A3i_Ch%C3%BAa_T%C3%B4i" title="Ca Ngợi Chúa Tôi">Ca Ngợi Chúa Tôi</a></li>
+index.php?title=D%C3%A2ng_Ng%C3%A0n_Ti%E1%BA%BFng_Tung_H%C3%B4" title="Dâng Ngàn Tiếng Tung Hô">Dâng Ngàn Tiếng Tung Hô</a></li>
+index.php?title=Ng%C3%A0i_L%C3%A0_Vua" title="Ngài Là Vua">Ngài Là Vua</a></li>
+index.php?title=Bi%E1%BA%BFt_Gi%C3%AA-xu_V%C3%A0_Truy%E1%BB%81n_B%C3%A1_Danh_Ng%C3%A0i" title="Biết Giê-xu Và Truyền Bá Danh Ngài"> Yêu Jêsus</a></li>
+index.php?title=Ng%C3%A0i_L%C3%A0_Ai%3F" title="Ngài Là Ai?">Ngài Là Ai?</a></li>
+index.php?title=Vua_Mu%C3%B4n_Vua" title="Vua Muôn Vua">Vua Muôn Vua</a></li>
+index.php?title=Thi%C3%AAn_Th%E1%BA%A7n_H%C3%B2a_Ca" title="Thiên Thần Hòa Ca"> Thiên Binh Vang Tiếng Hát</a></li>
+index.php?title=Ni%E1%BB%81m_Vui_Cho_Tr%E1%BA%A7n_Gian" title="Niềm Vui Cho Trần Gian"> Phước Cho Nhân Loại</a></li>
+index.php?title=C%C3%B9ng_%C4%90%E1%BA%BFn_Th%E1%BB%9D_Ch%C3%BAa" title="Cùng Đến Thờ Chúa"> Môn Đồ Trung Tín</a></li>
+index.php?title=Tho%E1%BA%A1t_%C4%90%E1%BA%BFn_%C4%90%C3%AAm_N%E1%BB%8D" title="Thoạt Đến Đêm Nọ"> Giữa Đêm Yên Tịnh</a></li>
+index.php?title=K%E1%BB%B7_Nguy%C3%AAn_Thanh_B%C3%ACnh" title="Kỷ Nguyên Thanh Bình">Kỷ Nguyên Thanh Bình</a></li>
+index.php?title=K%C3%ADp_%C4%90%E1%BA%BFn_T%C3%B4n_Th%E1%BB%9D" title="Kíp Đến Tôn Thờ"> Đến Tôn Thờ</a></li>
+index.php?title=B%C3%A0i_Ca_M%C3%A1ng_C%E1%BB%8F" title="Bài Ca Máng Cỏ"> Trong Máng Chiên</a></li>
+index.php?title=%C4%90%C3%AAm_Y%C3%AAn_L%E1%BA%B7ng" title="Đêm Yên Lặng">Đêm Yên Lặng</a></li>
+index.php?title=H%E1%BB%A1i_B%E1%BA%BFt-l%C3%AA-hem_Nh%E1%BB%8F_B%C3%A9" title="Hỡi Bết-lê-hem Nhỏ Bé"> Bết-lê-hem Nhỏ Bé</a></li>
+index.php?title=Kh%C3%B4ng_Ch%E1%BB%97_Trong_Qu%C3%A1n" title="Không Chỗ Trong Quán"> Không Chổ Trong Quán</a></li>
+index.php?title=%C4%90%C3%AAm_Th%C3%A1nh" title="Đêm Thánh">Đêm Thánh</a></li>
+index.php?title=Ca_Ch%C3%BAc_Gi%C3%A1ng_Sinh" title="Ca Chúc Giáng Sinh">Ca Chúc Giáng Sinh</a></li>
+index.php?title=%C4%90%C3%AAm_Ch%C3%BAa_Tr%E1%BB%9Di_Ban_%C6%A0n_L%C3%A0nh" title="Đêm Chúa Trời Ban Ơn Lành"> Đêm Ơn Lành</a></li>
+index.php?title=%C4%90%E1%BA%A5ng_Th%C3%A1nh_L%C3%A2m_Ph%C3%A0m" title="Đấng Thánh Lâm Phàm">Đấng Thánh Lâm Phàm</a></li>
+index.php?title=Thi%C3%AAn_%C4%90%C3%A0ng_Chung_Vui" title="Thiên Đàng Chung Vui"> Niềm Vui Thiên Đàng</a></li>
+index.php?title=N%C3%B4-%C3%AAn_%C4%90%E1%BA%A7u_Ti%C3%AAn" title="Nô-ên Đầu Tiên">Nô-ên Đầu Tiên</a></li>
+index.php?title=Nghe_Xa_Xa_%C4%90i%E1%BB%87u_Th%E1%BA%A7n_Ca" title="Nghe Xa Xa Điệu Thần Ca"> Điệu Thần Ca</a></li>
+index.php?title=Ha-l%C3%AA-lu-gia!_J%C3%AAsus_%C4%90%E1%BA%BFn" title="Ha-lê-lu-gia! Jêsus Đến">Ha-lê-lu-gia! Jêsus Đến</a></li>
+index.php?title=Em-ma-nu-%C3%AAn" title="Em-ma-nu-ên">Em-ma-nu-ên</a></li>
+index.php?title=Ch%C3%BAa_%C4%90%E1%BA%BFn_D%C6%B0%C6%A1ng_Tr%E1%BA%A7n" title="Chúa Đến Dương Trần">Chúa Đến Dương Trần</a></li>
+index.php?title=Vua_Mi%E1%BB%81n_%C4%90%C3%B4ng" title="Vua Miền Đông">Vua Miền Đông</a></li>
+index.php?title=Ti%E1%BA%BFng_H%C3%A1t_Thi%C3%AAn_Binh" title="Tiếng Hát Thiên Binh">Tiếng Hát Thiên Binh</a></li>
+index.php?title=T%C3%ACnh_Y%C3%AAu_Thi%C3%AAn_Ch%C3%BAa" title="Tình Yêu Thiên Chúa">Tình Yêu Thiên Chúa</a></li>
+index.php?title=%C4%90%C3%AAm_N%C3%B4-%C3%AAn_T%C6%B0ng_B%E1%BB%ABng" title="Đêm Nô-ên Tưng Bừng">Đêm Nô-ên Tưng Bừng</a></li>
+index.php?title=B%C3%A0i_Ca_M%C3%A1ng_C%E1%BB%8F" title="Bài Ca Máng Cỏ"> Bài Ca Máng Cỏ</a></li>
+index.php?title=%C4%90%C3%AAm_%C4%90%C3%B4ng_X%C6%B0a" title="Đêm Đông Xưa">Đêm Đông Xưa</a></li>
+index.php?title=B%C3%ACnh_An_Cho_Lo%C3%A0i_Ng%C6%B0%E1%BB%9Di" title="Bình An Cho Loài Người">Bình An Cho Loài Người</a></li>
+index.php?title=Ch%E1%BA%B3ng_C%C3%B3_Ai_Nh%C6%B0_Jesus" title="Chẳng Có Ai Như Jesus"> Không Ai Khác</a></li>
+index.php?title=H%C3%B4m_Qua,_Ng%C3%A0y_Nay,_Cho_%C4%90%E1%BA%BFn_%C4%90%E1%BB%9Di_%C4%90%E1%BB%9Di" title="Hôm Qua, Ngày Nay, Cho Đến Đời Đời"> Chúa Bất Biến</a></li>
+index.php?title=Ng%C6%B0%E1%BB%9Di_Kh%C3%A1ch_L%E1%BA%A1_Ga-li-l%C3%AA" title="Người Khách Lạ Ga-li-lê">Người Khách Lạ Ga-li-lê</a></li>
+index.php?title=Cung_%C4%90i%E1%BB%87n_B%E1%BA%B1ng_Ng%C3%A0" title="Cung Điện Bằng Ngà">Cung Điện Bằng Ngà</a></li>
+index.php?title=Jesus_Kh%C3%B4ng_%C4%90%E1%BB%95i_D%E1%BB%9Di" title="Jesus Không Đổi Dời"> Chúa Không Đổi Thay</a></li>
+index.php?title=T%C3%ACnh_Ch%C3%BAa_Bao_La" title="Tình Chúa Bao La">Tình Chúa Bao La</a></li>
+index.php?title=Ta_Hy_Sinh_V%C3%AC_Con" title="Ta Hy Sinh Vì Con"> Hi Sinh Vì Con</a></li>
+index.php?title=Nh%C3%ACn_C%C3%A2y_Th%E1%BA%ADp_T%E1%BB%B1" title="Nhìn Cây Thập Tự"> Nhìn Thập Tự</a></li>
+index.php?title=Khuya_Nay_Tr%C3%AAn_%C4%90%E1%BB%89nh_N%C3%BAi_%C3%94-li-ve" title="Khuya Nay Trên Đỉnh Núi Ô-li-ve"> Trên Đỉnh Ô-li-ve</a></li>
+index.php?title=Gh%E1%BA%BFt-s%C3%AA-ma-n%C3%AA" title="Ghết-sê-ma-nê">Ghết-sê-ma-nê</a></li>
+index.php?title=Nh%C6%B0_Chi%C3%AAn_%C4%90i_L%E1%BA%A1c" title="Như Chiên Đi Lạc">Như Chiên Đi Lạc</a></li>
+index.php?title=Gi%E1%BB%9D_%C4%90%C6%B0%E1%BB%A3c_Chi%C3%AAm_Ng%C6%B0%E1%BB%A1ng_Th%E1%BA%ADp_Gi%C3%A1" title="Giờ Được Chiêm Ngưỡng Thập Giá"> Chiêm Ngưỡng Thập Giá</a></li>
+index.php?title=Ch%C3%BAa_Mang_Th%E1%BA%ADp_H%C3%ACnh" title="Chúa Mang Thập Hình">Chúa Mang Thập Hình</a></li>
+index.php?title=Nguy%E1%BB%81n_D%C3%ACu_L%C3%AAn_G%C3%B4-g%C3%B4-tha" title="Nguyền Dìu Lên Gô-gô-tha"> Lên Gô-gô-tha</a></li>
+index.php?title=G%C3%B4-g%C3%B4-tha" title="Gô-gô-tha">Gô-gô-tha</a></li>
+index.php?title=Ng%E1%BB%A3i_Khen_D%C3%B2ng_Huy%E1%BA%BFt" title="Ngợi Khen Dòng Huyết"> Ca Ngợi Dòng Huyết Báu</a></li>
+index.php?title=H%C3%A3y_Tin" title="Hãy Tin">Hãy Tin</a></li>
+index.php?title=G%E1%BA%A7n_Th%E1%BA%ADp_T%E1%BB%B1" title="Gần Thập Tự"> Gần Thập Tự Hơn</a></li>
+index.php?title=N%C6%A1i_Th%E1%BA%ADp_T%E1%BB%B1_Gi%C3%A1" title="Nơi Thập Tự Giá"> Sông Tình Yêu</a></li>
+index.php?title=Nhi%E1%BB%81u_Khi_T%C3%B4i_Nh%E1%BB%9B_V%E1%BB%81" title="Nhiều Khi Tôi Nhớ Về">Nhiều Khi Tôi Nhớ Về</a></li>
+index.php?title=Tr%C3%AAn_%C4%90%E1%BB%93i_Cao" title="Trên Đồi Cao">Trên Đồi Cao</a></li>
+index.php?title=N%C6%A1i_Ch%C3%A2n_Th%E1%BA%ADp_T%E1%BB%B1" title="Nơi Chân Thập Tự">Nơi Chân Thập Tự</a></li>
+index.php?title=Christ_Ph%E1%BB%A5c_Sinh" title="Christ Phục Sinh"> Chúa Phục Sinh</a></li>
+index.php?title=Ng%C3%A0y_Nay_Ch%C3%BAa_Ph%E1%BB%A5c_Sinh" title="Ngày Nay Chúa Phục Sinh"> Chúa Phục Sinh Hôm Nay</a></li>
+index.php?title=Ch%C3%BAa_Oai_Quy%E1%BB%81n_Ph%E1%BB%A5c_Sanh" title="Chúa Oai Quyền Phục Sanh"> Chúa Oai Quyền Phục Sinh</a></li>
+index.php?title=Jesus_Ch%C3%A2n_Ch%C3%BAa_L%E1%BA%A1i_S%E1%BB%91ng" title="Jesus Chân Chúa Lại Sống"> Chúa Sống Lại</a></li>
+index.php?title=Tr%C3%AAn_%C4%90%C6%B0%E1%BB%9Dng_Em-mau" title="Trên Đường Em-mau">Trên Đường Em-mau</a></li>
+index.php?title=Ng%C3%A0i_S%E1%BB%91ng" title="Ngài Sống"> Chúa Sống</a></li>
+index.php?title=Ch%C3%BAa_Kh%C3%B4ng_%E1%BB%9E_N%C6%A1i_M%E1%BB%99_N%E1%BA%A7y" title="Chúa Không Ở Nơi Mộ Nầy"> Mộ Trống</a></li>
+index.php?title=V%C3%AC_Gi%C3%AA-xu_S%E1%BB%91ng" title="Vì Giê-xu Sống"> Vì Jêsus Sống</a></li>
+index.php?title=K%C3%ACa!_Nh%C3%ACn_Vua_Th%C4%83ng_Thi%C3%AAn" title="Kìa! Nhìn Vua Thăng Thiên"> Nhìn Vua Thăng Thiên</a></li>
+index.php?title=T%C3%B4n_Vinh_Jesus" title="Tôn Vinh Jesus"> Tôn Vinh Jêsus</a></li>
+index.php?title=Vinh_Di%E1%BB%87u_Ch%C3%BAa_Ph%E1%BB%A5c_Sinh" title="Vinh Diệu Chúa Phục Sinh">Vinh Diệu Chúa Phục Sinh</a></li>
+index.php?title=Jesus_Quang_L%C3%A2m" title="Jesus Quang Lâm"> Jêsus Quang Lâm</a></li>
+index.php?title=Ch%C3%BAa_T%C3%A1i_L%C3%A2m" title="Chúa Tái Lâm">Chúa Tái Lâm</a></li>
+index.php?title=K%C3%ACa!_Ch%C3%BAa_%C4%90%E1%BA%BFn" title="Kìa! Chúa Đến"> Kìa Chúa Đến!</a></li>
+index.php?title=Ng%C3%A0y_Nay_Ch%C3%BAa_%C4%90%E1%BA%BFn_Th%C3%AC_Sao%3F" title="Ngày Nay Chúa Đến Thì Sao?"> Nếu Chúa Đến Hôm Nay?</a></li>
+index.php?title=M%C3%A0n_S%C6%B0%C6%A1ng_Ti%C3%AAu_Tan" title="Màn Sương Tiêu Tan">Màn Sương Tiêu Tan</a></li>
+index.php?title=Ch%C3%BAa_K%C3%ADp_%C4%90%E1%BA%BFn" title="Chúa Kíp Đến">Chúa Kíp Đến</a></li>
+index.php?title=Tia_S%C3%A1ng_Ban_Mai" title="Tia Sáng Ban Mai">Tia Sáng Ban Mai</a></li>
+index.php?title=K%C3%ACa!_Th%E1%BA%A7n_Y%C3%AAn_%E1%BB%A6i_Gi%C3%A1ng_Lai" title="Kìa! Thần Yên Ủi Giáng Lai"> Thần Yên Ủi</a></li>
+index.php?title=Th%C3%A1nh_Linh_D%E1%BA%ABn_D%E1%BA%AFt" title="Thánh Linh Dẫn Dắt">Thánh Linh Dẫn Dắt</a></li>
+index.php?title=%C4%90%E1%BA%A7y_L%C3%B2ng_T%C3%B4i" title="Đầy Lòng Tôi">Đầy Lòng Tôi</a></li>
+index.php?title=B%C3%A0i_Ca_T%C3%A2m_Linh" title="Bài Ca Tâm Linh">Bài Ca Tâm Linh</a></li>
+index.php?title=Th%C3%A1nh_Linh_Ng%E1%BB%B1_V%C3%A0o_L%C3%B2ng" title="Thánh Linh Ngự Vào Lòng">Thánh Linh Ngự Vào Lòng</a></li>
+index.php?title=Gi%C3%B3_Th%C3%A1nh_Linh" title="Gió Thánh Linh">Gió Thánh Linh</a></li>
+index.php?title=H%C3%A0_H%C6%A1i_Linh" title="Hà Hơi Linh"> Hà Hơi Linh Thần</a></li>
+index.php?title=Xin_Th%E1%BA%A7n_Linh_C%E1%BA%A3m_H%C3%B3a" title="Xin Thần Linh Cảm Hóa"> Thần Linh Cảm Hóa</a></li>
+index.php?title=Th%C3%A1nh_Linh_H%E1%BA%B1ng_S%E1%BB%91ng" title="Thánh Linh Hằng Sống">Thánh Linh Hằng Sống</a></li>
+index.php?title=An_B%C3%ACnh_Trong_Ch%C3%BAa" title="An Bình Trong Chúa">An Bình Trong Chúa</a></li>
+index.php?title=Jesus!_%C4%90%E1%BB%A9ng_Tr%C6%B0%E1%BB%9Bc_C%E1%BB%ADa" title="Jesus! Đứng Trước Cửa"> Trước Cửa Tâm Hồn</a></li>
+index.php?title=Ch%C3%BAa_%C3%94i!_T%C3%B4i_L%E1%BA%A1i_Ngay!" title="Chúa Ôi! Tôi Lại Ngay!"> Tiếng Chúa Gọi</a></li>
+index.php?title=Nh%C3%ACn_L%C3%AAn_J%C3%AAsus" title="Nhìn Lên Jêsus">Nhìn Lên Jêsus</a></li>
+index.php?title=Huy%E1%BA%BFt_Ch%C3%BAa_M%E1%BA%A7u_Nhi%E1%BB%87m_Bi%E1%BA%BFt_Bao" title="Huyết Chúa Mầu Nhiệm Biết Bao"> Huyết Chúa Mầu Nhiệm</a></li>
+index.php?title=Ng%C3%A0i_V%E1%BB%B1c_T%C3%B4i" title="Ngài Vực Tôi"> Thoát Chốn Tội Tình</a></li>
+index.php?title=Ch%C3%BAa_%C4%90o%C3%A1i_Th%C6%B0%C6%A1ng" title="Chúa Đoái Thương">Chúa Đoái Thương</a></li>
+index.php?title=L%C4%83n_Xa" title="Lăn Xa">Lăn Xa</a></li>
+index.php?title=Ti%E1%BA%BFng_Chu%C3%B4ng_L%C3%B2ng" title="Tiếng Chuông Lòng">Tiếng Chuông Lòng</a></li>
+index.php?title=C%C3%B3_Jesus_Ph%E1%BA%A7n_T%C3%B4i_Th%E1%BB%8Fa_R%E1%BB%93i" title="Có Jesus Phần Tôi Thỏa Rồi"> Phần Vui Thỏa</a></li>
+index.php?title=Jesus_Ng%E1%BB%B1_C%C3%B9ng,_%E1%BA%A4y_N%C6%A1i_Thi%C3%AAn_Cung" title="Jesus Ngự Cùng, Ấy Nơi Thiên Cung"> Chúa Ngự Tâm Hồn</a></li>
+index.php?title=%C4%90%E1%BB%9Di_T%C3%B4i_Nay_%C4%90%C6%B0%E1%BB%A3c_%C4%90%E1%BB%95i_Thay" title="Đời Tôi Nay Được Đổi Thay"> Chúa Đến Trong Lòng</a></li>
+index.php?title=N%C3%A0y_L%C3%A0_Truy%E1%BB%87n_K%C3%BD_T%C3%B4i" title="Này Là Truyện Ký Tôi"> Tiếng Hát Của Tôi</a></li>
+index.php?title=T%C3%A2m_Linh_T%C3%B4i,_An_Ninh_Thay" title="Tâm Linh Tôi, An Ninh Thay"> Tâm Hồn Yên Ninh</a></li>
+index.php?title=H%E1%BA%B1ng_N%C6%B0%C6%A1ng_Trong_Ch%C3%BAa_Mu%C3%B4n_%C4%90%E1%BB%9Di" title="Hằng Nương Trong Chúa Muôn Đời"> Nương Trong Chúa</a></li>
+index.php?title=Tay_Ch%C3%BAa_N%E1%BA%AFm_T%C3%B4i" title="Tay Chúa Nắm Tôi">Tay Chúa Nắm Tôi</a></li>
+index.php?title=B%C6%B0%E1%BB%9Bc_V%E1%BB%9Bi_Ch%C3%BAa_Y%C3%AAu_Thu%C6%A1ng" title="Bước Với Chúa Yêu Thuơng"> Bước Với Chúa Yêu Thương</a></li>
+index.php?title=M%E1%BB%ABng_Vui!_Thanh_Ni%C3%AAn_Ta_H%C3%A1t" title="Mừng Vui! Thanh Niên Ta Hát"> Mừng Vui Hát Vang</a></li>
+index.php?title=S%E1%BB%B1_S%E1%BB%91ng_M%E1%BB%9Bi" title="Sự Sống Mới">Sự Sống Mới</a></li>
+index.php?title=L%C3%B2ng_T%C3%B4i_Vui_V%E1%BA%BB" title="Lòng Tôi Vui Vẻ"> Lòng Vui Vẻ</a></li>
+index.php?title=Vui_M%E1%BB%ABng_Ca_H%C3%A1t" title="Vui Mừng Ca Hát">Vui Mừng Ca Hát</a></li>
+index.php?title=%C6%A0n_L%E1%BA%A1_L%C3%B9ng" title="Ơn Lạ Lùng">Ơn Lạ Lùng</a></li>
+index.php?title=L%C3%B2ng_Th%C3%A1i_An" title="Lòng Thái An">Lòng Thái An</a></li>
+index.php?title=%C4%90%E1%BB%9Di_%C4%90%E1%BA%B9p_T%C6%B0%C6%A1i" title="Đời Đẹp Tươi">Đời Đẹp Tươi</a></li>
+index.php?title=S%E1%BB%B1_B%C3%ACnh_An" title="Sự Bình An">Sự Bình An</a></li>
+index.php?title=B%C6%B0%E1%BB%9Bc_Tr%C3%AAn_Thi%C3%AAn_Tr%C3%ACnh" title="Bước Trên Thiên Trình">Bước Trên Thiên Trình</a></li>
+index.php?title=Trong_Tay_Ch%C3%BAa" title="Trong Tay Chúa">Trong Tay Chúa</a></li>
+index.php?title=%C4%90%E1%BB%9Di_T%E1%BB%B1_Do" title="Đời Tự Do">Đời Tự Do</a></li>
+index.php?title=Ch%C3%BAa_%C4%90em_An_Vui_Cho_T%C3%B4i" title="Chúa Đem An Vui Cho Tôi">Chúa Đem An Vui Cho Tôi</a></li>
+index.php?title=S%E1%BB%91ng_Vui_Th%E1%BB%8Fa" title="Sống Vui Thỏa">Sống Vui Thỏa</a></li>
+index.php?title=Vui_B%C3%AAn_Ch%C3%BAa" title="Vui Bên Chúa">Vui Bên Chúa</a></li>
+index.php?title=B%C3%A0i_Ca_Trong_T%C3%A2m" title="Bài Ca Trong Tâm">Bài Ca Trong Tâm</a></li>
+index.php?title=Khi_J%C3%AAsus_Ng%E1%BB%B1_V%C3%A0o_L%C3%B2ng" title="Khi Jêsus Ngự Vào Lòng">Khi Jêsus Ngự Vào Lòng</a></li>
+index.php?title=T%C3%B4i_L%C3%A0_Chi%C3%AAn_C%E1%BB%A7a_Ch%C3%BAa" title="Tôi Là Chiên Của Chúa"> Chiên Của Chúa</a></li>
+index.php?title=%C4%90i_Trong_H%C3%A2n_Hoan" title="Đi Trong Hân Hoan">Đi Trong Hân Hoan</a></li>
+index.php?title=T%C3%B4n_Vinh_Cha" title="Tôn Vinh Cha">Tôn Vinh Cha</a></li>
+index.php?title=M%E1%BB%99t_Ng%C3%A0y_T%C6%B0%C6%A1i_M%E1%BB%9Bi" title="Một Ngày Tươi Mới">Một Ngày Tươi Mới</a></li>
+index.php?title=G%E1%BA%B7p_%C4%90%C6%B0%E1%BB%A3c_Thi%E1%BA%BFt_H%E1%BB%AFu" title="Gặp Được Thiết Hữu"> Gặp Thiết Hữu</a></li>
+index.php?title=Nguy%E1%BB%87n_C%E1%BA%A7u" title="Nguyện Cầu">Nguyện Cầu</a></li>
+index.php?title=Linh_%C3%82m_Giai_%C4%90i%E1%BB%87u" title="Linh Âm Giai Điệu"> Giai Điệu Trong Tâm Hồn</a></li>
+index.php?title=Nguy%E1%BB%87n_C%C3%A0ng_Y%C3%AAu_Th%C6%B0%C6%A1ng_Christ" title="Nguyện Càng Yêu Thương Christ"> Yêu Thương Chúa Thêm</a></li>
+index.php?title=Th%E1%BA%ADt_H%E1%BA%A1nh_Vinh_Thay!" title="Thật Hạnh Vinh Thay!"> Bước Đi Vinh Diệu</a></li>
+index.php?title=C%C3%A0ng_Y%C3%AAu_Ch%C3%BAa_H%C6%A1n" title="Càng Yêu Chúa Hơn"> Yêu Chúa Hơn</a></li>
+index.php?title=K%C3%ACa!_L%C3%B2ng_Y%C3%AAu_Th%C6%B0%C6%A1ng_Ch%C3%BAa_Phi_Th%C6%B0%E1%BB%9Dng" title="Kìa! Lòng Yêu Thương Chúa Phi Thường"> Ái Tâm Chúa</a></li>
+index.php?title=%C3%94i_T%C3%ACnh_Th%C6%B0%C6%A1ng" title="Ôi Tình Thương"> Tình Thương Cứu Chúa</a></li>
+index.php?title=%C3%82n_H%E1%BB%93ng_C%E1%BB%A9u_%C3%82n" title="Ân Hồng Cứu Ân"> Hồng Ân Cứu Chuộc</a></li>
+index.php?title=%C6%A0n_S%C3%A2u" title="Ơn Sâu">Ơn Sâu</a></li>
+index.php?title=%C3%82n_%C4%90i%E1%BB%83n" title="Ân Điển">Ân Điển</a></li>
+index.php?title=L%C3%B2ng_Lu%C3%B4n_T%C6%B0%E1%BB%9Fng_Con_Tr%E1%BB%9Di" title="Lòng Luôn Tưởng Con Trời"> Con Trời Thương Thế Gian</a></li>
+index.php?title=%C4%90%E1%BB%A9c_Tin,_Tr%C3%B4ng_C%E1%BA%ADy,_Y%C3%AAu_Th%C6%B0%C6%A1ng" title="Đức Tin, Trông Cậy, Yêu Thương"> Lòng Tin Yêu</a></li>
+index.php?title=Jesus_Y%C3%AAu_T%C3%B4i" title="Jesus Yêu Tôi"> Jêsus Yêu Tôi</a></li>
+index.php?title=Gi%C3%AA-xu_H%E1%BA%B1ng_Y%C3%AAu_M%E1%BA%BFn_T%C3%B4i" title="Giê-xu Hằng Yêu Mến Tôi"> Jêsus Yêu Mến Tôi</a></li>
+index.php?title=Thu%E1%BB%99c_Jesus_Th%E1%BB%8Fa_Vui" title="Thuộc Jesus Thỏa Vui"> Thỏa Vui Thuộc Chúa</a></li>
+index.php?title=N%E1%BA%BFu_C%C3%B3_C%E1%BA%A3_Th%E1%BA%BF_Gian" title="Nếu Có Cả Thế Gian"> Dù Có Cả Trần Gian</a></li>
+index.php?title=M%E1%BA%BFn_Y%C3%AAu_J%C3%AAsus" title="Mến Yêu Jêsus">Mến Yêu Jêsus</a></li>
+index.php?title=H%C3%A3y_%C4%90%E1%BA%BFm_C%C3%A1c_%C6%A0n_Ph%C6%B0%E1%BB%9Bc_Ch%C3%BAa_Ban" title="Hãy Đếm Các Ơn Phước Chúa Ban"> Đếm Phước Chúa Ban</a></li>
+index.php?title=L%E1%BA%BD_S%E1%BB%91ng_%C4%90%E1%BB%9Di_T%C3%B4i" title="Lẽ Sống Đời Tôi">Lẽ Sống Đời Tôi</a></li>
+index.php?title=%C4%90i%E1%BB%81u_N%C3%A0y_Th%E1%BA%ADt_Sao" title="Điều Này Thật Sao">Điều Này Thật Sao</a></li>
+index.php?title=V%E1%BB%AFng_Tin_N%C6%A1i_Ch%C3%BAa" title="Vững Tin Nơi Chúa">Vững Tin Nơi Chúa</a></li>
+index.php?title=T%C3%ACnh_Y%C3%AAu_Mu%C3%B4n_%C4%90%E1%BB%9Di" title="Tình Yêu Muôn Đời">Tình Yêu Muôn Đời</a></li>
+index.php?title=T%E1%BB%AB_Nay_Thu%E1%BB%99c_Ch%C3%BAa" title="Từ Nay Thuộc Chúa">Từ Nay Thuộc Chúa</a></li>
+index.php?title=Con_Thu%E1%BB%99c_V%E1%BB%81_Ta" title="Con Thuộc Về Ta">Con Thuộc Về Ta</a></li>
+index.php?title=Th%C3%A0_C%C3%B3_J%C3%AAsus" title="Thà Có Jêsus">Thà Có Jêsus</a></li>
+index.php?title=Gi%E1%BB%9D_D%E1%BB%8Bu_%C3%8Am" title="Giờ Dịu Êm">Giờ Dịu Êm</a></li>
+index.php?title=Lo_Bi%E1%BB%87t_Gi%E1%BB%9D_N%C3%AAn_Th%C3%A1nh_Ra" title="Lo Biệt Giờ Nên Thánh Ra"> Giờ Thánh</a></li>
+index.php?title=Gi%C3%AA-xu_L%C3%A0_B%E1%BA%A1n_Th%E1%BA%ADt" title="Giê-xu Là Bạn Thật"> Jêsus Là Bạn Thật</a></li>
+index.php?title=Ch%C3%BAa_%C3%94i,_Xin_%C4%90%E1%BB%ABng_L%C3%ACa_T%C3%B4i" title="Chúa Ôi, Xin Đừng Lìa Tôi"> Xin Dừng Chân</a></li>
+index.php?title=%C3%94i_Ch%C3%BAa_%C4%90%E1%BA%A5ng_T%C3%B4i_C%E1%BA%A7n_Lu%C3%B4n" title="Ôi Chúa Đấng Tôi Cần Luôn"> Cần Chúa Luôn</a></li>
+index.php?title=Mau_Th%C6%B0a_V%E1%BB%9Bi_Jesus" title="Mau Thưa Với Jesus"> Thưa Với Jêsus</a></li>
+index.php?title=Ban_Mai_V%E1%BB%9Bi_Gi%C3%AA-Xu" title="Ban Mai Với Giê-Xu"> Buổi Mai Với Jêsus</a></li>
+index.php?title=Xin_V%C3%B4_T%C3%A2m_H%E1%BB%93n" title="Xin Vô Tâm Hồn"> Xin Vào Tâm Hồn</a></li>
+index.php?title=D%E1%BB%A9c_D%E1%BA%A5y_Ch%C3%BAng_T%C3%B4i_Lu%C3%B4n" title="Dức Dấy Chúng Tôi Luôn"> Phục Hưng Tâm Hồn</a></li>
+index.php?title=T%C3%B4n_Vinh_Christ" title="Tôn Vinh Christ"> Tôn Vinh Chúa Chí Tôn</a></li>
+index.php?title=Ch%C3%A8o_Ra" title="Chèo Ra"> Ra Khơi</a></li>
+index.php?title=T%C3%A2m_H%E1%BB%93n_T%C3%B4i_%C4%90ang_Ch%C3%A1y" title="Tâm Hồn Tôi Đang Cháy"> Tâm Hồn Bùng Cháy</a></li>
+index.php?title=Nguy%E1%BB%81n_Cung_Hi%E1%BA%BFn_Ch%C3%BAa_C%E1%BA%A3_%C4%90%E1%BB%9Di_T%C3%B4i" title="Nguyền Cung Hiến Chúa Cả Đời Tôi"> Cung Hiến Cuộc Đời</a></li>
+index.php?title=Duy_Ch%C3%ADnh_Ng%C3%A0i" title="Duy Chính Ngài"> Chính Ngài</a></li>
+index.php?title=T%C3%B4i_Nguy%E1%BB%87n_D%C3%A2ng_T%E1%BA%A5t_Sanh" title="Tôi Nguyện Dâng Tất Sanh"> Tận Hiến</a></li>
+index.php?title=Hi%E1%BB%87n_T%C3%B4i_Nghe_R%C3%B5_Ti%E1%BA%BFng_C%E1%BB%A9u_Ch%C3%BAa_K%C3%AAu" title="Hiện Tôi Nghe Rõ Tiếng Cứu Chúa Kêu"> Tiếng Chúa Hướng Dẫn</a></li>
+index.php?title=Ta_Theo_%C3%9D_Ch%C3%BAa_Ch%C6%B0a%3F" title="Ta Theo Ý Chúa Chưa?"> Theo Ý Chúa</a></li>
+index.php?title=Nghe_Ti%E1%BA%BFng_Gi%C3%AA-xu_Tuy%C3%AAn" title="Nghe Tiếng Giê-xu Tuyên"> Lại Gần Hơn</a></li>
+index.php?title=Nguy%E1%BB%87n_%C4%90%E1%BB%9Di_T%C3%B4i_D%C3%A2ng_Ch%C3%BAa" title="Nguyện Đời Tôi Dâng Chúa"> Dâng Chúa Thủy Chung</a></li>
+index.php?title=L%C3%AAn_Ch%E1%BB%91n_Cao_H%C6%A1n" title="Lên Chốn Cao Hơn"> Chốn Cao Hơn</a></li>
+index.php?title=%C6%AF%E1%BB%9Bc_Ao_Nh%C3%ACn_Jesus" title="Ước Ao Nhìn Jesus"> Ước Ao Nhìn Jêsus</a></li>
+index.php?title=Gi%C3%AA-xu_T%C3%B4i_%C4%90%E1%BA%BFn" title="Giê-xu Tôi Đến"> Đến Theo Chúa</a></li>
+index.php?title=C%C6%A1n_M%C6%B0a_Ph%C6%B0%E1%BB%9Bc_L%C3%A0nh" title="Cơn Mưa Phước Lành">Cơn Mưa Phước Lành</a></li>
+index.php?title=Tr%C3%B4ng_Mong_Thi%C3%AAn_%C3%82n" title="Trông Mong Thiên Ân"> Chờ Mong Thiên Ân</a></li>
+index.php?title=Quy%E1%BA%BFt_S%E1%BB%91ng_Cho_Christ" title="Quyết Sống Cho Christ"> Sống Cho Chúa</a></li>
+index.php?title=Khi_Ch%C3%BAa_V%C3%B4_L%C3%B2ng" title="Khi Chúa Vô Lòng">Khi Chúa Vô Lòng</a></li>
+index.php?title=Nguy%E1%BB%87n_Theo_%C3%9D_Cha" title="Nguyện Theo Ý Cha"> Theo Ý Cha</a></li>
+index.php?title=Bi%E1%BA%BFt_Nhi%E1%BB%81u_H%C6%A1n_V%E1%BB%81_Gi%C3%AA-xu" title="Biết Nhiều Hơn Về Giê-xu"> Biết Chúa Tận Tường</a></li>
+index.php?title=Danh_Y_%C4%90%E1%BB%99c_Nh%E1%BA%A5t" title="Danh Y Độc Nhất">Danh Y Độc Nhất</a></li>
+index.php?title=Di%E1%BB%87u_Vinh_Thay_B%C3%ACnh_An!" title="Diệu Vinh Thay Bình An!"> Bình An Diệu Kỳ</a></li>
+index.php?title=Mau_D%C3%A2ng_Cho_Ch%C3%BAa_Bao_%C4%90i%E1%BB%81u_T%E1%BB%91t_Nh%E1%BA%A5t" title="Mau Dâng Cho Chúa Bao Điều Tốt Nhất"> Dâng Điều Tốt Nhất</a></li>
+index.php?title=Hi%E1%BA%BFn_C%E1%BA%A3_Th%E1%BA%A3y_Cho_Ng%C3%A0i" title="Hiến Cả Thảy Cho Ngài"> Tận Hiến Cho Chúa</a></li>
+index.php?title=Nh%C3%ACn_Vua_Vinh_Hi%E1%BB%83n" title="Nhìn Vua Vinh Hiển">Nhìn Vua Vinh Hiển</a></li>
+index.php?title=V%C3%A2ng_Theo_Ch%C3%BAa" title="Vâng Theo Chúa">Vâng Theo Chúa</a></li>
+index.php?title=T%E1%BA%A5t_C%E1%BA%A3_Cho_J%C3%AAsus" title="Tất Cả Cho Jêsus">Tất Cả Cho Jêsus</a></li>
+index.php?title=Tr%C3%B4ng_Mong_%C6%A0n_Ch%C3%AD_Cao" title="Trông Mong Ơn Chí Cao"> Trông Mong Thiên Ân</a></li>
+index.php?title=Ng%C3%A0y_C%E1%BB%A9u_Ch%C3%BAa_B%C6%B0%E1%BB%9Bc_%C4%90%E1%BA%BFn" title="Ngày Cứu Chúa Bước Đến">Ngày Cứu Chúa Bước Đến</a></li>
+index.php?title=G%E1%BA%A7n_L%C3%B2ng_T%E1%BB%AB_%C3%81i_Ch%C3%BAa_Cha" title="Gần Lòng Từ Ái Chúa Cha"> Gần Lòng Từ Ái</a></li>
+index.php?title=%C4%90%E1%BA%BFn_B%C3%AAn_D%C3%B2ng_S%C3%B4ng" title="Đến Bên Dòng Sông">Đến Bên Dòng Sông</a></li>
+index.php?title=Kh%C3%A1t_Khao_D%C3%B2ng_N%C6%B0%E1%BB%9Bc" title="Khát Khao Dòng Nước">Khát Khao Dòng Nước</a></li>
+index.php?title=Luy%E1%BB%87n_L%C3%B2ng_Con" title="Luyện Lòng Con">Luyện Lòng Con</a></li>
+index.php?title=Xin_M%E1%BB%9F_M%E1%BA%AFt_Con" title="Xin Mở Mắt Con"> Xin Mở Mắt Chúng Con</a></li>
+index.php?title=L%C3%B2ng_%C6%AF%E1%BB%9Bc_Mong" title="Lòng Ước Mong"> Như Ý Cha</a></li>
+index.php?title=Ch%E1%BB%91n_N%C6%B0%C6%A1ng_Th%C3%A2n" title="Chốn Nương Thân">Chốn Nương Thân</a></li>
+index.php?title=T%C3%A2m_H%E1%BB%93n_Trong_Tr%E1%BA%AFng" title="Tâm Hồn Trong Trắng">Tâm Hồn Trong Trắng</a></li>
+index.php?title=Khi_Ch%C3%BAa_Chinh_Ph%E1%BB%A5c_T%C3%B4i" title="Khi Chúa Chinh Phục Tôi">Khi Chúa Chinh Phục Tôi</a></li>
+index.php?title=N%C6%B0%C6%A1ng_M%C3%ACnh_Trong_C%C3%A1nh_Ch%C3%BAa" title="Nương Mình Trong Cánh Chúa"> Nương Cánh Chúa</a></li>
+index.php?title=%C4%90%E1%BB%A9ng_Tr%C3%AAn_L%E1%BB%9Di_H%E1%BB%A9a" title="Đứng Trên Lời Hứa"> Dựa Trên Lời Hứa</a></li>
+index.php?title=V%E1%BA%A7ng_%C4%90%C3%A1_Mu%C3%B4n_%C4%90%E1%BB%9Di" title="Vầng Đá Muôn Đời">Vầng Đá Muôn Đời</a></li>
+index.php?title=C%C3%A0ng_G%E1%BA%A7n_Ch%C3%BAa_H%C6%A1n" title="Càng Gần Chúa Hơn"> Gần Chúa Hơn</a></li>
+index.php?title=G%E1%BA%A7n_Th%E1%BA%ADp_T%E1%BB%B1" title="Gần Thập Tự">Gần Thập Tự</a></li>
+index.php?title=Jesus_%C4%90%E1%BA%A5ng_H%E1%BA%B1ng_Y%C3%AAu_Th%C6%B0%C6%A1ng_T%C3%B4i" title="Jesus Đấng Hằng Yêu Thương Tôi"> Chúa Yêu Thương Tôi</a></li>
+index.php?title=Tin_C%E1%BA%ADy_V%C3%A2ng_L%E1%BB%9Di" title="Tin Cậy Vâng Lời">Tin Cậy Vâng Lời</a></li>
+index.php?title=B%E1%BB%9Fi_Bi%E1%BA%BFt_%C4%90%E1%BA%A5ng_T%C3%B4i_%C4%90ang_Tin" title="Bởi Biết Đấng Tôi Đang Tin"> Tôi Biết Đấng Tôi Tin</a></li>
+index.php?title=Christ_N%E1%BA%AFm_T%C3%B4i_Th%E1%BA%ADt_Ch%E1%BA%B7t" title="Christ Nắm Tôi Thật Chặt"> Chúa Nắm Tôi</a></li>
+index.php?title=Neo_T%C3%B4i_Ch%E1%BA%AFc,_R%E1%BA%A5t_Ch%E1%BA%AFc" title="Neo Tôi Chắc, Rất Chắc"> Chiếc Neo Vững Chắc</a></li>
+index.php?title=%C4%90%E1%BB%ABng_S%E1%BB%A3" title="Đừng Sợ">Đừng Sợ</a></li>
+index.php?title=H%E1%BB%93n_T%C3%B4i_Ch%E1%BB%89_Quy%E1%BA%BFt_Neo_Trong_Huy%E1%BA%BFt_Jesus" title="Hồn Tôi Chỉ Quyết Neo Trong Huyết Jesus"> Nương Trên Jêsus</a></li>
+index.php?title=Th%E1%BB%8Fa_Th%C3%ADch_Thay_Tin_C%E1%BA%ADy_Ch%C3%BAa_Jesus" title="Thỏa Thích Thay Tin Cậy Chúa Jesus"> Tin Cậy Chúa Jêsus</a></li>
+index.php?title=Ch%E1%BB%97_H%C3%B3c_%C4%90%C3%A1_V%E1%BB%AFng_An" title="Chỗ Hóc Đá Vững An"> Hốc Đá Vững An</a></li>
+index.php?title=Trao_Cho_Ch%C3%BAa" title="Trao Cho Chúa">Trao Cho Chúa</a></li>
+index.php?title=Lo_G%C3%AC" title="Lo Gì">Lo Gì</a></li>
+index.php?title=Con_S%C3%B4ng_Th%C3%A1i_An" title="Con Sông Thái An"> Dòng Sông Thái An</a></li>
+index.php?title=N%C6%A1i_%E1%BA%A8n_N%C3%BAp_L%C3%BAc_Phong_Ba" title="Nơi Ẩn Núp Lúc Phong Ba"> Nơi Ẩn Nấp Lúc Phong Ba</a></li>
+index.php?title=Vi%E1%BB%87c_Chi_Ch%C3%BAa_Kh%C3%B4ng_Th%E1%BB%83_L%C3%A0m" title="Việc Chi Chúa Không Thể Làm"> Không Ai Bằng Chúa</a></li>
+index.php?title=N%C6%B0%C6%A1ng_C%C3%A1nh_V%C4%A9nh_Sinh" title="Nương Cánh Vĩnh Sinh"> Cánh Vĩnh Sinh</a></li>
+index.php?title=Xin_Cho_Con_%C4%90i_%C4%90%C6%B0%E1%BB%9Dng_Ng%C3%A0i" title="Xin Cho Con Đi Đường Ngài"> Đi Đường Ngài</a></li>
+index.php?title=Ch%C3%BAa_L%C3%A0_T%E1%BA%A5t_C%E1%BA%A3" title="Chúa Là Tất Cả">Chúa Là Tất Cả</a></li>
+index.php?title=L%C3%B2ng_C%E1%BB%A9_Y%C3%AAn_L%E1%BA%B7ng" title="Lòng Cứ Yên Lặng">Lòng Cứ Yên Lặng</a></li>
+index.php?title=C%E1%BB%A9u_Ch%C3%BAa_Si%C3%AAu_Vi%E1%BB%87t" title="Cứu Chúa Siêu Việt">Cứu Chúa Siêu Việt</a></li>
+index.php?title=Ch%C3%BAa_Gi%E1%BA%A5u_T%C3%B4i" title="Chúa Giấu Tôi"> Chúa Che Giấu Tôi</a></li>
+index.php?title=Lu%C3%B4n_M%E1%BB%97i_Ph%C3%BAt" title="Luôn Mỗi Phút">Luôn Mỗi Phút</a></li>
+index.php?title=Gi%C3%AA-h%C3%B4-va!_Xin_D%E1%BA%AFt_T%C3%B4i" title="Giê-hô-va! Xin Dắt Tôi"> Xin Chúa Dẫn Dắt</a></li>
+index.php?title=Ch%C3%BAa_S%E1%BA%BD_Lo_Toan" title="Chúa Sẽ Lo Toan">Chúa Sẽ Lo Toan</a></li>
+index.php?title=Quanh_%C4%90%C3%AAm_Lu%C3%B4n_Ng%C3%A0y" title="Quanh Đêm Luôn Ngày"> Dòng Bình Tịnh</a></li>
+index.php?title=Ngu%E1%BB%93n_An_B%C3%ACnh" title="Nguồn An Bình">Nguồn An Bình</a></li>
+index.php?title=Ch%C3%BAa_H%C6%B0%E1%BB%9Bng_D%E1%BA%ABn" title="Chúa Hướng Dẫn">Chúa Hướng Dẫn</a></li>
+index.php?title=M%E1%BA%AFt_Ta_H%E1%BA%B1ng_%C4%90%C6%B0a_D%E1%BA%AFt_Ng%C6%B0%C6%A1i" title="Mắt Ta Hằng Đưa Dắt Ngươi"> Lời Hứa Quí Báu</a></li>
+index.php?title=Jesus_H%E1%BA%B1ng_%E1%BB%9E_B%C3%AAn_T%C3%B4i" title="Jesus Hằng Ở Bên Tôi"> Chúa Ở Bên Tôi</a></li>
+index.php?title=Ph%C6%B0%E1%BB%9Bc_Thay_Trong_L%C3%B2ng" title="Phước Thay Trong Lòng"> Chúa Dìu Dắt Tôi</a></li>
+index.php?title=Ch%C3%A2n_Ch%C3%BAa_H%E1%BA%B1ng_Nh%E1%BB%9B_%C4%90%E1%BA%BFn_T%C3%B4i" title="Chân Chúa Hằng Nhớ Đến Tôi"> Chúa Nhớ Đến Tôi</a></li>
+index.php?title=Chim_S%E1%BA%BB_M%E1%BA%AFt_Ch%C3%BAa_V%E1%BA%ABn_Ch%C3%BA_V%C3%A0o" title="Chim Sẻ Mắt Chúa Vẫn Chú Vào"> Chúa Biết Từng Cánh Chim</a></li>
+index.php?title=Gi%C3%AA-xu_Nh%C6%B0_Ng%C6%B0%E1%BB%9Di_Ch%C4%83n_Chi%C3%AAn_D%C4%83t_T%C3%B4i" title="Giê-xu Như Người Chăn Chiên Dăt Tôi"> Người Chăn Dẫn Dắt</a></li>
+index.php?title=C%E1%BA%A7u_Xin_Ch%C3%BAa_%C4%90%C6%B0a_L%E1%BB%91i_T%C3%B4i" title="Cầu Xin Chúa Đưa Lối Tôi"> Xin Dắt Đưa Tôi</a></li>
+index.php?title=B%C3%AAn_Kia_B%C3%B3ng_M%E1%BB%9D" title="Bên Kia Bóng Mờ">Bên Kia Bóng Mờ</a></li>
+index.php?title=Gi%C3%AA-h%C3%B4-va_%C4%90%E1%BA%A5ng_D%E1%BA%AFt_Ch%C4%83n_H%E1%BB%93n_T%C3%B4i" title="Giê-hô-va Đấng Dắt Chăn Hồn Tôi"> Đấng Chăn Hồn Tôi</a></li>
+index.php?title=B%C3%AAn_T%C3%B4i_L%C3%A0_Ch%C3%BAa_J%C3%AAsus" title="Bên Tôi Là Chúa Jêsus">Bên Tôi Là Chúa Jêsus</a></li>
+index.php?title=%C4%90i_V%E1%BB%9Bi_Ch%C3%BAa" title="Đi Với Chúa">Đi Với Chúa</a></li>
+index.php?title=Tr%C6%B0%E1%BB%9Bc_Khi_R%E1%BA%A1ng_%C4%90%C3%B4ng" title="Trước Khi Rạng Đông"> Trước Rạng Đông</a></li>
+index.php?title=Danh_Qu%C3%AD_Tr%E1%BB%8Dng" title="Danh Quí Trọng">Danh Quí Trọng</a></li>
+index.php?title=An_T%C3%A2m_B%C3%AAn_Ch%C3%BAa" title="An Tâm Bên Chúa">An Tâm Bên Chúa</a></li>
+index.php?title=Xin_S%E1%BB%91ng_Cho_Ch%C3%BAa_J%C3%AAsus" title="Xin Sống Cho Chúa Jêsus">Xin Sống Cho Chúa Jêsus</a></li>
+index.php?title=Ng%C3%A0i_Bi%E1%BA%BFt_R%C3%B5" title="Ngài Biết Rõ">Ngài Biết Rõ</a></li>
+index.php?title=Ch%C3%BAa_D%E1%BA%ABn_%C4%90%C6%B0a_%C4%90%E1%BB%9Di_T%C3%B4i" title="Chúa Dẫn Đưa Đời Tôi"> Chúa Dẫn Đưa Tôi</a></li>
+index.php?title=Chim,_Hoa_V%C3%A0_Ng%C6%B0%E1%BB%9Di" title="Chim, Hoa Và Người">Chim, Hoa Và Người</a></li>
+index.php?title=Christ_Hi%E1%BB%83u_R%C3%B5_T%C3%A2m_Tr%E1%BA%A1ng" title="Christ Hiểu Rõ Tâm Trạng"> Chúa Hiểu Tâm Trạng</a></li>
+index.php?title=Ta_B%C6%B0%E1%BB%9Bc_L%C3%AAn_Si-%C3%B4n" title="Ta Bước Lên Si-ôn"> Bước Lên Si-ôn</a></li>
+index.php?title=T%E1%BB%99i_L%E1%BB%97i_C%E1%BA%A5t_Xa" title="Tội Lỗi Cất Xa">Tội Lỗi Cất Xa</a></li>
+index.php?title=%C4%90i_T%E1%BB%ABng_B%C6%B0%E1%BB%9Bc" title="Đi Từng Bước">Đi Từng Bước</a></li>
+index.php?title=D%C6%B0%C6%A1ng_Quang_Thi%C3%AAn_Qu%E1%BB%91c" title="Dương Quang Thiên Quốc">Dương Quang Thiên Quốc</a></li>
+index.php?title=B%C3%A0n_Tay_Mang_D%E1%BA%A5u_%C4%90inh" title="Bàn Tay Mang Dấu Đinh"> Bàn Tay Mang Dấu Dinh</a></li>
+index.php?title=Ng%C3%A0i_C%E1%BB%A9u_T%C3%B4i" title="Ngài Cứu Tôi">Ngài Cứu Tôi</a></li>
+index.php?title=V%E1%BB%81_Nh%C3%A0_Ch%C3%BAa" title="Về Nhà Chúa">Về Nhà Chúa</a></li>
+index.php?title=Ph%C6%B0%E1%BB%9Bc_H%E1%BA%A1nh_V%C3%A0_Th%C6%B0%C6%A1ng_X%C3%B3t_S%E1%BA%BD_Theo_T%C3%B4i" title="Phước Hạnh Và Thương Xót Sẽ Theo Tôi"> Mỗi Quãng Đường</a></li>
+index.php?title=T%C3%B4i_Bi%E1%BA%BFt_%C4%90%E1%BA%A5ng_N%E1%BA%AFm_T%C6%B0%C6%A1ng_Lai_M%C3%ACnh" title="Tôi Biết Đấng Nắm Tương Lai Mình"> Đấng Nắm Giữ Tương Lai</a></li>
+index.php?title=%C4%90i_V%E1%BB%9Bi_J%C3%AAsus" title="Đi Với Jêsus">Đi Với Jêsus</a></li>
+index.php?title=Tr%C3%AAn_%C4%90%E1%BB%93i_Ho%C3%A0ng_H%C3%B4n" title="Trên Đồi Hoàng Hôn">Trên Đồi Hoàng Hôn</a></li>
+index.php?title=%C4%90%C6%B0%E1%BB%9Dng_L%E1%BB%91i_Ch%C3%BAa" title="Đường Lối Chúa">Đường Lối Chúa</a></li>
+index.php?title=Tr%E1%BA%A7n_Th%E1%BA%BF_Ch%E1%BA%B3ng_Ph%E1%BA%A3i_Qu%C3%AA_H%C6%B0%C6%A1ng" title="Trần Thế Chẳng Phải Quê Hương"> Quê Hương Thiên Quốc</a></li>
+index.php?title=Nguy%E1%BB%87n_Theo_J%C3%AAsus" title="Nguyện Theo Jêsus">Nguyện Theo Jêsus</a></li>
+index.php?title=T%C3%ACnh_Y%C3%AAu_V%E1%BB%AFng_B%E1%BB%81n" title="Tình Yêu Vững Bền">Tình Yêu Vững Bền</a></li>
+index.php?title=Nguy%E1%BB%81n_Theo_B%C6%B0%E1%BB%9Bc_Ch%C3%A2n_Ng%C6%B0%E1%BB%9Di" title="Nguyền Theo Bước Chân Người">Nguyền Theo Bước Chân Người</a></li>
+index.php?title=Ch%C3%BAa_H%E1%BA%B1ng_Ch%C4%83n_Gi%E1%BB%AF_T%C3%B4i" title="Chúa Hằng Chăn Giữ Tôi"> Chúa Hằng Chăn Giữ</a></li>
+index.php?title=H%E1%BA%B1ng_Ng%C3%A0y_T%C3%B4i_Ti%E1%BA%BFn_B%C6%B0%E1%BB%9Bc_V%E1%BB%9Bi_Ch%C3%BAa" title="Hằng Ngày Tôi Tiến Bước Với Chúa"> Tiến Bước Với Chúa</a></li>
+index.php?title=H%C3%A3y_%C4%90i_Khi_Ch%C3%BAa_%C4%90ang_G%E1%BB%8Di" title="Hãy Đi Khi Chúa Đang Gọi"> Chúa Đang Gọi</a></li>
+index.php?title=Ph%C6%B0%E1%BB%9Bc_%C3%82m_Jesus_Mu%C3%B4n_Thu%E1%BB%9F_C%C3%B2n_Nguy%C3%AAn" title="Phước Âm Jesus Muôn Thuở Còn Nguyên"> Phúc Âm Muôn Thuở</a></li>
+index.php?title=Ta_Th%E1%BA%AFng_Nh%E1%BB%9D_%C4%90%E1%BB%A9c_Tin" title="Ta Thắng Nhờ Đức Tin"> Thắng Nhờ Đức Tin</a></li>
+index.php?title=Ng%E1%BA%AFm_Jesus_%C4%90%E1%BB%ABng_Xao" title="Ngắm Jesus Đừng Xao"> Ngắm Jêsus</a></li>
+index.php?title=Tinh_Binh_Gi%C3%AA-xu_Ti%E1%BA%BFn_L%C3%AAn" title="Tinh Binh Giê-xu Tiến Lên"> Tinh Binh Jêsus</a></li>
+index.php?title=H%C6%B0_Kh%C3%B4ng" title="Hư Không">Hư Không</a></li>
+index.php?title=Tinh_Binh_C%E1%BB%A7a_Qu%C3%A2n_Th%E1%BA%ADp_T%E1%BB%B1_Mau_%C4%90%E1%BB%A9ng_L%C3%AAn" title="Tinh Binh Của Quân Thập Tự Mau Đứng Lên"> Tinh Binh Thập Tự</a></li>
+index.php?title=S%E1%BA%B5n_S%C3%A0ng" title="Sẵn Sàng">Sẵn Sàng</a></li>
+index.php?title=T%E1%BA%A1i_Ch%E1%BB%91n_Tr%E1%BA%ADn_Ti%E1%BB%81n" title="Tại Chốn Trận Tiền"> Tại Trận Tiền</a></li>
+index.php?title=Trung,_Th%C3%A0nh,_T%C3%ADn,_Ngh%C4%A9a" title="Trung, Thành, Tín, Nghĩa">Trung, Thành, Tín, Nghĩa</a></li>
+index.php?title=S%E1%BB%A9c_L%E1%BB%B1c_T%E1%BB%AB_Ch%C3%BAa" title="Sức Lực Từ Chúa">Sức Lực Từ Chúa</a></li>
+index.php?title=V%E1%BA%B9n_L%C3%B2ng_Trung_T%C3%ADn" title="Vẹn Lòng Trung Tín">Vẹn Lòng Trung Tín</a></li>
+index.php?title=Ch%E1%BB%8Dn_%C4%90%E1%BB%A9ng_B%C3%AAn_Ng%C3%A0i" title="Chọn Đứng Bên Ngài">Chọn Đứng Bên Ngài</a></li>
+index.php?title=Khi_B%C3%ACnh_Minh_%C4%90%E1%BA%BFn" title="Khi Bình Minh Đến">Khi Bình Minh Đến</a></li>
+index.php?title=%C4%90%E1%BB%9Di_Con" title="Đời Con">Đời Con</a></li>
+index.php?title=%C4%90%E1%BA%BFn_V%E1%BB%9Bi_Ch%C3%BAa_Tay_Tr%E1%BA%AFng_Th%C3%B4i_Sao" title="Đến Với Chúa Tay Trắng Thôi Sao"> Có Gì Dâng Chúa</a></li>
+index.php?title=Ch%C3%BAa_Jesus_Con_H%E1%BB%A9a_Theo_Ng%C3%A0i" title="Chúa Jesus Con Hứa Theo Ngài"> Con Hứa Theo Ngài</a></li>
+index.php?title=Khi_Ban_Mai_%C4%90%E1%BA%BFn" title="Khi Ban Mai Đến">Khi Ban Mai Đến</a></li>
+index.php?title=Ch%C3%BAa_V%E1%BB%9Bi_T%C3%B4i" title="Chúa Với Tôi">Chúa Với Tôi</a></li>
+index.php?title=N%C3%A0o_%C4%90i_L%C3%AAn_%C4%90o%C3%A0n_Qu%C3%A2n_Th%C3%A1nh" title="Nào Đi Lên Đoàn Quân Thánh"> Nào Đi Lên</a></li>
+index.php?title=B%C3%A0n_Tay_D%C3%A2ng_L%C3%AAn" title="Bàn Tay Dâng Lên">Bàn Tay Dâng Lên</a></li>
+index.php?title=Tri%E1%BB%81u_Thi%C3%AAn_Vinh_Hi%E1%BB%83n" title="Triều Thiên Vinh Hiển">Triều Thiên Vinh Hiển</a></li>
+index.php?title=M%E1%BA%B7t_G%E1%BA%B7p_M%E1%BA%B7t" title="Mặt Gặp Mặt"> Mặt Đối Mặt</a></li>
+index.php?title=Vinh_Thay_Cho_T%C3%B4i" title="Vinh Thay Cho Tôi"> Niềm Vinh Hạnh</a></li>
+index.php?title=B%C3%AAn_Kia_Ho%C3%A0ng_H%C3%B4n" title="Bên Kia Hoàng Hôn">Bên Kia Hoàng Hôn</a></li>
+index.php?title=Khi_Ch%C3%BAa_T%C3%A1i_L%C3%A2m" title="Khi Chúa Tái Lâm"> Giờ Xướng Danh</a></li>
+index.php?title=Qua_%C4%90%E1%BB%9Di_S%E1%BA%BD_%C4%90%E1%BA%BFn_%C4%90%C3%A2u%3F" title="Qua Đời Sẽ Đến Đâu?">Qua Đời Sẽ Đến Đâu?</a></li>
+index.php?title=B%E1%BA%A5t_D%E1%BA%A1_Th%C3%A0nh" title="Bất Dạ Thành">Bất Dạ Thành</a></li>
+index.php?title=Ch%C3%BAng_Ta_S%E1%BA%BD_G%E1%BA%B7p_Nhau_B%C3%AAn_S%C3%B4ng_V%C3%A0ng" title="Chúng Ta Sẽ Gặp Nhau Bên Sông Vàng"> Chung Nhóm Ở Thiên Hà</a></li>
+index.php?title=Mi%E1%BB%81n_Vinh_Hi%E1%BB%83n" title="Miền Vinh Hiển">Miền Vinh Hiển</a></li>
+index.php?title=N%C6%A1i_V%C4%A9nh_Ph%C6%B0%E1%BB%9Bc" title="Nơi Vĩnh Phước"> Nơi Vĩnh Phúc</a></li>
+index.php?title=%C4%90o%E1%BA%A1n_Thi%C3%AAn_Ca" title="Đoạn Thiên Ca"> Khúc Thiên Ca</a></li>
+index.php?title=L%C3%A0m_Con_Vua_Th%C3%A1nh_Tr%C3%AAn_Tr%E1%BB%9Di" title="Làm Con Vua Thánh Trên Trời"> Làm Con Vua Thánh</a></li>
+index.php?title=N%C6%B0%E1%BB%9Bc_%C4%90%E1%BB%A9c_Ch%C3%BAa_Tr%E1%BB%9Di" title="Nước Đức Chúa Trời"> Vương Quốc Rạng Ngời</a></li>
+index.php?title=L%C3%B2ng_T%C3%B4i_Y%C3%AAu_Gi%C3%A1o_H%E1%BB%99i" title="Lòng Tôi Yêu Giáo Hội"> Lòng Yêu Giáo Hội</a></li>
+index.php?title=N%E1%BB%81n_H%E1%BB%99i_Th%C3%A1nh_Tr%C3%AAn_B%C3%A0n_Th%E1%BA%A1ch_Ki%C3%AAn_C%E1%BB%91" title="Nền Hội Thánh Trên Bàn Thạch Kiên Cố"> Nền Hội Thánh</a></li>
+index.php?title=M%E1%BB%99t_Jesus" title="Một Jesus"> Chúa Duy Nhất</a></li>
+index.php?title=%C4%90%E1%BB%93ng_C%E1%BB%8F_Thi%C3%AAn_Th%C6%B0%E1%BB%A3ng" title="Đồng Cỏ Thiên Thượng">Đồng Cỏ Thiên Thượng</a></li>
+index.php?title=C%C3%B9ng_H%E1%BB%8Dp_Nhau" title="Cùng Họp Nhau">Cùng Họp Nhau</a></li>
+index.php?title=Qu%C3%A2y_Qu%E1%BA%A7n_B%C3%AAn_Ch%C3%BAa" title="Quây Quần Bên Chúa">Quây Quần Bên Chúa</a></li>
+index.php?title=B%C3%A0i_Ca_Hi%E1%BB%87p_M%E1%BB%99t" title="Bài Ca Hiệp Một"> Bài Ca Hiệp Nhất </a></li>
+index.php?title=L%E1%BB%9Di_Ch%C3%BAa_V%E1%BB%AFng_L%E1%BA%ADp" title="Lời Chúa Vững Lập">Lời Chúa Vững Lập</a></li>
+index.php?title=L%E1%BB%9Di_Cha" title="Lời Cha">Lời Cha</a></li>
+index.php?title=L%E1%BB%9Di_D%E1%BB%8Bu_D%C3%A0ng" title="Lời Dịu Dàng">Lời Dịu Dàng</a></li>
+index.php?title=Th%C3%A1nh_Kinh_%C3%82m_Nh%E1%BA%A1c" title="Thánh Kinh Âm Nhạc"> Âm Nhạc Kinh Thánh</a></li>
+index.php?title=Xin_Ch%C3%BAa_M%E1%BB%9F_M%E1%BA%AFt" title="Xin Chúa Mở Mắt">Xin Chúa Mở Mắt</a></li>
+index.php?title=Ch%C3%BAa_L%C3%A0_V%E1%BA%A7ng_%C4%90%C3%A1" title="Chúa Là Vầng Đá">Chúa Là Vầng Đá</a></li>
+index.php?title=L%E1%BB%9Di_Ch%C3%BAa." title="Lời Chúa.">Lời Chúa.</a></li>
+index.php?title=L%E1%BA%AFng_Nghe_Ti%E1%BA%BFng_Ch%C3%BAa" title="Lắng Nghe Tiếng Chúa">Lắng Nghe Tiếng Chúa</a></li>
+index.php?title=Ng%C3%A0y_Vui_V%E1%BA%BB" title="Ngày Vui Vẻ"> Ngày Vui</a></li>
+index.php?title=Vi%C3%AAn_Ng%E1%BB%8Dc_%C4%90%E1%BA%B9p_R%C3%B2ng" title="Viên Ngọc Đẹp Ròng"> Viên Ngọc Đẹp</a></li>
+index.php?title=Ch%C3%BAc_M%E1%BB%ABng_H%C3%B4n_L%E1%BB%85" title="Chúc Mừng Hôn Lễ">Chúc Mừng Hôn Lễ</a></li>
+index.php?title=Nguy%E1%BB%87n_C%E1%BA%A7u_Cho_%C4%90%C3%B4i_L%E1%BB%A9a" title="Nguyện Cầu Cho Đôi Lứa">Nguyện Cầu Cho Đôi Lứa</a></li>
+index.php?title=Ti%E1%BB%87c_Th%C3%A1nh" title="Tiệc Thánh">Tiệc Thánh</a></li>
+index.php?title=Kh%C3%BAc_T%C3%ACnh_Ca_Ng%C3%A0y_C%C6%B0%E1%BB%9Bi" title="Khúc Tình Ca Ngày Cưới">Khúc Tình Ca Ngày Cưới</a></li>
+index.php?title=B%C3%A0i_C%E1%BA%A7u_Nguy%E1%BB%87n_Chung" title="Bài Cầu Nguyện Chung">Bài Cầu Nguyện Chung</a></li>
+index.php?title=Ng%C3%A0i_Ban_Cho_Th%C3%AAm_%C6%A0n" title="Ngài Ban Cho Thêm Ơn"> Chúa Ban Thêm Ơn</a></li>
+index.php?title=Th%E1%BA%ADp_T%E1%BB%B1_X%C6%B0a_-_The_Old_Rugged_Cross" title="Thập Tự Xưa - The Old Rugged Cross"> Thập Tự Xưa</a></li>
+index.php?title=Nh%C3%A0_Tr%C3%AAn_Tr%E1%BB%9Di" title="Nhà Trên Trời">Nhà Trên Trời</a></li>
+index.php?title=%C4%90%E1%BA%A5ng_Ch%C4%83n_Hi%E1%BB%81n_L%C3%A0nh" title="Đấng Chăn Hiền Lành"> Đấng Chăn Lành</a></li>
+index.php?title=T%C3%B4i_D%E1%BA%A7u_Nh%E1%BB%8F" title="Tôi Dầu Nhỏ"> Em Dầu Nhỏ</a></li>
+index.php?title=L%C3%B2ng_Em_Vui" title="Lòng Em Vui">Lòng Em Vui</a></li>
+index.php?title=M%E1%BB%99t_Tia_S%C3%A1ng" title="Một Tia Sáng">Một Tia Sáng</a></li>
+index.php?title=Ch%C3%A2u_B%C3%A1u_Vua_Jesus_Christ" title="Châu Báu Vua Jesus Christ"> Châu Báu Vua Jêsus</a></li>
+index.php?title=Thanh_Xu%C3%A2n_Ca_Kh%C3%BAc" title="Thanh Xuân Ca Khúc"> Ca Khúc Thanh Xuân</a></li>
+index.php?title=%C3%81nh_S%C3%A1ng_Cho_%C4%90%E1%BB%9Di" title="Ánh Sáng Cho Đời">Ánh Sáng Cho Đời</a></li>
+index.php?title=Vinh_Quang,_Vinh_Quang!" title="Vinh Quang, Vinh Quang!"> Chúa Vinh Quang</a></li>
+index.php?title=Lo_L%C3%A0m_Vi%E1%BB%87c_Mau_-_%C4%90%C3%AAm_%C4%90%E1%BA%BFn_K%C3%ACa!" title="Lo Làm Việc Mau - Đêm Đến Kìa!"> Đêm Đến</a></li>
+index.php?title=G%C3%A1nh_L%C3%BAa_V%E1%BB%81" title="Gánh Lúa Về">Gánh Lúa Về</a></li>
+index.php?title=Ca_Kh%C3%BAc_B%C3%ACnh_An" title="Ca Khúc Bình An">Ca Khúc Bình An</a></li>
+index.php?title=H%C3%A3y_Chi%E1%BA%BFu_Gi%E1%BB%91ng_H%C3%A3y_%C4%90%C4%83ng" title="Hãy Chiếu Giống Hãy Đăng"> Ánh Sáng Hải Đăng</a></li>
+index.php?title=D%E1%BA%AFt_V%E1%BB%81_Ch%C3%BAa" title="Dắt Về Chúa"> Đưa Về Chúa</a></li>
+index.php?title=B%C3%A1o_Tin_L%C3%A0nh" title="Báo Tin Lành"> Rao Tin Lành</a></li>
+index.php?title=Xin_Ch%C3%BAa_Sai" title="Xin Chúa Sai"> Xin Chúa Sai Con</a></li>
+index.php?title=Quy%E1%BA%BFt_Rao_Tin_L%C3%A0nh" title="Quyết Rao Tin Lành"> Rao Phúc Âm</a></li>
+index.php?title=%C4%90%E1%BB%95i_M%E1%BB%9Bi_T%C3%A2m_T%C3%B4i" title="Đổi Mới Tâm Tôi">Đổi Mới Tâm Tôi</a></li>
+index.php?title=Nguy%E1%BB%87n_T%C3%B4i_L%C3%A0m_Ngu%E1%BB%93n_Ph%C6%B0%E1%BB%9Bc" title="Nguyện Tôi Làm Nguồn Phước"> Mong Làm Nguồn Phước</a></li>
+index.php?title=J%C3%AAsus_C%E1%BB%A9u_T%C3%B4i" title="Jêsus Cứu Tôi">Jêsus Cứu Tôi</a></li>
+index.php?title=Mau_Chi%E1%BA%BFu_Ra" title="Mau Chiếu Ra"> Ánh Sáng Phúc Âm</a></li>
+index.php?title=Hoa_Hu%E1%BB%87_Trong_Tr%C5%A9ng" title="Hoa Huệ Trong Trũng">Hoa Huệ Trong Trũng</a></li>
+index.php?title=Nh%E1%BB%9D_Huy%E1%BA%BFt_Ch%C3%BAa" title="Nhờ Huyết Chúa">Nhờ Huyết Chúa</a></li>
+index.php?title=Ng%E1%BB%A3i_Khen_Ch%C3%BAa_%C4%90%C3%A3_Chu%E1%BB%99c_T%C3%B4i" title="Ngợi Khen Chúa Đã Chuộc Tôi"> Ngợi Ca Cứu Chúa</a></li>
+index.php?title=%C4%90au_Th%C6%B0%C6%A1ng_Ti%C3%AAu_M%E1%BA%A5t_N%C6%A1i_G%C3%B4-g%C3%B4-tha" title="Đau Thương Tiêu Mất Nơi Gô-gô-tha"> Đau Thương Tan Biến</a></li>
+index.php?title=B%C3%A2y_Gi%E1%BB%9D_T%C3%B4i_Tin" title="Bây Giờ Tôi Tin">Bây Giờ Tôi Tin</a></li>
+index.php?title=N%C6%A1i_G%C3%B4-g%C3%B4-tha" title="Nơi Gô-gô-tha">Nơi Gô-gô-tha</a></li>
+index.php?title=Vinh_Thay_Danh_Jesus" title="Vinh Thay Danh Jesus"> Vinh Danh Chúa</a></li>
+index.php?title=Con_S%C3%B4ng_T%E1%BA%A9y_U%E1%BA%BF" title="Con Sông Tẩy Uế"> Con Sông Thanh Tẩy</a></li>
+index.php?title=%C3%81nh_Th%C3%A1i_D%C6%B0%C6%A1ng_N%E1%BA%A7y" title="Ánh Thái Dương Nầy"> Ánh Thái Dương</a></li>
+index.php?title=T%E1%BB%AB_L%C3%BAc_Ch%C3%ADnh_T%C3%B4i_%C4%90%C6%B0%E1%BB%A3c_C%E1%BB%A9u" title="Từ Lúc Chính Tôi Được Cứu"> Từ Lúc Được Cứu</a></li>
+index.php?title=%C3%81i_T%E1%BB%AB_C%E1%BB%A9u_T%C3%B4i" title="Ái Từ Cứu Tôi"> Ái Từ Chúa</a></li>
+index.php?title=Khi_Jesus_Qua" title="Khi Jesus Qua"> Khi Jêsus Qua</a></li>
+index.php?title=Chuy%E1%BB%87n_T%C3%B4i_Th%C3%ADch_X%C6%B0%E1%BB%9Bng_Ca" title="Chuyện Tôi Thích Xướng Ca">Chuyện Tôi Thích Xướng Ca</a></li>
+index.php?title=T%C3%ACnh_Y%C3%AAu_Tr%E1%BB%9Di" title="Tình Yêu Trời">Tình Yêu Trời</a></li>
+index.php?title=T%C3%B4i_Kh%C3%B4ng_C%C3%B4_%C4%90%C6%A1n" title="Tôi Không Cô Đơn">Tôi Không Cô Đơn</a></li>
+index.php?title=T%E1%BA%ADn_Trong_T%C3%A2m_H%E1%BB%93n" title="Tận Trong Tâm Hồn">Tận Trong Tâm Hồn</a></li>
+index.php?title=Vinh_Quang_Tr%E1%BB%9Di" title="Vinh Quang Trời">Vinh Quang Trời</a></li>
+index.php?title=Ch%C3%ADnh_J%C3%AAsus" title="Chính Jêsus">Chính Jêsus</a></li>
+index.php?title=%C3%81nh_S%C3%A1ng_C%E1%BB%A7a_Th%E1%BA%BF_Gi%E1%BB%9Bi" title="Ánh Sáng Của Thế Giới"> Ánh Sáng Thế Giới</a></li>
+index.php?title=K%C3%ACa,_Ch%C3%ADn_M%C6%B0%C6%A1i_Ch%C3%ADn_Chi%C3%AAn" title="Kìa, Chín Mươi Chín Chiên"> Con Chiên Lạc</a></li>
+index.php?title=Jesus_Ti%E1%BA%BFp_Nghinh_T%E1%BB%99i_Nh%C3%A2n" title="Jesus Tiếp Nghinh Tội Nhân"> Vui Đón Tội Nhân</a></li>
+index.php?title=Gi%C3%AA-xu_K%C3%AAu_G%E1%BB%8Di_M%E1%BB%8Di_Ng%C6%B0%E1%BB%9Di" title="Giê-xu Kêu Gọi Mọi Người"> Lời Kêu Gọi</a></li>
+index.php?title=Ch%C3%BAa_Y%C3%AAu_Thi%E1%BA%BFt_Tha" title="Chúa Yêu Thiết Tha">Chúa Yêu Thiết Tha</a></li>
+index.php?title=Ch%E1%BB%89_Tin_N%C6%A1i_Ng%C3%A0i" title="Chỉ Tin Nơi Ngài"> Chỉ Tin Nơi Chúa</a></li>
+index.php?title=%C4%90%E1%BB%9Di_Ng%C6%B0%E1%BB%9Di_Ng%E1%BA%AFn_Ng%E1%BB%A7i" title="Đời Người Ngắn Ngủi"> Cuộc Đời Ngắn Ngủi</a></li>
+index.php?title=D%E1%BA%A7u_%C3%81c_Khi%C3%AAn_%C4%90%E1%BB%8F_Nh%C6%B0_%C4%90%C6%A1n_H%E1%BB%93ng" title="Dầu Ác Khiên Đỏ Như Đơn Hồng"> Tâm Linh Trong Trắng</a></li>
+index.php?title=N%C3%AAn_H%C3%A3y_%C4%82n_N%C4%83n_Hi%E1%BB%87n_Nay" title="Nên Hãy Ăn Năn Hiện Nay"> Lời Mời</a></li>
+index.php?title=Mau_%C4%90%E1%BA%BFn_Theo_Gi%C3%AA-xu" title="Mau Đến Theo Giê-xu"> Đến Theo Jêsus</a></li>
+index.php?title=T%C3%B4i_Nguy%E1%BB%87n_%C4%90%E1%BA%BFn_Li%E1%BB%81n" title="Tôi Nguyện Đến Liền"> Đến Với Chiên Con</a></li>
+index.php?title=K%C3%ACa!_C%E1%BB%ADa_C%E1%BB%A9u_R%E1%BB%97i" title="Kìa! Cửa Cứu Rỗi"> Cửa Cứu Rỗi</a></li>
+index.php?title=Quy%E1%BB%81n_Trong_Huy%E1%BA%BFt_Ch%C3%BAa_Gi%C3%AA-xu" title="Quyền Trong Huyết Chúa Giê-xu"> Quyền Trong Huyết</a></li>
+index.php?title=Huy%E1%BA%BFt_Chi%C3%AAn_Con_B%C3%B4i_S%E1%BA%A1ch_L%C3%B2ng" title="Huyết Chiên Con Bôi Sạch Lòng"> Huyết Chiên Con</a></li>
+index.php?title=K%E1%BB%B3_Di%E1%BB%87u_Thay,_Christ_Chu%E1%BB%99c_T%C3%B4i" title="Kỳ Diệu Thay, Christ Chuộc Tôi"> Cứu Chúa Kỳ Diệu</a></li>
+index.php?title=Ha-l%C3%AA-lu-gia!_Ng%E1%BB%A3i_Khen_Th%E1%BA%ADp_T%E1%BB%B1" title="Ha-lê-lu-gia! Ngợi Khen Thập Tự"> Ca Ngợi Thập Tự</a></li>
+index.php?title=Ng%C6%B0%C6%A1i_Y%C3%AAu_Ta_Ch%C4%83ng%3F" title="Ngươi Yêu Ta Chăng?">Ngươi Yêu Ta Chăng?</a></li>
+index.php?title=Danh_L%E1%BA%A1_L%C3%B9ng" title="Danh Lạ Lùng">Danh Lạ Lùng</a></li>
+index.php?title=H%E1%BB%A1i_Nh%E1%BB%AFng_K%E1%BA%BB_M%E1%BB%87t_M%E1%BB%8Fi" title="Hỡi Những Kẻ Mệt Mỏi"> Gọi Kẻ Nhọc Nhằn</a></li>
+index.php?title=V%C3%AC_Anh_T%C3%B4i_C%E1%BB%A9_K%C3%AAu_N%C3%A0i" title="Vì Anh Tôi Cứ Kêu Nài"> Cầu Nguyện Cho Anh</a></li>
+index.php?title=Xin_Ch%C3%BAa_Sai_T%C3%B4i" title="Xin Chúa Sai Tôi">Xin Chúa Sai Tôi</a></li>
+index.php?title=H%C3%A3y_Theo_Ta" title="Hãy Theo Ta">Hãy Theo Ta</a></li>
+index.php?title=Mong_B%E1%BA%A1n_Quay_V%E1%BB%81" title="Mong Bạn Quay Về">Mong Bạn Quay Về</a></li>
+index.php?title=%C4%90%E1%BB%A9c_Ch%C3%BAa_Tr%E1%BB%9Di_Y%C3%AAu_Th%C6%B0%C6%A1ng_Th%E1%BA%BF_Gian" title="Đức Chúa Trời Yêu Thương Thế Gian"> Chúa Yêu Thế Gian</a></li>
+index.php?title=Tr%E1%BB%9F_V%E1%BB%81" title="Trở Về">Trở Về</a></li>
+index.php?title=Ch%E1%BB%89_V%C3%AC_T%E1%BB%99i_T%C3%B4i" title="Chỉ Vì Tội Tôi"> Vì Tội Tôi</a></li>
+index.php?title=Ti%E1%BA%BFng_Gi%C3%AA-xu" title="Tiếng Giê-xu"> Tiếng Chúa</a></li>
+index.php?title=Ngu%E1%BB%93n_T%C3%ACnh_Y%C3%AAu" title="Nguồn Tình Yêu">Nguồn Tình Yêu</a></li>
+index.php?title=V%E1%BB%81_G%E1%BA%A5p_L%C3%AAn" title="Về Gấp Lên">Về Gấp Lên</a></li>
+index.php?title=Chi%C3%AAn_L%E1%BA%A1c_Tr%E1%BB%9F_V%E1%BB%81" title="Chiên Lạc Trở Về">Chiên Lạc Trở Về</a></li>
+index.php?title=Loan_Tin_M%E1%BB%ABng" title="Loan Tin Mừng">Loan Tin Mừng</a></li>
+index.php?title=Ch%C3%BAa_%C4%90%C3%A3_T%E1%BB%9Bi" title="Chúa Đã Tới"> Yêu Là Khi</a></li>
+index.php?title=%C4%90%C6%B0a_Ng%C6%B0%E1%BB%9Di_%C4%90%E1%BA%BFn_Tin_Ch%C3%BAa" title="Đưa Người Đến Tin Chúa"> Đưa Người Đến Chúa</a></li>
+index.php?title=Vi%E1%BB%87t_Nam_Ca" title="Việt Nam Ca"> Mảnh Đất Quê Hương</a></li>
+index.php?title=Xin_Cha_%C4%90%C6%B0a_Anh" title="Xin Cha Đưa Anh"> Xin Cha Dẫn Đưa</a></li>
+index.php?title=Ph%C3%BAt_Nguy%E1%BB%87n_C%E1%BA%A7u" title="Phút Nguyện Cầu"> Lúc Anh Nguyện Cầu</a></li>
+index.php?title=C%E1%BA%A7u_Ch%C3%BAa_%E1%BB%9E_B%C3%AAn_T%C3%B4i_Ho%C3%A0i" title="Cầu Chúa Ở Bên Tôi Hoài"> Xin Chúa Ở Bên Con</a></li>
+index.php?title=Ca_Kh%C3%BAc_Xanh" title="Ca Khúc Xanh">Ca Khúc Xanh</a></li>
+index.php?title=T%C3%B4n_Th%E1%BB%9D_Cha_Th%C3%A1nh" title="Tôn Thờ Cha Thánh">Tôn Thờ Cha Thánh</a></li>
+index.php?title=D%C3%A2ng_Cha_%C4%90%C3%B3a_Hoa_L%C3%B2ng" title="Dâng Cha Đóa Hoa Lòng">Dâng Cha Đóa Hoa Lòng</a></li>
+index.php?title=Ng%E1%BB%A3i_Ca_%C6%A0n_Th%C6%B0%C6%A1ng_X%C3%B3t" title="Ngợi Ca Ơn Thương Xót">Ngợi Ca Ơn Thương Xót</a></li>
+index.php?title=Nh%C3%ACn_L%C3%AAn_Cha_Th%C3%A1nh" title="Nhìn Lên Cha Thánh">Nhìn Lên Cha Thánh</a></li>
+index.php?title=%C6%A0n_Y%C3%AAu_Th%C6%B0%C6%A1ng_T%E1%BB%AB_Cha" title="Ơn Yêu Thương Từ Cha">Ơn Yêu Thương Từ Cha</a></li>
+index.php?title=Ch%C3%BAc_T%C3%B4n_Ch%C3%BAa" title="Chúc Tôn Chúa">Chúc Tôn Chúa</a></li>
+index.php?title=Th%C3%A0nh_K%C3%ADnh_Ca_Ng%E1%BB%A3i" title="Thành Kính Ca Ngợi">Thành Kính Ca Ngợi</a></li>
+index.php?title=L%E1%BB%9Di_T%E1%BA%A1_%C6%A0n" title="Lời Tạ Ơn">Lời Tạ Ơn</a></li>
+index.php?title=T%C3%B4n_Vinh_Danh_Ch%C3%BAa" title="Tôn Vinh Danh Chúa">Tôn Vinh Danh Chúa</a></li>
+index.php?title=L%E1%BA%A1y_Cha_Y%C3%AAu_Th%C6%B0%C6%A1ng" title="Lạy Cha Yêu Thương">Lạy Cha Yêu Thương</a></li>
+index.php?title=H%C3%B4-sa-na" title="Hô-sa-na">Hô-sa-na</a></li>
+index.php?title=D%C3%A2ng_L%E1%BB%9Di_T%C3%A1n_D%C6%B0%C6%A1ng" title="Dâng Lời Tán Dương">Dâng Lời Tán Dương</a></li>
+index.php?title=D%C3%A2ng_L%C3%AAn_Cha" title="Dâng Lên Cha">Dâng Lên Cha</a></li>
+index.php?title=Trong_Gi%C3%A2y_Ph%C3%BAt_N%C3%A0y" title="Trong Giây Phút Này">Trong Giây Phút Này</a></li>
+index.php?title=Ch%C3%BAa_Oai_Quy%E1%BB%81n" title="Chúa Oai Quyền">Chúa Oai Quyền</a></li>
+index.php?title=D%C3%A2ng_Hi%E1%BA%BFn" title="Dâng Hiến">Dâng Hiến</a></li>
+index.php?title=Ca_Ng%E1%BB%A3i_Ch%C3%BAa" title="Ca Ngợi Chúa">Ca Ngợi Chúa</a></li>
+index.php?title=Vinh_Quang_R%E1%BA%A1ng_Ng%E1%BB%9Di" title="Vinh Quang Rạng Ngời">Vinh Quang Rạng Ngời</a></li>
+index.php?title=L%E1%BB%9Di_Con_Ca_T%E1%BB%A5ng" title="Lời Con Ca Tụng">Lời Con Ca Tụng</a></li>
+index.php?title=H%C6%B0%E1%BB%9Bng_L%C3%AAn_Ch%C3%BAa" title="Hướng Lên Chúa">Hướng Lên Chúa</a></li>
+index.php?title=Cha_Cao_Qu%C3%AD" title="Cha Cao Quí">Cha Cao Quí</a></li>
+index.php?title=T%C3%ACnh_Y%C3%AAu_Mu%C3%B4n_Thu" title="Tình Yêu Muôn Thu">Tình Yêu Muôn Thu</a></li>
+index.php?title=D%C3%A2ng_L%E1%BB%9Di_Suy_T%C3%B4n" title="Dâng Lời Suy Tôn">Dâng Lời Suy Tôn</a></li>
+index.php?title=Thi_Thi%C3%AAn_86" title="Thi Thiên 86">Thi Thiên 86</a></li>
+index.php?title=H%C3%A1t_Ha-l%C3%AA-lu-gia" title="Hát Ha-lê-lu-gia">Hát Ha-lê-lu-gia</a></li>
+index.php?title=L%E1%BB%9Di_Nguy%E1%BB%87n_K%C3%ADnh_Y%C3%AAu" title="Lời Nguyện Kính Yêu">Lời Nguyện Kính Yêu</a></li>
+index.php?title=N%C6%A1i_%E1%BA%A8n_Tr%C3%BA_Mu%C3%B4n_%C4%90%E1%BB%9Di" title="Nơi Ẩn Trú Muôn Đời">Nơi Ẩn Trú Muôn Đời</a></li>
+index.php?title=D%C3%A2ng_L%E1%BB%9Di_C%E1%BA%A3m_T%E1%BA%A1" title="Dâng Lời Cảm Tạ">Dâng Lời Cảm Tạ</a></li>
+index.php?title=N%C3%A0y_Anh_Th%E1%BA%A5y_Kh%C3%B4ng" title="Này Anh Thấy Không">Này Anh Thấy Không</a></li>
+index.php?title=Ph%C3%BAt_Suy_T%C6%B0" title="Phút Suy Tư">Phút Suy Tư</a></li>
+index.php?title=%C4%90%E1%BB%93i_V%E1%BA%AFng" title="Đồi Vắng">Đồi Vắng</a></li>
+index.php?title=D%C3%A2ng_Tr%E1%BB%8Dn_Cho_J%C3%AAsus" title="Dâng Trọn Cho Jêsus">Dâng Trọn Cho Jêsus</a></li>
+index.php?title=M%E1%BB%ABng_Xu%C3%A2n" title="Mừng Xuân">Mừng Xuân</a></li>
+index.php?title=Chuy%E1%BB%87n_Gi%C3%A1ng_Sinh" title="Chuyện Giáng Sinh">Chuyện Giáng Sinh</a></li>
+index.php?title=Ni%E1%BB%81m_Vui" title="Niềm Vui">Niềm Vui</a></li>
+index.php?title=Xu%C3%A2n_%C4%90%E1%BA%BFn_B%C3%AAn_Nh%C3%A0" title="Xuân Đến Bên Nhà">Xuân Đến Bên Nhà</a></li>
+index.php?title=H%C3%A3y_Tin,_%C4%90%E1%BB%ABng_S%E1%BB%A3!" title="Hãy Tin, Đừng Sợ!">Hãy Tin, Đừng Sợ!</a></li>
+index.php?title=Ti%E1%BA%BFng_G%C3%B5_C%E1%BB%ADa" title="Tiếng Gõ Cửa">Tiếng Gõ Cửa</a></li>
+index.php?title=Khi_Ch%C3%BAa_Y%C3%AAn_L%E1%BA%B7ng_Nh%C3%ACn" title="Khi Chúa Yên Lặng Nhìn">Khi Chúa Yên Lặng Nhìn</a></li>
+index.php?title=D%C3%B9_Mai_Sau" title="Dù Mai Sau">Dù Mai Sau</a></li>
+index.php?title=Khi_T%C3%B4i_Qu%E1%BB%B3_N%C6%A1i_Ch%C3%A2n_Ch%C3%BAa" title="Khi Tôi Quỳ Nơi Chân Chúa">Khi Tôi Quỳ Nơi Chân Chúa</a></li>
+index.php?title=L%E1%BB%9Di_Nguy%E1%BB%87n_Chi%E1%BB%81u" title="Lời Nguyện Chiều">Lời Nguyện Chiều</a></li>
+index.php?title=Thi_Thi%C3%AAn_90" title="Thi Thiên 90">Thi Thiên 90</a></li>
+index.php?title=T%C3%B4i_%C6%AF%E1%BB%9Bc_M%C6%A1_L%C3%A0_Vi%C3%AAn_Than_H%E1%BB%93ng" title="Tôi Ước Mơ Là Viên Than Hồng">Tôi Ước Mơ Là Viên Than Hồng</a></li>
+index.php?title=B%C3%AAn_Cha" title="Bên Cha">Bên Cha</a></li>
+index.php?title=Hang_B%C3%AA-lem" title="Hang Bê-lem">Hang Bê-lem</a></li>
+index.php?title=%C4%90%C3%AAm_Vui_Tr%E1%BA%A7n_Th%E1%BA%BF" title="Đêm Vui Trần Thế">Đêm Vui Trần Thế</a></li>
+index.php?title=Ng%C6%B0%E1%BB%9Di_%C4%90%C3%A3_%C4%90%E1%BA%BFn" title="Người Đã Đến">Người Đã Đến</a></li>
+index.php?title=B%C6%B0%E1%BB%9Bc_Ng%C6%B0%E1%BB%9Di_%C4%90i_Qua" title="Bước Người Đi Qua">Bước Người Đi Qua</a></li>
+index.php?title=J%C3%AAsus" title="Jêsus">Jêsus</a></li>
+index.php?title=V%C3%B9ng_%C4%90%E1%BB%93i_Xa_%E1%BA%A4y" title="Vùng Đồi Xa Ấy">Vùng Đồi Xa Ấy</a></li>
+index.php?title=L%E1%BB%9Di_Ch%C3%BAa" title="Lời Chúa">Lời Chúa</a></li>
+index.php?title=Gi%C3%B2ng_S%C3%B4ng_Tr%C6%B0%E1%BB%9Dng_Sinh" title="Giòng Sông Trường Sinh">Giòng Sông Trường Sinh</a></li>
+index.php?title=T%C3%B4n_Vinh" title="Tôn Vinh">Tôn Vinh</a></li>
+index.php?title=N%E1%BA%AFm_Ch%E1%BA%B7t_L%E1%BB%9Di_H%E1%BB%A9a" title="Nắm Chặt Lời Hứa">Nắm Chặt Lời Hứa</a></li>
+index.php?title=R%E1%BB%93i_Ng%C3%A0y_S%E1%BA%BD_Tr%C3%B4i_Qua" title="Rồi Ngày Sẽ Trôi Qua">Rồi Ngày Sẽ Trôi Qua</a></li>
+index.php?title=V%E1%BB%AFng_B%C6%B0%E1%BB%9Bc_%C4%90i_Tr%C3%AAn_Kh%E1%BB%95_%C4%90au" title="Vững Bước Đi Trên Khổ Đau">Vững Bước Đi Trên Khổ Đau</a></li>
+index.php?title=Ca_Kh%C3%BAc_T%E1%BA%A1_%C6%A0n_T%C3%B4n_Vinh" title="Ca Khúc Tạ Ơn Tôn Vinh">Ca Khúc Tạ Ơn Tôn Vinh</a></li>
+index.php?title=Gi%C3%AA-xu_B%C3%AAn_T%C3%B4i" title="Giê-xu Bên Tôi"> Jêsus Bên Tôi</a></li>
