@@ -101,20 +101,6 @@ function CollectionBrowser({ songs, onAddToSlideshow }) {
       </div>
       <div className="song-pagination">
         <div className="song-pagination-controls">
-          <label className="song-page-size">
-            <span>Số bài/trang</span>
-            <select
-              className="dropdown song-page-size-select"
-              value={songsPerPage}
-              onChange={(event) => handlePageSizeChange(Number(event.target.value))}
-            >
-              {PAGE_SIZE_OPTIONS.map((pageSize) => (
-                <option key={pageSize} value={pageSize}>
-                  {pageSize}
-                </option>
-              ))}
-            </select>
-          </label>
           <button
             type="button"
             className="button-mode pagination-button"
@@ -139,6 +125,24 @@ function CollectionBrowser({ songs, onAddToSlideshow }) {
         </div>
       </div>
       <SongList songs={pagedSongs} onAddToSlideshow={onAddToSlideshow} />
+      <div className="song-page-size-bar">
+        <label className="song-page-size" htmlFor="song-page-size-select">
+          <span>Hiển thị</span>
+          <select
+            id="song-page-size-select"
+            className="dropdown song-page-size-select"
+            value={songsPerPage}
+            onChange={(event) => handlePageSizeChange(Number(event.target.value))}
+          >
+            {PAGE_SIZE_OPTIONS.map((pageSize) => (
+              <option key={pageSize} value={pageSize}>
+                {pageSize}
+              </option>
+            ))}
+          </select>
+          <span>bài/trang</span>
+        </label>
+      </div>
     </>
   );
 }

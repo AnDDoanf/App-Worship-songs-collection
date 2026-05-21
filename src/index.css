@@ -169,35 +169,36 @@ code {
   appearance: none;
   border: 1px solid transparent;
   border-radius: 20px;
-  background:
-    linear-gradient(135deg, var(--accent) 0%, var(--accent-strong) 100%);
-  color: #fdf6e3;
+  background: var(--accent-contrast);
+  color: var(--accent-strong);
   font-weight: 700;
   text-align: center;
   padding-right: 44px;
   box-shadow:
-    0 14px 28px rgba(38, 139, 210, 0.2),
+    0 14px 28px rgba(38, 139, 210, 0.12),
     var(--shadow-soft);
   background-image:
-    linear-gradient(135deg, var(--accent) 0%, var(--accent-strong) 100%),
-    linear-gradient(45deg, transparent 50%, #fdf6e3 50%),
-    linear-gradient(135deg, #fdf6e3 50%, transparent 50%);
+    linear-gradient(45deg, transparent 50%, var(--accent-strong) 50%),
+    linear-gradient(135deg, var(--accent-strong) 50%, transparent 50%);
   background-position:
-    0 0,
     calc(100% - 22px) calc(50% - 3px),
     calc(100% - 16px) calc(50% - 3px);
   background-size:
-    100% 100%,
     6px 6px,
     6px 6px;
   background-repeat: no-repeat;
+}
+
+.collection-menu-mobile option {
+  background: var(--panel-strong);
+  color: var(--text-primary);
 }
 
 .collection-menu-mobile:focus {
   outline: none;
   box-shadow:
     0 0 0 3px rgba(42, 161, 152, 0.24),
-    0 14px 28px rgba(38, 139, 210, 0.24),
+    0 14px 28px rgba(38, 139, 210, 0.16),
     var(--shadow-soft);
 }
 
@@ -470,11 +471,19 @@ code {
   gap: 10px;
 }
 
+.song-page-size-bar {
+  display: flex;
+  justify-content: center;
+  margin-top: 18px;
+}
+
 .song-page-size {
   display: inline-flex;
   align-items: center;
   gap: 8px;
   color: var(--text-muted);
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
 .song-page-size-select {
@@ -881,8 +890,14 @@ code {
   }
 
   .header {
+    align-items: center;
+    text-align: center;
     gap: 14px;
     margin-bottom: 18px;
+  }
+
+  .header-copy {
+    width: 100%;
   }
 
   .header h1 {
@@ -954,25 +969,9 @@ code {
     display: grid;
     grid-template-columns: repeat(3, minmax(0, 1fr));
     grid-template-areas:
-      'size size size'
       'prev current next';
     gap: 10px;
     align-items: center;
-  }
-
-  .song-page-size {
-    grid-area: size;
-    justify-content: space-between;
-    width: 100%;
-  }
-
-  .song-page-size span {
-    min-width: 0;
-  }
-
-  .song-page-size-select {
-    width: 88px;
-    justify-self: end;
   }
 
   .pagination-button {
@@ -992,6 +991,18 @@ code {
 
   .pagination-button:last-of-type {
     grid-area: next;
+  }
+
+  .song-page-size-bar {
+    justify-content: stretch;
+  }
+
+  .song-page-size {
+    width: 100%;
+  }
+
+  .song-page-size-select {
+    width: 88px;
   }
 
   .song-footer-col2 {
