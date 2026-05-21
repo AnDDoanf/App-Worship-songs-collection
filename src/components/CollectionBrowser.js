@@ -1,4 +1,5 @@
 import { useEffect, useMemo, useState } from 'react';
+import { FiChevronLeft, FiChevronRight } from 'react-icons/fi';
 import Filter1 from './Filter1';
 import Filter2 from './Filter2';
 import Filter3 from './Filter3';
@@ -61,9 +62,6 @@ function CollectionBrowser({ songs, onAddToSlideshow }) {
     return filteredSongs.slice(startIndex, startIndex + songsPerPage);
   }, [currentPage, filteredSongs, songsPerPage]);
 
-  const pageStart = filteredSongs.length === 0 ? 0 : (currentPage - 1) * songsPerPage + 1;
-  const pageEnd = Math.min(currentPage * songsPerPage, filteredSongs.length);
-
   const handlePageSizeChange = (nextPageSize) => {
     const currentStartIndex = (currentPage - 1) * songsPerPage;
     const nextPage = Math.floor(currentStartIndex / nextPageSize) + 1;
@@ -102,9 +100,6 @@ function CollectionBrowser({ songs, onAddToSlideshow }) {
         />
       </div>
       <div className="song-pagination">
-        <p className="song-pagination-summary">
-          {pageStart}-{pageEnd} / {filteredSongs.length} bài
-        </p>
         <div className="song-pagination-controls">
           <label className="song-page-size">
             <span>Số bài/trang</span>
@@ -125,8 +120,9 @@ function CollectionBrowser({ songs, onAddToSlideshow }) {
             className="button-mode pagination-button"
             onClick={() => setCurrentPage((page) => Math.max(page - 1, 1))}
             disabled={currentPage === 1}
+            aria-label="Previous page"
           >
-            Trước
+            <FiChevronLeft />
           </button>
           <span className="song-pagination-current">
             {currentPage} / {totalPages}
@@ -136,8 +132,9 @@ function CollectionBrowser({ songs, onAddToSlideshow }) {
             className="button-mode pagination-button"
             onClick={() => setCurrentPage((page) => Math.min(page + 1, totalPages))}
             disabled={currentPage === totalPages}
+            aria-label="Next page"
           >
-            Sau
+            <FiChevronRight />
           </button>
         </div>
       </div>

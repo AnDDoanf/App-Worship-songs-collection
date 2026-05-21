@@ -9,13 +9,21 @@ function ThemeToggle({ mode, onToggle }) {
       aria-label={mode ? 'Chuyển sang giao diện sáng' : 'Chuyển sang giao diện tối'}
       aria-pressed={mode}
     >
-      <span className={`theme-toggle-option ${!mode ? 'active' : ''}`}>
+      <span
+        className={`theme-toggle-option ${!mode ? 'active' : ''}`}
+        title="Sáng"
+        aria-label="Chế độ sáng"
+      >
         <FiSun />
-        Sáng
+        <span className="theme-toggle-text">Sáng</span>
       </span>
-      <span className={`theme-toggle-option ${mode ? 'active' : ''}`}>
+      <span
+        className={`theme-toggle-option ${mode ? 'active' : ''}`}
+        title="Tối"
+        aria-label="Chế độ tối"
+      >
         <FiMoon />
-        Tối
+        <span className="theme-toggle-text">Tối</span>
       </span>
       <span className={`theme-toggle-thumb ${mode ? 'is-dark' : ''}`} />
     </button>

@@ -4,7 +4,7 @@ import ThemeToggle from './ThemeToggle';
 const Header = ({ mode, handleMode }) => {
   return (
     <div className="header">
-      <div>
+      <div className="header-copy">
         <h1>Danh Sách Thánh Ca Tin Lành</h1>
         <p className="app-version">2.00.00</p>
       </div>

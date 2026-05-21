@@ -4,6 +4,7 @@ import { FiChevronLeft, FiChevronRight, FiXCircle } from 'react-icons/fi';
 import gallery from './gallery';
 
 const SWIPE_THRESHOLD = 50;
+const MOBILE_BREAKPOINT = 850;
 
 function getSongPages(song) {
   if (!song?.image || song.image.includes('Không rõ')) {
@@ -45,20 +46,33 @@ function SheetSlideshowModal({ songs, trigger, setTrigger, initialSongId }) {
   const [activeViewIndex, setActiveViewIndex] = useState(0);
   const [mobilePageIndex, setMobilePageIndex] = useState(0);
   const [touchStartX, setTouchStartX] = useState(null);
+  const [isMobileViewport, setIsMobileViewport] = useState(() =>
+    typeof window !== 'undefined' ? window.innerWidth <= MOBILE_BREAKPOINT : false
+  );
 
   const desktopViews = useMemo(() => buildDesktopViews(songs), [songs]);
-  const activeView = desktopViews[activeViewIndex];
-  const activeMobilePages = useMemo(
+  const mobilePages = useMemo(
     () =>
-      (activeView?.songs || []).flatMap(({ song, pages }) =>
-        pages.map((imageKey, pageIndex) => ({
+      songs.flatMap((song) =>
+        getSongPages(song).map((imageKey, pageIndex) => ({
           imageKey,
           song,
           pageIndex,
         }))
       ),
-    [activeView]
+    [songs]
   );
+  const activeView = desktopViews[activeViewIndex];
+  const activeMobilePage = mobilePages[mobilePageIndex];
+
+  useEffect(() => {
+    const handleResize = () => {
+      setIsMobileViewport(window.innerWidth <= MOBILE_BREAKPOINT);
+    };
+
+    window.addEventListener('resize', handleResize);
+    return () => window.removeEventListener('resize', handleResize);
+  }, []);
 
   useEffect(() => {
     if (!trigger) {
@@ -70,7 +84,9 @@ function SheetSlideshowModal({ songs, trigger, setTrigger, initialSongId }) {
     );
 
     setActiveViewIndex(initialIndex >= 0 ? initialIndex : 0);
-    setMobilePageIndex(0);
+
+    const initialMobileIndex = mobilePages.findIndex(({ song }) => song.id === initialSongId);
+    setMobilePageIndex(initialMobileIndex >= 0 ? initialMobileIndex : 0);
 
     const previousOverflow = document.body.style.overflow;
     document.body.style.overflow = 'hidden';
@@ -81,13 +97,21 @@ function SheetSlideshowModal({ songs, trigger, setTrigger, initialSongId }) {
       }
 
       if (event.key === 'ArrowLeft') {
-        setActiveViewIndex((currentIndex) => Math.max(currentIndex - 1, 0));
-        setMobilePageIndex(0);
+        if (isMobileViewport) {
+          setMobilePageIndex((currentIndex) => Math.max(currentIndex - 1, 0));
+        } else {
+          setActiveViewIndex((currentIndex) => Math.max(currentIndex - 1, 0));
+          setMobilePageIndex(0);
+        }
       }
 
       if (event.key === 'ArrowRight') {
-        setActiveViewIndex((currentIndex) => Math.min(currentIndex + 1, desktopViews.length - 1));
-        setMobilePageIndex(0);
+        if (isMobileViewport) {
+          setMobilePageIndex((currentIndex) => Math.min(currentIndex + 1, mobilePages.length - 1));
+        } else {
+          setActiveViewIndex((currentIndex) => Math.min(currentIndex + 1, desktopViews.length - 1));
+          setMobilePageIndex(0);
+        }
       }
     };
 
@@ -97,11 +121,29 @@ function SheetSlideshowModal({ songs, trigger, setTrigger, initialSongId }) {
       document.body.style.overflow = previousOverflow;
       window.removeEventListener('keydown', handleKeyDown);
     };
-  }, [desktopViews, initialSongId, setTrigger, trigger]);
+  }, [desktopViews, initialSongId, isMobileViewport, mobilePages, setTrigger, trigger]);
 
   useEffect(() => {
+    if (isMobileViewport) {
+      return;
+    }
+
     setMobilePageIndex(0);
-  }, [activeViewIndex]);
+  }, [activeViewIndex, isMobileViewport]);
+
+  useEffect(() => {
+    if (!activeMobilePage) {
+      return;
+    }
+
+    const matchingDesktopIndex = desktopViews.findIndex((view) =>
+      view.songs.some(({ song }) => song.id === activeMobilePage.song.id)
+    );
+
+    if (matchingDesktopIndex >= 0 && matchingDesktopIndex !== activeViewIndex) {
+      setActiveViewIndex(matchingDesktopIndex);
+    }
+  }, [activeMobilePage, activeViewIndex, desktopViews]);
 
   if (!trigger || !activeView) {
     return null;
@@ -113,6 +155,14 @@ function SheetSlideshowModal({ songs, trigger, setTrigger, initialSongId }) {
 
   const goToNextView = () => {
     setActiveViewIndex((currentIndex) => Math.min(currentIndex + 1, desktopViews.length - 1));
+  };
+
+  const goToPreviousMobilePage = () => {
+    setMobilePageIndex((currentIndex) => Math.max(currentIndex - 1, 0));
+  };
+
+  const goToNextMobilePage = () => {
+    setMobilePageIndex((currentIndex) => Math.min(currentIndex + 1, mobilePages.length - 1));
   };
 
   const handleTouchStart = (event) => {
@@ -129,11 +179,15 @@ function SheetSlideshowModal({ songs, trigger, setTrigger, initialSongId }) {
 
     if (Math.abs(touchDelta) > SWIPE_THRESHOLD) {
       if (touchDelta > 0) {
-        if (mobilePageIndex < activeMobilePages.length - 1) {
+        if (isMobileViewport) {
+          goToNextMobilePage();
+        } else if (mobilePageIndex < mobilePages.length - 1) {
           setMobilePageIndex((currentIndex) => currentIndex + 1);
         } else {
           goToNextView();
         }
+      } else if (isMobileViewport) {
+        goToPreviousMobilePage();
       } else if (mobilePageIndex > 0) {
         setMobilePageIndex((currentIndex) => currentIndex - 1);
       } else {
@@ -145,8 +199,15 @@ function SheetSlideshowModal({ songs, trigger, setTrigger, initialSongId }) {
   };
 
   const desktopSongCount = activeView.songs.length;
-  const metaTitle = activeView.songs.map(({ song }) => song.id).join(', ');
-  const metaSubtitle = activeView.songs.map(({ song }) => song.songName).join(' | ');
+  const metaTitle = isMobileViewport
+    ? activeMobilePage?.song.id || ''
+    : activeView.songs.map(({ song }) => song.id).join(', ');
+  const metaSubtitle = isMobileViewport
+    ? activeMobilePage?.song.songName || ''
+    : activeView.songs.map(({ song }) => song.songName).join(' | ');
+  const positionLabel = isMobileViewport
+    ? `${mobilePageIndex + 1} / ${mobilePages.length}`
+    : `${activeViewIndex + 1} / ${desktopViews.length}`;
 
   const modal = (
     <div className="popup popup-sheet-overlay" onClick={() => setTrigger(false)}>
@@ -165,12 +226,10 @@ function SheetSlideshowModal({ songs, trigger, setTrigger, initialSongId }) {
             <strong>{metaTitle}</strong>
             <span>{metaSubtitle}</span>
           </div>
-          <div className="slideshow-position">
-            {activeViewIndex + 1} / {desktopViews.length}
-          </div>
+          <div className="slideshow-position">{positionLabel}</div>
         </div>
 
-        {activeMobilePages.length === 0 ? (
+        {mobilePages.length === 0 ? (
           <div className="popup-lyric popup-empty-state">No Sheet available</div>
         ) : (
           <>
@@ -198,7 +257,7 @@ function SheetSlideshowModal({ songs, trigger, setTrigger, initialSongId }) {
                 className="sheet-track"
                 style={{ transform: `translateX(-${mobilePageIndex * 100}%)` }}
               >
-                {activeMobilePages.map(({ imageKey, song, pageIndex }) => (
+                {mobilePages.map(({ imageKey, song, pageIndex }) => (
                   <div className="sheet-slide" key={`${song.id}-${imageKey}-mobile`}>
                     <img
                       loading="lazy"
@@ -217,18 +276,18 @@ function SheetSlideshowModal({ songs, trigger, setTrigger, initialSongId }) {
           <button
             type="button"
             className="sheet-nav-button"
-            onClick={goToPreviousView}
-            disabled={activeViewIndex === 0}
-            aria-label="Previous view"
+            onClick={isMobileViewport ? goToPreviousMobilePage : goToPreviousView}
+            disabled={isMobileViewport ? mobilePageIndex === 0 : activeViewIndex === 0}
+            aria-label={isMobileViewport ? 'Previous page' : 'Previous view'}
           >
             <FiChevronLeft />
           </button>
           <button
             type="button"
             className="sheet-nav-button"
-            onClick={goToNextView}
-            disabled={activeViewIndex === desktopViews.length - 1}
-            aria-label="Next view"
+            onClick={isMobileViewport ? goToNextMobilePage : goToNextView}
+            disabled={isMobileViewport ? mobilePageIndex === mobilePages.length - 1 : activeViewIndex === desktopViews.length - 1}
+            aria-label={isMobileViewport ? 'Next page' : 'Next view'}
           >
             <FiChevronRight />
           </button>

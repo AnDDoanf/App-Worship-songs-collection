@@ -406,6 +406,24 @@ function App() {
           onClearQueue={clearSlideshow}
           onDeleteList={deleteActiveList}
         />
+        <div className="collection-menu-wrapper">
+          <label className="collection-menu-mobile-label" htmlFor="collection-menu-mobile">
+            Chọn tuyển tập
+          </label>
+          <select
+            id="collection-menu-mobile"
+            className="dropdown collection-menu-mobile"
+            value={activeCollectionId}
+            onChange={(event) => setActiveCollectionId(Number(event.target.value))}
+            aria-label="Chọn tuyển tập bài hát"
+          >
+            {collections.map((collection) => (
+              <option key={collection.id} value={collection.id}>
+                {collection.label}
+              </option>
+            ))}
+          </select>
+        </div>
         <div className="collection-menu" role="tablist" aria-label="Các tuyển tập bài hát">
           {collections.map((collection) => (
             <button
