@@ -819,6 +819,13 @@ code {
     padding: 10px 12px;
   }
 
+  .search-input,
+  .dropdown,
+  .slideshow-input,
+  .song-page-size-select {
+    font-size: 16px;
+  }
+
   .song {
     padding: 14px 16px;
   }
