@@ -1,23 +1,16 @@
 import React, { useState } from 'react';
 
 function AudioPlayer(props) {
-  const [isPlaying, setIsPlaying] = useState(false);
   const [audioLoaded, setAudioLoaded] = useState(false);
 
-  const togglePlay = () => {
-    if (!audioLoaded) {
-      setAudioLoaded(true); // Set audio as loaded when user clicks play button
-    }
-    setIsPlaying(!isPlaying);
-  };
-
   return (
-    <div>
-      {!audioLoaded && <button className='button-mode audio-button' onClick={togglePlay}>Audio</button>}
-      {audioLoaded && (
-        <div>
-          <audio src={props.audio} controls={true} autoPlay={false} />
-        </div>
+    <div className="audio-player">
+      {!audioLoaded ? (
+        <button type="button" className="button-mode audio-button" onClick={() => setAudioLoaded(true)}>
+          Audio
+        </button>
+      ) : (
+        <audio className="audio-control" src={props.audio} controls autoPlay={false} preload="none" />
       )}
     </div>
   );

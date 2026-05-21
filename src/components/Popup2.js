@@ -1,25 +1,40 @@
-import { FiXCircle } from "react-icons/fi";
+import { createPortal } from 'react-dom';
+import { FiXCircle } from 'react-icons/fi';
 
 function PrintLine(props) {
-    return <p style={{color:"black"}}>{ props.text.replace('\'', "").replace('\'', "") }</p>;
+  return <p style={{ color: 'black' }}>{props.text.replace("'", '').replace("'", '')}</p>;
 }
 
 function ShowLyric(props) {
   const lyricss = props.lyric.slice(1, -1).split(', ');
-  return (props.lyric.includes('Không rõ')) ? (
-    <div className='popup-lyric'>No lyric available</div>
-  ) : (lyricss.map((line) => <PrintLine text={line}/>))
+  return props.lyric.includes('Không rõ') ? (
+    <div className="popup-lyric">No lyric available</div>
+  ) : (
+    lyricss.map((line, index) => <PrintLine key={`${line}-${index}`} text={line} />)
+  );
 }
 
 function Popup2(props) {
-  return (props.trigger) ? (    
-    <div className='popup'>
-      <div className='popup-lyric'>
-        <FiXCircle className='close-popup' onClick={() => props.setTrigger(false)}/>
-        <ShowLyric lyric={props.lyric}/>
+  if (!props.trigger) {
+    return null;
+  }
+
+  return createPortal(
+    <div className="popup" onClick={() => props.setTrigger(false)}>
+      <div className="popup-lyric" onClick={(event) => event.stopPropagation()}>
+        <button
+          type="button"
+          className="popup-close-button"
+          onClick={() => props.setTrigger(false)}
+          aria-label="Close lyric view"
+        >
+          <FiXCircle />
+        </button>
+        <ShowLyric lyric={props.lyric} />
       </div>
-    </div>
-  ) : ""
+    </div>,
+    document.body
+  );
 }
 
-export default Popup2
+export default Popup2;

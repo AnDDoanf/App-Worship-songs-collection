@@ -1,13 +1,16 @@
-import React from "react";
+import React from 'react';
+import ThemeToggle from './ThemeToggle';
 
-const Header = ({ handleMode }) => {
-    return(
-        <div className="header">
-            <h1>Danh sách Thánh ca Tin Lành</h1> 
-            {/* <ChordAlignmentTool/> */}
-            <button onClick={()=>handleMode((prevMode)=>!prevMode)} className="button-mode">Mode</button>
-        </div>
-    )
-}
+const Header = ({ mode, handleMode }) => {
+  return (
+    <div className="header">
+      <div>
+        <h1>Danh Sách Thánh Ca Tin Lành</h1>
+        <p className="app-version">2.00.00</p>
+      </div>
+      <ThemeToggle mode={mode} onToggle={() => handleMode((prevMode) => !prevMode)} />
+    </div>
+  );
+};
 
-export default Header
+export default Header;
