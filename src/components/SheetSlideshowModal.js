@@ -1,7 +1,7 @@
 import { useEffect, useMemo, useState } from 'react';
 import { createPortal } from 'react-dom';
 import { FiChevronLeft, FiChevronRight, FiXCircle } from 'react-icons/fi';
-import gallery from './ImageLoader';
+import gallery from './gallery';
 
 const SWIPE_THRESHOLD = 50;
 
