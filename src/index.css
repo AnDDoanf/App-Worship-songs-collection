@@ -438,6 +438,8 @@ code {
 
 .song-footer-col3 {
   justify-self: end;
+  display: flex;
+  justify-content: center;
 }
 
 .search {
@@ -574,13 +576,15 @@ code {
 }
 
 .audio-player {
-  width: 100%;
+  width: min(320px, 100%);
+  min-width: 220px;
 }
 
 .audio-control {
   display: block;
   width: 100%;
   max-width: 320px;
+  min-width: 220px;
 }
 
 .popup {
