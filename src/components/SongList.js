@@ -1,6 +1,6 @@
 import Song from './Song';
 
-const SongList = ({ songs, onAddToSlideshow }) => {
+const SongList = ({ songs, onAddToSlideshow, onShowToast }) => {
   return (
     <div className="song-list">
       {songs.map((song) => (
@@ -15,6 +15,7 @@ const SongList = ({ songs, onAddToSlideshow }) => {
           audio={song.audio}
           image={song.image}
           onAddToSlideshow={onAddToSlideshow}
+          onShowToast={onShowToast}
         />
       ))}
     </div>

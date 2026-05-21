@@ -220,11 +220,14 @@ function App() {
 
   const addSongToSlideshow = (songId) => {
     const normalizedId = songId.toUpperCase();
+    let wasAdded = false;
 
     updateActiveList((currentList) => {
       if (currentList.ids.includes(normalizedId)) {
         return currentList;
       }
+
+      wasAdded = true;
 
       const parsedCodes = parseSongCodes(currentList.draft);
       const nextDraft = parsedCodes.includes(normalizedId)
@@ -236,6 +239,8 @@ function App() {
         ids: [...currentList.ids, normalizedId],
       };
     });
+
+    return { added: wasAdded };
   };
 
   const buildQueueFromDraft = (value) => {

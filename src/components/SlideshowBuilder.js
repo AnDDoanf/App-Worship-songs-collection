@@ -1,9 +1,9 @@
 import { useMemo, useState } from 'react';
 import {
   FiChevronDown,
+  FiFileText,
   FiFolderPlus,
   FiSave,
-  FiPlay,
   FiTrash2,
   FiXCircle,
 } from 'react-icons/fi';
@@ -129,8 +129,8 @@ function SlideshowBuilder({
               <ActionButton
                 onClick={onOpenSlideshow}
                 disabled={queueSongs.length === 0}
-                label="Mở trình chiếu"
-                icon={<FiPlay />}
+                label="Mở bản nhạc"
+                icon={<FiFileText />}
               />
               <ActionButton
                 onClick={onClearQueue}

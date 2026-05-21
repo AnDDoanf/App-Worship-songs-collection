@@ -25,6 +25,7 @@ function CollectionBrowser({ songs, onAddToSlideshow }) {
   const [searchText, setSearchText] = useState('');
   const [currentPage, setCurrentPage] = useState(1);
   const [songsPerPage, setSongsPerPage] = useState(DEFAULT_SONGS_PER_PAGE);
+  const [toastMessage, setToastMessage] = useState('');
   const [filters, setFilters] = useState({
     category: '',
     tone: '',
@@ -57,6 +58,18 @@ function CollectionBrowser({ songs, onAddToSlideshow }) {
     setCurrentPage((page) => Math.min(page, totalPages));
   }, [totalPages]);
 
+  useEffect(() => {
+    if (!toastMessage) {
+      return undefined;
+    }
+
+    const timeoutId = window.setTimeout(() => {
+      setToastMessage('');
+    }, 2200);
+
+    return () => window.clearTimeout(timeoutId);
+  }, [toastMessage]);
+
   const pagedSongs = useMemo(() => {
     const startIndex = (currentPage - 1) * songsPerPage;
     return filteredSongs.slice(startIndex, startIndex + songsPerPage);
@@ -68,6 +81,10 @@ function CollectionBrowser({ songs, onAddToSlideshow }) {
 
     setSongsPerPage(nextPageSize);
     setCurrentPage(nextPage);
+  };
+
+  const showToast = (message) => {
+    setToastMessage(message);
   };
 
   return (
@@ -124,7 +141,11 @@ function CollectionBrowser({ songs, onAddToSlideshow }) {
           </button>
         </div>
       </div>
-      <SongList songs={pagedSongs} onAddToSlideshow={onAddToSlideshow} />
+      <SongList
+        songs={pagedSongs}
+        onAddToSlideshow={onAddToSlideshow}
+        onShowToast={showToast}
+      />
       <div className="song-page-size-bar">
         <label className="song-page-size" htmlFor="song-page-size-select">
           <span>Hiển thị</span>
@@ -142,6 +163,9 @@ function CollectionBrowser({ songs, onAddToSlideshow }) {
           </select>
           <span>bài/trang</span>
         </label>
+      </div>
+      <div className={`song-action-toast ${toastMessage ? 'visible' : ''}`} aria-live="polite">
+        {toastMessage}
       </div>
     </>
   );

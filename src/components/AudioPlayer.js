@@ -7,7 +7,7 @@ function AudioPlayer(props) {
     <div className="audio-player">
       {!audioLoaded ? (
         <button type="button" className="button-mode audio-button" onClick={() => setAudioLoaded(true)}>
-          Audio
+          Âm thanh
         </button>
       ) : (
         <audio className="audio-control" src={props.audio} controls autoPlay={false} preload="none" />

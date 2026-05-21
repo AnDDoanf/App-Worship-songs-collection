@@ -132,7 +132,7 @@ function SheetSlideshowModal({ songs, trigger, setTrigger, initialSongId }) {
   }, [activeViewIndex, isMobileViewport]);
 
   useEffect(() => {
-    if (!activeMobilePage) {
+    if (!isMobileViewport || !activeMobilePage) {
       return;
     }
 
@@ -143,7 +143,7 @@ function SheetSlideshowModal({ songs, trigger, setTrigger, initialSongId }) {
     if (matchingDesktopIndex >= 0 && matchingDesktopIndex !== activeViewIndex) {
       setActiveViewIndex(matchingDesktopIndex);
     }
-  }, [activeMobilePage, activeViewIndex, desktopViews]);
+  }, [activeMobilePage, activeViewIndex, desktopViews, isMobileViewport]);
 
   if (!trigger || !activeView) {
     return null;
