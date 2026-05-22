@@ -1549,7 +1549,7 @@ code {
   }
 
   .popup {
-    padding: 12px 0 calc(12px + env(safe-area-inset-bottom));
+    padding: 12px 0 0;
     align-items: center;
   }
 
@@ -1565,38 +1565,39 @@ code {
   .popup-lyric {
     width: min(92vw, 760px);
     min-height: auto;
-    max-height: calc(100svh - 24px - env(safe-area-inset-bottom));
-    max-height: calc(100dvh - 24px - env(safe-area-inset-bottom));
+    max-height: calc(100svh - 12px);
+    max-height: calc(100dvh - 12px);
     margin-top: 0;
     margin-bottom: 0;
     border-radius: 28px;
     padding-top: 56px;
-    padding-bottom: 24px;
+    padding-bottom: calc(24px + env(safe-area-inset-bottom));
     overflow: hidden;
   }
 
   .popup-list-editor {
     width: min(92vw, 760px);
-    max-height: calc(100svh - 24px - env(safe-area-inset-bottom));
-    max-height: calc(100dvh - 24px - env(safe-area-inset-bottom));
+    max-height: calc(100svh - 12px);
+    max-height: calc(100dvh - 12px);
     margin-top: 0;
     margin-bottom: 0;
+    padding-bottom: calc(24px + env(safe-area-inset-bottom));
     overflow: auto;
   }
 
   .popup-lyrics-queue {
     width: min(92vw, 760px);
-    max-height: calc(100svh - 24px - env(safe-area-inset-bottom));
-    max-height: calc(100dvh - 24px - env(safe-area-inset-bottom));
+    max-height: calc(100svh - 12px);
+    max-height: calc(100dvh - 12px);
     margin-top: 0;
     margin-bottom: 0;
-    padding: 56px 18px 18px;
+    padding: 56px 18px calc(18px + env(safe-area-inset-bottom));
     border-radius: 28px;
   }
 
   .popup-lyrics-queue-grid {
-    max-height: calc(100svh - 168px - env(safe-area-inset-bottom));
-    max-height: calc(100dvh - 168px - env(safe-area-inset-bottom));
+    max-height: calc(100svh - 156px - env(safe-area-inset-bottom));
+    max-height: calc(100dvh - 156px - env(safe-area-inset-bottom));
   }
 
   .popup-sheet {
