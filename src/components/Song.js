@@ -65,7 +65,13 @@ const Song = (props) => {
         </div>
       </div>
       <Popup image={props.image} trigger={buttonPopup} setTrigger={setButtonPopup} />
-      <Popup2 lyric={props.lyric} trigger={buttonPopup2} setTrigger={setButtonPopup2} />
+      <Popup2
+        lyric={props.lyric}
+        trigger={buttonPopup2}
+        setTrigger={setButtonPopup2}
+        songId={props.id}
+        onNotify={notifyAction}
+      />
     </div>
   );
 };

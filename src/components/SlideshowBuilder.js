@@ -3,14 +3,20 @@ import {
   FiChevronDown,
   FiFileText,
   FiFolderPlus,
+  FiList,
   FiSave,
   FiTrash2,
   FiXCircle,
 } from 'react-icons/fi';
 
-function ActionButton({ onClick, disabled, label, icon }) {
+function ActionButton({ onClick, disabled, label, icon, variant = 'default' }) {
   return (
-    <button type="button" className="button-mode slideshow-action-button" onClick={onClick} disabled={disabled}>
+    <button
+      type="button"
+      className={`button-mode slideshow-action-button slideshow-action-button-${variant}`}
+      onClick={onClick}
+      disabled={disabled}
+    >
       <span className="slideshow-action-label">{label}</span>
       <span className="slideshow-action-icon" aria-hidden="true">
         {icon}
@@ -32,6 +38,7 @@ function SlideshowBuilder({
   onBuildQueue,
   queueSongs,
   onOpenSlideshow,
+  onOpenLyricsQueue,
   onClearQueue,
   onDeleteList,
 }) {
@@ -123,27 +130,45 @@ function SlideshowBuilder({
               onChange={(event) => onDraftChange(event.target.value)}
               placeholder="T12, H122, TCX001"
             />
-            <div className="slideshow-action-row">
-              <ActionButton onClick={handleCreate} label="Tạo danh sách" icon={<FiFolderPlus />} />
-              <ActionButton onClick={handleSave} label="Lưu danh sách" icon={<FiSave />} />
-              <ActionButton
-                onClick={onOpenSlideshow}
-                disabled={queueSongs.length === 0}
-                label="Mở bản nhạc"
-                icon={<FiFileText />}
-              />
-              <ActionButton
-                onClick={onClearQueue}
-                disabled={queueSongs.length === 0 && !draftValue}
-                label="Xóa bài hát"
-                icon={<FiXCircle />}
-              />
-              <ActionButton
-                onClick={onDeleteList}
-                disabled={availableLists.length <= 1}
-                label="Xóa danh sách"
-                icon={<FiTrash2 />}
-              />
+            <div className="slideshow-action-group">
+              <p className="slideshow-action-heading">Xem nhanh</p>
+              <div className="slideshow-primary-actions">
+                <ActionButton
+                  onClick={onOpenSlideshow}
+                  disabled={queueSongs.length === 0}
+                  label="Mở bản nhạc"
+                  icon={<FiFileText />}
+                  variant="primary"
+                />
+                <ActionButton
+                  onClick={onOpenLyricsQueue}
+                  disabled={queueSongs.length === 0}
+                  label="Mở lời"
+                  icon={<FiList />}
+                  variant="primary"
+                />
+              </div>
+            </div>
+            <div className="slideshow-action-group">
+              <p className="slideshow-action-heading">Quản lý danh sách</p>
+              <div className="slideshow-secondary-actions">
+                <ActionButton onClick={handleCreate} label="Tạo danh sách" icon={<FiFolderPlus />} variant="secondary" />
+                <ActionButton onClick={handleSave} label="Lưu danh sách" icon={<FiSave />} variant="secondary" />
+                <ActionButton
+                  onClick={onClearQueue}
+                  disabled={queueSongs.length === 0 && !draftValue}
+                  label="Xóa bài hát"
+                  icon={<FiXCircle />}
+                  variant="secondary"
+                />
+                <ActionButton
+                  onClick={onDeleteList}
+                  disabled={availableLists.length <= 1}
+                  label="Xóa danh sách"
+                  icon={<FiTrash2 />}
+                  variant="secondary"
+                />
+              </div>
             </div>
           </div>
           {errorMessage ? <p className="slideshow-error">{errorMessage}</p> : null}

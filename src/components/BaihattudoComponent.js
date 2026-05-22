@@ -1,8 +1,7 @@
 import CollectionBrowser from './CollectionBrowser';
-import data from '../data/song3-data.json';
 
-function BaihattudoComponent({ onAddToSlideshow }) {
-  return <CollectionBrowser songs={data} onAddToSlideshow={onAddToSlideshow} />;
+function BaihattudoComponent({ songs, onAddToSlideshow }) {
+  return <CollectionBrowser songs={songs} onAddToSlideshow={onAddToSlideshow} />;
 }
 
 export default BaihattudoComponent;

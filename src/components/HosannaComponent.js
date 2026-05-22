@@ -1,8 +1,7 @@
 import CollectionBrowser from './CollectionBrowser';
-import data from '../data/song2-data.json';
 
-function HosannaComponent({ onAddToSlideshow }) {
-  return <CollectionBrowser songs={data} onAddToSlideshow={onAddToSlideshow} />;
+function HosannaComponent({ songs, onAddToSlideshow }) {
+  return <CollectionBrowser songs={songs} onAddToSlideshow={onAddToSlideshow} />;
 }
 
 export default HosannaComponent;

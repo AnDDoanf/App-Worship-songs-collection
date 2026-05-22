@@ -1,8 +1,7 @@
 import CollectionBrowser from './CollectionBrowser';
-import data from '../data/song-data.json';
 
-const TVCHHComponent = ({ onAddToSlideshow }) => {
-  return <CollectionBrowser songs={data} onAddToSlideshow={onAddToSlideshow} />;
+const TVCHHComponent = ({ songs, onAddToSlideshow }) => {
+  return <CollectionBrowser songs={songs} onAddToSlideshow={onAddToSlideshow} />;
 };
 
 export default TVCHHComponent;
