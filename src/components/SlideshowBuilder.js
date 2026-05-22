@@ -1,24 +1,17 @@
-import { useMemo, useState } from 'react';
-import {
-  FiChevronDown,
-  FiFileText,
-  FiFolderPlus,
-  FiList,
-  FiSave,
-  FiTrash2,
-  FiXCircle,
-} from 'react-icons/fi';
+import { useEffect, useMemo, useState } from 'react';
+import { FiChevronDown, FiFileText, FiList, FiPlus } from 'react-icons/fi';
+import SlideshowListEditorModal from './SlideshowListEditorModal';
 
-function ActionButton({ onClick, disabled, label, icon, variant = 'default' }) {
+function QuickActionButton({ onClick, disabled, label, icon }) {
   return (
     <button
       type="button"
-      className={`button-mode slideshow-action-button slideshow-action-button-${variant}`}
+      className="button-mode slideshow-list-action-button"
       onClick={onClick}
       disabled={disabled}
     >
-      <span className="slideshow-action-label">{label}</span>
-      <span className="slideshow-action-icon" aria-hidden="true">
+      <span className="slideshow-list-action-label">{label}</span>
+      <span className="slideshow-list-action-icon" aria-hidden="true">
         {icon}
       </span>
     </button>
@@ -26,155 +19,173 @@ function ActionButton({ onClick, disabled, label, icon, variant = 'default' }) {
 }
 
 function SlideshowBuilder({
-  selectedListName,
-  listNameInput,
-  availableLists,
-  draftValue,
-  onDraftChange,
-  onSelectList,
-  onListNameChange,
+  lists,
+  newestListName,
   onCreateList,
-  onSaveList,
-  onBuildQueue,
-  queueSongs,
+  onUpdateList,
+  onDeleteList,
   onOpenSlideshow,
   onOpenLyricsQueue,
-  onClearQueue,
-  onDeleteList,
 }) {
-  const [errorMessage, setErrorMessage] = useState('');
   const [isExpanded, setIsExpanded] = useState(false);
+  const [toastMessage, setToastMessage] = useState('');
+  const [editorState, setEditorState] = useState({
+    isOpen: false,
+    mode: 'create',
+    originalName: '',
+    name: '',
+    draft: '',
+  });
 
-  const queueLabel = useMemo(() => {
-    if (queueSongs.length === 0) {
-      return 'Chưa có bài trong danh sách';
+  useEffect(() => {
+    if (!toastMessage) {
+      return undefined;
     }
 
-    return queueSongs.map((song) => song.id).join(', ');
-  }, [queueSongs]);
+    const timeoutId = window.setTimeout(() => {
+      setToastMessage('');
+    }, 2200);
 
-  const handleSave = () => {
-    const buildResult = onBuildQueue(draftValue);
+    return () => window.clearTimeout(timeoutId);
+  }, [toastMessage]);
 
-    if (buildResult.error) {
-      setErrorMessage(buildResult.error);
-      setIsExpanded(true);
-      return;
+  const visibleLists = useMemo(() => {
+    if (isExpanded) {
+      return lists;
     }
 
-    const saveResult = onSaveList();
+    const newestList = lists.find((list) => list.name === newestListName);
+    return newestList ? [newestList] : lists.slice(-1);
+  }, [isExpanded, lists, newestListName]);
 
-    if (saveResult.error) {
-      setErrorMessage(saveResult.error);
-      setIsExpanded(true);
-      return;
+  const queueSummary = useMemo(() => {
+    if (lists.length === 0) {
+      return 'Chưa có danh sách';
     }
 
-    setErrorMessage('');
+    const newestList =
+      lists.find((list) => list.name === newestListName) || lists[lists.length - 1];
+
+    return newestList?.codesLabel || 'Chưa có bài trong danh sách';
+  }, [lists, newestListName]);
+
+  const openCreateModal = () => {
+    setEditorState({
+      isOpen: true,
+      mode: 'create',
+      originalName: '',
+      name: '',
+      draft: '',
+    });
   };
 
-  const handleCreate = () => {
-    const createResult = onCreateList();
+  const openEditModal = (list) => {
+    setEditorState({
+      isOpen: true,
+      mode: 'edit',
+      originalName: list.name,
+      name: list.name,
+      draft: list.draft,
+    });
+  };
 
-    if (createResult.error) {
-      setErrorMessage(createResult.error);
-      setIsExpanded(true);
+  const closeEditor = () => {
+    setEditorState((currentState) => ({
+      ...currentState,
+      isOpen: false,
+    }));
+  };
+
+  const handleOpenSheet = (list) => {
+    if (list.songs.length === 0) {
+      setToastMessage(`Danh sách "${list.name}" chưa có bài để mở bản nhạc`);
       return;
     }
 
-    setErrorMessage('');
+    onOpenSlideshow(list.name);
+  };
+
+  const handleOpenLyrics = (list) => {
+    if (list.songs.length === 0) {
+      setToastMessage(`Danh sách "${list.name}" chưa có bài để mở lời`);
+      return;
+    }
+
+    onOpenLyricsQueue(list.name);
   };
 
   return (
-    <section className={`slideshow-builder ${isExpanded ? 'expanded' : 'collapsed'}`}>
-      <button
-        type="button"
-        className="slideshow-builder-toggle"
-        onClick={() => setIsExpanded((currentValue) => !currentValue)}
-        aria-expanded={isExpanded}
-      >
-        <div className="slideshow-builder-copy">
-          <h2>Danh sách trình chiếu bản nhạc</h2>
-          <p>{queueLabel}</p>
-        </div>
-        <FiChevronDown className={`slideshow-builder-chevron ${isExpanded ? 'open' : ''}`} />
-      </button>
-
-      {isExpanded ? (
-        <>
-          <div className="slideshow-builder-controls">
-            <div className="slideshow-list-row">
-              <select
-                className="dropdown slideshow-list-select"
-                value={selectedListName}
-                onChange={(event) => onSelectList(event.target.value)}
-              >
-                {availableLists.map((listName) => (
-                  <option key={listName} value={listName}>
-                    {listName}
-                  </option>
-                ))}
-              </select>
-              <input
-                type="text"
-                className="slideshow-input slideshow-name-input"
-                value={listNameInput}
-                onChange={(event) => onListNameChange(event.target.value)}
-                placeholder="Chương trình Chúa nhật"
-              />
+    <>
+      <section className={`slideshow-builder ${isExpanded ? 'expanded' : 'collapsed'}`}>
+        <div className="slideshow-builder-header">
+          <button
+            type="button"
+            className="slideshow-builder-toggle"
+            onClick={() => setIsExpanded((currentValue) => !currentValue)}
+            aria-expanded={isExpanded}
+          >
+            <div className="slideshow-builder-copy">
+              <h2>Danh sách trình chiếu bản nhạc</h2>
             </div>
-            <input
-              type="text"
-              className="slideshow-input"
-              value={draftValue}
-              onChange={(event) => onDraftChange(event.target.value)}
-              placeholder="T12, H122, TCX001"
-            />
-            <div className="slideshow-action-group">
-              <p className="slideshow-action-heading">Xem nhanh</p>
-              <div className="slideshow-primary-actions">
-                <ActionButton
-                  onClick={onOpenSlideshow}
-                  disabled={queueSongs.length === 0}
+            <FiChevronDown className={`slideshow-builder-chevron ${isExpanded ? 'open' : ''}`} />
+          </button>
+          <button
+            type="button"
+            className="button-mode slideshow-create-button"
+            onClick={openCreateModal}
+          >
+            <FiPlus aria-hidden="true" />
+            <span>Tạo mới</span>
+          </button>
+        </div>
+
+        <div className="slideshow-list-grid">
+          {visibleLists.map((list) => (
+            <article key={list.name} className="slideshow-list-card">
+              <button
+                type="button"
+                className="slideshow-list-summary"
+                onClick={() => openEditModal(list)}
+              >
+                <div className="slideshow-list-title-row">
+                  <h3>{list.name}</h3>
+                </div>
+                <p>{list.codesLabel}</p>
+              </button>
+              <div className="slideshow-list-actions">
+                <QuickActionButton
+                  onClick={() => handleOpenSheet(list)}
                   label="Mở bản nhạc"
                   icon={<FiFileText />}
-                  variant="primary"
                 />
-                <ActionButton
-                  onClick={onOpenLyricsQueue}
-                  disabled={queueSongs.length === 0}
+                <QuickActionButton
+                  onClick={() => handleOpenLyrics(list)}
                   label="Mở lời"
                   icon={<FiList />}
-                  variant="primary"
                 />
               </div>
-            </div>
-            <div className="slideshow-action-group">
-              <p className="slideshow-action-heading">Quản lý danh sách</p>
-              <div className="slideshow-secondary-actions">
-                <ActionButton onClick={handleCreate} label="Tạo danh sách" icon={<FiFolderPlus />} variant="secondary" />
-                <ActionButton onClick={handleSave} label="Lưu danh sách" icon={<FiSave />} variant="secondary" />
-                <ActionButton
-                  onClick={onClearQueue}
-                  disabled={queueSongs.length === 0 && !draftValue}
-                  label="Xóa bài hát"
-                  icon={<FiXCircle />}
-                  variant="secondary"
-                />
-                <ActionButton
-                  onClick={onDeleteList}
-                  disabled={availableLists.length <= 1}
-                  label="Xóa danh sách"
-                  icon={<FiTrash2 />}
-                  variant="secondary"
-                />
-              </div>
-            </div>
-          </div>
-          {errorMessage ? <p className="slideshow-error">{errorMessage}</p> : null}
-        </>
-      ) : null}
-    </section>
+            </article>
+          ))}
+        </div>
+      </section>
+
+      <SlideshowListEditorModal
+        trigger={editorState.isOpen}
+        mode={editorState.mode}
+        originalName={editorState.originalName}
+        initialName={editorState.name}
+        initialDraft={editorState.draft}
+        setTrigger={closeEditor}
+        onCreateList={onCreateList}
+        onUpdateList={onUpdateList}
+        onDeleteList={onDeleteList}
+        onNotify={setToastMessage}
+      />
+
+      <div className={`song-action-toast ${toastMessage ? 'visible' : ''}`} aria-live="polite">
+        {toastMessage}
+      </div>
+    </>
   );
 }
 

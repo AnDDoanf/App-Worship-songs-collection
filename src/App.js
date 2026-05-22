@@ -1,4 +1,4 @@
-import React, { useEffect, useMemo, useState } from 'react';
+import React, { useCallback, useEffect, useMemo, useState } from 'react';
 import BaihattudoComponent from './components/BaihattudoComponent';
 import churchLogo from './church-logo.svg';
 import churchLogoDark from './church-logo-dark.svg';
@@ -103,10 +103,11 @@ function normalizeStoredState(value) {
     return createDefaultState();
   }
 
+  const listNames = Object.keys(nextLists);
   const nextActiveListName =
     typeof value.activeListName === 'string' && nextLists[value.activeListName]
       ? value.activeListName
-      : Object.keys(nextLists)[0];
+      : listNames[listNames.length - 1];
 
   return {
     activeListName: nextActiveListName,
@@ -131,10 +132,10 @@ function App() {
   });
   const [activeCollectionId, setActiveCollectionId] = useState(2);
   const [slideshowState, setSlideshowState] = useState(createDefaultState);
-  const [activeListNameInput, setActiveListNameInput] = useState(DEFAULT_LIST_NAME);
   const [isLyricsQueueOpen, setIsLyricsQueueOpen] = useState(false);
   const [isSlideshowOpen, setIsSlideshowOpen] = useState(false);
   const [slideshowStartId, setSlideshowStartId] = useState('');
+  const [playbackSongs, setPlaybackSongs] = useState([]);
   const [songLibraryState, setSongLibraryState] = useState({
     songs: [],
     source: 'local',
@@ -155,6 +156,8 @@ function App() {
       }, {}),
     [allSongs]
   );
+
+  const getSongsForIds = useCallback((ids) => ids.map((id) => songsById[id]).filter(Boolean), [songsById]);
 
   useEffect(() => {
     let isMounted = true;
@@ -183,9 +186,7 @@ function App() {
     }
 
     try {
-      const parsedValue = normalizeStoredState(JSON.parse(savedValue));
-      setSlideshowState(parsedValue);
-      setActiveListNameInput(parsedValue.activeListName);
+      setSlideshowState(normalizeStoredState(JSON.parse(savedValue)));
     } catch (_error) {
       window.localStorage.removeItem(STORAGE_KEY);
     }
@@ -219,6 +220,7 @@ function App() {
   }, []);
 
   useEffect(() => {
+    document.documentElement.classList.toggle('dark-mode', mode);
     document.title = APP_TITLE;
 
     const activeLogo = mode ? churchLogoDark : churchLogo;
@@ -226,16 +228,36 @@ function App() {
     setHeadLink('apple-touch-icon', activeLogo);
   }, [mode]);
 
-  const activeList = slideshowState.lists[slideshowState.activeListName] || {
-    draft: '',
-    ids: [],
+  const availableLists = useMemo(() => Object.keys(slideshowState.lists), [slideshowState.lists]);
+  const newestListName = availableLists[availableLists.length - 1] || DEFAULT_LIST_NAME;
+
+  const getSongsForListName = (listName) => {
+    const list = slideshowState.lists[listName];
+
+    if (!list) {
+      return [];
+    }
+
+    return getSongsForIds(list.ids);
   };
 
-  const availableLists = useMemo(() => Object.keys(slideshowState.lists), [slideshowState.lists]);
+  const listSummaries = useMemo(
+    () =>
+      [...availableLists].reverse().map((listName) => {
+        const list = slideshowState.lists[listName];
+        const codes = list.draft.trim() || list.ids.join(', ');
 
-  const slideshowSongs = useMemo(
-    () => activeList.ids.map((id) => songsById[id]).filter(Boolean),
-    [activeList.ids, songsById]
+        return {
+          name: listName,
+          draft: list.draft,
+          ids: list.ids,
+          codesLabel: codes || 'Chưa có bài trong danh sách',
+          songCount: list.ids.length,
+          songs: getSongsForIds(list.ids),
+          isNewest: listName === newestListName,
+        };
+      }),
+    [availableLists, getSongsForIds, newestListName, slideshowState.lists]
   );
 
   const ActiveCollection = useMemo(
@@ -255,33 +277,128 @@ function App() {
     [activeCollectionKey, allSongs]
   );
 
-  const updateActiveList = (updater) => {
+  const updateListByName = (listName, updater) => {
     setSlideshowState((currentState) => {
-      const currentList = currentState.lists[currentState.activeListName] || { draft: '', ids: [] };
+      const currentList = currentState.lists[listName];
+
+      if (!currentList) {
+        return currentState;
+      }
+
       const nextList = typeof updater === 'function' ? updater(currentList) : updater;
 
       return {
         ...currentState,
         lists: {
           ...currentState.lists,
-          [currentState.activeListName]: nextList,
+          [listName]: nextList,
         },
       };
     });
   };
 
-  const handleDraftChange = (value) => {
-    updateActiveList((currentList) => ({
-      ...currentList,
-      draft: value,
-    }));
+  const validateDraft = (draft) => {
+    const parsedCodes = parseSongCodes(draft);
+
+    if (parsedCodes.length === 0) {
+      return {
+        error: '',
+        ids: [],
+      };
+    }
+
+    const missingCodes = parsedCodes.filter((code) => !songsById[code]);
+
+    if (missingCodes.length > 0) {
+      return {
+        error: `Không tìm thấy mã bài hát: ${missingCodes.join(', ')}`,
+        ids: [],
+      };
+    }
+
+    return {
+      error: '',
+      ids: parsedCodes.filter((code, index) => parsedCodes.indexOf(code) === index),
+    };
+  };
+
+  const saveListDefinition = ({ originalName = '', name, draft }) => {
+    const trimmedName = name.trim();
+
+    if (!trimmedName) {
+      return { error: 'Vui lòng nhập tên danh sách.' };
+    }
+
+    if (trimmedName !== originalName && slideshowState.lists[trimmedName]) {
+      return { error: 'Tên danh sách này đã tồn tại.' };
+    }
+
+    const draftResult = validateDraft(draft);
+
+    if (draftResult.error) {
+      return draftResult;
+    }
+
+    setSlideshowState((currentState) => {
+      const nextLists = { ...currentState.lists };
+
+      if (originalName && originalName !== trimmedName) {
+        delete nextLists[originalName];
+      }
+
+      nextLists[trimmedName] = {
+        draft,
+        ids: draftResult.ids,
+      };
+
+      return {
+        activeListName: trimmedName,
+        lists: nextLists,
+      };
+    });
+
+    return { error: '' };
+  };
+
+  const createList = ({ name, draft }) => saveListDefinition({ name, draft });
+
+  const updateList = ({ originalName, name, draft }) =>
+    saveListDefinition({ originalName, name, draft });
+
+  const deleteListByName = (listName) => {
+    if (!slideshowState.lists[listName]) {
+      return { error: '' };
+    }
+
+    if (availableLists.length <= 1) {
+      return { error: 'Cần giữ lại ít nhất một danh sách.' };
+    }
+
+    setSlideshowState((currentState) => {
+      const nextLists = { ...currentState.lists };
+      delete nextLists[listName];
+
+      const nextNames = Object.keys(nextLists);
+      const nextActiveListName =
+        currentState.activeListName === listName
+          ? nextNames[nextNames.length - 1]
+          : currentState.activeListName;
+
+      return {
+        activeListName: nextActiveListName,
+        lists: nextLists,
+      };
+    });
+
+    return { error: '' };
   };
 
   const addSongToSlideshow = (songId) => {
     const normalizedId = songId.toUpperCase();
+    const targetListName = slideshowState.activeListName || newestListName;
     let wasAdded = false;
 
-    updateActiveList((currentList) => {
+    updateListByName(targetListName, (currentList) => {
       if (currentList.ids.includes(normalizedId)) {
         return currentList;
       }
@@ -302,97 +419,10 @@ function App() {
     return { added: wasAdded };
   };
 
-  const buildQueueFromDraft = (value) => {
-    const parsedCodes = parseSongCodes(value);
+  const openSlideshowForList = (listName, startId = '') => {
+    const songs = getSongsForListName(listName);
 
-    if (parsedCodes.length === 0) {
-      updateActiveList((currentList) => ({
-        ...currentList,
-        ids: [],
-        draft: value,
-      }));
-      return { error: '' };
-    }
-
-    const missingCodes = parsedCodes.filter((code) => !songsById[code]);
-
-    if (missingCodes.length > 0) {
-      return {
-        error: `Không tìm thấy mã bài hát: ${missingCodes.join(', ')}`,
-      };
-    }
-
-    const uniqueCodes = parsedCodes.filter((code, index) => parsedCodes.indexOf(code) === index);
-
-    updateActiveList({
-      draft: value,
-      ids: uniqueCodes,
-    });
-
-    return { error: '' };
-  };
-
-  const saveActiveList = () => {
-    const trimmedName = activeListNameInput.trim();
-
-    if (!trimmedName) {
-      return { error: 'Vui lòng nhập tên danh sách.' };
-    }
-
-    if (trimmedName !== slideshowState.activeListName && slideshowState.lists[trimmedName]) {
-      return { error: 'Tên danh sách này đã tồn tại.' };
-    }
-
-    setSlideshowState((currentState) => {
-      const currentList = currentState.lists[currentState.activeListName];
-
-      if (trimmedName === currentState.activeListName || currentState.lists[trimmedName]) {
-        return currentState;
-      }
-
-      return {
-        activeListName: trimmedName,
-        lists: {
-          ...currentState.lists,
-          [trimmedName]: currentList,
-        },
-      };
-    });
-
-    setActiveListNameInput(trimmedName);
-
-    return { error: '' };
-  };
-
-  const createNewList = () => {
-    const trimmedName = activeListNameInput.trim();
-
-    if (!trimmedName) {
-      return { error: 'Vui lòng nhập tên danh sách.' };
-    }
-
-    if (slideshowState.lists[trimmedName]) {
-      return { error: 'Tên danh sách này đã tồn tại.' };
-    }
-
-    setSlideshowState((currentState) => ({
-      activeListName: trimmedName,
-      lists: {
-        ...currentState.lists,
-        [trimmedName]: {
-          draft: '',
-          ids: [],
-        },
-      },
-    }));
-
-    setActiveListNameInput(trimmedName);
-
-    return { error: '' };
-  };
-
-  const selectList = (listName) => {
-    if (!slideshowState.lists[listName]) {
+    if (songs.length === 0) {
       return;
     }
 
@@ -400,44 +430,24 @@ function App() {
       ...currentState,
       activeListName: listName,
     }));
-    setActiveListNameInput(listName);
+    setPlaybackSongs(songs);
+    setSlideshowStartId(startId || songs[0].id);
+    setIsSlideshowOpen(true);
   };
 
-  const clearSlideshow = () => {
-    updateActiveList({
-      draft: '',
-      ids: [],
-    });
-  };
+  const openLyricsQueueForList = (listName) => {
+    const songs = getSongsForListName(listName);
 
-  const deleteActiveList = () => {
-    setSlideshowState((currentState) => {
-      const listNames = Object.keys(currentState.lists);
-
-      if (listNames.length <= 1) {
-        return currentState;
-      }
-
-      const nextLists = { ...currentState.lists };
-      delete nextLists[currentState.activeListName];
-
-      const nextActiveListName = Object.keys(nextLists)[0];
-      setActiveListNameInput(nextActiveListName);
-
-      return {
-        activeListName: nextActiveListName,
-        lists: nextLists,
-      };
-    });
-  };
-
-  const openSlideshow = (startId = '') => {
-    if (slideshowSongs.length === 0) {
+    if (songs.length === 0) {
       return;
     }
 
-    setSlideshowStartId(startId || slideshowSongs[0].id);
-    setIsSlideshowOpen(true);
+    setSlideshowState((currentState) => ({
+      ...currentState,
+      activeListName: listName,
+    }));
+    setPlaybackSongs(songs);
+    setIsLyricsQueueOpen(true);
   };
 
   const handleMode = (updater) => {
@@ -458,9 +468,7 @@ function App() {
           <div className="data-source-banner">Đang tải kho bài hát...</div>
         ) : null}
         {!songLibraryState.isLoading && songLibraryState.source === 'remote' ? (
-          <div className="data-source-banner">
-            Đang đọc dữ liệu từ file Excel trên Drive.
-          </div>
+          <div className="data-source-banner">Đang đọc dữ liệu từ file Excel trên Drive.</div>
         ) : null}
         {!songLibraryState.isLoading && songLibraryState.source === 'fallback' ? (
           <div className="data-source-banner data-source-banner-warning">
@@ -472,21 +480,13 @@ function App() {
           </div>
         ) : null}
         <SlideshowBuilder
-          selectedListName={slideshowState.activeListName}
-          listNameInput={activeListNameInput}
-          availableLists={availableLists}
-          draftValue={activeList.draft}
-          onDraftChange={handleDraftChange}
-          onSelectList={selectList}
-          onListNameChange={setActiveListNameInput}
-          onCreateList={createNewList}
-          onSaveList={saveActiveList}
-          onBuildQueue={buildQueueFromDraft}
-          queueSongs={slideshowSongs}
-          onOpenSlideshow={() => openSlideshow()}
-          onOpenLyricsQueue={() => setIsLyricsQueueOpen(true)}
-          onClearQueue={clearSlideshow}
-          onDeleteList={deleteActiveList}
+          lists={listSummaries}
+          newestListName={newestListName}
+          onCreateList={createList}
+          onUpdateList={updateList}
+          onDeleteList={deleteListByName}
+          onOpenSlideshow={openSlideshowForList}
+          onOpenLyricsQueue={openLyricsQueueForList}
         />
         <div className="collection-menu-wrapper">
           <label className="collection-menu-mobile-label" htmlFor="collection-menu-mobile">
@@ -522,13 +522,13 @@ function App() {
         </div>
         <ActiveCollection songs={activeCollectionSongs} onAddToSlideshow={addSongToSlideshow} />
         <SheetSlideshowModal
-          songs={slideshowSongs}
+          songs={playbackSongs}
           trigger={isSlideshowOpen}
           setTrigger={setIsSlideshowOpen}
           initialSongId={slideshowStartId}
         />
         <LyricsQueueModal
-          songs={slideshowSongs}
+          songs={playbackSongs}
           trigger={isLyricsQueueOpen}
           setTrigger={setIsLyricsQueueOpen}
         />

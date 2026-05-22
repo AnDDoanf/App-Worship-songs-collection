@@ -14,7 +14,7 @@ const Header = ({ mode, handleMode }) => {
         </div>
         <div className="header-copy">
           <h1>Thánh Ca Hội Thánh</h1>
-          <p className="app-version">2.00.00</p>
+          <p className="app-version">Version 2.03</p>
         </div>
       </div>
       <ThemeToggle mode={mode} onToggle={() => handleMode((prevMode) => !prevMode)} />
