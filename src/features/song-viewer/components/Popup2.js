@@ -48,6 +48,28 @@ function Popup2({ lyric, trigger, setTrigger, songId, onNotify }) {
     setIsSuggesting(false);
   }, [initialEditableLyric, trigger]);
 
+  useEffect(() => {
+    if (!trigger) {
+      return undefined;
+    }
+
+    const previousOverflow = document.body.style.overflow;
+    document.body.style.overflow = 'hidden';
+
+    const handleKeyDown = (event) => {
+      if (event.key === 'Escape') {
+        setTrigger(false);
+      }
+    };
+
+    window.addEventListener('keydown', handleKeyDown);
+
+    return () => {
+      document.body.style.overflow = previousOverflow;
+      window.removeEventListener('keydown', handleKeyDown);
+    };
+  }, [setTrigger, trigger]);
+
   if (!trigger) {
     return null;
   }
