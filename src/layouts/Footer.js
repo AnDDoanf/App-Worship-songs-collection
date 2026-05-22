@@ -2,7 +2,7 @@ function Footer({ songLibraryState }) {
   const currentYear = new Date().getFullYear();
   const isRemote = songLibraryState.source === 'remote';
   const isFallback = songLibraryState.source === 'fallback';
-  const hasRemoteLink = Boolean(songLibraryState.resolvedWorkbookUrl);
+  const hasRemoteLink = Boolean(songLibraryState.workbookUrl);
 
   return (
     <footer className="app-footer">
@@ -24,7 +24,7 @@ function Footer({ songLibraryState }) {
               Dữ liệu đọc từ{' '}
               {hasRemoteLink ? (
                 <a
-                  href={songLibraryState.resolvedWorkbookUrl}
+                  href={songLibraryState.workbookUrl}
                   target="_blank"
                   rel="noopener noreferrer"
                 >
