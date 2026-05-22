@@ -821,6 +821,7 @@ code {
   position: fixed;
   inset: 0;
   width: 100vw;
+  min-height: 100svh;
   height: 100vh;
   height: 100dvh;
   z-index: 9999;
@@ -1294,6 +1295,19 @@ code {
 }
 
 @media only screen and (max-width: 560px) {
+  .popup-lyric-actions .button-mode {
+    min-width: 44px;
+    width: 44px;
+    height: 44px;
+    padding: 0;
+    justify-content: center;
+    gap: 0;
+  }
+
+  .popup-lyric-actions .button-mode span {
+    display: none;
+  }
+
   .slideshow-list-card {
     grid-template-columns: minmax(0, 1fr) auto;
     align-items: center;
@@ -1535,7 +1549,7 @@ code {
   }
 
   .popup {
-    padding: 0;
+    padding: 12px 0 calc(12px + env(safe-area-inset-bottom));
     align-items: center;
   }
 
@@ -1551,10 +1565,10 @@ code {
   .popup-lyric {
     width: min(92vw, 760px);
     min-height: auto;
-    max-height: calc(100vh - 24px);
-    max-height: calc(100dvh - 24px);
-    margin-top: 12px;
-    margin-bottom: 12px;
+    max-height: calc(100svh - 24px - env(safe-area-inset-bottom));
+    max-height: calc(100dvh - 24px - env(safe-area-inset-bottom));
+    margin-top: 0;
+    margin-bottom: 0;
     border-radius: 28px;
     padding-top: 56px;
     padding-bottom: 24px;
@@ -1563,26 +1577,26 @@ code {
 
   .popup-list-editor {
     width: min(92vw, 760px);
-    max-height: calc(100vh - 24px);
-    max-height: calc(100dvh - 24px);
-    margin-top: 12px;
-    margin-bottom: 12px;
+    max-height: calc(100svh - 24px - env(safe-area-inset-bottom));
+    max-height: calc(100dvh - 24px - env(safe-area-inset-bottom));
+    margin-top: 0;
+    margin-bottom: 0;
     overflow: auto;
   }
 
   .popup-lyrics-queue {
     width: min(92vw, 760px);
-    max-height: calc(100vh - 24px);
-    max-height: calc(100dvh - 24px);
-    margin-top: 12px;
-    margin-bottom: 12px;
+    max-height: calc(100svh - 24px - env(safe-area-inset-bottom));
+    max-height: calc(100dvh - 24px - env(safe-area-inset-bottom));
+    margin-top: 0;
+    margin-bottom: 0;
     padding: 56px 18px 18px;
     border-radius: 28px;
   }
 
   .popup-lyrics-queue-grid {
-    max-height: calc(100vh - 168px);
-    max-height: calc(100dvh - 168px);
+    max-height: calc(100svh - 168px - env(safe-area-inset-bottom));
+    max-height: calc(100dvh - 168px - env(safe-area-inset-bottom));
   }
 
   .popup-sheet {
