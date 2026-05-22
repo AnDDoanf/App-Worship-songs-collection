@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/App-Worship-songs-collection/static/css/main.67ad94b5.css",
-    "main.js": "/App-Worship-songs-collection/static/js/main.03054e08.js",
+    "main.css": "/App-Worship-songs-collection/static/css/main.f09480d0.css",
+    "main.js": "/App-Worship-songs-collection/static/js/main.fcef3e86.js",
     "static/media/H137_page0.jpg": "/App-Worship-songs-collection/static/media/H137_page0.f5dcca36f203df983aae.jpg",
     "static/media/H162_page0.jpg": "/App-Worship-songs-collection/static/media/H162_page0.978b01efde0d9684385b.jpg",
     "static/media/H251_page0.jpg": "/App-Worship-songs-collection/static/media/H251_page0.7efab1992027c394f685.jpg",
@@ -235,7 +235,6 @@
     "static/media/H62_page0.jpg": "/App-Worship-songs-collection/static/media/H62_page0.26a7d2b4a7bdf148c457.jpg",
     "static/media/H101_page0.jpg": "/App-Worship-songs-collection/static/media/H101_page0.5994c334177082da01f2.jpg",
     "static/media/H1_page0.jpg": "/App-Worship-songs-collection/static/media/H1_page0.8aa4a3b41e09418d4a8d.jpg",
-    "static/media/page0.jpg": "/App-Worship-songs-collection/static/media/page0.8aa4a3b41e09418d4a8d.jpg",
     "static/media/H69_page0.jpg": "/App-Worship-songs-collection/static/media/H69_page0.b955f9a2358bc9af78e7.jpg",
     "static/media/H44_page0.jpg": "/App-Worship-songs-collection/static/media/H44_page0.98b32784b821b82b304d.jpg",
     "static/media/H68_page0.jpg": "/App-Worship-songs-collection/static/media/H68_page0.5d0355a0c85d104e0f0a.jpg",
@@ -296,7 +295,6 @@
     "static/media/H129_page0.jpg": "/App-Worship-songs-collection/static/media/H129_page0.1afb72edcc5a3ad771c3.jpg",
     "static/media/H80_page0.jpg": "/App-Worship-songs-collection/static/media/H80_page0.191bcf5f35dc7d8d2df5.jpg",
     "static/media/H142_page0.jpg": "/App-Worship-songs-collection/static/media/H142_page0.e4b4932bd38576898edb.jpg",
-    "static/media/Hosanna_page-0001.jpg": "/App-Worship-songs-collection/static/media/Hosanna_page-0001.b69047e30e859468dc03.jpg",
     "static/media/H62_page1.jpg": "/App-Worship-songs-collection/static/media/H62_page1.1b4be7503e29867994db.jpg",
     "static/media/H85_page0.jpg": "/App-Worship-songs-collection/static/media/H85_page0.8a245c3fd9c810f3ee1a.jpg",
     "static/media/H76_page1.jpg": "/App-Worship-songs-collection/static/media/H76_page1.e10582f22da0fb39eeae.jpg",
@@ -1645,6 +1643,8 @@
     "static/media/T29_page0.jpg": "/App-Worship-songs-collection/static/media/T29_page0.7903f7255117efc0f4e7.jpg",
     "static/media/TCX628_page0.jpg": "/App-Worship-songs-collection/static/media/TCX628_page0.42d50f4c920a982aa8b0.jpg",
     "static/media/T296_page0.jpg": "/App-Worship-songs-collection/static/media/T296_page0.9ceea921998826ab2eaa.jpg",
+    "static/media/church-logo-dark.svg": "/App-Worship-songs-collection/static/media/church-logo-dark.99bf096736b778ab9fc3b6773aa0a54a.svg",
+    "static/media/church-logo.svg": "/App-Worship-songs-collection/static/media/church-logo.42fa806152ea41d60818a968f3e98e06.svg",
     "static/media/TCX815_page1.jpg": "/App-Worship-songs-collection/static/media/TCX815_page1.1081512fd62397cc39e1.jpg",
     "static/media/TCX598_page1.jpg": "/App-Worship-songs-collection/static/media/TCX598_page1.5ce9765929dfe536f7e8.jpg",
     "static/media/T109_page1.jpg": "/App-Worship-songs-collection/static/media/T109_page1.3075a6aaf4f0c4788dc1.jpg",
@@ -1974,11 +1974,11 @@
     "static/media/TCX326_page1.jpg": "/App-Worship-songs-collection/static/media/TCX326_page1.3a95a10dd4ea4fc4f752.jpg",
     "static/media/TCX700_page1.jpg": "/App-Worship-songs-collection/static/media/TCX700_page1.049f267891e6a3255f6a.jpg",
     "index.html": "/App-Worship-songs-collection/index.html",
-    "main.67ad94b5.css.map": "/App-Worship-songs-collection/static/css/main.67ad94b5.css.map",
-    "main.03054e08.js.map": "/App-Worship-songs-collection/static/js/main.03054e08.js.map"
+    "main.f09480d0.css.map": "/App-Worship-songs-collection/static/css/main.f09480d0.css.map",
+    "main.fcef3e86.js.map": "/App-Worship-songs-collection/static/js/main.fcef3e86.js.map"
   },
   "entrypoints": [
-    "static/css/main.67ad94b5.css",
-    "static/js/main.03054e08.js"
+    "static/css/main.f09480d0.css",
+    "static/js/main.fcef3e86.js"
   ]
 }
