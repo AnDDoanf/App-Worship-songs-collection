@@ -9,7 +9,7 @@ function Footer({ songLibraryState }) {
       <div className="app-footer-inner">
         <div className="app-footer-top">
           <strong>Thánh Ca Hội Thánh</strong>
-          <span>Version 2.03</span>
+          <span>Version 2.04</span>
           <span>{currentYear}</span>
         </div>
 

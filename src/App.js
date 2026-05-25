@@ -1,4 +1,5 @@
 import { useEffect, useState } from 'react';
+import { Toaster } from 'sonner';
 import { loadSongLibrary } from './services/songLibrary';
 import churchLogo from './assets/logos/church-logo.svg';
 import churchLogoDark from './assets/logos/church-logo-dark.svg';
@@ -112,12 +113,21 @@ function App() {
   };
 
   return (
-    <RootLayout mode={mode} handleMode={handleMode} footerProps={{ songLibraryState }}>
-      <HomePage
-        songLibraryState={songLibraryState}
-        setSongLibraryState={setSongLibraryState}
+    <>
+      <Toaster
+        position="bottom-center"
+        theme={mode ? 'dark' : 'light'}
+        toastOptions={{
+          duration: 2200,
+        }}
       />
-    </RootLayout>
+      <RootLayout mode={mode} handleMode={handleMode} footerProps={{ songLibraryState }}>
+        <HomePage
+          songLibraryState={songLibraryState}
+          setSongLibraryState={setSongLibraryState}
+        />
+      </RootLayout>
+    </>
   );
 }
 

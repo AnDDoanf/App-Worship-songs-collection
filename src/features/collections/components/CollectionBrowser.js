@@ -1,6 +1,6 @@
 import { useEffect, useMemo, useState } from 'react';
 import { FiChevronLeft, FiChevronRight } from 'react-icons/fi';
-import useToast from '../../../hooks/useToast';
+import { toast } from 'sonner';
 import Filter1 from './Filter1';
 import Filter2 from './Filter2';
 import Filter3 from './Filter3';
@@ -31,8 +31,6 @@ function CollectionBrowser({ songs, onAddToSlideshow }) {
     tone: '',
     timeSignature: '',
   });
-  const { toastMessage, showToast } = useToast();
-
   const filteredSongs = useMemo(
     () =>
       songs.filter(
@@ -129,7 +127,7 @@ function CollectionBrowser({ songs, onAddToSlideshow }) {
       <SongList
         songs={pagedSongs}
         onAddToSlideshow={onAddToSlideshow}
-        onShowToast={showToast}
+        onShowToast={toast}
       />
       <div className="song-page-size-bar">
         <label className="song-page-size" htmlFor="song-page-size-select">
@@ -148,9 +146,6 @@ function CollectionBrowser({ songs, onAddToSlideshow }) {
           </select>
           <span>bài/trang</span>
         </label>
-      </div>
-      <div className={`song-action-toast ${toastMessage ? 'visible' : ''}`} aria-live="polite">
-        {toastMessage}
       </div>
     </>
   );

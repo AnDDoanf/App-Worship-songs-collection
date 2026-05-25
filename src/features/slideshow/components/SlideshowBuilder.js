@@ -1,6 +1,6 @@
 import { useMemo, useState } from 'react';
 import { FiChevronDown, FiFileText, FiList, FiPlus } from 'react-icons/fi';
-import useToast from '../../../hooks/useToast';
+import { toast } from 'sonner';
 import SlideshowListEditorModal from './SlideshowListEditorModal';
 
 function QuickActionButton({ onClick, label, icon }) {
@@ -35,7 +35,6 @@ function SlideshowBuilder({
     name: '',
     draft: '',
   });
-  const { toastMessage, showToast } = useToast();
 
   const visibleLists = useMemo(() => {
     if (isExpanded) {
@@ -45,17 +44,6 @@ function SlideshowBuilder({
     const newestList = lists.find((list) => list.name === newestListName);
     return newestList ? [newestList] : lists.slice(-1);
   }, [isExpanded, lists, newestListName]);
-
-  const queueSummary = useMemo(() => {
-    if (lists.length === 0) {
-      return 'Chưa có danh sách';
-    }
-
-    const newestList =
-      lists.find((list) => list.name === newestListName) || lists[lists.length - 1];
-
-    return newestList?.codesLabel || 'Chưa có bài trong danh sách';
-  }, [lists, newestListName]);
 
   const openCreateModal = () => {
     setEditorState({
@@ -86,7 +74,7 @@ function SlideshowBuilder({
 
   const handleOpenSheet = (list) => {
     if (list.songs.length === 0) {
-      showToast(`Danh sách "${list.name}" chưa có bài để mở bản nhạc`);
+      toast(`Danh s\u00e1ch "${list.name}" ch\u01b0a c\u00f3 b\u00e0i \u0111\u1ec3 m\u1edf b\u1ea3n nh\u1ea1c`);
       return;
     }
 
@@ -95,7 +83,7 @@ function SlideshowBuilder({
 
   const handleOpenLyrics = (list) => {
     if (list.songs.length === 0) {
-      showToast(`Danh sách "${list.name}" chưa có bài để mở lời`);
+      toast(`Danh s\u00e1ch "${list.name}" ch\u01b0a c\u00f3 b\u00e0i \u0111\u1ec3 m\u1edf l\u1eddi`);
       return;
     }
 
@@ -113,7 +101,7 @@ function SlideshowBuilder({
             aria-expanded={isExpanded}
           >
             <div className="slideshow-builder-copy">
-              <h2>Thư mục bản nhạc</h2>
+              <h2>Th\u01b0 m\u1ee5c b\u1ea3n nh\u1ea1c</h2>
             </div>
             <FiChevronDown className={`slideshow-builder-chevron ${isExpanded ? 'open' : ''}`} />
           </button>
@@ -123,7 +111,7 @@ function SlideshowBuilder({
             onClick={openCreateModal}
           >
             <FiPlus aria-hidden="true" />
-            <span>Tạo mới</span>
+            <span>T\u1ea1o m\u1edbi</span>
           </button>
         </div>
 
@@ -137,19 +125,19 @@ function SlideshowBuilder({
               >
                 <div className="slideshow-list-title-row">
                   <h3>{list.name}</h3>
-                  {list.isNewest ? <span className="slideshow-list-badge">Mới nhất</span> : null}
+                  {list.isNewest ? <span className="slideshow-list-badge">M\u1edbi nh\u1ea5t</span> : null}
                 </div>
                 <p>{list.codesLabel}</p>
               </button>
               <div className="slideshow-list-actions">
                 <QuickActionButton
                   onClick={() => handleOpenSheet(list)}
-                  label="Mở bản nhạc"
+                  label="M\u1edf b\u1ea3n nh\u1ea1c"
                   icon={<FiFileText />}
                 />
                 <QuickActionButton
                   onClick={() => handleOpenLyrics(list)}
-                  label="Mở lời"
+                  label="M\u1edf l\u1eddi"
                   icon={<FiList />}
                 />
               </div>
@@ -168,12 +156,8 @@ function SlideshowBuilder({
         onCreateList={onCreateList}
         onUpdateList={onUpdateList}
         onDeleteList={onDeleteList}
-        onNotify={showToast}
+        onNotify={toast}
       />
-
-      <div className={`song-action-toast ${toastMessage ? 'visible' : ''}`} aria-live="polite">
-        {toastMessage}
-      </div>
     </>
   );
 }
