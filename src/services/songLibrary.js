@@ -18,6 +18,10 @@ const COLLECTION_KEY_TO_LABEL = LOCAL_SONG_SOURCES.reduce((accumulator, source) 
   return accumulator;
 }, {});
 
+function createSongLookupKey(song) {
+  return `${song.sourceCollectionKey || ''}:${song.id || ''}`;
+}
+
 function normalizeUnknownText(value) {
   if (typeof value !== 'string') {
     return '';
@@ -124,12 +128,45 @@ function normalizeSongRecord(record, fallbackCollectionKey) {
   };
 }
 
+function hasKnownImageValue(value) {
+  const normalizedValue = normalizeUnknownText(value);
+  return Boolean(normalizedValue && normalizedValue !== DEFAULT_UNKNOWN_VALUE);
+}
+
 function createLocalSongLibrary() {
   return LOCAL_SONG_SOURCES.flatMap((source) =>
     source.songs
       .map((song) => normalizeSongRecord(song, source.key))
       .filter((song) => song.id && song.songName)
   );
+}
+
+export function mergePreferredImages(remoteSongs, localSongs) {
+  const localSongsByCollectionAndId = new Map(
+    localSongs.map((song) => [createSongLookupKey(song), song])
+  );
+  const localSongsById = new Map(localSongs.map((song) => [song.id, song]));
+
+  return remoteSongs.map((song) => {
+    const localMatch =
+      localSongsByCollectionAndId.get(createSongLookupKey(song)) || localSongsById.get(song.id);
+
+    if (localMatch && hasKnownImageValue(localMatch.image)) {
+      return {
+        ...song,
+        image: localMatch.image,
+      };
+    }
+
+    if (hasKnownImageValue(song.image)) {
+      return song;
+    }
+
+    return {
+      ...song,
+      image: DEFAULT_UNKNOWN_VALUE,
+    };
+  });
 }
 
 function resolveRemoteWorkbookUrl() {
@@ -263,7 +300,7 @@ export async function loadSongLibrary() {
   try {
     const workbookData = await fetchWorkbookBuffer(workbookUrl);
     const workbook = XLSX.read(workbookData, { type: 'array' });
-    const remoteSongs = readSongsFromWorkbook(workbook);
+    const remoteSongs = mergePreferredImages(readSongsFromWorkbook(workbook), localSongs);
 
     if (remoteSongs.length === 0) {
       throw new Error('Workbook loaded, but no songs were found. Expected ALL_SONGS or known sheet names.');

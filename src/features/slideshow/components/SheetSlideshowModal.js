@@ -1,17 +1,13 @@
 import { useEffect, useMemo, useState } from 'react';
 import { createPortal } from 'react-dom';
 import { FiChevronLeft, FiChevronRight, FiXCircle } from 'react-icons/fi';
-import gallery from '../../song-viewer/lib/gallery';
+import { parseSheetImageSources } from '../../song-viewer/lib/sheetImages';
 
 const SWIPE_THRESHOLD = 50;
 const MOBILE_BREAKPOINT = 850;
 
 function getSongPages(song) {
-  if (!song?.image || song.image.includes('Không rõ')) {
-    return [];
-  }
-
-  return song.image.split(',').map((entry) => entry.trim());
+  return parseSheetImageSources(song?.image);
 }
 
 function buildDesktopViews(songs) {
@@ -54,8 +50,8 @@ function SheetSlideshowModal({ songs, trigger, setTrigger, initialSongId }) {
   const mobilePages = useMemo(
     () =>
       songs.flatMap((song) =>
-        getSongPages(song).map((imageKey, pageIndex) => ({
-          imageKey,
+        getSongPages(song).map((imageSource, pageIndex) => ({
+          imageSource,
           song,
           pageIndex,
         }))
@@ -235,12 +231,12 @@ function SheetSlideshowModal({ songs, trigger, setTrigger, initialSongId }) {
           <>
             <div className={`sheet-desktop-grid ${desktopSongCount === 1 ? 'single-song-view' : ''}`}>
               {activeView.songs.map(({ song, pages }) =>
-                pages.map((imageKey, index) => (
-                  <div className="sheet-desktop-page" key={`${song.id}-${imageKey}`}>
+                pages.map((imageSource, index) => (
+                  <div className="sheet-desktop-page" key={`${song.id}-${imageSource.id}`}>
                     <img
                       loading="lazy"
                       className="image-box"
-                      src={gallery[imageKey]}
+                      src={imageSource.src}
                       alt={`${song.id} page ${index + 1}`}
                     />
                   </div>
@@ -257,12 +253,12 @@ function SheetSlideshowModal({ songs, trigger, setTrigger, initialSongId }) {
                 className="sheet-track"
                 style={{ transform: `translateX(-${mobilePageIndex * 100}%)` }}
               >
-                {mobilePages.map(({ imageKey, song, pageIndex }) => (
-                  <div className="sheet-slide" key={`${song.id}-${imageKey}-mobile`}>
+                {mobilePages.map(({ imageSource, song, pageIndex }) => (
+                  <div className="sheet-slide" key={`${song.id}-${imageSource.id}-mobile`}>
                     <img
                       loading="lazy"
                       className="image-box"
-                      src={gallery[imageKey]}
+                      src={imageSource.src}
                       alt={`${song.id} page ${pageIndex + 1}`}
                     />
                   </div>
@@ -286,7 +282,11 @@ function SheetSlideshowModal({ songs, trigger, setTrigger, initialSongId }) {
             type="button"
             className="sheet-nav-button"
             onClick={isMobileViewport ? goToNextMobilePage : goToNextView}
-            disabled={isMobileViewport ? mobilePageIndex === mobilePages.length - 1 : activeViewIndex === desktopViews.length - 1}
+            disabled={
+              isMobileViewport
+                ? mobilePageIndex === mobilePages.length - 1
+                : activeViewIndex === desktopViews.length - 1
+            }
             aria-label={isMobileViewport ? 'Next page' : 'Next view'}
           >
             <FiChevronRight />
