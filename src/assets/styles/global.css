@@ -694,6 +694,18 @@ code {
   margin-top: 18px;
 }
 
+.song-pagination-bottom {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  margin-top: 18px;
+}
+
+.song-pagination-bottom .song-pagination {
+  margin-bottom: 0;
+}
+
 .song-page-size {
   display: inline-flex;
   align-items: center;
@@ -1464,6 +1476,11 @@ code {
 
   .song-page-size-bar {
     justify-content: stretch;
+  }
+
+  .song-pagination-bottom {
+    flex-direction: column;
+    justify-content: center;
   }
 
   .song-page-size {

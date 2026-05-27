@@ -70,6 +70,34 @@ function CollectionBrowser({ songs, onAddToSlideshow }) {
     setCurrentPage(nextPage);
   };
 
+  const renderPagination = () => (
+    <div className="song-pagination">
+      <div className="song-pagination-controls">
+        <button
+          type="button"
+          className="button-mode pagination-button"
+          onClick={() => setCurrentPage((page) => Math.max(page - 1, 1))}
+          disabled={currentPage === 1}
+          aria-label="Previous page"
+        >
+          <FiChevronLeft />
+        </button>
+        <span className="song-pagination-current">
+          {currentPage} / {totalPages}
+        </span>
+        <button
+          type="button"
+          className="button-mode pagination-button"
+          onClick={() => setCurrentPage((page) => Math.min(page + 1, totalPages))}
+          disabled={currentPage === totalPages}
+          aria-label="Next page"
+        >
+          <FiChevronRight />
+        </button>
+      </div>
+    </div>
+  );
+
   return (
     <>
       <Search handleSearchNote={setSearchText} />
@@ -99,37 +127,13 @@ function CollectionBrowser({ songs, onAddToSlideshow }) {
           }
         />
       </div>
-      <div className="song-pagination">
-        <div className="song-pagination-controls">
-          <button
-            type="button"
-            className="button-mode pagination-button"
-            onClick={() => setCurrentPage((page) => Math.max(page - 1, 1))}
-            disabled={currentPage === 1}
-            aria-label="Previous page"
-          >
-            <FiChevronLeft />
-          </button>
-          <span className="song-pagination-current">
-            {currentPage} / {totalPages}
-          </span>
-          <button
-            type="button"
-            className="button-mode pagination-button"
-            onClick={() => setCurrentPage((page) => Math.min(page + 1, totalPages))}
-            disabled={currentPage === totalPages}
-            aria-label="Next page"
-          >
-            <FiChevronRight />
-          </button>
-        </div>
-      </div>
+      {renderPagination()}
       <SongList
         songs={pagedSongs}
         onAddToSlideshow={onAddToSlideshow}
         onShowToast={toast}
       />
-      <div className="song-page-size-bar">
+      <div className="song-pagination-bottom">
         <label className="song-page-size" htmlFor="song-page-size-select">
           <span>Hiển thị</span>
           <select
@@ -146,6 +150,7 @@ function CollectionBrowser({ songs, onAddToSlideshow }) {
           </select>
           <span>bài/trang</span>
         </label>
+        {renderPagination()}
       </div>
     </>
   );
