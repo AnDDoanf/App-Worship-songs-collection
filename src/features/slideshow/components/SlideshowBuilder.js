@@ -101,7 +101,7 @@ function SlideshowBuilder({
             aria-expanded={isExpanded}
           >
             <div className="slideshow-builder-copy">
-              <h2>Th\u01b0 m\u1ee5c b\u1ea3n nh\u1ea1c</h2>
+              <h2>Thư mục bản nhạc</h2>
             </div>
             <FiChevronDown className={`slideshow-builder-chevron ${isExpanded ? 'open' : ''}`} />
           </button>
@@ -111,7 +111,7 @@ function SlideshowBuilder({
             onClick={openCreateModal}
           >
             <FiPlus aria-hidden="true" />
-            <span>T\u1ea1o m\u1edbi</span>
+            <span>Tạo mới</span>
           </button>
         </div>
 
@@ -125,19 +125,19 @@ function SlideshowBuilder({
               >
                 <div className="slideshow-list-title-row">
                   <h3>{list.name}</h3>
-                  {list.isNewest ? <span className="slideshow-list-badge">M\u1edbi nh\u1ea5t</span> : null}
+                  {list.isNewest ? <span className="slideshow-list-badge">Mới nhất</span> : null}
                 </div>
                 <p>{list.codesLabel}</p>
               </button>
               <div className="slideshow-list-actions">
                 <QuickActionButton
                   onClick={() => handleOpenSheet(list)}
-                  label="M\u1edf b\u1ea3n nh\u1ea1c"
+                  label="Mở bản nhạc"
                   icon={<FiFileText />}
                 />
                 <QuickActionButton
                   onClick={() => handleOpenLyrics(list)}
-                  label="M\u1edf l\u1eddi"
+                  label="Mở lời"
                   icon={<FiList />}
                 />
               </div>
