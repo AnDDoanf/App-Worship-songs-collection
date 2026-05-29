@@ -1,9 +1,10 @@
 import churchLogo from '../assets/logos/church-logo.svg';
 import churchLogoDark from '../assets/logos/church-logo-dark.svg';
+import { FiBookOpen } from 'react-icons/fi';
 import PalettePicker from '../components/common/PalettePicker';
 import ThemeToggle from '../components/common/ThemeToggle';
 
-function Header({ mode, handleMode, palette, onPaletteChange }) {
+function Header({ mode, handleMode, palette, onPaletteChange, onOpenGuide }) {
   const activeLogo = mode ? churchLogoDark : churchLogo;
 
   return (
@@ -18,6 +19,15 @@ function Header({ mode, handleMode, palette, onPaletteChange }) {
         </div>
       </div>
       <div className="header-controls">
+        <button
+          type="button"
+          className="header-guide-button"
+          onClick={onOpenGuide}
+          aria-label="Mở hướng dẫn sử dụng"
+        >
+          <FiBookOpen />
+          <span>Cách dùng</span>
+        </button>
         <PalettePicker value={palette} onChange={onPaletteChange} />
         <ThemeToggle mode={mode} onToggle={() => handleMode((prevMode) => !prevMode)} />
       </div>
