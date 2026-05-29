@@ -812,6 +812,34 @@ code {
   --palette-label: #293592;
 }
 
+:root.dark-mode .palette-picker-option[data-palette='solarized'] {
+  --palette-label: #4fb4ff;
+}
+
+:root.dark-mode .palette-picker-option[data-palette='warm-cozy'] {
+  --palette-label: #ffb27a;
+}
+
+:root.dark-mode .palette-picker-option[data-palette='dreamy-calming'] {
+  --palette-label: #f0b3ff;
+}
+
+:root.dark-mode .palette-picker-option[data-palette='fresh-productive'] {
+  --palette-label: #7fe0a0;
+}
+
+:root.dark-mode .palette-picker-option[data-palette='minimalist-vintage'] {
+  --palette-label: #d6a98a;
+}
+
+:root.dark-mode .palette-picker-option[data-palette='bright-energetic'] {
+  --palette-label: #f5f5f5;
+}
+
+:root.dark-mode .palette-picker-option[data-palette='church-logo'] {
+  --palette-label: #7f8fff;
+}
+
 .collection-menu {
   display: grid;
   grid-template-columns: repeat(4, minmax(0, 1fr));
