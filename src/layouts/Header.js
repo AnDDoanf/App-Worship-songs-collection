@@ -11,7 +11,9 @@ function Header({ mode, handleMode, palette, onPaletteChange, onOpenGuide }) {
     <div className="header">
       <div className="header-brand">
         <div className="header-logo-wrap" aria-hidden="true">
-          <img className="header-logo" src={activeLogo} alt="" />
+          <a href="https://hoithanhnhancap.vn/" target="_blank" rel="noopener noreferrer">
+            <img className="header-logo" src={activeLogo} alt="Thánh Ca Hội Thánh" />
+          </a>
         </div>
         <div className="header-copy">
           <h1>Thánh Ca Hội Thánh</h1>
