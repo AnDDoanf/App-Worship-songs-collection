@@ -13,6 +13,13 @@
   overflow: auto;
   background: var(--overlay);
   box-sizing: border-box;
+  overscroll-behavior: none;
+}
+
+.popup-sheet-overlay {
+  overflow: hidden;
+  padding: 0;
+  touch-action: none;
 }
 
 .popup.usage-guide-overlay {
@@ -268,6 +275,7 @@
   height: 100dvh;
   overflow: hidden;
   border-radius: 0;
+  touch-action: pan-x;
 }
 
 .sheet-desktop-grid {

@@ -2,6 +2,7 @@ import { useEffect, useMemo, useState } from 'react';
 import { createPortal } from 'react-dom';
 import { FiChevronLeft, FiChevronRight, FiXCircle } from 'react-icons/fi';
 import { parseSheetImageSources } from '../../song-viewer/lib/sheetImages';
+import { lockBodyScroll } from '../../../utils/bodyScrollLock';
 
 const SWIPE_THRESHOLD = 50;
 const MOBILE_BREAKPOINT = 850;
@@ -84,8 +85,7 @@ function SheetSlideshowModal({ songs, trigger, setTrigger, initialSongId }) {
     const initialMobileIndex = mobilePages.findIndex(({ song }) => song.id === initialSongId);
     setMobilePageIndex(initialMobileIndex >= 0 ? initialMobileIndex : 0);
 
-    const previousOverflow = document.body.style.overflow;
-    document.body.style.overflow = 'hidden';
+    const unlockBodyScroll = lockBodyScroll();
 
     const handleKeyDown = (event) => {
       if (event.key === 'Escape') {
@@ -114,7 +114,7 @@ function SheetSlideshowModal({ songs, trigger, setTrigger, initialSongId }) {
     window.addEventListener('keydown', handleKeyDown);
 
     return () => {
-      document.body.style.overflow = previousOverflow;
+      unlockBodyScroll();
       window.removeEventListener('keydown', handleKeyDown);
     };
   }, [desktopViews, initialSongId, isMobileViewport, mobilePages, setTrigger, trigger]);

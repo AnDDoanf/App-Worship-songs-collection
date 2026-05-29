@@ -119,6 +119,11 @@
     align-items: center;
   }
 
+  .popup.popup-sheet-overlay {
+    padding: 0;
+    align-items: stretch;
+  }
+
   .sheet-desktop-grid {
     display: none;
   }
@@ -502,6 +507,11 @@
   .popup {
     padding: 12px 0 0;
     align-items: center;
+  }
+
+  .popup.popup-sheet-overlay {
+    padding: 0;
+    align-items: stretch;
   }
 
   .popup-sheet {
