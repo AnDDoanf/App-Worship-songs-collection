@@ -11,12 +11,12 @@
   gap: 8px;
   border: 1px solid var(--border-color);
   border-radius: 100%;
-  background: color-mix(in srgb, var(--panel-strong) 88%, transparent);
+  background: transparent;
   color: var(--text-primary);
   box-shadow:
     0 10px 24px rgba(0, 0, 0, 0.08),
     var(--shadow-soft);
-  backdrop-filter: blur(12px);
+  backdrop-filter: blur(1px);
   cursor: pointer;
   opacity: 0;
   pointer-events: none;
