@@ -52,7 +52,7 @@
 
 .popup-lyrics-queue {
   position: relative;
-  width: min(94vw, 1240px);
+  width: 94vw;
   max-height: min(88vh, 980px);
   padding: 56px 24px 24px;
   border: 1px solid var(--border-color);

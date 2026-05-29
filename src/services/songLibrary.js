@@ -42,6 +42,12 @@ function lyricArrayStringToLines(value) {
     return null;
   }
 
+  // Only unwrap workbook cells that are serialized arrays like ['line 1', 'line 2'].
+  // Real chorded lyrics can also start/end with brackets, e.g. [G]... [Em].
+  if (!/^\[\s*['"]/.test(trimmed) || !/['"]\s*\]$/.test(trimmed)) {
+    return null;
+  }
+
   return trimmed
     .slice(1, -1)
     .split(/',\s*'|",\s*"|',\s*"|",\s*'/)
