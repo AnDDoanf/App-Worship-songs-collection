@@ -56,19 +56,10 @@ function Popup2({ lyric, trigger, setTrigger, songId, onNotify }) {
     const previousOverflow = document.body.style.overflow;
     document.body.style.overflow = 'hidden';
 
-    const handleKeyDown = (event) => {
-      if (event.key === 'Escape') {
-        setTrigger(false);
-      }
-    };
-
-    window.addEventListener('keydown', handleKeyDown);
-
     return () => {
       document.body.style.overflow = previousOverflow;
-      window.removeEventListener('keydown', handleKeyDown);
     };
-  }, [setTrigger, trigger]);
+  }, [trigger]);
 
   if (!trigger) {
     return null;
@@ -89,7 +80,7 @@ function Popup2({ lyric, trigger, setTrigger, songId, onNotify }) {
   };
 
   return createPortal(
-    <div className="popup" onClick={() => setTrigger(false)}>
+    <div className="popup">
       <div className="popup-lyric" onClick={(event) => event.stopPropagation()}>
         <button
           type="button"
