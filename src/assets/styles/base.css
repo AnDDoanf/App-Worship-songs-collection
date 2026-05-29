@@ -1,0 +1,47 @@
+body {
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background: var(--page-bg);
+  color: var(--text-primary);
+  scrollbar-width: thin;
+  scrollbar-color: var(--control-active-bg) color-mix(in srgb, var(--panel-muted) 88%, transparent);
+}
+
+code {
+  font-family: 'Courier New', Courier, monospace;
+}
+
+html {
+  scrollbar-width: thin;
+  scrollbar-color: var(--control-active-bg) color-mix(in srgb, var(--panel-muted) 88%, transparent);
+}
+
+html::-webkit-scrollbar,
+body::-webkit-scrollbar {
+  width: 12px;
+  height: 12px;
+}
+
+html::-webkit-scrollbar-track,
+body::-webkit-scrollbar-track {
+  background: color-mix(in srgb, var(--panel-muted) 88%, transparent);
+}
+
+html::-webkit-scrollbar-thumb,
+body::-webkit-scrollbar-thumb {
+  background: color-mix(in srgb, var(--control-active-bg) 78%, var(--panel-bg));
+  border: 2px solid color-mix(in srgb, var(--page-bg) 92%, transparent);
+  border-radius: 999px;
+}
+
+html::-webkit-scrollbar-thumb:hover,
+body::-webkit-scrollbar-thumb:hover {
+  background: var(--control-active-bg);
+}
+
+#root {
+  overflow-x: hidden;
+}
+
