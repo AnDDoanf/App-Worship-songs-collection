@@ -7,6 +7,7 @@ import RootLayout from './layouts/RootLayout';
 import HomePage from './pages/HomePage';
 
 const THEME_STORAGE_KEY = 'song-collections-theme';
+const PALETTE_STORAGE_KEY = 'song-collections-palette';
 const APP_TITLE = 'Thánh Ca Hội Thánh';
 
 function getSystemPrefersDark() {
@@ -39,6 +40,13 @@ function App() {
     }
 
     return getSystemPrefersDark();
+  });
+  const [palette, setPalette] = useState(() => {
+    if (typeof window === 'undefined') {
+      return 'church-logo';
+    }
+
+    return window.localStorage.getItem(PALETTE_STORAGE_KEY) || 'church-logo';
   });
   const [songLibraryState, setSongLibraryState] = useState({
     songs: [],
@@ -80,6 +88,10 @@ function App() {
   }, [themePreference]);
 
   useEffect(() => {
+    window.localStorage.setItem(PALETTE_STORAGE_KEY, palette);
+  }, [palette]);
+
+  useEffect(() => {
     const mediaQuery = window.matchMedia('(prefers-color-scheme: dark)');
     const handleChange = (event) => {
       setSystemPrefersDark(event.matches);
@@ -95,12 +107,13 @@ function App() {
 
   useEffect(() => {
     document.documentElement.classList.toggle('dark-mode', mode);
+    document.documentElement.dataset.palette = palette;
     document.title = APP_TITLE;
 
     const activeLogo = mode ? churchLogoDark : churchLogo;
     setHeadLink('icon', activeLogo);
     setHeadLink('apple-touch-icon', activeLogo);
-  }, [mode]);
+  }, [mode, palette]);
 
   const handleMode = (updater) => {
     setThemePreference((currentPreference) => {
@@ -121,7 +134,13 @@ function App() {
           duration: 2200,
         }}
       />
-      <RootLayout mode={mode} handleMode={handleMode} footerProps={{ songLibraryState }}>
+      <RootLayout
+        mode={mode}
+        handleMode={handleMode}
+        palette={palette}
+        onPaletteChange={setPalette}
+        footerProps={{ songLibraryState }}
+      >
         <HomePage
           songLibraryState={songLibraryState}
           setSongLibraryState={setSongLibraryState}

@@ -30,7 +30,7 @@ const Filter2 = ({ handleFilter2 }) => {
 
   return (
     <div className="filter-column2">
-      <p>Lọc theo tone giọng:</p>
+      <p>Tone giọng:</p>
       <select className="dropdown" onChange={(e) => handleFilter2(e.target.value)} defaultValue="">
         <option value="">Tất cả</option>
         {optionsFilter2.map((option, idx) => (

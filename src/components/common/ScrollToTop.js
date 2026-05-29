@@ -1,6 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import { FaArrowCircleUp } from 'react-icons/fa';
-import { Button } from './Styles';
+import { FiArrowUp } from 'react-icons/fi';
 
 const ScrollToTop = () => {
   const [visible, setVisible] = useState(false);
@@ -27,9 +26,14 @@ const ScrollToTop = () => {
   };
 
   return (
-    <Button>
-      <FaArrowCircleUp onClick={scrollToTop} style={{ display: visible ? 'inline' : 'none' }} />
-    </Button>
+    <button
+      type="button"
+      className={`scroll-to-top ${visible ? 'is-visible' : ''}`}
+      onClick={scrollToTop}
+      aria-label="Lên đầu trang"
+    >
+      <FiArrowUp />
+    </button>
   );
 };
 
