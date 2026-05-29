@@ -563,8 +563,7 @@
   }
 
   .popup-lyrics-queue-grid {
-    max-height: calc(100svh - 156px - env(safe-area-inset-bottom));
-    max-height: calc(100dvh - 156px - env(safe-area-inset-bottom));
+    min-height: 0;
   }
 
   .popup-sheet {
