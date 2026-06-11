@@ -126,6 +126,7 @@ function HomePage({ songLibraryState }) {
       return;
     }
 
+    const sharedSongs = validIds.map((id) => songsById[id]).filter(Boolean);
     let importedListName = sharedList.name;
 
     setSlideshowState((currentState) => {
@@ -146,6 +147,11 @@ function HomePage({ songLibraryState }) {
     if (matchingCollection) {
       setActiveCollectionId(matchingCollection.id);
     }
+
+    setPlaybackSongs(sharedSongs);
+    setSlideshowStartId(sharedSongs[0].id);
+    setIsLyricsQueueOpen(false);
+    setIsSlideshowOpen(true);
 
     if (missingIds.length > 0) {
       toast(
