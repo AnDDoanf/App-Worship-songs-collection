@@ -1,6 +1,8 @@
 import { useMemo, useState } from 'react';
-import { FiChevronDown, FiFileText, FiList, FiPlus } from 'react-icons/fi';
+import { FiChevronDown, FiFileText, FiList, FiPlus, FiShare2 } from 'react-icons/fi';
 import { toast } from 'sonner';
+import { copyTextToClipboard } from '../../../utils/clipboard';
+import { buildShareUrl } from '../../../utils/shareLinks';
 import SlideshowListEditorModal from './SlideshowListEditorModal';
 
 function QuickActionButton({ onClick, label, icon }) {
@@ -26,6 +28,7 @@ function SlideshowBuilder({
   onDeleteList,
   onOpenSlideshow,
   onOpenLyricsQueue,
+  workbookUrl,
 }) {
   const [isExpanded, setIsExpanded] = useState(false);
   const [editorState, setEditorState] = useState({
@@ -90,6 +93,26 @@ function SlideshowBuilder({
     onOpenLyricsQueue(list.name);
   };
 
+  const handleShare = async (list) => {
+    if (list.ids.length === 0) {
+      toast(`Danh s\u00e1ch "${list.name}" ch\u01b0a c\u00f3 b\u00e0i \u0111\u1ec3 chia s\u1ebb`);
+      return;
+    }
+
+    try {
+      await copyTextToClipboard(
+        buildShareUrl({
+          name: list.name,
+          ids: list.ids,
+          workbookUrl,
+        })
+      );
+      toast(`\u0110\u00e3 sao ch\u00e9p li\u00ean k\u1ebft chia s\u1ebb cho "${list.name}"`);
+    } catch (_error) {
+      toast(`Kh\u00f4ng th\u1ec3 sao ch\u00e9p li\u00ean k\u1ebft chia s\u1ebb cho "${list.name}"`);
+    }
+  };
+
   return (
     <>
       <section className={`slideshow-builder ${isExpanded ? 'expanded' : 'collapsed'}`}>
@@ -139,6 +162,11 @@ function SlideshowBuilder({
                   onClick={() => handleOpenLyrics(list)}
                   label="Mở lời"
                   icon={<FiList />}
+                />
+                <QuickActionButton
+                  onClick={() => handleShare(list)}
+                  label="Chia sẻ"
+                  icon={<FiShare2 />}
                 />
               </div>
             </article>

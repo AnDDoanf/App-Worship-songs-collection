@@ -1,4 +1,5 @@
-import { useCallback, useEffect, useMemo, useState } from 'react';
+import { useCallback, useEffect, useMemo, useRef, useState } from 'react';
+import { toast } from 'sonner';
 import BaihattudoCollection from '../features/collections/views/BaihattudoCollection';
 import HosannaCollection from '../features/collections/views/HosannaCollection';
 import TCXCollection from '../features/collections/views/TCXCollection';
@@ -9,9 +10,11 @@ import SlideshowBuilder from '../features/slideshow/components/SlideshowBuilder'
 import {
   createDefaultState,
   DEFAULT_LIST_NAME,
+  mergeSharedListIntoState,
   normalizeStoredState,
   STORAGE_KEY,
 } from '../store/slideshowStore';
+import { consumePendingShareLocation, getAppHomePath } from '../utils/shareLinks';
 import { parseSongCodes } from '../utils/slideshow';
 
 const collections = [
@@ -41,13 +44,33 @@ const collections = [
   },
 ];
 
-function HomePage({ songLibraryState, setSongLibraryState }) {
+function loadInitialSlideshowState() {
+  if (typeof window === 'undefined') {
+    return createDefaultState();
+  }
+
+  const savedValue = window.localStorage.getItem(STORAGE_KEY);
+
+  if (!savedValue) {
+    return createDefaultState();
+  }
+
+  try {
+    return normalizeStoredState(JSON.parse(savedValue));
+  } catch (_error) {
+    window.localStorage.removeItem(STORAGE_KEY);
+    return createDefaultState();
+  }
+}
+
+function HomePage({ songLibraryState }) {
   const [activeCollectionId, setActiveCollectionId] = useState(2);
-  const [slideshowState, setSlideshowState] = useState(createDefaultState);
+  const [slideshowState, setSlideshowState] = useState(loadInitialSlideshowState);
   const [isLyricsQueueOpen, setIsLyricsQueueOpen] = useState(false);
   const [isSlideshowOpen, setIsSlideshowOpen] = useState(false);
   const [slideshowStartId, setSlideshowStartId] = useState('');
   const [playbackSongs, setPlaybackSongs] = useState([]);
+  const hasHandledShareImportRef = useRef(false);
 
   const allSongs = songLibraryState.songs;
 
@@ -66,22 +89,73 @@ function HomePage({ songLibraryState, setSongLibraryState }) {
   );
 
   useEffect(() => {
-    const savedValue = window.localStorage.getItem(STORAGE_KEY);
+    window.localStorage.setItem(STORAGE_KEY, JSON.stringify(slideshowState));
+  }, [slideshowState]);
 
-    if (!savedValue) {
+  useEffect(() => {
+    if (hasHandledShareImportRef.current || songLibraryState.isLoading) {
       return;
     }
 
-    try {
-      setSlideshowState(normalizeStoredState(JSON.parse(savedValue)));
-    } catch (_error) {
-      window.localStorage.removeItem(STORAGE_KEY);
-    }
-  }, []);
+    hasHandledShareImportRef.current = true;
 
-  useEffect(() => {
-    window.localStorage.setItem(STORAGE_KEY, JSON.stringify(slideshowState));
-  }, [slideshowState]);
+    const sharedList = consumePendingShareLocation();
+
+    if (!sharedList) {
+      return;
+    }
+
+    const validIds = [];
+    const missingIds = [];
+
+    sharedList.ids.forEach((id) => {
+      if (songsById[id]) {
+        if (!validIds.includes(id)) {
+          validIds.push(id);
+        }
+        return;
+      }
+
+      missingIds.push(id);
+    });
+
+    window.history.replaceState({}, document.title, getAppHomePath());
+
+    if (validIds.length === 0) {
+      toast('Liên kết chia sẻ không có bài hát hợp lệ để tạo thư mục.');
+      return;
+    }
+
+    let importedListName = sharedList.name;
+
+    setSlideshowState((currentState) => {
+      const nextState = mergeSharedListIntoState(currentState, {
+        name: sharedList.name,
+        ids: validIds,
+      });
+
+      importedListName = nextState.activeListName;
+      return nextState;
+    });
+
+    const firstSong = songsById[validIds[0]];
+    const matchingCollection = collections.find(
+      (collection) => collection.key === firstSong?.sourceCollectionKey
+    );
+
+    if (matchingCollection) {
+      setActiveCollectionId(matchingCollection.id);
+    }
+
+    if (missingIds.length > 0) {
+      toast(
+        `Đã tạo thư mục "${importedListName}" từ liên kết chia sẻ. Bỏ qua mã không tìm thấy: ${missingIds.join(', ')}`
+      );
+      return;
+    }
+
+    toast(`Đã tạo thư mục "${importedListName}" từ liên kết chia sẻ.`);
+  }, [songLibraryState.isLoading, songsById]);
 
   const availableLists = useMemo(() => Object.keys(slideshowState.lists), [slideshowState.lists]);
   const newestListName = availableLists[availableLists.length - 1] || DEFAULT_LIST_NAME;
@@ -324,6 +398,7 @@ function HomePage({ songLibraryState, setSongLibraryState }) {
         onDeleteList={deleteListByName}
         onOpenSlideshow={openSlideshowForList}
         onOpenLyricsQueue={openLyricsQueueForList}
+        workbookUrl={songLibraryState.workbookUrl}
       />
 
       <div className="collection-menu-wrapper">

@@ -176,7 +176,7 @@
   }
 
   .slideshow-list-actions {
-    grid-template-columns: repeat(2, 42px);
+    grid-template-columns: repeat(3, 42px);
     gap: 8px;
   }
 
