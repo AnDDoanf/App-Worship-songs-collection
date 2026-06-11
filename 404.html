@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Redirecting...</title>
+    <script>
+      (function () {
+        var pendingShareStorageKey = 'song-collections-pending-share';
+        var pathname = window.location.pathname || '/';
+
+        if (!/\/share\/?$/.test(pathname)) {
+          return;
+        }
+
+        var pathSegments = pathname.split('/');
+        pathSegments.pop();
+
+        var basePath = pathSegments.join('/') || '/';
+        var targetPath = /\/$/.test(basePath) ? basePath : basePath + '/';
+
+        try {
+          window.sessionStorage.setItem(
+            pendingShareStorageKey,
+            JSON.stringify({
+              pathname: pathname,
+              search: window.location.search || '',
+            })
+          );
+        } catch (_error) {
+          // Ignore sessionStorage failures and still try to redirect.
+        }
+
+        window.location.replace(window.location.origin + targetPath);
+      })();
+    </script>
+  </head>
+  <body></body>
+</html>
