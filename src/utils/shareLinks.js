@@ -98,16 +98,13 @@ export function isSharePath(pathname) {
   return trimTrailingSlash(pathname || '/') === getSharePath();
 }
 
-export function buildShareUrl({ name, ids, origin, workbookUrl = '' }) {
+export function buildShareUrl({ name, ids, origin }) {
   const normalizedIds = normalizeShareIds(ids);
   const normalizedOrigin = origin || (typeof window !== 'undefined' ? window.location.origin : '');
   const encodedName = encodeURIComponent(normalizeShareName(name));
   const encodedSongs = normalizedIds.map((id) => encodeURIComponent(id)).join('|');
-  const workbookSegment = workbookUrl
-    ? `&workbookUrl=${encodeURIComponent(String(workbookUrl).trim())}`
-    : '';
 
-  return `${normalizedOrigin}${getSharePath()}?name=${encodedName}&songs=${encodedSongs}${workbookSegment}`;
+  return `${normalizedOrigin}${getSharePath()}?name=${encodedName}&songs=${encodedSongs}`;
 }
 
 export function parseShareLocation(locationLike) {

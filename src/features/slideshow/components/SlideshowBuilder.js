@@ -28,7 +28,6 @@ function SlideshowBuilder({
   onDeleteList,
   onOpenSlideshow,
   onOpenLyricsQueue,
-  workbookUrl,
 }) {
   const [isExpanded, setIsExpanded] = useState(false);
   const [editorState, setEditorState] = useState({
@@ -104,7 +103,6 @@ function SlideshowBuilder({
         buildShareUrl({
           name: list.name,
           ids: list.ids,
-          workbookUrl,
         })
       );
       toast(`\u0110\u00e3 sao ch\u00e9p li\u00ean k\u1ebft chia s\u1ebb cho "${list.name}"`);

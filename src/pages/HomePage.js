@@ -398,7 +398,6 @@ function HomePage({ songLibraryState }) {
         onDeleteList={deleteListByName}
         onOpenSlideshow={openSlideshowForList}
         onOpenLyricsQueue={openLyricsQueueForList}
-        workbookUrl={songLibraryState.workbookUrl}
       />
 
       <div className="collection-menu-wrapper">
