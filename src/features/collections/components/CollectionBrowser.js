@@ -1,4 +1,4 @@
-import { useEffect, useMemo, useState } from 'react';
+import { useEffect, useLayoutEffect, useMemo, useRef, useState } from 'react';
 import { FiChevronLeft, FiChevronRight } from 'react-icons/fi';
 import { toast } from 'sonner';
 import Filter1 from './Filter1';
@@ -26,6 +26,8 @@ function CollectionBrowser({ songs, onAddToSlideshow }) {
   const [searchText, setSearchText] = useState('');
   const [currentPage, setCurrentPage] = useState(1);
   const [songsPerPage, setSongsPerPage] = useState(DEFAULT_SONGS_PER_PAGE);
+  const listTopRef = useRef(null);
+  const shouldScrollToListRef = useRef(false);
   const [filters, setFilters] = useState({
     category: '',
     tone: '',
@@ -57,10 +59,8 @@ function CollectionBrowser({ songs, onAddToSlideshow }) {
     setCurrentPage((page) => Math.min(page, totalPages));
   }, [totalPages]);
 
-  const pagedSongs = useMemo(() => {
-    const startIndex = (currentPage - 1) * songsPerPage;
-    return filteredSongs.slice(startIndex, startIndex + songsPerPage);
-  }, [currentPage, filteredSongs, songsPerPage]);
+  const startIndex = (currentPage - 1) * songsPerPage;
+  const pagedSongs = filteredSongs.slice(startIndex, startIndex + songsPerPage);
 
   const handlePageSizeChange = (nextPageSize) => {
     const currentStartIndex = (currentPage - 1) * songsPerPage;
@@ -70,13 +70,25 @@ function CollectionBrowser({ songs, onAddToSlideshow }) {
     setCurrentPage(nextPage);
   };
 
+  const changePage = (nextPage) => {
+    shouldScrollToListRef.current = true;
+    setCurrentPage(nextPage);
+  };
+
+  useLayoutEffect(() => {
+    if (shouldScrollToListRef.current) {
+      listTopRef.current?.scrollIntoView({ block: 'start', behavior: 'instant' });
+      shouldScrollToListRef.current = false;
+    }
+  }, [currentPage]);
+
   const renderPagination = () => (
     <div className="song-pagination">
       <div className="song-pagination-controls">
         <button
           type="button"
           className="button-mode pagination-button"
-          onClick={() => setCurrentPage((page) => Math.max(page - 1, 1))}
+          onClick={() => changePage(Math.max(currentPage - 1, 1))}
           disabled={currentPage === 1}
           aria-label="Previous page"
         >
@@ -88,7 +100,7 @@ function CollectionBrowser({ songs, onAddToSlideshow }) {
         <button
           type="button"
           className="button-mode pagination-button"
-          onClick={() => setCurrentPage((page) => Math.min(page + 1, totalPages))}
+          onClick={() => changePage(Math.min(currentPage + 1, totalPages))}
           disabled={currentPage === totalPages}
           aria-label="Next page"
         >
@@ -127,7 +139,7 @@ function CollectionBrowser({ songs, onAddToSlideshow }) {
           }
         />
       </div>
-      {renderPagination()}
+      <div ref={listTopRef}>{renderPagination()}</div>
       <SongList
         songs={pagedSongs}
         onAddToSlideshow={onAddToSlideshow}

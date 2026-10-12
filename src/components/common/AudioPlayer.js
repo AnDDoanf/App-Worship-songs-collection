@@ -1,4 +1,4 @@
-import React, { useEffect, useMemo, useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import { createPortal } from 'react-dom';
 import { FiExternalLink, FiXCircle } from 'react-icons/fi';
 
@@ -106,7 +106,7 @@ function AudioPlayer(props) {
   const [isYoutubePopupOpen, setIsYoutubePopupOpen] = useState(false);
   const normalizedAudio = normalizeAudioValue(props.audio);
   const hasAudio = hasAudioSource(normalizedAudio);
-  const youtubeVideoId = useMemo(() => getYouTubeVideoId(normalizedAudio), [normalizedAudio]);
+  const youtubeVideoId = getYouTubeVideoId(normalizedAudio);
   const youtubeEmbedUrl = youtubeVideoId
     ? `https://www.youtube.com/embed/${youtubeVideoId}?autoplay=1&rel=0`
     : '';

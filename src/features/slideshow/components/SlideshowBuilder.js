@@ -1,4 +1,4 @@
-import { useMemo, useState } from 'react';
+import { useState } from 'react';
 import { FiChevronDown, FiFileText, FiList, FiPlus, FiShare2 } from 'react-icons/fi';
 import { toast } from 'sonner';
 import { copyTextToClipboard } from '../../../utils/clipboard';
@@ -38,14 +38,11 @@ function SlideshowBuilder({
     draft: '',
   });
 
-  const visibleLists = useMemo(() => {
-    if (isExpanded) {
-      return lists;
-    }
-
-    const newestList = lists.find((list) => list.name === newestListName);
-    return newestList ? [newestList] : lists.slice(-1);
-  }, [isExpanded, lists, newestListName]);
+  const newestList = lists.find((list) => list.name === newestListName);
+  let visibleLists = lists;
+  if (!isExpanded) {
+    visibleLists = newestList ? [newestList] : lists.slice(-1);
+  }
 
   const openCreateModal = () => {
     setEditorState({

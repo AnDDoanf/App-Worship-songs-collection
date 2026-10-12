@@ -1,4 +1,4 @@
-import { useEffect, useMemo, useState } from 'react';
+import { useEffect, useState } from 'react';
 import { createPortal } from 'react-dom';
 import { FiChevronLeft, FiChevronRight, FiXCircle } from 'react-icons/fi';
 import { parseSheetImageSources } from '../lib/sheetImages';
@@ -10,7 +10,7 @@ function Popup({ image, trigger, setTrigger }) {
   const [activeIndex, setActiveIndex] = useState(0);
   const [touchStartX, setTouchStartX] = useState(null);
 
-  const images = useMemo(() => parseSheetImageSources(image), [image]);
+  const images = parseSheetImageSources(image);
 
   useEffect(() => {
     if (!trigger) {

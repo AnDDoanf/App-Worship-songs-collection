@@ -117,13 +117,13 @@ function SlideshowListEditorModal({
               className="button-mode slideshow-list-editor-delete"
               onClick={handleDelete}
             >
-              <FiTrash2 aria-hidden="true" />
-              <span>Xóa danh sách</span>
+              <FiTrash2 aria-hidden="true" className="pr-2" />
+              <span>Xóa</span>
             </button>
           ) : null}
           <button type="button" className="button-mode" onClick={handleSave}>
-            <FiSave aria-hidden="true" />
-            <span>Lưu danh sách</span>
+            <FiSave aria-hidden="true" className="pr-2" />
+            <span>Lưu</span>
           </button>
         </div>
       </div>

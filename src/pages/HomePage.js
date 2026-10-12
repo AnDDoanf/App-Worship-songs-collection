@@ -163,7 +163,7 @@ function HomePage({ songLibraryState }) {
     toast(`Đã tạo thư mục "${importedListName}" từ liên kết chia sẻ.`);
   }, [songLibraryState.isLoading, songsById]);
 
-  const availableLists = useMemo(() => Object.keys(slideshowState.lists), [slideshowState.lists]);
+  const availableLists = Object.keys(slideshowState.lists);
   const newestListName = availableLists[availableLists.length - 1] || DEFAULT_LIST_NAME;
 
   const getSongsForListName = (listName) => {
@@ -176,39 +176,25 @@ function HomePage({ songLibraryState }) {
     return getSongsForIds(list.ids);
   };
 
-  const listSummaries = useMemo(
-    () =>
-      [...availableLists].reverse().map((listName) => {
-        const list = slideshowState.lists[listName];
-        const codes = list.draft.trim() || list.ids.join(', ');
+  const listSummaries = [...availableLists].reverse().map((listName) => {
+    const list = slideshowState.lists[listName];
+    const codes = list.draft.trim() || list.ids.join(', ');
 
-        return {
-          name: listName,
-          draft: list.draft,
-          ids: list.ids,
-          codesLabel: codes || 'Chưa có bài trong danh sách',
-          songs: getSongsForIds(list.ids),
-          isNewest: listName === newestListName,
-        };
-      }),
-    [availableLists, getSongsForIds, newestListName, slideshowState.lists]
-  );
+    return {
+      name: listName,
+      draft: list.draft,
+      ids: list.ids,
+      codesLabel: codes || 'Chưa có bài trong danh sách',
+      songs: getSongsForIds(list.ids),
+      isNewest: listName === newestListName,
+    };
+  });
 
-  const ActiveCollection = useMemo(
-    () =>
-      collections.find((collection) => collection.id === activeCollectionId)?.component ||
-      HosannaCollection,
-    [activeCollectionId]
-  );
-
-  const activeCollectionKey = useMemo(
-    () => collections.find((collection) => collection.id === activeCollectionId)?.key || 'hosanna',
-    [activeCollectionId]
-  );
-
-  const activeCollectionSongs = useMemo(
-    () => allSongs.filter((song) => song.sourceCollectionKey === activeCollectionKey),
-    [activeCollectionKey, allSongs]
+  const activeCollection = collections.find((collection) => collection.id === activeCollectionId);
+  const ActiveCollection = activeCollection?.component || HosannaCollection;
+  const activeCollectionKey = activeCollection?.key || 'hosanna';
+  const activeCollectionSongs = allSongs.filter(
+    (song) => song.sourceCollectionKey === activeCollectionKey
   );
 
   const updateListByName = (listName, updater) => {

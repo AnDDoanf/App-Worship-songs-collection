@@ -1,4 +1,4 @@
-import { useEffect, useMemo, useState } from 'react';
+import { useEffect, useLayoutEffect, useMemo, useRef, useState } from 'react';
 import { createPortal } from 'react-dom';
 import { FiChevronLeft, FiChevronRight, FiXCircle } from 'react-icons/fi';
 import { parseSheetImageSources } from '../../song-viewer/lib/sheetImages';
@@ -43,6 +43,7 @@ function SheetSlideshowModal({ songs, trigger, setTrigger, initialSongId }) {
   const [activeViewIndex, setActiveViewIndex] = useState(0);
   const [mobilePageIndex, setMobilePageIndex] = useState(0);
   const [touchStartX, setTouchStartX] = useState(null);
+  const navigationRef = useRef(null);
   const [isMobileViewport, setIsMobileViewport] = useState(() =>
     typeof window !== 'undefined' ? window.innerWidth <= MOBILE_BREAKPOINT : false
   );
@@ -87,6 +88,53 @@ function SheetSlideshowModal({ songs, trigger, setTrigger, initialSongId }) {
 
     const unlockBodyScroll = lockBodyScroll();
 
+    return unlockBodyScroll;
+  }, [desktopViews, initialSongId, mobilePages, trigger]);
+
+  useLayoutEffect(() => {
+    const viewport = window.visualViewport;
+    const navigation = navigationRef.current;
+
+    if (!trigger || !viewport || !navigation) {
+      return undefined;
+    }
+
+    // Keep controls at their normal screen size and position while the browser
+    // zooms the sheets. Page changes leave the native viewport zoom untouched.
+    const updateNavigation = () => {
+      if (viewport.scale <= 1) {
+        navigation.removeAttribute('style');
+        return;
+      }
+
+      const scale = viewport.scale;
+      Object.assign(navigation.style, {
+        position: 'fixed',
+        left: `${viewport.offsetLeft + 8 / scale}px`,
+        top: `${viewport.offsetTop + viewport.height - 54 / scale}px`,
+        right: 'auto',
+        bottom: 'auto',
+        width: `${viewport.width * scale - 16}px`,
+        transform: `scale(${1 / scale})`,
+        transformOrigin: 'top left',
+      });
+    };
+
+    updateNavigation();
+    viewport.addEventListener('resize', updateNavigation);
+    viewport.addEventListener('scroll', updateNavigation);
+
+    return () => {
+      viewport.removeEventListener('resize', updateNavigation);
+      viewport.removeEventListener('scroll', updateNavigation);
+    };
+  }, [trigger]);
+
+  useEffect(() => {
+    if (!trigger) {
+      return undefined;
+    }
+
     const handleKeyDown = (event) => {
       if (event.key === 'Escape') {
         setTrigger(false);
@@ -114,10 +162,9 @@ function SheetSlideshowModal({ songs, trigger, setTrigger, initialSongId }) {
     window.addEventListener('keydown', handleKeyDown);
 
     return () => {
-      unlockBodyScroll();
       window.removeEventListener('keydown', handleKeyDown);
     };
-  }, [desktopViews, initialSongId, isMobileViewport, mobilePages, setTrigger, trigger]);
+  }, [desktopViews.length, isMobileViewport, mobilePages.length, setTrigger, trigger]);
 
   useEffect(() => {
     if (isMobileViewport) {
@@ -275,7 +322,7 @@ function SheetSlideshowModal({ songs, trigger, setTrigger, initialSongId }) {
           </>
         )}
 
-        <div className="slideshow-nav-bar">
+        <div className="slideshow-nav-bar" ref={navigationRef}>
           <button
             type="button"
             className="sheet-nav-button"
