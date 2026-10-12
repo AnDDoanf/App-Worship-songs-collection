@@ -48,11 +48,17 @@ function Popup({ image, trigger, setTrigger }) {
   }
 
   const handleTouchStart = (event) => {
-    setTouchStartX(event.touches[0].clientX);
+    const canSwipe = event.touches.length === 1 && (window.visualViewport?.scale ?? 1) <= 1;
+    setTouchStartX(canSwipe ? event.touches[0].clientX : null);
   };
 
   const handleTouchEnd = (event) => {
-    if (touchStartX === null) {
+    if (
+      touchStartX === null ||
+      event.touches.length > 0 ||
+      (window.visualViewport?.scale ?? 1) > 1
+    ) {
+      setTouchStartX(null);
       return;
     }
 
@@ -107,6 +113,7 @@ function Popup({ image, trigger, setTrigger }) {
               className={`sheet-carousel ${images.length === 2 ? 'sheet-carousel-mobile-only' : ''}`}
               onTouchStart={handleTouchStart}
               onTouchEnd={handleTouchEnd}
+              onTouchCancel={() => setTouchStartX(null)}
             >
               <div className="sheet-track" style={{ transform: `translateX(-${activeIndex * 100}%)` }}>
                 {images.map((imageSource, index) => (
