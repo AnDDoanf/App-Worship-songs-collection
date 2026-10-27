@@ -1,4 +1,9 @@
-const imageContext = require.context('./', true, /TCX\d+\/TCX\d+_page\d+\.jpg$/i);
+let imageContext;
+try {
+  imageContext = require.context('../../assets/images/sheets', true, /TCX\d+\/TCX\d+_page\d+\.jpg$/i);
+} catch (_error) {
+  imageContext = { keys: () => [] };
+}
 
 const collator = new Intl.Collator('vi', {
   numeric: true,

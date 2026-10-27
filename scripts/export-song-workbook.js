@@ -3,7 +3,8 @@ const path = require('path');
 const XLSX = require('xlsx');
 
 const ROOT_DIR = path.resolve(__dirname, '..');
-const DATA_DIR = path.join(ROOT_DIR, 'src', 'data');
+const DATA_DIR = path.join(ROOT_DIR, 'src', 'services', 'data');
+const SHEETS_DIR = path.join(ROOT_DIR, 'src', 'assets', 'images', 'sheets');
 const OUTPUT_DIR = path.join(ROOT_DIR, 'exports');
 const OUTPUT_PATH = path.join(OUTPUT_DIR, 'song-collections.xlsx');
 const UNKNOWN_VALUE = 'Không rõ';
@@ -123,21 +124,21 @@ function walkDirectory(directoryPath, callback) {
 function loadTcxSongs() {
   const pagesBySong = {};
 
-  walkDirectory(DATA_DIR, (filePath) => {
-    const relativePath = path.relative(DATA_DIR, filePath).replace(/\\/g, '/');
-    const match = relativePath.match(/(TCX\d+)\/(TCX\d+)_page(\d+)\.jpg$/i);
+  walkDirectory(SHEETS_DIR, (filePath) => {
+    const relativePath = path.relative(SHEETS_DIR, filePath).replace(/\\/g, '/');
+    const match = relativePath.match(/(TCX\d+)_page(\d+)\.jpg$/i);
 
     if (!match) {
       return;
     }
 
-    const [, songId, imageId, pageIndex] = match;
+    const [, songId, pageIndex] = match;
 
     if (!pagesBySong[songId]) {
       pagesBySong[songId] = [];
     }
 
-    pagesBySong[songId][Number(pageIndex)] = imageId;
+    pagesBySong[songId][Number(pageIndex)] = `${songId}_page${pageIndex}`;
   });
 
   const collator = new Intl.Collator('vi', {

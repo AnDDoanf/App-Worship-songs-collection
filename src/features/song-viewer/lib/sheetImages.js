@@ -6,7 +6,7 @@ function normalizeImageToken(value) {
   return String(value || '').trim();
 }
 
-export function hasKnownImageValue(value) {
+function hasKnownImageValue(value) {
   return !UNKNOWN_IMAGE_VALUES.has(normalizeImageToken(value));
 }
 

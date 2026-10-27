@@ -11,7 +11,11 @@ const PALETTE_STORAGE_KEY = 'song-collections-palette';
 const APP_TITLE = 'Thánh Ca Hội Thánh';
 
 function getSystemPrefersDark() {
-  return window.matchMedia('(prefers-color-scheme: dark)').matches;
+  if (typeof window === 'undefined' || !window.matchMedia) {
+    return false;
+  }
+
+  return Boolean(window.matchMedia('(prefers-color-scheme: dark)')?.matches);
 }
 
 function setHeadLink(rel, href) {

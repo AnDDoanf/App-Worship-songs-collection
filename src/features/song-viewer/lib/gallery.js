@@ -1,4 +1,9 @@
-const imageContext = require.context('../../../assets/images/sheets', true, /\.(png|jpe?g|svg)$/);
+let imageContext;
+try {
+  imageContext = require.context('../../../assets/images/sheets', true, /\.(png|jpe?g|svg)$/);
+} catch (_error) {
+  imageContext = { keys: () => [] };
+}
 
 const gallery = imageContext.keys().reduce((images, key) => {
   const fileName = key.split('/').pop();
