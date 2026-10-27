@@ -649,3 +649,73 @@
     display: none;
   }
 }
+
+/* Cover both portrait phones and their wider, shorter landscape viewport. */
+@media (max-width: 600px), (max-height: 500px) and (pointer: coarse) {
+  .popup.popup-lyric-overlay {
+    padding: 0;
+    align-items: stretch;
+    overflow: hidden;
+    min-height: 0;
+    height: 100dvh;
+  }
+
+  .popup-lyric.popup-lyric-dialog {
+    width: 100%;
+    max-width: none;
+    height: 100%;
+    min-height: 0;
+    max-height: none;
+    margin: 0;
+    border: 0;
+    border-radius: 0;
+    padding: max(10px, env(safe-area-inset-top)) max(14px, env(safe-area-inset-right)) max(10px, env(safe-area-inset-bottom)) max(14px, env(safe-area-inset-left));
+  }
+
+  .popup-lyric-dialog .popup-close-button {
+    top: max(10px, env(safe-area-inset-top));
+    right: max(10px, env(safe-area-inset-right));
+    width: 44px;
+    height: 44px;
+  }
+
+  .popup-lyric-toolbar {
+    justify-content: center;
+    gap: 8px 12px;
+    padding-inline: 46px;
+    margin-bottom: 12px;
+  }
+
+  .popup-lyric-dialog .popup-lyric-actions {
+    gap: 6px;
+  }
+
+  .popup-lyric-dialog .popup-lyric-actions .button-mode {
+    min-width: 44px;
+    width: 44px;
+    height: 44px;
+    padding: 0;
+    justify-content: center;
+    gap: 0;
+  }
+
+  .popup-lyric-dialog .popup-lyric-actions .button-mode span {
+    display: none;
+  }
+
+  .popup-lyric-dialog .popup-transpose-controls {
+    gap: 8px;
+    flex-wrap: nowrap;
+  }
+
+  .popup-lyric-dialog .popup-transpose-controls select {
+    min-height: 44px;
+    font-size: 16px;
+  }
+
+  .popup-lyric-dialog .popup-lyric-editor {
+    flex: 1;
+    min-height: 0;
+    font-size: 16px;
+  }
+}

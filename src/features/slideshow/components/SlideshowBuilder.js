@@ -100,6 +100,7 @@ function SlideshowBuilder({
         buildShareUrl({
           name: list.name,
           ids: list.ids,
+          chordPreferences: list.chordPreferences,
         })
       );
       toast(`\u0110\u00e3 sao ch\u00e9p li\u00ean k\u1ebft chia s\u1ebb cho "${list.name}"`);

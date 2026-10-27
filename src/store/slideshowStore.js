@@ -1,5 +1,7 @@
+import { normalizePreferences } from './chordPreferences';
+
 export const STORAGE_KEY = 'song-collections-slideshows';
-export const DEFAULT_SHARED_LIST_NAME = 'Danh sách được chia sẻ';
+const DEFAULT_SHARED_LIST_NAME = 'Danh sách được chia sẻ';
 
 function normalizeUniqueIds(ids) {
   return [...new Set((ids || []).map((id) => String(id || '').trim().toUpperCase()).filter(Boolean))];
@@ -13,7 +15,7 @@ function haveSameIds(leftIds, rightIds) {
   return leftIds.every((id, index) => id === rightIds[index]);
 }
 
-export function createUniqueListName(name, existingNames) {
+function createUniqueListName(name, existingNames) {
   const normalizedName = String(name || '').trim() || DEFAULT_SHARED_LIST_NAME;
 
   if (!existingNames.includes(normalizedName)) {
@@ -54,6 +56,7 @@ export function normalizeStoredState(value) {
 
     accumulator[listName] = {
       draft: typeof listValue?.draft === 'string' ? listValue.draft : '',
+      chordPreferences: normalizePreferences(listValue?.chordPreferences, (Array.isArray(listValue?.ids) ? listValue.ids : []).filter((id) => typeof id === 'string').map((id) => id.toUpperCase())),
       ids: Array.isArray(listValue?.ids)
         ? listValue.ids.filter((id) => typeof id === 'string').map((id) => id.toUpperCase())
         : [],
@@ -78,8 +81,9 @@ export function normalizeStoredState(value) {
   };
 }
 
-export function mergeSharedListIntoState(state, { name, ids }) {
+export function mergeSharedListIntoState(state, { name, ids, chordPreferences }) {
   const normalizedIds = normalizeUniqueIds(ids);
+  const preferences = normalizePreferences(chordPreferences, normalizedIds);
 
   if (normalizedIds.length === 0) {
     return state;
@@ -88,7 +92,8 @@ export function mergeSharedListIntoState(state, { name, ids }) {
   const requestedName = String(name || '').trim() || DEFAULT_SHARED_LIST_NAME;
   const existingList = state.lists[requestedName];
 
-  if (existingList && haveSameIds(existingList.ids, normalizedIds)) {
+  if (existingList && haveSameIds(existingList.ids, normalizedIds) &&
+      JSON.stringify(normalizePreferences(existingList.chordPreferences, normalizedIds)) === JSON.stringify(preferences)) {
     return {
       ...state,
       activeListName: requestedName,
@@ -106,6 +111,7 @@ export function mergeSharedListIntoState(state, { name, ids }) {
       [nextListName]: {
         draft: normalizedIds.join(', '),
         ids: normalizedIds,
+        chordPreferences: preferences,
       },
     },
   };

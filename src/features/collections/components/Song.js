@@ -67,6 +67,7 @@ function Song(props) {
       <Popup image={props.image} trigger={buttonPopup} setTrigger={setButtonPopup} />
       <Popup2
         lyric={props.lyric}
+        tone={props.tone}
         trigger={buttonPopup2}
         setTrigger={setButtonPopup2}
         songId={props.id}

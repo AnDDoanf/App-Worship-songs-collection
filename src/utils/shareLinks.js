@@ -1,7 +1,8 @@
 import { parseSongCodes } from './slideshow';
+import { normalizePreferences } from '../store/chordPreferences';
 
-export const PENDING_SHARE_STORAGE_KEY = 'song-collections-pending-share';
-export const DEFAULT_SHARED_LIST_NAME = 'Danh sách được chia sẻ';
+const PENDING_SHARE_STORAGE_KEY = 'song-collections-pending-share';
+const DEFAULT_SHARED_LIST_NAME = 'Danh sách được chia sẻ';
 
 function trimTrailingSlash(value) {
   if (!value || value === '/') {
@@ -59,15 +60,21 @@ function parseCompactShareQuery(rawQuery) {
 
 function parseNamedShareQuery(rawQuery) {
   const searchParams = new URLSearchParams(rawQuery);
+  let chordPreferences = {};
+  try {
+    chordPreferences = normalizePreferences(JSON.parse(searchParams.get('chords')),
+      normalizeShareIds(splitSongs(searchParams.get('songs'))));
+  } catch (_error) { /* Older or malformed links still import their song IDs. */ }
 
   return {
     name: normalizeShareName(searchParams.get('name')),
     ids: normalizeShareIds(splitSongs(searchParams.get('songs'))),
     workbookUrl: String(searchParams.get('workbookUrl') || '').trim(),
+    chordPreferences,
   };
 }
 
-export function getAppBasePath() {
+function getAppBasePath() {
   const publicUrl = process.env.PUBLIC_URL || '';
 
   if (!publicUrl) {
@@ -89,22 +96,24 @@ export function getAppHomePath() {
   return basePath ? `${basePath}/` : '/';
 }
 
-export function getSharePath() {
+function getSharePath() {
   const basePath = getAppBasePath();
   return `${basePath}/share`;
 }
 
-export function isSharePath(pathname) {
+function isSharePath(pathname) {
   return trimTrailingSlash(pathname || '/') === getSharePath();
 }
 
-export function buildShareUrl({ name, ids, origin }) {
+export function buildShareUrl({ name, ids, origin, chordPreferences }) {
   const normalizedIds = normalizeShareIds(ids);
   const normalizedOrigin = origin || (typeof window !== 'undefined' ? window.location.origin : '');
   const encodedName = encodeURIComponent(normalizeShareName(name));
   const encodedSongs = normalizedIds.map((id) => encodeURIComponent(id)).join('|');
 
-  return `${normalizedOrigin}${getSharePath()}?name=${encodedName}&songs=${encodedSongs}`;
+  const preferences = normalizePreferences(chordPreferences, normalizedIds);
+  const chords = Object.keys(preferences).length ? `&chords=${encodeURIComponent(JSON.stringify(preferences))}` : '';
+  return `${normalizedOrigin}${getSharePath()}?name=${encodedName}&songs=${encodedSongs}${chords}`;
 }
 
 export function parseShareLocation(locationLike) {

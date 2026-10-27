@@ -16,6 +16,8 @@ import {
 } from '../store/slideshowStore';
 import { consumePendingShareLocation, getAppHomePath } from '../utils/shareLinks';
 import { parseSongCodes } from '../utils/slideshow';
+import { applyChordPreference, normalizePreferences, useChordPreferences } from '../store/chordPreferences';
+import { inferKey } from '../utils/chords';
 
 const collections = [
   {
@@ -73,6 +75,7 @@ function HomePage({ songLibraryState }) {
   const hasHandledShareImportRef = useRef(false);
 
   const allSongs = songLibraryState.songs;
+  const chordPreferences = useChordPreferences();
 
   const songsById = useMemo(
     () =>
@@ -84,9 +87,15 @@ function HomePage({ songLibraryState }) {
   );
 
   const getSongsForIds = useCallback(
-    (ids) => ids.map((id) => songsById[id]).filter(Boolean),
-    [songsById]
+    (ids, preferences = {}) => ids.map((id) => songsById[id]).filter(Boolean)
+      .map((song) => applyChordPreference(song, preferences[song.id.toUpperCase()] || chordPreferences[song.id.toUpperCase()])),
+    [songsById, chordPreferences]
   );
+
+  const snapshotPreferences = (ids, existing = {}) => normalizePreferences(Object.fromEntries(ids.map((id) => {
+    const key = inferKey(songsById[id]?.lyric, songsById[id]?.tone);
+    return [id, existing[id] || chordPreferences[id] || { sourceKey: key, targetKey: key }];
+  })), ids);
 
   useEffect(() => {
     window.localStorage.setItem(STORAGE_KEY, JSON.stringify(slideshowState));
@@ -126,13 +135,14 @@ function HomePage({ songLibraryState }) {
       return;
     }
 
-    const sharedSongs = validIds.map((id) => songsById[id]).filter(Boolean);
+    const sharedSongs = validIds.map((id) => applyChordPreference(songsById[id], sharedList.chordPreferences?.[id]));
     let importedListName = sharedList.name;
 
     setSlideshowState((currentState) => {
       const nextState = mergeSharedListIntoState(currentState, {
         name: sharedList.name,
         ids: validIds,
+        chordPreferences: sharedList.chordPreferences,
       });
 
       importedListName = nextState.activeListName;
@@ -173,7 +183,7 @@ function HomePage({ songLibraryState }) {
       return [];
     }
 
-    return getSongsForIds(list.ids);
+    return getSongsForIds(list.ids, list.chordPreferences);
   };
 
   const listSummaries = [...availableLists].reverse().map((listName) => {
@@ -184,8 +194,9 @@ function HomePage({ songLibraryState }) {
       name: listName,
       draft: list.draft,
       ids: list.ids,
+      chordPreferences: snapshotPreferences(list.ids, list.chordPreferences),
       codesLabel: codes || 'Chưa có bài trong danh sách',
-      songs: getSongsForIds(list.ids),
+      songs: getSongsForIds(list.ids, list.chordPreferences),
       isNewest: listName === newestListName,
     };
   });
@@ -269,6 +280,7 @@ function HomePage({ songLibraryState }) {
       nextLists[trimmedName] = {
         draft,
         ids: draftResult.ids,
+        chordPreferences: snapshotPreferences(draftResult.ids, currentState.lists[originalName]?.chordPreferences),
       };
 
       return {
@@ -333,6 +345,7 @@ function HomePage({ songLibraryState }) {
       return {
         draft: nextDraft,
         ids: [...currentList.ids, normalizedId],
+        chordPreferences: snapshotPreferences([...currentList.ids, normalizedId], currentList.chordPreferences),
       };
     });
 
