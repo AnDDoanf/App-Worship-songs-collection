@@ -17,7 +17,7 @@ function RootLayout({ children, mode, handleMode, palette, onPaletteChange, foot
           onPaletteChange={onPaletteChange}
           onOpenGuide={() => setIsGuideOpen(true)}
         />
-        {children}
+        <main>{children}</main>
         <ScrollToTop />
         <UsageGuideModal trigger={isGuideOpen} setTrigger={setIsGuideOpen} />
       </div>

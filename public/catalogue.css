@@ -1,0 +1,19 @@
+:root { color-scheme: light dark; font-family: system-ui, sans-serif; line-height: 1.65; color: #24313b; background: #f8f5ec; }
+body { max-width: 900px; margin: auto; padding: 24px clamp(16px, 4vw, 40px); }
+header, footer { padding-block: 20px; border-block-end: 1px solid #bcc4c8; }
+header > a { font-size: 1.2rem; font-weight: 750; }
+nav { margin-block: 12px; }
+main { padding-block: 24px; }
+a { color: #185d99; text-underline-offset: 3px; overflow-wrap: anywhere; }
+a:focus-visible { outline: 3px solid #b15b10; outline-offset: 4px; }
+h1 { font-size: clamp(1.8rem, 5vw, 2.5rem); line-height: 1.25; margin-bottom: 8px; }
+h2 { line-height: 1.35; margin-top: 32px; }
+.song-code { margin-top: 0; }
+dl { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 12px; }
+dt { font-weight: 700; } dd { margin: 0; }
+.lyrics { white-space: pre-wrap; overflow-wrap: anywhere; font-size: 1.1rem; }
+.catalogue { padding-left: 24px; } li { margin-block: 10px; }
+figure { margin: 24px 0; } img { display: block; max-width: 100%; height: auto; margin: auto; }
+figcaption { text-align: center; font-size: .9rem; }
+@media (prefers-color-scheme: dark) { :root { background: #15232b; color: #e4e9ec; } a { color: #91caff; } }
+@media print { header, footer, aside, nav { display: none; } :root { background: white; color: black; } a { color: black; } }

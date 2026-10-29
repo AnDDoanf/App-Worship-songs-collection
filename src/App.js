@@ -8,7 +8,7 @@ import HomePage from './pages/HomePage';
 
 const THEME_STORAGE_KEY = 'song-collections-theme';
 const PALETTE_STORAGE_KEY = 'song-collections-palette';
-const APP_TITLE = 'Thánh Ca Hội Thánh';
+const APP_TITLE = 'Thánh Ca Hội Thánh — Lời bài hát, hợp âm và bản nhạc';
 
 function getSystemPrefersDark() {
   if (typeof window === 'undefined' || !window.matchMedia) {

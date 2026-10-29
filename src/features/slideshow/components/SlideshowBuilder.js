@@ -11,6 +11,7 @@ function QuickActionButton({ onClick, label, icon }) {
       type="button"
       className="button-mode slideshow-list-action-button"
       onClick={onClick}
+      aria-label={label}
     >
       <span className="slideshow-list-action-label">{label}</span>
       <span className="slideshow-list-action-icon" aria-hidden="true">
@@ -128,6 +129,7 @@ function SlideshowBuilder({
             type="button"
             className="button-mode slideshow-create-button"
             onClick={openCreateModal}
+            aria-label="Tạo danh sách trình chiếu mới"
           >
             <FiPlus aria-hidden="true" />
             <span>Tạo mới</span>

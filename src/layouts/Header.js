@@ -8,9 +8,9 @@ function Header({ mode, handleMode, palette, onPaletteChange, onOpenGuide }) {
   const activeLogo = mode ? churchLogoDark : churchLogo;
 
   return (
-    <div className="header">
+    <header className="header">
       <div className="header-brand">
-        <div className="header-logo-wrap" aria-hidden="true">
+        <div className="header-logo-wrap">
           <a href="https://hoithanhnhancap.vn/" target="_blank" rel="noopener noreferrer">
             <img className="header-logo" src={activeLogo} alt="Thánh Ca Hội Thánh" />
           </a>
@@ -33,7 +33,7 @@ function Header({ mode, handleMode, palette, onPaletteChange, onOpenGuide }) {
         <PalettePicker value={palette} onChange={onPaletteChange} />
         <ThemeToggle mode={mode} onToggle={() => handleMode((prevMode) => !prevMode)} />
       </div>
-    </div>
+    </header>
   );
 }
 

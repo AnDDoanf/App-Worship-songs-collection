@@ -73,6 +73,7 @@ function HomePage({ songLibraryState }) {
   const [slideshowStartId, setSlideshowStartId] = useState('');
   const [playbackSongs, setPlaybackSongs] = useState([]);
   const hasHandledShareImportRef = useRef(false);
+  const hasHandledSongLinkRef = useRef(false);
 
   const allSongs = songLibraryState.songs;
   const chordPreferences = useChordPreferences();
@@ -85,6 +86,22 @@ function HomePage({ songLibraryState }) {
       }, {}),
     [allSongs]
   );
+
+  useEffect(() => {
+    if (songLibraryState.isLoading || hasHandledSongLinkRef.current) return;
+    hasHandledSongLinkRef.current = true;
+    const id = new URL(window.location.href).searchParams.get('song')?.toUpperCase();
+    if (!id) return;
+    const song = songsById[id];
+    if (!song) {
+      toast(`Không tìm thấy mã bài hát: ${id}`);
+      return;
+    }
+    const collection = collections.find((item) => item.key === song.sourceCollectionKey);
+    if (collection) setActiveCollectionId(collection.id);
+    setPlaybackSongs([song]);
+    setIsLyricsQueueOpen(true);
+  }, [songLibraryState.isLoading, songsById]);
 
   const getSongsForIds = useCallback(
     (ids, preferences = {}) => ids.map((id) => songsById[id]).filter(Boolean)

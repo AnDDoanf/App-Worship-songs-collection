@@ -119,8 +119,8 @@
 
 .app-footer-bottom a,
 .app-footer-source-inline a {
-  color: var(--accent);
-  text-decoration: none;
+  color: var(--text-primary);
+  text-decoration: underline;
 }
 
 .app-footer-bottom a:hover,
@@ -491,7 +491,21 @@ select.dropdown,
   margin-bottom: 14px;
 }
 
-.song-header b,
+.song-title {
+  margin: 0;
+  font-size: 1rem;
+}
+
+.song-title a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.song-title a:hover {
+  text-decoration: underline;
+}
+
+.song-header .song-title,
 .song-header small {
   line-height: 1.3;
 }

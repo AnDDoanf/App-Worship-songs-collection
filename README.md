@@ -9,7 +9,7 @@ Demo: https://anddoanf.github.io/App-Worship-songs-collection/
 - Xem nhiều tuyển tập bài hát trong cùng một ứng dụng: `Tôn Vinh Chúa Hằng Hữu`, `Hosanna Việt Nam`, `Bài hát tự do`, `Thánh Ca Xanh`.
 - Tìm kiếm bài hát nhanh theo tên bài, mã bài hoặc nội dung lyric.
 - Lọc danh sách theo chủ đề, tone và nhịp.
-- Phân trang danh sách bài hát và tùy chỉnh số bài hiển thị mỗi trang.
+- Tự động hiển thị thêm bài hát khi cuộn, có nút xem thêm dự phòng.
 - Xem sheet nhạc trực tiếp trong popup.
 - Phát audio tham khảo ngay trên từng bài hát khi có dữ liệu.
 - Thêm bài hát vào danh sách trình chiếu chỉ với một nút bấm.
@@ -53,6 +53,32 @@ Thiết lập một lần trên GitHub trước khi push workflow:
 2. Trong **Settings → Environments → github-pages → Deployment branches and tags**, cho phép nhánh `master` deploy.
 
 Workflow sử dụng token mặc định của GitHub Actions, không cần thêm secret.
+
+## SEO và danh mục tĩnh
+
+`npm run build` tự chạy `scripts/generate-seo.js` sau khi React build xong. Thư mục `build`
+chứa các trang HTML độc lập, đọc được khi tắt JavaScript:
+
+- `songs/`: danh mục tuyển tập.
+- `songs/<id>/`: lời, hợp âm, thông tin và bản nhạc của từng bài hát.
+- `collections/<key>/`: danh sách theo tuyển tập, có liên kết phân trang khi trên 100 bài.
+- `sitemap.xml`: URL trang chủ, danh mục và toàn bộ bài hát.
+
+Generator ưu tiên workbook công khai đang được cấu hình trong `src/services/remoteWorkbook.js`
+hoặc biến `REACT_APP_SONG_WORKBOOK_URL`, giống ứng dụng. Nếu không tải được workbook trong
+20 giây, generator dùng dữ liệu local và ghi cảnh báo. Đặt `SEO_REQUIRE_REMOTE=true` để build
+thất bại khi workbook lỗi; đặt `SEO_OFFLINE=true` để chỉ dùng dữ liệu local.
+Các trang tĩnh là ảnh chụp dữ liệu tại thời điểm build; chỉnh workbook xong cần build/deploy lại.
+Các URL workbook riêng trong query hoặc localStorage của từng người không được xuất ra trang tĩnh.
+
+Chạy kiểm tra generator bằng `npm run test:seo`. Workflow deploy cũng chạy bộ kiểm tra này.
+Liên kết “Mở bài hát trong ứng dụng” dùng `?song=<id>` để mở lời bài hát tương ứng.
+
+Sau khi deploy, gửi sitemap
+`https://anddoanf.github.io/App-Worship-songs-collection/sitemap.xml`
+trong Google Search Console và kiểm tra URL trang chủ cùng một trang bài hát.
+File `robots.txt` ở gốc domain thuộc repository khác; có thể thêm dòng `Sitemap` trỏ đến URL này
+ở đó nếu bạn quản lý domain. Sitemap trong repository này không thay thế robots ở gốc domain.
 
 ## Excel workflow
 

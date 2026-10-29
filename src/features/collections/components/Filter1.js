@@ -23,7 +23,7 @@ const Filter1 = ({ handleFilter1 }) => {
   return (
     <div className="filter-column1">
       <p>Chủ đề:</p>
-      <select className="dropdown" onChange={(e) => handleFilter1(e.target.value)} defaultValue="">
+      <select aria-label="Lọc theo chủ đề" className="dropdown" onChange={(e) => handleFilter1(e.target.value)} defaultValue="">
         <option value="">Tất cả</option>
         {optionsFilter1.map((option, idx) => (
           <option key={idx}>{option}</option>

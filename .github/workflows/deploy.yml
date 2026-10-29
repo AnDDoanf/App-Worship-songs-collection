@@ -33,6 +33,9 @@ jobs:
         env:
           CI: 'true'
 
+      - name: Test SEO generation
+        run: npm run test:seo
+
       - name: Build site
         run: npm run build
         env:

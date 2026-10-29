@@ -1,6 +1,5 @@
-import * as XLSX from 'xlsx';
 import { DEFAULT_REMOTE_WORKBOOK_URL } from './remoteWorkbook';
-import { LOCAL_SONG_SOURCES } from './data/localSongSources';
+import { COLLECTION_DEFINITIONS } from './data/collectionDefinitions';
 
 const REMOTE_WORKBOOK_URL_QUERY_PARAM = 'workbookUrl';
 const REMOTE_WORKBOOK_URL_STORAGE_KEY = 'song-collections-workbook-url';
@@ -13,7 +12,7 @@ const SHEET_NAME_TO_COLLECTION_KEY = {
   THANH_CA_XANH: 'tcx',
 };
 
-const COLLECTION_KEY_TO_LABEL = LOCAL_SONG_SOURCES.reduce((accumulator, source) => {
+const COLLECTION_KEY_TO_LABEL = COLLECTION_DEFINITIONS.reduce((accumulator, source) => {
   accumulator[source.key] = source.label;
   return accumulator;
 }, {});
@@ -139,7 +138,8 @@ function hasKnownImageValue(value) {
   return Boolean(normalizedValue && normalizedValue !== DEFAULT_UNKNOWN_VALUE);
 }
 
-function createLocalSongLibrary() {
+async function createLocalSongLibrary() {
+  const { LOCAL_SONG_SOURCES } = await import('./data/localSongSources');
   return LOCAL_SONG_SOURCES.flatMap((source) =>
     source.songs
       .map((song) => normalizeSongRecord(song, source.key))
@@ -259,7 +259,7 @@ async function fetchWorkbookBuffer(workbookUrl) {
   return response.arrayBuffer();
 }
 
-function readSongsFromWorkbook(workbook) {
+function readSongsFromWorkbook(workbook, XLSX) {
   const collectionSheetSongs = workbook.SheetNames.flatMap((sheetName) => {
     const collectionKey = SHEET_NAME_TO_COLLECTION_KEY[sheetName];
 
@@ -288,12 +288,12 @@ function readSongsFromWorkbook(workbook) {
 }
 
 export async function loadSongLibrary() {
-  const localSongs = createLocalSongLibrary();
+  const localSongsPromise = createLocalSongLibrary();
   const workbookUrl = resolveRemoteWorkbookUrl();
 
   if (!workbookUrl) {
     return {
-      songs: localSongs,
+      songs: await localSongsPromise,
       source: 'local',
       workbookUrl: '',
       resolvedWorkbookUrl: '',
@@ -304,9 +304,13 @@ export async function loadSongLibrary() {
   const resolvedWorkbookUrl = normalizeRemoteWorkbookUrl(workbookUrl);
 
   try {
-    const workbookData = await fetchWorkbookBuffer(workbookUrl);
+    const [workbookData, XLSX, localSongs] = await Promise.all([
+      fetchWorkbookBuffer(workbookUrl),
+      import('xlsx'),
+      localSongsPromise,
+    ]);
     const workbook = XLSX.read(workbookData, { type: 'array' });
-    const remoteSongs = mergePreferredImages(readSongsFromWorkbook(workbook), localSongs);
+    const remoteSongs = mergePreferredImages(readSongsFromWorkbook(workbook, XLSX), localSongs);
 
     if (remoteSongs.length === 0) {
       throw new Error('Workbook loaded, but no songs were found. Expected ALL_SONGS or known sheet names.');
@@ -321,7 +325,7 @@ export async function loadSongLibrary() {
     };
   } catch (error) {
     return {
-      songs: localSongs,
+      songs: await localSongsPromise,
       source: 'fallback',
       workbookUrl,
       resolvedWorkbookUrl,

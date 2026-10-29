@@ -3,6 +3,7 @@ import { FiFileText, FiList, FiPlus } from 'react-icons/fi';
 import AudioPlayer from '../../../components/common/AudioPlayer';
 import Popup from '../../song-viewer/components/Popup';
 import Popup2 from '../../song-viewer/components/Popup2';
+import { getAppHomePath } from '../../../utils/shareLinks';
 
 function Song(props) {
   const [buttonPopup, setButtonPopup] = useState(false);
@@ -36,9 +37,11 @@ function Song(props) {
   return (
     <div className="song">
       <div className="song-header">
-        <b>
-          {props.id}. {props.songName}
-        </b>
+        <h2 className="song-title">
+          <a href={`${getAppHomePath()}songs/${encodeURIComponent(props.id)}/`}>
+            {props.id}. {props.songName}
+          </a>
+        </h2>
         <small>{props.category}</small>
       </div>
       <div className="song-footer">
@@ -47,15 +50,15 @@ function Song(props) {
           <small>Nhịp {props.timeSignature}</small>
         </div>
         <div className="song-footer-col2">
-          <button className="button-mode song-button" type="button" onClick={handleOpenSheet}>
+          <button className="button-mode song-button" type="button" onClick={handleOpenSheet} aria-label={`Xem bản nhạc ${props.id}`}>
             <span className="song-button-label">Bản nhạc</span>
             <FiFileText className="song-button-icon" aria-hidden="true" />
           </button>
-          <button className="button-mode song-button" type="button" onClick={handleAddToSlideshow}>
+          <button className="button-mode song-button" type="button" onClick={handleAddToSlideshow} aria-label={`Thêm ${props.id} vào trình chiếu`}>
             <span className="song-button-label">Thêm</span>
             <FiPlus className="song-button-icon" aria-hidden="true" />
           </button>
-          <button className="button-mode song-button" type="button" onClick={handleOpenLyric}>
+          <button className="button-mode song-button" type="button" onClick={handleOpenLyric} aria-label={`Xem lời bài hát ${props.id}`}>
             <span className="song-button-label">Lời</span>
             <FiList className="song-button-icon" aria-hidden="true" />
           </button>

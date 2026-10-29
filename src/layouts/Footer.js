@@ -1,3 +1,5 @@
+import { getAppHomePath } from '../utils/shareLinks';
+
 function Footer({ songLibraryState }) {
   const currentYear = new Date().getFullYear();
   const isRemote = songLibraryState.source === 'remote';
@@ -14,6 +16,7 @@ function Footer({ songLibraryState }) {
         </div>
 
         <div className="app-footer-bottom">
+          <a href={`${getAppHomePath()}songs/`}>Danh mục thánh ca</a>
           <span>Liên hệ:</span>
           <a href="mailto:anddoanf.work@gmail.com">anddoanf.work@gmail.com</a>
 
