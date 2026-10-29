@@ -1,12 +1,15 @@
-import { useEffect, useState } from 'react';
+import { useEffect, useRef, useState } from 'react';
 import { createPortal } from 'react-dom';
 import { FiChevronLeft, FiChevronRight, FiXCircle } from 'react-icons/fi';
 import { parseSheetImageSources } from '../lib/sheetImages';
 import { lockBodyScroll } from '../../../utils/bodyScrollLock';
+import { useSheetViewport } from '../../../utils/useSheetViewport';
 
 const SWIPE_THRESHOLD = 50;
 
 function Popup({ image, trigger, setTrigger }) {
+  const overlayRef = useRef(null);
+  useSheetViewport(overlayRef, trigger);
   const [activeIndex, setActiveIndex] = useState(0);
   const [touchStartX, setTouchStartX] = useState(null);
 
@@ -77,7 +80,7 @@ function Popup({ image, trigger, setTrigger }) {
   };
 
   const modal = (
-    <div className="popup popup-sheet-overlay" onClick={() => setTrigger(false)}>
+    <div ref={overlayRef} className="popup popup-sheet-overlay" onClick={() => setTrigger(false)}>
       <div
         className={`popup-sheet ${images.length === 2 ? 'popup-sheet-dual' : 'popup-sheet-carousel'}`}
         onClick={(event) => event.stopPropagation()}

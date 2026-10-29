@@ -3,6 +3,7 @@ import { createPortal } from 'react-dom';
 import { FiChevronLeft, FiChevronRight, FiXCircle } from 'react-icons/fi';
 import { parseSheetImageSources } from '../../song-viewer/lib/sheetImages';
 import { lockBodyScroll } from '../../../utils/bodyScrollLock';
+import { useSheetViewport } from '../../../utils/useSheetViewport';
 
 const SWIPE_THRESHOLD = 50;
 const MOBILE_BREAKPOINT = 560;
@@ -40,6 +41,8 @@ function buildDesktopViews(songs) {
 }
 
 function SheetSlideshowModal({ songs, trigger, setTrigger, initialSongId }) {
+  const overlayRef = useRef(null);
+  useSheetViewport(overlayRef, trigger);
   const [activeViewIndex, setActiveViewIndex] = useState(0);
   const [mobilePageIndex, setMobilePageIndex] = useState(0);
   const [touchStartX, setTouchStartX] = useState(null);
@@ -259,7 +262,7 @@ function SheetSlideshowModal({ songs, trigger, setTrigger, initialSongId }) {
     : `${activeViewIndex + 1} / ${desktopViews.length}`;
 
   const modal = (
-    <div className="popup popup-sheet-overlay" onClick={() => setTrigger(false)}>
+    <div ref={overlayRef} className="popup popup-sheet-overlay" onClick={() => setTrigger(false)}>
       <div className="popup-sheet popup-slideshow-sheet" onClick={(event) => event.stopPropagation()}>
         <button
           type="button"

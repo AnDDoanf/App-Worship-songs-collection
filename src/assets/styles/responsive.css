@@ -503,11 +503,7 @@
 
   .popup-sheet {
     width: 100%;
-    min-height: 100vh;
-    min-height: 100dvh;
-    max-height: none;
     border-radius: 0;
-    padding-top: 0;
   }
 
   .popup-lyric {
@@ -553,13 +549,6 @@
     min-height: 0;
   }
 
-  .popup-sheet {
-    padding-left: 0;
-    padding-right: 0;
-    padding-bottom: 0;
-    border: none;
-  }
-
   .slideshow-meta-bar {
     left: 8px;
     right: 56px;
@@ -577,9 +566,6 @@
   }
 
   .sheet-carousel {
-    min-height: 100svh;
-    height: 100vh;
-    height: 100dvh;
     border-radius: 0;
   }
 
