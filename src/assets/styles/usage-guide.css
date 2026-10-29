@@ -144,7 +144,7 @@
 .usage-guide-step {
   padding: 18px;
   border: 1px solid var(--border-color);
-  border-radius: 22px;
+  border-radius: 10px;
   background: var(--panel-bg);
   display: grid;
   gap: 12px;
@@ -175,7 +175,7 @@
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  border-radius: 12px;
+  border-radius: 6px;
   background: var(--control-active-bg);
   color: var(--control-active-fg);
   flex: 0 0 auto;
@@ -192,7 +192,7 @@
   gap: 18px;
   padding: 18px;
   border: 1px solid var(--border-color);
-  border-radius: 24px;
+  border-radius: 12px;
   background: var(--panel-bg);
 }
 
@@ -205,7 +205,7 @@
 .usage-guide-shot-frame {
   min-height: 210px;
   border: 1px solid var(--border-color);
-  border-radius: 22px;
+  border-radius: 10px;
   background:
     linear-gradient(180deg, color-mix(in srgb, var(--panel-strong) 96%, transparent) 0%, var(--panel-bg) 100%);
   box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2);
@@ -239,7 +239,7 @@
 .usage-guide-theme-pill {
   width: 48px;
   height: 42px;
-  border-radius: 14px;
+  border-radius: 6px;
   border: 1px solid var(--border-color);
   background: var(--panel-strong);
 }
@@ -264,7 +264,7 @@
   gap: 14px;
   padding: 12px 14px;
   border: 1px solid var(--border-color);
-  border-radius: 18px;
+  border-radius: 8px;
   background: var(--panel-strong);
   font-weight: 700;
 }
@@ -281,7 +281,7 @@
 .usage-guide-theme-swatches span {
   width: 36px;
   height: 26px;
-  border-radius: 10px;
+  border-radius: 6px;
   background: var(--panel-muted);
 }
 
@@ -292,7 +292,7 @@
 .usage-guide-search-bar {
   height: 52px;
   border: 1px solid var(--border-color);
-  border-radius: 18px;
+  border-radius: 8px;
   background: var(--panel-strong);
   display: flex;
   align-items: center;
@@ -323,7 +323,7 @@
 .usage-guide-filter-grid span {
   height: 68px;
   border: 1px solid var(--border-color);
-  border-radius: 18px;
+  border-radius: 8px;
   background: var(--panel-strong);
 }
 
@@ -341,7 +341,7 @@
 .usage-guide-pagination span {
   height: 46px;
   border: 1px solid var(--border-color);
-  border-radius: 16px;
+  border-radius: 8px;
   background: var(--panel-strong);
 }
 
@@ -366,7 +366,7 @@
 .usage-guide-song-card {
   padding: 16px;
   border: 1px solid var(--border-color);
-  border-radius: 22px;
+  border-radius: 10px;
   background: var(--panel-strong);
   display: grid;
   gap: 14px;
@@ -422,7 +422,7 @@
   width: 40px;
   height: 40px;
   border: 1px solid var(--border-color);
-  border-radius: 14px;
+  border-radius: 6px;
   background: var(--panel-strong);
 }
 
@@ -433,7 +433,7 @@
 .usage-guide-song-audio {
   height: 44px;
   border: 1px solid var(--border-color);
-  border-radius: 16px;
+  border-radius: 8px;
   background: var(--panel-strong);
 }
 
@@ -456,7 +456,7 @@
 .usage-guide-folder-card {
   padding: 16px;
   border: 1px solid var(--border-color);
-  border-radius: 22px;
+  border-radius: 10px;
   background: var(--panel-strong);
   display: grid;
   gap: 14px;
@@ -485,7 +485,7 @@
   gap: 12px;
   padding: 12px 14px;
   border: 1px solid var(--border-color);
-  border-radius: 16px;
+  border-radius: 8px;
   background: var(--panel-bg);
 }
 
@@ -510,7 +510,7 @@
   width: 28px;
   height: 28px;
   border: 1px solid var(--border-color);
-  border-radius: 10px;
+  border-radius: 6px;
   background: var(--panel-strong);
 }
 
