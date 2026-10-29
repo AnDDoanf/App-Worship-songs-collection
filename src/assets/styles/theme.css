@@ -1,4 +1,5 @@
 :root {
+  --sheet-ink: #000;
   --page-bg: #f3ebd7;
   --panel-bg: rgba(253, 246, 227, 0.92);
   --panel-strong: #fdf6e3;
@@ -15,6 +16,10 @@
   --control-active-fg: #fdf6e3;
   --control-active-border: #1f6ea7;
   --overlay: rgba(7, 54, 66, 0.52);
+}
+
+:root.dark-mode {
+  --sheet-ink: #fff;
 }
 
 :root[data-palette='solarized'] {

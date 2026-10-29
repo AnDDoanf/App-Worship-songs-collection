@@ -2,6 +2,7 @@ import { useEffect, useLayoutEffect, useMemo, useRef, useState } from 'react';
 import { createPortal } from 'react-dom';
 import { FiChevronLeft, FiChevronRight, FiXCircle } from 'react-icons/fi';
 import { parseSheetImageSources } from '../../song-viewer/lib/sheetImages';
+import ThemeSheet from '../../song-viewer/components/ThemeSheet';
 import { lockBodyScroll } from '../../../utils/bodyScrollLock';
 import { useSheetViewport } from '../../../utils/useSheetViewport';
 
@@ -289,12 +290,7 @@ function SheetSlideshowModal({ songs, trigger, setTrigger, initialSongId }) {
               {activeView.songs.map(({ song, pages }) =>
                 pages.map((imageSource, index) => (
                   <div className="sheet-desktop-page" key={`${song.id}-${imageSource.id}`}>
-                    <img
-                      loading="lazy"
-                      className="image-box"
-                      src={imageSource.src}
-                      alt={`${song.id} page ${index + 1}`}
-                    />
+                    <ThemeSheet className="image-box" source={imageSource.src} label={`${song.id} page ${index + 1}`} />
                   </div>
                 ))
               )}
@@ -312,12 +308,7 @@ function SheetSlideshowModal({ songs, trigger, setTrigger, initialSongId }) {
               >
                 {mobilePages.map(({ imageSource, song, pageIndex }) => (
                   <div className="sheet-slide" key={`${song.id}-${imageSource.id}-mobile`}>
-                    <img
-                      loading="lazy"
-                      className="image-box"
-                      src={imageSource.src}
-                      alt={`${song.id} page ${pageIndex + 1}`}
-                    />
+                    <ThemeSheet className="image-box" source={imageSource.src} label={`${song.id} page ${pageIndex + 1}`} />
                   </div>
                 ))}
               </div>

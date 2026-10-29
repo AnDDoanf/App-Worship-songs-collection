@@ -2,6 +2,7 @@ import { useEffect, useRef, useState } from 'react';
 import { createPortal } from 'react-dom';
 import { FiChevronLeft, FiChevronRight, FiXCircle } from 'react-icons/fi';
 import { parseSheetImageSources } from '../lib/sheetImages';
+import ThemeSheet from './ThemeSheet';
 import { lockBodyScroll } from '../../../utils/bodyScrollLock';
 import { useSheetViewport } from '../../../utils/useSheetViewport';
 
@@ -101,12 +102,7 @@ function Popup({ image, trigger, setTrigger }) {
               <div className="sheet-desktop-grid">
                 {images.map((imageSource, index) => (
                   <div className="sheet-desktop-page" key={imageSource.id}>
-                    <img
-                      loading="lazy"
-                      className="image-box"
-                      src={imageSource.src}
-                      alt={`Sheet page ${index + 1}`}
-                    />
+                    <ThemeSheet className="image-box" source={imageSource.src} label={`Sheet page ${index + 1}`} />
                   </div>
                 ))}
               </div>
@@ -121,12 +117,7 @@ function Popup({ image, trigger, setTrigger }) {
               <div className="sheet-track" style={{ transform: `translateX(-${activeIndex * 100}%)` }}>
                 {images.map((imageSource, index) => (
                   <div className="sheet-slide" key={imageSource.id}>
-                    <img
-                      loading="lazy"
-                      className="image-box"
-                      src={imageSource.src}
-                      alt={`Sheet page ${index + 1}`}
-                    />
+                    <ThemeSheet className="image-box" source={imageSource.src} label={`Sheet page ${index + 1}`} />
                   </div>
                 ))}
               </div>

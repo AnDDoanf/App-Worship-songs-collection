@@ -1,6 +1,6 @@
 let imageContext;
 try {
-  imageContext = require.context('../../assets/images/sheets', true, /TCX\d+\/TCX\d+_page\d+\.jpg$/i);
+  imageContext = require.context('../../assets/images/sheet-masks', true, /TCX\d+\/TCX\d+_page\d+\.webp$/i);
 } catch (_error) {
   imageContext = { keys: () => [] };
 }
@@ -11,7 +11,7 @@ const collator = new Intl.Collator('vi', {
 });
 
 const pagesBySong = imageContext.keys().reduce((songs, key) => {
-  const match = key.match(/(TCX\d+)_page(\d+)\.jpg$/i);
+  const match = key.match(/(TCX\d+)_page(\d+)\.webp$/i);
 
   if (!match) {
     return songs;

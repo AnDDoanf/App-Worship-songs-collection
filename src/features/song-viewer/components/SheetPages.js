@@ -2,6 +2,8 @@ import { useEffect, useState } from 'react';
 import { FiChevronLeft, FiChevronRight } from 'react-icons/fi';
 import { parseSheetImageSources } from '../lib/sheetImages';
 
+import ThemeSheet from './ThemeSheet';
+
 export default function SheetPages({ image, songName }) {
   const images = parseSheetImageSources(image);
   const [page, setPage] = useState(0);
@@ -17,9 +19,9 @@ export default function SheetPages({ image, songName }) {
   }, [images.length]);
   if (!images.length) return <p>Chưa có bản nhạc cho bài hát này.</p>;
   return <div className="workspace-sheet" data-dual={images.length === 2}>
-    {images.length === 2 ? <div className="workspace-sheet-pair">{images.map((source, i) => <img key={source.id} src={source.src} alt={`${songName || 'Bản nhạc'} — trang ${i + 1}`} />)}</div> : null}
+    {images.length === 2 ? <div className="workspace-sheet-pair">{images.map((source, i) => <ThemeSheet key={source.id} source={source.src} label={`${songName || 'Sheet'} page ${i + 1}`} />)}</div> : null}
     <div className="workspace-sheet-single">
-      <div className="workspace-sheet-image"><img src={images[page]?.src} alt={`${songName || 'Bản nhạc'} — trang ${page + 1}`} /></div>
+      <div className="workspace-sheet-image"><ThemeSheet source={images[page]?.src} label={`${songName || 'Sheet'} page ${page + 1}`} /></div>
       {images.length > 1 ? <div className="workspace-page-controls">
         <button type="button" className="button-mode" aria-label="Trang nhạc trước" disabled={page === 0} onClick={() => setPage(page - 1)}><FiChevronLeft /></button>
         <span>Trang {page + 1} / {images.length}</span>

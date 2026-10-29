@@ -104,8 +104,10 @@
 .workspace-musician-tools label { display: flex; align-items: center; gap: 8px; font-size: .9rem; }
 .workspace-musician-tools select { width: auto; min-width: 82px; min-height: 44px; }
 .workspace-reader-content { padding-top: 16px; }
-.workspace-content-expand { position: sticky; top: 0; align-self: flex-end; flex: 0 0 44px; z-index: 3; margin-bottom: 8px; border-radius: 14px; }
+.workspace-content-expand { position: absolute; top: 56px; right: 12px; z-index: 3; margin: 0; border-radius: 14px; }
 .workspace-content-expand .action-icon-button { background: color-mix(in srgb, var(--panel-strong) 65%, transparent); -webkit-backdrop-filter: blur(12px); backdrop-filter: blur(12px); }
+.workspace-content-expand .action-icon-button { opacity: .5; transition: opacity .16s ease; }
+.workspace-content-expand .action-icon-button:hover, .workspace-content-expand .action-icon-button:focus-visible { opacity: 1; }
 .workspace-content-expand .action-tooltip { top: calc(100% + 8px); bottom: auto; left: auto; right: 0; transform: none; }
 .workspace-reader-content > .chord-chart { width: 100%; max-width: 720px; margin-inline: auto; flex-shrink: 0; text-align: left; }
 .workspace-reader-sheet { overflow: auto; }
@@ -144,7 +146,7 @@
 .workspace-reading .workspace-song-header { display: none; }
 .workspace-sheet { display: flex; flex-direction: column; flex: 1; height: 100%; min-height: 0; gap: 8px; }
 .workspace-sheet-pair { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 8px; flex: 1; min-height: 0; }
-.workspace-sheet-pair img, .workspace-sheet-image img { width: 100%; height: 100%; min-height: 0; min-width: 0; object-fit: contain; background: white; }
+.workspace-sheet-pair .theme-sheet-image, .workspace-sheet-image .theme-sheet-image { width: 100%; height: 100%; min-height: 0; min-width: 0; background-color: var(--sheet-ink); mask-repeat: no-repeat; mask-position: center; mask-size: contain; -webkit-mask-repeat: no-repeat; -webkit-mask-position: center; -webkit-mask-size: contain; }
 .workspace-sheet-single { display: flex; flex-direction: column; flex: 1; min-height: 0; }
 .workspace-sheet[data-dual='true'] .workspace-sheet-single { display: none; }
 .workspace-sheet-image { min-height: 0; flex: 1; }

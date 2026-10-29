@@ -387,8 +387,13 @@
   height: 100%;
   border: none;
   border-radius: 0;
-  background: #fff;
-  object-fit: contain;
+  background-color: var(--sheet-ink);
+  mask-repeat: no-repeat;
+  mask-position: center;
+  mask-size: contain;
+  -webkit-mask-repeat: no-repeat;
+  -webkit-mask-position: center;
+  -webkit-mask-size: contain;
 }
 
 .sheet-controls {
