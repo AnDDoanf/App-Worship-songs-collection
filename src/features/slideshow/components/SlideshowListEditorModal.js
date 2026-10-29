@@ -7,6 +7,8 @@ import { notifyToast } from '../../../utils/songToasts';
 import { inferKey, isKey, KEY_OPTIONS } from '../../../utils/chords';
 import { normalizeSetDetails } from '../../../store/slideshowStore';
 import { useModalFocus } from '../../../utils/useModalFocus';
+import { normalizeLyricText } from '../../../services/songLibrary';
+import Popup2 from '../../song-viewer/components/Popup2';
 
 function metadataValue(value, fallback = 'Chưa có') {
   const text = String(value || '').trim();
@@ -36,12 +38,16 @@ function SlideshowListEditorModal({
   const [draft, setDraft] = useState(initialDraft);
   const [errorMessage, setErrorMessage] = useState('');
   const [isEditing, setIsEditing] = useState(false);
+  const [previewSongId, setPreviewSongId] = useState('');
   const [details, setDetails] = useState({ serviceDate: '', service: '', status: 'draft', songNotes: {}, chordPreferences: {} });
   const detailsKey = JSON.stringify(initialDetails || {});
   const initialCodes = initialDraft || initialIds.join(', ');
   const showForm = mode !== 'view' || isEditing;
   const songLookup = useMemo(() => new Map([...songs, ...listSongs].map((song) => [song.id.toUpperCase(), song])), [listSongs, songs]);
   const songIds = [...new Set(parseSongCodes(draft || ''))];
+  const previewSongs = songIds.map((id) => songLookup.get(id)).filter(Boolean);
+  const previewSongIndex = previewSongs.findIndex((song) => song.id.toUpperCase() === previewSongId);
+  const previewSong = previewSongs[previewSongIndex];
 
   useEffect(() => {
     if (!trigger) return;
@@ -49,6 +55,7 @@ function SlideshowListEditorModal({
     setDraft(initialCodes);
     setErrorMessage('');
     setIsEditing(false);
+    setPreviewSongId('');
     const initial = JSON.parse(detailsKey);
     setDetails({ ...normalizeSetDetails(initial, parseSongCodes(initialCodes)), chordPreferences: initial.chordPreferences || {} });
   }, [detailsKey, initialCodes, initialName, trigger]);
@@ -56,14 +63,14 @@ function SlideshowListEditorModal({
   useEffect(() => {
     if (!trigger) return undefined;
     const unlock = lockBodyScroll();
-    const handleKeyDown = (event) => { if (event.key === 'Escape') setTrigger(false); };
+    const handleKeyDown = (event) => { if (event.key === 'Escape' && !previewSongId) setTrigger(false); };
     window.addEventListener('keydown', handleKeyDown);
 
     return () => {
       unlock();
       window.removeEventListener('keydown', handleKeyDown);
     };
-  }, [setTrigger, trigger]);
+  }, [previewSongId, setTrigger, trigger]);
 
   if (!trigger) {
     return null;
@@ -103,6 +110,7 @@ function SlideshowListEditorModal({
   };
 
   return createPortal(
+    <>
     <div className="popup" onClick={() => setTrigger(false)}>
       <div ref={dialogRef} tabIndex={-1} className="popup-list-editor" role="dialog" aria-modal="true" aria-labelledby="list-details-heading" onClick={(event) => event.stopPropagation()}>
         <button
@@ -159,7 +167,7 @@ function SlideshowListEditorModal({
                   setDraft(reordered.join(', '));
                 };
                 return <tr key={id}>
-                  <td><strong>{song?.songName || 'Không tìm thấy bài hát'}</strong><small>{id}</small>
+                  <td><button type="button" className="workspace-text-button set-song-preview" disabled={!song} onClick={() => setPreviewSongId(id)}>{song?.songName || 'Không tìm thấy bài hát'}</button><small>{id}</small>
                     {showForm ? <input className="set-note-input" aria-label={`Ghi chú ${id}`} placeholder="Câu hát, phối khí, chuyển bài…" value={details.songNotes[id] || ''}
                       onChange={(event) => setDetails((current) => ({ ...current, songNotes: { ...current.songNotes, [id]: event.target.value } }))} />
                       : details.songNotes[id] ? <p className="set-song-note">{details.songNotes[id]}</p> : null}
@@ -200,7 +208,18 @@ function SlideshowListEditorModal({
           </button>}
         </div>
       </div>
-    </div>,
+    </div>
+    {previewSong ? <Popup2
+      {...previewSong}
+      songId={previewSong.id}
+      collection={originalName || name}
+      initialView={normalizeLyricText(previewSong.lyric) ? 'chords' : 'sheet'}
+      trigger={Boolean(trigger && previewSong)}
+      setTrigger={(open) => { if (!open) setPreviewSongId(''); }}
+      onPrevious={previewSongIndex > 0 ? () => setPreviewSongId(previewSongs[previewSongIndex - 1].id.toUpperCase()) : undefined}
+      onNext={previewSongIndex >= 0 && previewSongIndex < previewSongs.length - 1 ? () => setPreviewSongId(previewSongs[previewSongIndex + 1].id.toUpperCase()) : undefined}
+    /> : null}
+    </>,
     document.body
   );
 }

@@ -4,8 +4,6 @@ import BaihattudoCollection from '../features/collections/views/BaihattudoCollec
 import HosannaCollection from '../features/collections/views/HosannaCollection';
 import TCXCollection from '../features/collections/views/TCXCollection';
 import TVCHHCollection from '../features/collections/views/TVCHHCollection';
-import LyricsQueueModal from '../features/slideshow/components/LyricsQueueModal';
-import SheetSlideshowModal from '../features/slideshow/components/SheetSlideshowModal';
 import SlideshowBuilder from '../features/slideshow/components/SlideshowBuilder';
 import SongRecommendations from '../features/recommendations/SongRecommendationsPanel';
 import { normalizeLyricText } from '../services/songLibrary';
@@ -22,6 +20,7 @@ import {
 } from '../store/slideshowStore';
 import { consumePendingShareLocation, getAppHomePath } from '../utils/shareLinks';
 import { parseSongCodes } from '../utils/slideshow';
+import { parseSheetImageSources } from '../features/song-viewer/lib/sheetImages';
 import { applyChordPreference, normalizePreferences, useChordPreferences } from '../store/chordPreferences';
 import { inferKey } from '../utils/chords';
 import { normalizeSearch } from '../utils/songSearch';
@@ -80,13 +79,12 @@ function HomePage({ songLibraryState }) {
   const [themeFilter, setThemeFilter] = useState('');
   const [readerSongId, setReaderSongId] = useState('');
   const [readerInitialView, setReaderInitialView] = useState();
+  const [readerScopeSongs, setReaderScopeSongs] = useState(null);
   const [pendingAddSongId, setPendingAddSongId] = useState('');
   const [slideshowState, setSlideshowState] = useState(loadInitialSlideshowState);
-  const [isLyricsQueueOpen, setIsLyricsQueueOpen] = useState(false);
-  const [isSlideshowOpen, setIsSlideshowOpen] = useState(false);
   const [isProjectionOpen, setIsProjectionOpen] = useState(false);
-  const [slideshowStartId, setSlideshowStartId] = useState('');
   const [playbackSongs, setPlaybackSongs] = useState([]);
+  const [isNarrowViewport, setIsNarrowViewport] = useState(() => window.innerWidth <= 560);
   const hasHandledShareImportRef = useRef(false);
   const hasHandledSongLinkRef = useRef(false);
 
@@ -101,6 +99,18 @@ function HomePage({ songLibraryState }) {
       }, {}),
     [allSongs]
   );
+
+  useEffect(() => {
+    const media = window.matchMedia?.('(max-width: 560px)');
+    const update = () => setIsNarrowViewport(media ? media.matches : window.innerWidth <= 560);
+    update();
+    media?.addEventListener?.('change', update);
+    window.addEventListener('resize', update);
+    return () => {
+      media?.removeEventListener?.('change', update);
+      window.removeEventListener('resize', update);
+    };
+  }, []);
 
   useEffect(() => {
     if (songLibraryState.isLoading || hasHandledSongLinkRef.current) return;
@@ -189,10 +199,9 @@ function HomePage({ songLibraryState }) {
       setActiveCollectionId(matchingCollection.id);
     }
 
-    setPlaybackSongs(sharedSongs);
-    setSlideshowStartId(sharedSongs[0].id);
-    setIsLyricsQueueOpen(false);
-    setIsSlideshowOpen(true);
+    setReaderScopeSongs(sharedSongs);
+    setReaderSongId(sharedSongs[0].id.toUpperCase());
+    setReaderInitialView('sheet');
 
     if (missingIds.length > 0) {
       toast.warning(
@@ -418,7 +427,7 @@ function HomePage({ songLibraryState }) {
     return { added: true, undo: undoAddition(targetListName, normalizedId) };
   };
 
-  const openSlideshowForList = (listName, startId = '') => {
+  const openSlideshowForList = (listName) => {
     const songs = getSongsForListName(listName);
 
     if (songs.length === 0) {
@@ -429,25 +438,27 @@ function HomePage({ songLibraryState }) {
       ...currentState,
       activeListName: listName,
     }));
-    setPlaybackSongs(songs);
-    setSlideshowStartId(startId || songs[0].id);
-    setIsSlideshowOpen(true);
+    setReaderScopeSongs(songs);
+    setReaderSongId(songs[0].id.toUpperCase());
+    setReaderInitialView('sheet');
   };
 
-  const openLyricsQueueForList = (listName) => {
-    const songs = getSongsForListName(listName);
-
-    if (songs.length === 0) {
-      return;
-    }
-
-    setSlideshowState((currentState) => ({
-      ...currentState,
-      activeListName: listName,
-    }));
-    setPlaybackSongs(songs);
-    setIsLyricsQueueOpen(true);
-  };
+  const readerSongs = readerScopeSongs || allSongs;
+  const readerSongIndex = readerSongs.findIndex((song) => song.id.toUpperCase() === readerSongId);
+  const readerSong = readerSongs[readerSongIndex];
+  const readerSheetPageCount = parseSheetImageSources(readerSong?.image).length;
+  const nextReaderSong = readerSongs[readerSongIndex + 1];
+  const previousReaderSong = readerSongs[readerSongIndex - 1];
+  const pairedSheetSong = readerScopeSongs && readerInitialView === 'sheet' && !isNarrowViewport
+    && readerSheetPageCount === 1 && parseSheetImageSources(nextReaderSong?.image).length === 1
+    ? nextReaderSong
+    : null;
+  const previousReaderIndex = readerScopeSongs && readerInitialView === 'sheet' && !isNarrowViewport
+    && parseSheetImageSources(previousReaderSong?.image).length === 1
+    && parseSheetImageSources(readerSongs[readerSongIndex - 2]?.image).length === 1
+    ? readerSongIndex - 2
+    : readerSongIndex - 1;
+  const nextReaderIndex = readerSongIndex + (pairedSheetSong ? 2 : 1);
 
   return (
     <>
@@ -500,7 +511,6 @@ function HomePage({ songLibraryState }) {
         onUpdateList={updateList}
         onDeleteList={deleteListByName}
         onOpenSlideshow={openSlideshowForList}
-        onOpenLyricsQueue={openLyricsQueueForList}
       />
 
       <SongRecommendations
@@ -557,7 +567,7 @@ function HomePage({ songLibraryState }) {
 
       <ActiveCollection
         onRequestAddToSet={(id) => setPendingAddSongId(id.toUpperCase())}
-        onOpenReader={(id, view) => { setReaderSongId(id.toUpperCase()); setReaderInitialView(view); }}
+        onOpenReader={(id, view) => { setReaderScopeSongs(null); setReaderSongId(id.toUpperCase()); setReaderInitialView(view); }}
         key={`${activeCollectionKey}:${themeFilter}`}
         hideSearch
         searchText={searchText}
@@ -570,20 +580,16 @@ function HomePage({ songLibraryState }) {
 
 
       <Popup2
-        {...songsById[readerSongId]}
+        {...readerSong}
         songId={readerSongId}
-        librarySongs={allSongs}
-        trigger={Boolean(songsById[readerSongId])}
-        setTrigger={(open) => { if (!open) setReaderSongId(''); }}
+        trigger={Boolean(readerSong)}
+        setTrigger={(open) => { if (!open) { setReaderSongId(''); setReaderScopeSongs(null); } }}
         initialView={readerInitialView}
         onNotify={toast}
-        onNavigate={(id) => setReaderSongId(id.toUpperCase())}
-        onPrevious={allSongs.findIndex((song) => song.id.toUpperCase() === readerSongId) > 0 ? () => {
-          const index = allSongs.findIndex((song) => song.id.toUpperCase() === readerSongId); setReaderSongId(allSongs[index - 1].id.toUpperCase());
-        } : undefined}
-        onNext={allSongs.findIndex((song) => song.id.toUpperCase() === readerSongId) >= 0 && allSongs.findIndex((song) => song.id.toUpperCase() === readerSongId) < allSongs.length - 1 ? () => {
-          const index = allSongs.findIndex((song) => song.id.toUpperCase() === readerSongId); setReaderSongId(allSongs[index + 1].id.toUpperCase());
-        } : undefined}
+        pairedSheetSong={pairedSheetSong}
+        isSetView={Boolean(readerScopeSongs)}
+        onPrevious={readerSongIndex > 0 ? () => setReaderSongId(readerSongs[previousReaderIndex].id.toUpperCase()) : undefined}
+        onNext={nextReaderIndex < readerSongs.length ? () => setReaderSongId(readerSongs[nextReaderIndex].id.toUpperCase()) : undefined}
         onAdd={() => setPendingAddSongId(readerSongId)}
       />
       <SetPickerModal song={songsById[pendingAddSongId]} lists={listSummaries} activeListName={slideshowState.activeListName}
@@ -599,17 +605,6 @@ function HomePage({ songLibraryState }) {
           return { added: true, undo: undoAddition(name, pendingAddSongId) };
         }} />
 
-      <SheetSlideshowModal
-        songs={playbackSongs}
-        trigger={isSlideshowOpen}
-        setTrigger={setIsSlideshowOpen}
-        initialSongId={slideshowStartId}
-      />
-      <LyricsQueueModal
-        songs={playbackSongs}
-        trigger={isLyricsQueueOpen}
-        setTrigger={setIsLyricsQueueOpen}
-      />
       <LyricsProjectionModal songs={playbackSongs} trigger={isProjectionOpen} setTrigger={setIsProjectionOpen} />
     </>
   );
