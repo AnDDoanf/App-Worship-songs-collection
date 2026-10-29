@@ -25,7 +25,7 @@ test('supports slide shortcuts, blanking, operator notes and song navigation', (
   fireEvent.keyDown(window, { key: 'ArrowRight' });
   expect(screen.getByText('Câu năm')).toBeInTheDocument();
   fireEvent.keyDown(window, { key: 'b' });
-  expect(screen.getByLabelText('Màn hình đen')).toBeEmptyDOMElement();
+  expect(screen.getByLabelText('Màn hình trống')).toBeEmptyDOMElement();
   fireEvent.keyDown(window, { key: 'b' });
   fireEvent.click(screen.getByRole('button', { name: 'Góc nhìn điều khiển' }));
   expect(screen.getByText('Ban hát hát câu 1')).toBeInTheDocument();

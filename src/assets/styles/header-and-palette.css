@@ -30,7 +30,7 @@
   justify-content: center;
   padding: 10px;
   border: 1px solid var(--border-color);
-  border-radius: 24px;
+  border-radius: 12px;
   background: var(--panel-bg);
   box-shadow: var(--shadow-soft);
 }
@@ -71,7 +71,7 @@
   gap: 8px;
   padding: 0 14px;
   border: 1px solid var(--border-color);
-  border-radius: 18px;
+  border-radius: 8px;
   background: var(--panel-strong);
   color: var(--text-primary);
   box-shadow: var(--shadow-soft);
@@ -108,7 +108,7 @@
   justify-content: center;
   padding: 0;
   border: 1px solid var(--border-color);
-  border-radius: 18px;
+  border-radius: 8px;
   background: var(--panel-strong);
   color: var(--accent);
   box-shadow: var(--shadow-soft);
@@ -181,7 +181,7 @@
   align-items: center;
   justify-content: center;
   border: 1px solid var(--border-color);
-  border-radius: 18px;
+  border-radius: 8px;
   background: var(--panel-strong);
   color: var(--accent);
   box-shadow: var(--shadow-soft);
@@ -256,7 +256,7 @@
   width: min(360px, calc(100vw - 28px));
   padding: 10px;
   border: 1px solid var(--border-color);
-  border-radius: 20px;
+  border-radius: 10px;
   background: var(--panel-strong);
   box-shadow: var(--shadow-soft);
   backdrop-filter: blur(14px);
@@ -277,7 +277,7 @@
   gap: 10px;
   padding: 10px 12px;
   border: none;
-  border-radius: 16px;
+  border-radius: 8px;
   background: transparent;
   color: var(--text-primary);
   text-align: left;
@@ -329,7 +329,7 @@
   width: 42px;
   height: 30px;
   padding: 4px;
-  border-radius: 10px;
+  border-radius: 6px;
   display: inline-flex;
   align-items: stretch;
   justify-content: stretch;
@@ -339,7 +339,7 @@
 
 .palette-picker-option-swatch-panel {
   width: 100%;
-  border-radius: 7px;
+  border-radius: 5px;
   padding: 4px;
   display: grid;
   gap: 4px;

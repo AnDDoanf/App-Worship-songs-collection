@@ -1,5 +1,5 @@
 import { useRef, useState } from 'react';
-import { FiChevronDown, FiDownload, FiFileText, FiList, FiMonitor, FiPlus, FiShare2, FiUpload } from 'react-icons/fi';
+import { FiChevronDown, FiDownload, FiFileText, FiMonitor, FiPlus, FiShare2, FiUpload } from 'react-icons/fi';
 import { toast } from 'sonner';
 import { copyTextToClipboard } from '../../../utils/clipboard';
 import { buildShareUrl } from '../../../utils/shareLinks';
@@ -17,7 +17,6 @@ function SlideshowBuilder({
   onUpdateList,
   onDeleteList,
   onOpenSlideshow,
-  onOpenLyricsQueue,
   songLibrary = [],
   onDuplicateList,
   onExportLists,
@@ -74,15 +73,6 @@ function SlideshowBuilder({
     }
 
     onOpenSlideshow(list.name);
-  };
-
-  const handleOpenLyrics = (list) => {
-    if (list.songs.length === 0) {
-      toast.warning(`Danh s\u00e1ch "${list.name}" ch\u01b0a c\u00f3 b\u00e0i \u0111\u1ec3 m\u1edf l\u1eddi`);
-      return;
-    }
-
-    onOpenLyricsQueue(list.name);
   };
 
   const handleShare = async (list) => {
@@ -164,11 +154,6 @@ function SlideshowBuilder({
                   onClick={() => handleOpenSheet(list)}
                   label="Mở bản nhạc"
                   icon={<FiFileText />}
-                />
-                <QuickActionButton
-                  onClick={() => handleOpenLyrics(list)}
-                  label="Lời và hợp âm"
-                  icon={<FiList />}
                 />
                 <QuickActionButton
                   onClick={() => handleShare(list)}

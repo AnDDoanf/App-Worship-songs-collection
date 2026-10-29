@@ -13,7 +13,6 @@ jest.mock('../features/collections/views/HosannaCollection', () => ({ onAddToSli
 jest.mock('../features/collections/views/TVCHHCollection', () => () => null);
 jest.mock('../features/collections/views/TCXCollection', () => () => null);
 jest.mock('../features/collections/views/BaihattudoCollection', () => () => null);
-jest.mock('../features/slideshow/components/SheetSlideshowModal', () => () => null);
 jest.mock('../features/slideshow/components/LyricsQueueModal', () => ({ songs, trigger }) =>
   trigger ? <p>{songs[0]?.lyric}</p> : null);
 jest.mock('../features/slideshow/components/SlideshowBuilder', () => ({ lists, onOpenLyricsQueue, onUpdateList }) => <>

@@ -24,7 +24,7 @@
   margin: 0;
   appearance: auto;
   border: 1px solid transparent;
-  border-radius: 20px;
+  border-radius: 10px;
   background: var(--accent-contrast);
   color: var(--text-primary);
   font-weight: 700;
@@ -54,7 +54,7 @@
   margin-bottom: 24px;
   padding: 18px;
   border: 1px solid var(--border-color);
-  border-radius: 22px;
+  border-radius: 10px;
   background: var(--panel-bg);
   box-shadow: var(--shadow-soft);
 }
@@ -63,7 +63,7 @@
   margin-bottom: 24px;
   padding: 18px;
   border: 1px solid var(--border-color);
-  border-radius: 22px;
+  border-radius: 10px;
   background: var(--panel-bg);
   color: var(--text-primary);
   box-shadow: var(--shadow-soft);
@@ -117,7 +117,7 @@
 .recommendations-search-results button { width: 100%; text-align: left; }
 .recommendations-context, .recommendations-empty p { color: var(--text-muted); margin-block: 12px; }
 .recommendations-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); list-style: none; padding: 0; margin: 16px 0 0; gap: 12px; }
-.recommendation-card { display: flex; flex-direction: column; min-width: 0; padding: 16px; border: 1px solid var(--border-color); border-radius: 18px; background: var(--panel-strong); }
+.recommendation-card { display: flex; flex-direction: column; min-width: 0; padding: 16px; border: 1px solid var(--border-color); border-radius: 8px; background: var(--panel-strong); }
 .recommendation-card h3 { font-size: 1rem; margin: 0; overflow-wrap: anywhere; }
 .recommendation-reasons, .recommendation-match { color: var(--text-muted); font-size: .9rem; margin: 8px 0; }
 .recommendation-actions { display: flex; flex-wrap: wrap; gap: 8px; margin-top: auto; padding-top: 12px; }
@@ -136,7 +136,7 @@
   margin-bottom: 18px;
   padding: 12px 14px;
   border: 1px solid var(--border-color);
-  border-radius: 18px;
+  border-radius: 8px;
   background: var(--panel-bg);
   color: var(--text-primary);
   box-shadow: var(--shadow-soft);
@@ -266,7 +266,7 @@
   gap: 16px;
   padding: 16px;
   border: 1px solid var(--border-color);
-  border-radius: 20px;
+  border-radius: 10px;
   background: var(--panel-bg);
 }
 
@@ -325,7 +325,7 @@
 .popup-list-editor-textarea {
   width: 100%;
   border: 1px solid var(--border-color);
-  border-radius: 16px;
+  border-radius: 8px;
   background: var(--panel-strong);
   color: var(--text-primary);
   padding: 12px 14px;
@@ -344,7 +344,7 @@
   margin: 0 auto;
   padding: 56px 28px 28px;
   border: 1px solid var(--border-color);
-  border-radius: 28px;
+  border-radius: 12px;
   background: var(--panel-strong);
   color: var(--text-primary);
   box-sizing: border-box;
@@ -411,7 +411,7 @@
 
 .menu-item {
   border: 1px solid var(--border-color);
-  border-radius: 18px;
+  border-radius: 8px;
   background: var(--panel-bg);
   color: var(--text-primary);
   padding: 16px 18px;
@@ -478,7 +478,7 @@
 .dropdown {
   width: 100%;
   border: 1px solid var(--border-color);
-  border-radius: 16px;
+  border-radius: 8px;
   background: var(--panel-strong);
   color: var(--text-primary);
   padding: 12px 14px;
@@ -520,7 +520,7 @@ select.dropdown,
   display: block;
   flex-shrink: 0;
   max-width: 100%;
-  border-radius: 8px;
+  border-radius: 6px;
   height: 16px;
   background: linear-gradient(90deg, var(--panel-muted) 25%, var(--panel-hover) 50%, var(--panel-muted) 75%);
   background-size: 200% 100%;
@@ -543,7 +543,7 @@ select.dropdown,
 .song-skeleton-button {
   width: 62px;
   height: 40px;
-  border-radius: 14px;
+  border-radius: 6px;
 }
 
 @keyframes song-skeleton-shimmer {
@@ -560,7 +560,7 @@ select.dropdown,
 .song {
   background: var(--panel-bg);
   border: 1px solid var(--border-color);
-  border-radius: 22px;
+  border-radius: 10px;
   padding: 18px;
   box-sizing: border-box;
   backdrop-filter: blur(10px);
@@ -634,7 +634,7 @@ select.dropdown,
   gap: 10px;
   margin-bottom: 18px;
   border: 1px solid var(--border-color);
-  border-radius: 18px;
+  border-radius: 8px;
   background: var(--panel-strong);
   padding: 12px 14px;
   box-sizing: border-box;
@@ -729,7 +729,7 @@ select.dropdown,
 
 .button-mode {
   border: 1px solid var(--border-color);
-  border-radius: 14px;
+  border-radius: 6px;
   background: var(--panel-strong);
   color: var(--text-primary);
   padding: 10px 14px;
@@ -780,7 +780,7 @@ select.dropdown,
   width: min(92vw, 960px);
   padding: 56px 20px 20px;
   border: 1px solid var(--border-color);
-  border-radius: 28px;
+  border-radius: 12px;
   background: var(--panel-strong);
   box-shadow: var(--shadow-soft);
   box-sizing: border-box;
@@ -790,7 +790,7 @@ select.dropdown,
   position: relative;
   width: 100%;
   padding-top: 56.25%;
-  border-radius: 20px;
+  border-radius: 10px;
   overflow: hidden;
   background: #000;
 }

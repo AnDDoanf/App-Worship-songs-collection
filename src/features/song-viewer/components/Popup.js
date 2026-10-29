@@ -1,6 +1,6 @@
 import { useEffect, useRef, useState } from 'react';
 import { createPortal } from 'react-dom';
-import { FiChevronLeft, FiChevronRight, FiXCircle } from 'react-icons/fi';
+import { FiChevronLeft, FiChevronRight } from 'react-icons/fi';
 import { parseSheetImageSources } from '../lib/sheetImages';
 import ThemeSheet from './ThemeSheet';
 import { lockBodyScroll } from '../../../utils/bodyScrollLock';
@@ -86,14 +86,6 @@ function Popup({ image, trigger, setTrigger }) {
         className={`popup-sheet ${images.length === 2 ? 'popup-sheet-dual' : 'popup-sheet-carousel'}`}
         onClick={(event) => event.stopPropagation()}
       >
-        <button
-          type="button"
-          className="popup-close-button"
-          onClick={() => setTrigger(false)}
-          aria-label="Close sheet view"
-        >
-          <FiXCircle />
-        </button>
         {images.length === 0 ? (
           <div className="popup-lyric popup-empty-state">No Sheet available</div>
         ) : (
