@@ -233,12 +233,6 @@
     margin-top: 6px;
   }
 
-  .theme-toggle-option {
-    min-width: 52px;
-    padding: 10px 0;
-    gap: 0;
-  }
-
   .header-guide-button {
     width: 46px;
     height: 46px;
@@ -247,7 +241,8 @@
     border-radius: 16px;
   }
 
-  .palette-picker-trigger {
+  .palette-picker-trigger,
+  .theme-toggle {
     width: 46px;
     height: 46px;
     border-radius: 16px;
@@ -308,14 +303,6 @@
 
   .usage-guide-pagination {
     grid-template-columns: 72px 1fr 72px;
-  }
-
-  .theme-toggle-option svg {
-    font-size: 1.05rem;
-  }
-
-  .theme-toggle-text {
-    display: none;
   }
 
   .search-input,

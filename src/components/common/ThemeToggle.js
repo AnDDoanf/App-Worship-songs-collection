@@ -4,28 +4,14 @@ function ThemeToggle({ mode, onToggle }) {
   return (
     <button
       type="button"
-      className="theme-toggle"
+      className={`theme-toggle ${mode ? 'is-dark' : ''}`}
       onClick={onToggle}
       aria-label={mode ? 'Chuyển sang giao diện sáng' : 'Chuyển sang giao diện tối'}
       aria-pressed={mode}
+      title={mode ? 'Chuyển sang giao diện sáng' : 'Chuyển sang giao diện tối'}
     >
-      <span
-        className={`theme-toggle-option ${!mode ? 'active' : ''}`}
-        title="Sáng"
-        aria-label="Chế độ sáng"
-      >
-        <FiSun />
-        <span className="theme-toggle-text">Sáng</span>
-      </span>
-      <span
-        className={`theme-toggle-option ${mode ? 'active' : ''}`}
-        title="Tối"
-        aria-label="Chế độ tối"
-      >
-        <FiMoon />
-        <span className="theme-toggle-text">Tối</span>
-      </span>
-      <span className={`theme-toggle-thumb ${mode ? 'is-dark' : ''}`} />
+      <FiSun className="theme-toggle-sun" aria-hidden="true" />
+      <FiMoon className="theme-toggle-moon" aria-hidden="true" />
     </button>
   );
 }

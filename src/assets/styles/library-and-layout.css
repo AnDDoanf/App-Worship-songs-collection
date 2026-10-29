@@ -414,6 +414,66 @@ select.dropdown,
   gap: 16px;
 }
 
+.song-list-progress {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  padding: 20px 0;
+  color: var(--text-muted);
+  text-align: center;
+}
+
+.song-list-progress p {
+  margin: 0;
+}
+
+.song-loading-status {
+  color: var(--text-muted);
+  margin: 0 0 14px;
+}
+
+.song-skeleton-bar {
+  display: block;
+  flex-shrink: 0;
+  max-width: 100%;
+  border-radius: 8px;
+  height: 16px;
+  background: linear-gradient(90deg, var(--panel-muted) 25%, var(--panel-hover) 50%, var(--panel-muted) 75%);
+  background-size: 200% 100%;
+  animation: song-skeleton-shimmer 1.6s ease-in-out infinite;
+}
+
+.song-skeleton-title {
+  width: 55%;
+  height: 22px;
+}
+
+.song-skeleton-category {
+  width: 110px;
+}
+
+.song-skeleton-detail {
+  width: 65px;
+}
+
+.song-skeleton-button {
+  width: 62px;
+  height: 40px;
+  border-radius: 14px;
+}
+
+@keyframes song-skeleton-shimmer {
+  from { background-position: 200% 0; }
+  to { background-position: -200% 0; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .song-skeleton-bar {
+    animation: none;
+  }
+}
+
 .song {
   background: var(--panel-bg);
   border: 1px solid var(--border-color);

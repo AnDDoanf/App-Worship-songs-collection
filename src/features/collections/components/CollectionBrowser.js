@@ -1,14 +1,13 @@
-import { useEffect, useLayoutEffect, useMemo, useRef, useState } from 'react';
-import { FiChevronLeft, FiChevronRight } from 'react-icons/fi';
+import { useEffect, useMemo, useRef, useState } from 'react';
 import { toast } from 'sonner';
 import Filter1 from './Filter1';
 import Filter2 from './Filter2';
 import Filter3 from './Filter3';
 import Search from './Search';
 import SongList from './SongList';
+import SongListSkeleton from './SongListSkeleton';
 
-const DEFAULT_SONGS_PER_PAGE = 12;
-const PAGE_SIZE_OPTIONS = [8, 12, 16, 24];
+const SONG_BATCH_SIZE = 12;
 
 function matchesQuery(song, query) {
   if (!query) {
@@ -22,12 +21,10 @@ function matchesQuery(song, query) {
   );
 }
 
-function CollectionBrowser({ songs, onAddToSlideshow }) {
+function CollectionBrowser({ songs, isLoading = false, onAddToSlideshow }) {
   const [searchText, setSearchText] = useState('');
-  const [currentPage, setCurrentPage] = useState(1);
-  const [songsPerPage, setSongsPerPage] = useState(DEFAULT_SONGS_PER_PAGE);
-  const listTopRef = useRef(null);
-  const shouldScrollToListRef = useRef(false);
+  const [visibleCount, setVisibleCount] = useState(SONG_BATCH_SIZE);
+  const loadMoreRef = useRef(null);
   const [filters, setFilters] = useState({
     category: '',
     tone: '',
@@ -49,66 +46,33 @@ function CollectionBrowser({ songs, onAddToSlideshow }) {
     [filters.category, filters.timeSignature, filters.tone, searchText, songs]
   );
 
-  const totalPages = Math.max(1, Math.ceil(filteredSongs.length / songsPerPage));
+  useEffect(() => {
+    setVisibleCount(SONG_BATCH_SIZE);
+  }, [searchText, filters.category, filters.timeSignature, filters.tone, songs]);
+
+  const visibleSongs = filteredSongs.slice(0, visibleCount);
+  const hasMore = visibleCount < filteredSongs.length;
 
   useEffect(() => {
-    setCurrentPage(1);
-  }, [searchText, filters.category, filters.timeSignature, filters.tone]);
-
-  useEffect(() => {
-    setCurrentPage((page) => Math.min(page, totalPages));
-  }, [totalPages]);
-
-  const startIndex = (currentPage - 1) * songsPerPage;
-  const pagedSongs = filteredSongs.slice(startIndex, startIndex + songsPerPage);
-
-  const handlePageSizeChange = (nextPageSize) => {
-    const currentStartIndex = (currentPage - 1) * songsPerPage;
-    const nextPage = Math.floor(currentStartIndex / nextPageSize) + 1;
-
-    setSongsPerPage(nextPageSize);
-    setCurrentPage(nextPage);
-  };
-
-  const changePage = (nextPage) => {
-    shouldScrollToListRef.current = true;
-    setCurrentPage(nextPage);
-  };
-
-  useLayoutEffect(() => {
-    if (shouldScrollToListRef.current) {
-      listTopRef.current?.scrollIntoView({ block: 'start', behavior: 'instant' });
-      shouldScrollToListRef.current = false;
+    if (isLoading || !hasMore || !loadMoreRef.current || !window.IntersectionObserver) {
+      return;
     }
-  }, [currentPage]);
 
-  const renderPagination = () => (
-    <div className="song-pagination">
-      <div className="song-pagination-controls">
-        <button
-          type="button"
-          className="button-mode pagination-button"
-          onClick={() => changePage(Math.max(currentPage - 1, 1))}
-          disabled={currentPage === 1}
-          aria-label="Previous page"
-        >
-          <FiChevronLeft />
-        </button>
-        <span className="song-pagination-current">
-          {currentPage} / {totalPages}
-        </span>
-        <button
-          type="button"
-          className="button-mode pagination-button"
-          onClick={() => changePage(Math.min(currentPage + 1, totalPages))}
-          disabled={currentPage === totalPages}
-          aria-label="Next page"
-        >
-          <FiChevronRight />
-        </button>
-      </div>
-    </div>
-  );
+    let active = true;
+    const observer = new window.IntersectionObserver((entries) => {
+      if (active && entries.some((entry) => entry.isIntersecting)) {
+        active = false;
+        observer.disconnect();
+        setVisibleCount((count) => Math.min(count + SONG_BATCH_SIZE, filteredSongs.length));
+      }
+    }, { rootMargin: '300px 0px' });
+
+    observer.observe(loadMoreRef.current);
+    return () => {
+      active = false;
+      observer.disconnect();
+    };
+  }, [filteredSongs, hasMore, isLoading, visibleCount]);
 
   return (
     <>
@@ -139,31 +103,35 @@ function CollectionBrowser({ songs, onAddToSlideshow }) {
           }
         />
       </div>
-      <div ref={listTopRef}>{renderPagination()}</div>
-      <SongList
-        songs={pagedSongs}
-        onAddToSlideshow={onAddToSlideshow}
-        onShowToast={toast}
-      />
-      <div className="song-pagination-bottom">
-        <label className="song-page-size" htmlFor="song-page-size-select">
-          <span>Hiển thị</span>
-          <select
-            id="song-page-size-select"
-            className="dropdown song-page-size-select"
-            value={songsPerPage}
-            onChange={(event) => handlePageSizeChange(Number(event.target.value))}
-          >
-            {PAGE_SIZE_OPTIONS.map((pageSize) => (
-              <option key={pageSize} value={pageSize}>
-                {pageSize}
-              </option>
-            ))}
-          </select>
-          <span>bài/trang</span>
-        </label>
-        {renderPagination()}
-      </div>
+      <section aria-label="Danh sách bài hát" aria-busy={isLoading}>
+        {isLoading ? <SongListSkeleton /> : (
+          <>
+            <SongList
+              songs={visibleSongs}
+              onAddToSlideshow={onAddToSlideshow}
+              onShowToast={toast}
+            />
+            <div className="song-list-progress">
+              <p role="status">
+                {filteredSongs.length === 0
+                  ? 'Không tìm thấy bài hát phù hợp.'
+                  : `Đang hiển thị ${visibleSongs.length} / ${filteredSongs.length} bài hát${hasMore ? '' : ' · Đã hiển thị tất cả'}`}
+              </p>
+              {hasMore ? (
+                <div ref={loadMoreRef}>
+                  <button
+                    type="button"
+                    className="button-mode"
+                    onClick={() => setVisibleCount((count) => Math.min(count + SONG_BATCH_SIZE, filteredSongs.length))}
+                  >
+                    Xem thêm bài hát
+                  </button>
+                </div>
+              ) : null}
+            </div>
+          </>
+        )}
+      </section>
     </>
   );
 }

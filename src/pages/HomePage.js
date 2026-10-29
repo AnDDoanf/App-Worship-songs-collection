@@ -204,8 +204,9 @@ function HomePage({ songLibraryState }) {
   const activeCollection = collections.find((collection) => collection.id === activeCollectionId);
   const ActiveCollection = activeCollection?.component || HosannaCollection;
   const activeCollectionKey = activeCollection?.key || 'hosanna';
-  const activeCollectionSongs = allSongs.filter(
-    (song) => song.sourceCollectionKey === activeCollectionKey
+  const activeCollectionSongs = useMemo(
+    () => allSongs.filter((song) => song.sourceCollectionKey === activeCollectionKey),
+    [allSongs, activeCollectionKey]
   );
 
   const updateListByName = (listName, updater) => {
@@ -439,7 +440,12 @@ function HomePage({ songLibraryState }) {
         ))}
       </div>
 
-      <ActiveCollection songs={activeCollectionSongs} onAddToSlideshow={addSongToSlideshow} />
+      <ActiveCollection
+        key={activeCollectionKey}
+        songs={activeCollectionSongs}
+        isLoading={songLibraryState.isLoading}
+        onAddToSlideshow={addSongToSlideshow}
+      />
 
       <SheetSlideshowModal
         songs={playbackSongs}

@@ -100,56 +100,74 @@
 
 .theme-toggle {
   position: relative;
-  display: inline-grid;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
-  align-items: center;
-  gap: 6px;
-  padding: 6px;
-  border: 1px solid var(--border-color);
-  border-radius: 999px;
-  background: var(--panel-strong);
-  box-shadow: var(--shadow-soft);
-  cursor: pointer;
-  overflow: hidden;
-}
-
-.theme-toggle-option {
-  position: relative;
-  z-index: 1;
+  width: 52px;
+  height: 52px;
+  flex-shrink: 0;
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  gap: 8px;
-  min-width: 88px;
-  padding: 10px 14px;
-  color: var(--text-muted);
-  font-size: 0.92rem;
-  font-weight: 700;
-  transition: color 0.25s ease;
+  padding: 0;
+  border: 1px solid var(--border-color);
+  border-radius: 18px;
+  background: var(--panel-strong);
+  color: var(--accent);
+  box-shadow: var(--shadow-soft);
+  cursor: pointer;
+  overflow: hidden;
+  transition:
+    transform 0.22s ease,
+    background-color 0.22s ease,
+    color 0.22s ease;
 }
 
-.theme-toggle-text {
-  display: inline;
+.theme-toggle:hover {
+  transform: translateY(-2px) scale(1.03);
+  background: var(--panel-hover);
 }
 
-.theme-toggle-option.active {
-  color: var(--accent-contrast);
+.theme-toggle:active {
+  transform: scale(0.97);
 }
 
-.theme-toggle-thumb {
+.theme-toggle:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 3px;
+}
+
+.theme-toggle svg {
   position: absolute;
-  top: 6px;
-  left: 6px;
-  width: calc(50% - 6px);
-  height: calc(100% - 12px);
-  border-radius: 999px;
-  background: var(--control-active-bg);
-  box-shadow: 0 10px 20px rgba(72, 42, 18, 0.22);
-  transition: transform 0.25s ease;
+  font-size: 1.15rem;
+  pointer-events: none;
+  transition:
+    opacity 0.3s ease,
+    transform 0.35s cubic-bezier(0.2, 0.8, 0.2, 1);
 }
 
-.theme-toggle-thumb.is-dark {
-  transform: translateX(100%);
+.theme-toggle-sun {
+  opacity: 1;
+  transform: rotate(0) scale(1);
+}
+
+.theme-toggle-moon {
+  opacity: 0;
+  transform: rotate(-90deg) scale(0.5);
+}
+
+.theme-toggle.is-dark .theme-toggle-sun {
+  opacity: 0;
+  transform: rotate(90deg) scale(0.5);
+}
+
+.theme-toggle.is-dark .theme-toggle-moon {
+  opacity: 1;
+  transform: rotate(0) scale(1);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .theme-toggle,
+  .theme-toggle svg {
+    transition: none;
+  }
 }
 
 .palette-picker {
