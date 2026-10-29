@@ -124,21 +124,6 @@
     align-items: stretch;
   }
 
-  .sheet-desktop-grid {
-    display: none;
-  }
-
-  .sheet-carousel-mobile-only {
-    display: block;
-  }
-
-  .popup-sheet-dual .sheet-controls,
-  .popup-sheet-dual .sheet-hint,
-  .popup-sheet-carousel .sheet-controls,
-  .popup-sheet-carousel .sheet-hint {
-    display: flex;
-  }
-
   .popup-lyrics-queue-grid {
     grid-template-columns: 1fr;
   }
@@ -157,6 +142,21 @@
 }
 
 @media only screen and (max-width: 560px) {
+  .sheet-desktop-grid {
+    display: none;
+  }
+
+  .sheet-carousel-mobile-only {
+    display: block;
+  }
+
+  .popup-sheet-dual .sheet-controls,
+  .popup-sheet-dual .sheet-hint,
+  .popup-sheet-carousel .sheet-controls,
+  .popup-sheet-carousel .sheet-hint {
+    display: flex;
+  }
+
   .popup-lyric-actions .button-mode {
     min-width: 44px;
     width: 44px;

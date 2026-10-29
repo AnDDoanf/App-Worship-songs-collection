@@ -5,7 +5,7 @@ import { parseSheetImageSources } from '../../song-viewer/lib/sheetImages';
 import { lockBodyScroll } from '../../../utils/bodyScrollLock';
 
 const SWIPE_THRESHOLD = 50;
-const MOBILE_BREAKPOINT = 850;
+const MOBILE_BREAKPOINT = 560;
 
 function getSongPages(song) {
   return parseSheetImageSources(song?.image);
