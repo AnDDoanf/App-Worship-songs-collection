@@ -41,6 +41,19 @@ npm start
 npm run build
 ```
 
+## Tự động deploy
+
+Workflow `.github/workflows/deploy.yml` tự động chạy khi push lên `master`: cài dependencies bằng
+`npm ci`, chạy tests, build production và deploy thư mục `build` lên GitHub Pages.
+Có thể chạy thủ công tại **Actions → Deploy to GitHub Pages → Run workflow**.
+
+Thiết lập một lần trên GitHub trước khi push workflow:
+
+1. Trong **Settings → Pages → Build and deployment**, chọn **Source: GitHub Actions**.
+2. Trong **Settings → Environments → github-pages → Deployment branches and tags**, cho phép nhánh `master` deploy.
+
+Workflow sử dụng token mặc định của GitHub Actions, không cần thêm secret.
+
 ## Excel workflow
 
 Xuất workbook từ 4 nguồn dữ liệu hiện tại:
