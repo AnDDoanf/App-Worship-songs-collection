@@ -132,8 +132,10 @@ function App() {
   return (
     <>
       <Toaster
+        richColors
         position="bottom-center"
         theme={mode ? 'dark' : 'light'}
+        mobileOffset={{ bottom: 'max(16px, env(safe-area-inset-bottom))', left: '16px', right: '16px' }}
         toastOptions={{
           duration: 2200,
         }}

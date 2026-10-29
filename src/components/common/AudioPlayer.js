@@ -1,6 +1,5 @@
 import React, { useEffect, useState } from 'react';
 import { createPortal } from 'react-dom';
-import { FiExternalLink, FiXCircle } from 'react-icons/fi';
 
 function normalizeAudioValue(audio) {
   return typeof audio === 'string' ? audio.trim() : '';
@@ -48,7 +47,7 @@ function getYouTubeVideoId(audio) {
   }
 }
 
-function YouTubePopup({ embedUrl, sourceUrl, onClose }) {
+function YouTubePopup({ embedUrl, onClose }) {
   useEffect(() => {
     const previousOverflow = document.body.style.overflow;
     document.body.style.overflow = 'hidden';
@@ -70,14 +69,6 @@ function YouTubePopup({ embedUrl, sourceUrl, onClose }) {
   return createPortal(
     <div className="popup" onClick={onClose}>
       <div className="popup-youtube" onClick={(event) => event.stopPropagation()}>
-        <button
-          type="button"
-          className="popup-close-button popup-close-button-themed"
-          onClick={onClose}
-          aria-label="Close YouTube player"
-        >
-          <FiXCircle />
-        </button>
         <div className="popup-youtube-frame">
           <iframe
             src={embedUrl}
@@ -86,15 +77,6 @@ function YouTubePopup({ embedUrl, sourceUrl, onClose }) {
             allowFullScreen
           />
         </div>
-        <a
-          className="button-mode popup-youtube-link"
-          href={sourceUrl}
-          target="_blank"
-          rel="noreferrer"
-        >
-          <span>Open on YouTube</span>
-          <FiExternalLink aria-hidden="true" />
-        </a>
       </div>
     </div>,
     document.body
@@ -136,7 +118,6 @@ function AudioPlayer(props) {
         {isYoutubePopupOpen ? (
           <YouTubePopup
             embedUrl={youtubeEmbedUrl}
-            sourceUrl={normalizedAudio}
             onClose={() => setIsYoutubePopupOpen(false)}
           />
         ) : null}
