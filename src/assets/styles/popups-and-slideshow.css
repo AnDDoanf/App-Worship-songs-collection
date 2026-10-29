@@ -121,6 +121,15 @@
   margin-bottom: 16px;
 }
 
+.chord-visibility-toggle[aria-pressed="true"] {
+  border-color: var(--accent);
+  background: var(--panel-muted);
+}
+
+.chord-visibility-toggle:disabled {
+  opacity: 0.5;
+}
+
 .popup-lyric-toolbar .popup-lyric-actions,
 .popup-lyric-toolbar .popup-transpose-controls {
   margin-bottom: 0;

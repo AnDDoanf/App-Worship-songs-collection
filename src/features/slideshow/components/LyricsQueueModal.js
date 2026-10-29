@@ -1,6 +1,8 @@
+import { useState } from 'react';
 import { createPortal } from 'react-dom';
-import { FiXCircle } from 'react-icons/fi';
+import { FiMusic, FiXCircle } from 'react-icons/fi';
 import { normalizeLyricText } from '../../../services/songLibrary';
+import { hideChords } from '../../../utils/chords';
 
 function getLyricLines(lyric) {
   const normalized = normalizeLyricText(lyric);
@@ -12,8 +14,8 @@ function getLyricLines(lyric) {
   return normalized.split('\n').map((line) => line.trimEnd());
 }
 
-function LyricsCard({ song }) {
-  const lyricLines = getLyricLines(song.lyric);
+function LyricsCard({ song, showChords }) {
+  const lyricLines = getLyricLines(showChords ? song.lyric : hideChords(normalizeLyricText(song.lyric)));
 
   return (
     <article className="lyrics-queue-card">
@@ -37,6 +39,7 @@ function LyricsCard({ song }) {
 }
 
 function LyricsQueueModal({ songs, trigger, setTrigger }) {
+  const [showChords, setShowChords] = useState(true);
   if (!trigger) {
     return null;
   }
@@ -55,10 +58,15 @@ function LyricsQueueModal({ songs, trigger, setTrigger }) {
         <div className="popup-lyrics-queue-header">
           <h2>Lời bài hát trong danh sách</h2>
           <p>{songs.map((song) => song.id).join(', ')}</p>
+          <button type="button" className="button-mode chord-visibility-toggle"
+            aria-label={showChords ? 'Ẩn hợp âm' : 'Hiện hợp âm'}
+            aria-pressed={showChords} onClick={() => setShowChords((value) => !value)}>
+            <FiMusic aria-hidden="true" /> Hợp âm
+          </button>
         </div>
         <div className="popup-lyrics-queue-grid">
           {songs.map((song) => (
-            <LyricsCard key={song.id} song={song} />
+            <LyricsCard key={song.id} song={song} showChords={showChords} />
           ))}
         </div>
       </div>

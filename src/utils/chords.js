@@ -7,6 +7,10 @@ const keyPattern = /^([A-G])([#b]?)(m?)$/;
 const chordPattern = /^([A-G][#b♯♭]?)((?:(?:maj|min|dim|aug|sus|add|omit|m|M|Δ|ø|°|\+|-)|[0-9#b♯♭(),])*)(?:\/([A-G][#b♯♭]?))?$/;
 const normalizeAccidentals = (value) => value.replace(/♯/g, '#').replace(/♭/g, 'b');
 export const isKey = (value) => typeof value === 'string' && keyPattern.test(value);
+export function hideChords(lyric) {
+  return String(lyric || '').replace(/\[([^\u005B\u005D]+)\]/g, (whole, content) =>
+    chordPattern.test(content.trim()) || /^(N\.C\.|NC)$/.test(content.trim()) ? '' : whole);
+}
 const pitch = (note) => (PITCHES[note[0]] + (note[1] === '#' ? 1 : note[1] === 'b' ? -1 : 0) + 12) % 12;
 
 export function inferKey(lyric, tone = '') {

@@ -1,9 +1,9 @@
 import { useEffect, useState } from 'react';
 import { createPortal } from 'react-dom';
-import { FiClipboard, FiEdit3, FiRefreshCw, FiXCircle } from 'react-icons/fi';
+import { FiClipboard, FiEdit3, FiMusic, FiRefreshCw, FiXCircle } from 'react-icons/fi';
 import { normalizeLyricText } from '../../../services/songLibrary';
 import { copyTextToClipboard } from '../../../utils/clipboard';
-import { inferKey, KEY_OPTIONS, transposeLyrics } from '../../../utils/chords';
+import { hideChords, inferKey, KEY_OPTIONS, transposeLyrics } from '../../../utils/chords';
 import { readChordPreferences, saveChordPreference } from '../../../store/chordPreferences';
 
 function ShowLyric({ lyric }) {
@@ -24,6 +24,7 @@ function Popup2({ lyric, tone, trigger, setTrigger, songId, onNotify }) {
   const initialEditableLyric = normalizeLyricText(lyric);
   const [draftLyric, setDraftLyric] = useState(initialEditableLyric);
   const [isSuggesting, setIsSuggesting] = useState(false);
+  const [showChords, setShowChords] = useState(true);
   const [sourceKey, setSourceKey] = useState('');
   const [targetKey, setTargetKey] = useState('');
   const displayedLyric = transposeLyrics(draftLyric, sourceKey, targetKey);
@@ -101,6 +102,13 @@ function Popup2({ lyric, tone, trigger, setTrigger, songId, onNotify }) {
         </button>
         <div className="popup-lyric-toolbar">
         <div className="popup-lyric-actions">
+          <button type="button" className="button-mode chord-visibility-toggle"
+            aria-label={showChords ? 'Ẩn hợp âm' : 'Hiện hợp âm'}
+            title={showChords ? 'Ẩn hợp âm' : 'Hiện hợp âm'}
+            aria-pressed={showChords} disabled={isSuggesting}
+            onClick={() => setShowChords((value) => !value)}>
+            <FiMusic aria-hidden="true" /><span>Hợp âm</span>
+          </button>
           <button
             type="button"
             className="button-mode"
@@ -159,7 +167,7 @@ function Popup2({ lyric, tone, trigger, setTrigger, songId, onNotify }) {
               spellCheck="false"
             />
           ) : (
-            <ShowLyric lyric={displayedLyric} />
+            <ShowLyric lyric={showChords ? displayedLyric : hideChords(displayedLyric)} />
           )}
         </div>
       </div>
