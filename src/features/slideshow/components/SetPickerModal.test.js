@@ -23,3 +23,24 @@ test('can create a new set directly from the picker', () => {
   fireEvent.click(screen.getByRole('button', { name: 'Tạo và thêm' }));
   expect(create).toHaveBeenCalledWith('Chúa nhật');
 });
+
+test('reports selection and create errors, validates new names, and closes from backdrop or Escape', () => {
+  const close = jest.fn();
+  const select = jest.fn().mockReturnValueOnce({ error: 'selection failed' }).mockReturnValue({ added: false });
+  const create = jest.fn().mockReturnValue({ error: 'creation failed' });
+  render(<SetPickerModal song={song} lists={lists} onSelect={select} onClose={close} onCreate={create} />);
+  fireEvent.click(document.querySelector('.set-picker-option:not(:disabled)'));
+  expect(screen.getByRole('alert')).toBeInTheDocument();
+  fireEvent.click(document.querySelector('.set-picker-option:not(:disabled)'));
+  expect(screen.getByRole('alert')).toBeInTheDocument();
+  fireEvent.click(document.querySelector('.set-picker-create button'));
+  expect(screen.getByRole('alert')).toBeInTheDocument();
+  fireEvent.change(document.getElementById('new-set-name'), { target: { value: 'New' } });
+  fireEvent.click(document.querySelector('.set-picker-create button'));
+  expect(create).toHaveBeenCalledWith('New');
+  expect(screen.getByRole('alert')).toBeInTheDocument();
+  fireEvent.keyDown(window, { key: 'Escape' });
+  expect(close).toHaveBeenCalled();
+  fireEvent.click(document.querySelector('.popup'));
+  expect(close).toHaveBeenCalledTimes(2);
+});

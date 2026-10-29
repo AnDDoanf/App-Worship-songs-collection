@@ -1,4 +1,4 @@
-import { buildShareUrl, parseShareLocation } from './shareLinks';
+import { buildShareUrl, consumePendingShareLocation, getAppHomePath, parseShareLocation } from './shareLinks';
 import { createDefaultState, mergeSharedListIntoState, normalizeStoredState } from '../store/slideshowStore';
 import { applyChordPreference, readChordPreferences, saveChordPreference } from '../store/chordPreferences';
 
@@ -26,4 +26,35 @@ test('old links and malformed preference payloads remain usable', () => {
   url.searchParams.set('chords', 'invalid');
   expect(parseShareLocation(url)).toMatchObject({ ids: ['H18'], chordPreferences: {} });
   expect(normalizeStoredState({ lists: { old: { ids: 'bad' } } }).lists.old.ids).toEqual([]);
+});
+
+test('parses compact IDs and ignores paths outside the app share route', () => {
+  expect(parseShareLocation({ pathname: '/share', search: '?H18|td37|H18' })).toMatchObject({
+    ids: ['H18', 'TD37'],
+    workbookUrl: '',
+  });
+  expect(parseShareLocation({ pathname: '/other', search: '?H18' })).toBeNull();
+  expect(parseShareLocation({ pathname: '/share', search: '' })).toBeNull();
+});
+
+test('uses the public URL base path for app and share routes', () => {
+  const original = process.env.PUBLIC_URL;
+  process.env.PUBLIC_URL = 'https://example.com/worship/';
+  expect(getAppHomePath()).toBe('/worship/');
+  const url = buildShareUrl({ name: 'Set', ids: ['H18'], origin: 'https://example.com' });
+  expect(url).toContain('https://example.com/worship/share?');
+  if (original === undefined) delete process.env.PUBLIC_URL;
+  else process.env.PUBLIC_URL = original;
+});
+
+test('consumes direct and pending share locations and ignores malformed pending data', () => {
+  const original = window.location.href;
+  window.history.replaceState({}, '', '/share?H18|TD37');
+  expect(consumePendingShareLocation().ids).toEqual(['H18', 'TD37']);
+  window.history.replaceState({}, '', '/');
+  sessionStorage.setItem('song-collections-pending-share', JSON.stringify({ pathname: '/share', search: '?H19' }));
+  expect(consumePendingShareLocation().ids).toEqual(['H19']);
+  sessionStorage.setItem('song-collections-pending-share', '{bad json');
+  expect(consumePendingShareLocation()).toBeNull();
+  window.history.replaceState({}, '', new URL(original).pathname);
 });
