@@ -6,23 +6,14 @@ import Filter3 from './Filter3';
 import Search from './Search';
 import SongList from './SongList';
 import SongListSkeleton from './SongListSkeleton';
+import { createSearchIndex, normalizeSearch, rankSongs } from '../../../utils/songSearch';
 
 const SONG_BATCH_SIZE = 12;
 
-function matchesQuery(song, query) {
-  if (!query) {
-    return true;
-  }
-
-  const normalizedQuery = query.toLocaleLowerCase();
-
-  return [song.songName, song.id, song.lyric].some((value) =>
-    value.toLocaleLowerCase().includes(normalizedQuery)
-  );
-}
-
-function CollectionBrowser({ songs, isLoading = false, onAddToSlideshow }) {
-  const [searchText, setSearchText] = useState('');
+function CollectionBrowser({ songs, isLoading = false, onAddToSlideshow, onOpenReader, onRequestAddToSet, searchText: externalSearch, hideSearch = false, categoryFilter = '' }) {
+  const [localSearch, setSearchText] = useState('');
+  const searchText = externalSearch ?? localSearch;
+  const searchIndex = useMemo(() => createSearchIndex(songs), [songs]);
   const [visibleCount, setVisibleCount] = useState(SONG_BATCH_SIZE);
   const loadMoreRef = useRef(null);
   const [filters, setFilters] = useState({
@@ -32,18 +23,14 @@ function CollectionBrowser({ songs, isLoading = false, onAddToSlideshow }) {
   });
   const filteredSongs = useMemo(
     () =>
-      songs.filter(
+      rankSongs(searchIndex, searchText).filter(
         (song) =>
-          matchesQuery(song, searchText) &&
-          song.category
-            .toLocaleLowerCase()
-            .includes(filters.category.toLocaleLowerCase()) &&
-          song.tone.toLocaleLowerCase().includes(filters.tone.toLocaleLowerCase()) &&
-          song.timeSignature
-            .toLocaleLowerCase()
-            .includes(filters.timeSignature.toLocaleLowerCase())
+          normalizeSearch(song.category).includes(normalizeSearch(filters.category)) &&
+          normalizeSearch(song.category).includes(normalizeSearch(categoryFilter)) &&
+          (!filters.tone || song.tone === filters.tone) &&
+          (!filters.timeSignature || song.timeSignature === filters.timeSignature)
       ),
-    [filters.category, filters.timeSignature, filters.tone, searchText, songs]
+    [categoryFilter, filters.category, filters.timeSignature, filters.tone, searchText, searchIndex]
   );
 
   useEffect(() => {
@@ -76,7 +63,7 @@ function CollectionBrowser({ songs, isLoading = false, onAddToSlideshow }) {
 
   return (
     <>
-      <Search handleSearchNote={setSearchText} />
+      {!hideSearch ? <Search handleSearchNote={setSearchText} /> : null}
       <div className="filter-row">
         <Filter1
           handleFilter1={(value) =>
@@ -107,6 +94,8 @@ function CollectionBrowser({ songs, isLoading = false, onAddToSlideshow }) {
         {isLoading ? <SongListSkeleton /> : (
           <>
             <SongList
+              onRequestAddToSet={onRequestAddToSet}
+              onOpenReader={onOpenReader}
               songs={visibleSongs}
               onAddToSlideshow={onAddToSlideshow}
               onShowToast={toast}

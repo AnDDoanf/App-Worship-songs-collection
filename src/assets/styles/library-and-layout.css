@@ -59,6 +59,79 @@
   box-shadow: var(--shadow-soft);
 }
 
+.song-recommendations {
+  margin-bottom: 24px;
+  padding: 18px;
+  border: 1px solid var(--border-color);
+  border-radius: 22px;
+  background: var(--panel-bg);
+  color: var(--text-primary);
+  box-shadow: var(--shadow-soft);
+}
+
+.recommendations-header {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 16px;
+}
+
+.recommendations-header h2 { margin: 0; font-size: 1.15rem; }
+.recommendations-header > h2 { width: 100%; }
+.recommendations-toggle { display: flex; width: 100%; align-items: center; justify-content: space-between; gap: 12px; padding: 0; border: 0; background: transparent; color: inherit; font: inherit; font-weight: 700; text-align: left; cursor: pointer; }
+.recommendations-toggle svg { flex-shrink: 0; transition: transform .2s ease; }
+.recommendations-toggle svg.is-expanded { transform: rotate(180deg); }
+.recommendations-content-header { margin-top: 16px; }
+.recommendations-collapse {
+  display: grid;
+  grid-template-rows: 0fr;
+  opacity: 0;
+  visibility: hidden;
+  transition: grid-template-rows .28s ease, opacity .2s ease, visibility 0s .28s;
+}
+.recommendations-collapse.is-expanded {
+  grid-template-rows: 1fr;
+  opacity: 1;
+  visibility: visible;
+  transition: grid-template-rows .28s ease, opacity .2s ease, visibility 0s;
+}
+.recommendations-content-inner {
+  min-height: 0;
+  overflow: hidden;
+  transform: translateY(-6px);
+  transition: transform .28s ease;
+}
+.recommendations-collapse.is-expanded .recommendations-content-inner { transform: translateY(0); }
+@media (prefers-reduced-motion: reduce) {
+  .recommendations-toggle svg, .recommendations-collapse, .recommendations-content-inner { transition: none; }
+}
+.recommendations-header p { margin: 6px 0 0; color: var(--text-muted); }
+.recommendations-target { display: grid; gap: 6px; max-width: 100%; font-size: .9rem; }
+.recommendations-target .dropdown { width: 100%; max-width: 280px; }
+.recommendations-modes { display: flex; gap: 8px; flex-wrap: wrap; margin-block: 16px; }
+.recommendations-modes [aria-pressed='true'] { background: var(--control-active-bg); color: var(--control-active-fg); border-color: var(--control-active-border); }
+.recommendations-search > label { display: block; margin-bottom: 8px; }
+.recommendations-search .search { margin-bottom: 8px; }
+.recommendations-search-results { display: grid; gap: 6px; list-style: none; padding: 0; margin-block: 8px 16px; }
+.recommendations-search-results button { width: 100%; text-align: left; }
+.recommendations-context, .recommendations-empty p { color: var(--text-muted); margin-block: 12px; }
+.recommendations-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); list-style: none; padding: 0; margin: 16px 0 0; gap: 12px; }
+.recommendation-card { display: flex; flex-direction: column; min-width: 0; padding: 16px; border: 1px solid var(--border-color); border-radius: 18px; background: var(--panel-strong); }
+.recommendation-card h3 { font-size: 1rem; margin: 0; overflow-wrap: anywhere; }
+.recommendation-reasons, .recommendation-match { color: var(--text-muted); font-size: .9rem; margin: 8px 0; }
+.recommendation-actions { display: flex; flex-wrap: wrap; gap: 8px; margin-top: auto; padding-top: 12px; }
+.recommendation-actions button { display: inline-flex; align-items: center; justify-content: center; gap: 6px; }
+.song-recommendations button:focus-visible { outline: 2px solid var(--accent); outline-offset: 3px; }
+
+@media (max-width: 560px) {
+  .recommendations-grid { grid-template-columns: minmax(0, 1fr); }
+  .recommendations-target { width: 100%; }
+  .recommendations-target .dropdown { max-width: none; }
+  .recommendations-search input { font-size: 16px; }
+  .recommendation-actions button { flex: 1; }
+}
+
 .data-source-banner {
   margin-bottom: 18px;
   padding: 12px 14px;
@@ -278,7 +351,17 @@
   display: flex;
   flex-direction: column;
   gap: 18px;
+  max-height: calc(100dvh - 24px);
+  overflow: auto;
 }
+
+.folder-songs-table-wrapper { overflow-x: auto; flex-shrink: 0; }
+.folder-songs-table { width: 100%; border-collapse: collapse; text-align: left; font-size: .95rem; }
+.folder-songs-table th, .folder-songs-table td { padding: 12px 8px; border-bottom: 1px solid var(--border-color); vertical-align: top; }
+.folder-songs-table th { font-weight: 700; }
+.folder-songs-table td:first-child { width: 60%; overflow-wrap: anywhere; }
+.folder-songs-table td:not(:first-child) { white-space: nowrap; }
+.folder-songs-table small { display: block; color: var(--text-muted); margin-top: 4px; }
 
 .popup-list-editor-header h2 {
   margin: 0 0 6px;

@@ -1,24 +1,13 @@
-import { useState } from 'react';
-import { FiChevronDown, FiFileText, FiList, FiPlus, FiShare2 } from 'react-icons/fi';
+import { useRef, useState } from 'react';
+import { FiChevronDown, FiDownload, FiFileText, FiList, FiMonitor, FiPlus, FiShare2, FiUpload } from 'react-icons/fi';
 import { toast } from 'sonner';
 import { copyTextToClipboard } from '../../../utils/clipboard';
 import { buildShareUrl } from '../../../utils/shareLinks';
 import SlideshowListEditorModal from './SlideshowListEditorModal';
+import ActionIconButton from '../../../components/common/ActionIconButton';
 
 function QuickActionButton({ onClick, label, icon }) {
-  return (
-    <button
-      type="button"
-      className="button-mode slideshow-list-action-button"
-      onClick={onClick}
-      aria-label={label}
-    >
-      <span className="slideshow-list-action-label">{label}</span>
-      <span className="slideshow-list-action-icon" aria-hidden="true">
-        {icon}
-      </span>
-    </button>
-  );
+  return <ActionIconButton label={label} icon={icon} onClick={onClick} />;
 }
 
 function SlideshowBuilder({
@@ -29,8 +18,14 @@ function SlideshowBuilder({
   onDeleteList,
   onOpenSlideshow,
   onOpenLyricsQueue,
+  songLibrary = [],
+  onDuplicateList,
+  onExportLists,
+  onImportLists,
+  onOpenLyricsProjection,
 }) {
   const [isExpanded, setIsExpanded] = useState(false);
+  const importRef = useRef(null);
   const [editorState, setEditorState] = useState({
     isOpen: false,
     mode: 'create',
@@ -58,7 +53,7 @@ function SlideshowBuilder({
   const openEditModal = (list) => {
     setEditorState({
       isOpen: true,
-      mode: 'edit',
+      mode: 'view',
       originalName: list.name,
       name: list.name,
       draft: list.draft,
@@ -74,7 +69,7 @@ function SlideshowBuilder({
 
   const handleOpenSheet = (list) => {
     if (list.songs.length === 0) {
-      toast(`Danh s\u00e1ch "${list.name}" ch\u01b0a c\u00f3 b\u00e0i \u0111\u1ec3 m\u1edf b\u1ea3n nh\u1ea1c`);
+      toast.warning(`Danh s\u00e1ch "${list.name}" ch\u01b0a c\u00f3 b\u00e0i \u0111\u1ec3 m\u1edf b\u1ea3n nh\u1ea1c`);
       return;
     }
 
@@ -83,7 +78,7 @@ function SlideshowBuilder({
 
   const handleOpenLyrics = (list) => {
     if (list.songs.length === 0) {
-      toast(`Danh s\u00e1ch "${list.name}" ch\u01b0a c\u00f3 b\u00e0i \u0111\u1ec3 m\u1edf l\u1eddi`);
+      toast.warning(`Danh s\u00e1ch "${list.name}" ch\u01b0a c\u00f3 b\u00e0i \u0111\u1ec3 m\u1edf l\u1eddi`);
       return;
     }
 
@@ -92,7 +87,7 @@ function SlideshowBuilder({
 
   const handleShare = async (list) => {
     if (list.ids.length === 0) {
-      toast(`Danh s\u00e1ch "${list.name}" ch\u01b0a c\u00f3 b\u00e0i \u0111\u1ec3 chia s\u1ebb`);
+      toast.warning(`Danh s\u00e1ch "${list.name}" ch\u01b0a c\u00f3 b\u00e0i \u0111\u1ec3 chia s\u1ebb`);
       return;
     }
 
@@ -104,9 +99,9 @@ function SlideshowBuilder({
           chordPreferences: list.chordPreferences,
         })
       );
-      toast(`\u0110\u00e3 sao ch\u00e9p li\u00ean k\u1ebft chia s\u1ebb cho "${list.name}"`);
+      toast.success(`\u0110\u00e3 sao ch\u00e9p li\u00ean k\u1ebft chia s\u1ebb cho "${list.name}"`);
     } catch (_error) {
-      toast(`Kh\u00f4ng th\u1ec3 sao ch\u00e9p li\u00ean k\u1ebft chia s\u1ebb cho "${list.name}"`);
+      toast.error(`Kh\u00f4ng th\u1ec3 sao ch\u00e9p li\u00ean k\u1ebft chia s\u1ebb cho "${list.name}"`);
     }
   };
 
@@ -121,10 +116,22 @@ function SlideshowBuilder({
             aria-expanded={isExpanded}
           >
             <div className="slideshow-builder-copy">
-              <h2>Thư mục bản nhạc</h2>
+              <h2>Bộ bài hát của tôi</h2>
             </div>
             <FiChevronDown className={`slideshow-builder-chevron ${isExpanded ? 'open' : ''}`} />
           </button>
+          <div className="set-backup-actions">
+            {onExportLists ? <button type="button" className="button-mode" onClick={onExportLists}><FiDownload aria-hidden="true" /> Sao lưu</button> : null}
+            {onImportLists ? <button type="button" className="button-mode" onClick={() => importRef.current?.click()}><FiUpload aria-hidden="true" /> Khôi phục</button> : null}
+            <input ref={importRef} type="file" accept=".json,application/json" hidden aria-label="Chọn bản sao lưu" onChange={async (event) => {
+              const file = event.target.files?.[0]; event.target.value = '';
+              if (!file) return;
+              try {
+                if (file.size > 5 * 1024 * 1024) throw new Error('File sao lưu quá lớn (tối đa 5 MB).');
+                const count = onImportLists(await file.text()); toast.success(`Đã khôi phục ${count} bộ bài hát. Các bộ hiện có được giữ nguyên.`);
+              } catch (error) { toast.error(error.message || 'Không thể đọc bản sao lưu.'); }
+            }} />
+          </div>
           <button
             type="button"
             className="button-mode slideshow-create-button"
@@ -149,8 +156,10 @@ function SlideshowBuilder({
                   {list.isNewest ? <span className="slideshow-list-badge">Mới nhất</span> : null}
                 </div>
                 <p>{list.codesLabel}</p>
+                <small>{[list.serviceDate, list.service, list.status === 'ready' ? 'Sẵn sàng' : 'Đang chuẩn bị'].filter(Boolean).join(' · ')}</small>
               </button>
               <div className="slideshow-list-actions">
+                {onOpenLyricsProjection ? <QuickActionButton label="Chiếu lời" icon={<FiMonitor />} onClick={() => list.songs.length ? onOpenLyricsProjection(list.name) : toast.warning('Bộ chưa có bài hát.')} /> : null}
                 <QuickActionButton
                   onClick={() => handleOpenSheet(list)}
                   label="Mở bản nhạc"
@@ -158,7 +167,7 @@ function SlideshowBuilder({
                 />
                 <QuickActionButton
                   onClick={() => handleOpenLyrics(list)}
-                  label="Mở lời"
+                  label="Lời và hợp âm"
                   icon={<FiList />}
                 />
                 <QuickActionButton
@@ -178,6 +187,11 @@ function SlideshowBuilder({
         originalName={editorState.originalName}
         initialName={editorState.name}
         initialDraft={editorState.draft}
+        initialIds={lists.find((list) => list.name === editorState.originalName)?.ids || []}
+        songs={songLibrary}
+        listSongs={lists.find((list) => list.name === editorState.originalName)?.songs || []}
+        initialDetails={lists.find((list) => list.name === editorState.originalName)}
+        onDuplicateList={onDuplicateList}
         setTrigger={closeEditor}
         onCreateList={onCreateList}
         onUpdateList={onUpdateList}

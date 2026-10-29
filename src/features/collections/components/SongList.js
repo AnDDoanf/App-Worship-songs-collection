@@ -1,11 +1,14 @@
 import Song from './Song';
 
-function SongList({ songs, onAddToSlideshow, onShowToast }) {
+function SongList({ songs, onAddToSlideshow, onShowToast, onOpenReader, onRequestAddToSet }) {
   return (
     <div className="song-list">
       {songs.map((song) => (
         <Song
           key={song.id}
+          {...song}
+          onOpenReader={onOpenReader}
+          onRequestAddToSet={onRequestAddToSet}
           songName={song.songName}
           category={song.category}
           id={song.id}

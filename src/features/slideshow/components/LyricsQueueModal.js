@@ -3,6 +3,7 @@ import { createPortal } from 'react-dom';
 import { FiMusic, FiXCircle } from 'react-icons/fi';
 import { normalizeLyricText } from '../../../services/songLibrary';
 import { hideChords } from '../../../utils/chords';
+import ChordLyrics from '../../song-viewer/components/ChordLyrics';
 
 function getLyricLines(lyric) {
   const normalized = normalizeLyricText(lyric);
@@ -25,11 +26,7 @@ function LyricsCard({ song, showChords }) {
       </header>
       {lyricLines.length > 0 ? (
         <div className="lyrics-queue-card-body">
-          {lyricLines.map((line, index) => (
-            <p key={`${song.id}-${index}`} className="lyrics-queue-line">
-              {line || '\u00A0'}
-            </p>
-          ))}
+          <ChordLyrics lyric={song.lyric} showChords={showChords} />
         </div>
       ) : (
         <div className="popup-empty-state">Không có lời bài hát</div>

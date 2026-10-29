@@ -2,6 +2,17 @@ import { normalizePreferences } from './chordPreferences';
 
 export const STORAGE_KEY = 'song-collections-slideshows';
 const DEFAULT_SHARED_LIST_NAME = 'Danh sách được chia sẻ';
+const RESERVED_NAMES = new Set(['__proto__', 'constructor', 'prototype']);
+
+export function normalizeSetDetails(value = {}, ids = []) {
+  value = value && typeof value === 'object' ? value : {};
+  return {
+    serviceDate: typeof value.serviceDate === 'string' && /^\d{4}-\d{2}-\d{2}$/.test(value.serviceDate) ? value.serviceDate : '',
+    service: typeof value.service === 'string' ? value.service : '',
+    status: value.status === 'ready' ? 'ready' : 'draft',
+    songNotes: Object.fromEntries(ids.filter((id) => typeof value.songNotes?.[id] === 'string').map((id) => [id, value.songNotes[id]])),
+  };
+}
 
 function normalizeUniqueIds(ids) {
   return [...new Set((ids || []).map((id) => String(id || '').trim().toUpperCase()).filter(Boolean))];
@@ -50,16 +61,16 @@ export function normalizeStoredState(value) {
   }
 
   const nextLists = Object.entries(value.lists || {}).reduce((accumulator, [listName, listValue]) => {
-    if (typeof listName !== 'string' || !listName.trim()) {
+    if (typeof listName !== 'string' || !listName.trim() || RESERVED_NAMES.has(listName)) {
       return accumulator;
     }
 
+    const ids = normalizeUniqueIds((Array.isArray(listValue?.ids) ? listValue.ids : []).filter((id) => typeof id === 'string'));
     accumulator[listName] = {
+      ...normalizeSetDetails(listValue, ids),
       draft: typeof listValue?.draft === 'string' ? listValue.draft : '',
-      chordPreferences: normalizePreferences(listValue?.chordPreferences, (Array.isArray(listValue?.ids) ? listValue.ids : []).filter((id) => typeof id === 'string').map((id) => id.toUpperCase())),
-      ids: Array.isArray(listValue?.ids)
-        ? listValue.ids.filter((id) => typeof id === 'string').map((id) => id.toUpperCase())
-        : [],
+      chordPreferences: normalizePreferences(listValue?.chordPreferences, ids),
+      ids,
     };
 
     return accumulator;

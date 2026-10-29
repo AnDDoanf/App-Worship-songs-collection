@@ -7,19 +7,28 @@ import TVCHHCollection from '../features/collections/views/TVCHHCollection';
 import LyricsQueueModal from '../features/slideshow/components/LyricsQueueModal';
 import SheetSlideshowModal from '../features/slideshow/components/SheetSlideshowModal';
 import SlideshowBuilder from '../features/slideshow/components/SlideshowBuilder';
+import SongRecommendations from '../features/recommendations/SongRecommendationsPanel';
+import { normalizeLyricText } from '../services/songLibrary';
+import Popup2 from '../features/song-viewer/components/Popup2';
+import LyricsProjectionModal from '../features/slideshow/components/LyricsProjectionModal';
+import SetPickerModal from '../features/slideshow/components/SetPickerModal';
 import {
   createDefaultState,
   DEFAULT_LIST_NAME,
   mergeSharedListIntoState,
   normalizeStoredState,
+  normalizeSetDetails,
   STORAGE_KEY,
 } from '../store/slideshowStore';
 import { consumePendingShareLocation, getAppHomePath } from '../utils/shareLinks';
 import { parseSongCodes } from '../utils/slideshow';
 import { applyChordPreference, normalizePreferences, useChordPreferences } from '../store/chordPreferences';
 import { inferKey } from '../utils/chords';
+import { normalizeSearch } from '../utils/songSearch';
+import { downloadSetlists, mergeSetlistBackup, parseSetlistBackup } from '../utils/setlistBackup';
 
 const collections = [
+  { id: 0, key: 'all', label: 'Tất cả', component: HosannaCollection },
   {
     id: 1,
     key: 'tvchh',
@@ -67,9 +76,15 @@ function loadInitialSlideshowState() {
 
 function HomePage({ songLibraryState }) {
   const [activeCollectionId, setActiveCollectionId] = useState(2);
+  const [searchText, setSearchText] = useState('');
+  const [themeFilter, setThemeFilter] = useState('');
+  const [readerSongId, setReaderSongId] = useState('');
+  const [readerInitialView, setReaderInitialView] = useState();
+  const [pendingAddSongId, setPendingAddSongId] = useState('');
   const [slideshowState, setSlideshowState] = useState(loadInitialSlideshowState);
   const [isLyricsQueueOpen, setIsLyricsQueueOpen] = useState(false);
   const [isSlideshowOpen, setIsSlideshowOpen] = useState(false);
+  const [isProjectionOpen, setIsProjectionOpen] = useState(false);
   const [slideshowStartId, setSlideshowStartId] = useState('');
   const [playbackSongs, setPlaybackSongs] = useState([]);
   const hasHandledShareImportRef = useRef(false);
@@ -94,13 +109,12 @@ function HomePage({ songLibraryState }) {
     if (!id) return;
     const song = songsById[id];
     if (!song) {
-      toast(`Không tìm thấy mã bài hát: ${id}`);
+      toast.warning(`Không tìm thấy mã bài hát: ${id}`);
       return;
     }
     const collection = collections.find((item) => item.key === song.sourceCollectionKey);
     if (collection) setActiveCollectionId(collection.id);
-    setPlaybackSongs([song]);
-    setIsLyricsQueueOpen(true);
+    setReaderSongId(song.id.toUpperCase());
   }, [songLibraryState.isLoading, songsById]);
 
   const getSongsForIds = useCallback(
@@ -148,7 +162,7 @@ function HomePage({ songLibraryState }) {
     window.history.replaceState({}, document.title, getAppHomePath());
 
     if (validIds.length === 0) {
-      toast('Liên kết chia sẻ không có bài hát hợp lệ để tạo thư mục.');
+      toast.warning('Liên kết chia sẻ không có bài hát hợp lệ để tạo thư mục.');
       return;
     }
 
@@ -181,13 +195,13 @@ function HomePage({ songLibraryState }) {
     setIsSlideshowOpen(true);
 
     if (missingIds.length > 0) {
-      toast(
+      toast.warning(
         `Đã tạo thư mục "${importedListName}" từ liên kết chia sẻ. Bỏ qua mã không tìm thấy: ${missingIds.join(', ')}`
       );
       return;
     }
 
-    toast(`Đã tạo thư mục "${importedListName}" từ liên kết chia sẻ.`);
+    toast.success(`Đã tạo thư mục "${importedListName}" từ liên kết chia sẻ.`);
   }, [songLibraryState.isLoading, songsById]);
 
   const availableLists = Object.keys(slideshowState.lists);
@@ -200,7 +214,7 @@ function HomePage({ songLibraryState }) {
       return [];
     }
 
-    return getSongsForIds(list.ids, list.chordPreferences);
+    return getSongsForIds(list.ids, list.chordPreferences).map((song) => ({ ...song, setNote: list.songNotes?.[song.id] || '' }));
   };
 
   const listSummaries = [...availableLists].reverse().map((listName) => {
@@ -208,12 +222,13 @@ function HomePage({ songLibraryState }) {
     const codes = list.draft.trim() || list.ids.join(', ');
 
     return {
+      ...normalizeSetDetails(list, list.ids),
       name: listName,
       draft: list.draft,
       ids: list.ids,
       chordPreferences: snapshotPreferences(list.ids, list.chordPreferences),
       codesLabel: codes || 'Chưa có bài trong danh sách',
-      songs: getSongsForIds(list.ids, list.chordPreferences),
+      songs: getSongsForListName(listName),
       isNewest: listName === newestListName,
     };
   });
@@ -222,7 +237,7 @@ function HomePage({ songLibraryState }) {
   const ActiveCollection = activeCollection?.component || HosannaCollection;
   const activeCollectionKey = activeCollection?.key || 'hosanna';
   const activeCollectionSongs = useMemo(
-    () => allSongs.filter((song) => song.sourceCollectionKey === activeCollectionKey),
+    () => activeCollectionKey === 'all' ? allSongs : allSongs.filter((song) => song.sourceCollectionKey === activeCollectionKey),
     [allSongs, activeCollectionKey]
   );
 
@@ -271,12 +286,13 @@ function HomePage({ songLibraryState }) {
     };
   };
 
-  const saveListDefinition = ({ originalName = '', name, draft }) => {
+  const saveListDefinition = ({ originalName = '', name, draft, serviceDate, service, status, songNotes, chordPreferences: editedPreferences }) => {
     const trimmedName = name.trim();
 
     if (!trimmedName) {
       return { error: 'Vui lòng nhập tên danh sách.' };
     }
+    if (['__proto__', 'constructor', 'prototype'].includes(trimmedName)) return { error: 'Vui lòng chọn tên bộ khác.' };
 
     if (trimmedName !== originalName && slideshowState.lists[trimmedName]) {
       return { error: 'Tên danh sách này đã tồn tại.' };
@@ -296,9 +312,12 @@ function HomePage({ songLibraryState }) {
       }
 
       nextLists[trimmedName] = {
+        ...normalizeSetDetails({ ...currentState.lists[originalName],
+          ...(serviceDate !== undefined ? { serviceDate } : {}), ...(service !== undefined ? { service } : {}),
+          ...(status !== undefined ? { status } : {}), ...(songNotes !== undefined ? { songNotes } : {}) }, draftResult.ids),
         draft,
         ids: draftResult.ids,
-        chordPreferences: snapshotPreferences(draftResult.ids, currentState.lists[originalName]?.chordPreferences),
+        chordPreferences: snapshotPreferences(draftResult.ids, editedPreferences || currentState.lists[originalName]?.chordPreferences),
       };
 
       return {
@@ -310,10 +329,23 @@ function HomePage({ songLibraryState }) {
     return { error: '' };
   };
 
-  const createList = ({ name, draft }) => saveListDefinition({ name, draft });
+  const createList = (definition) => saveListDefinition(definition);
 
-  const updateList = ({ originalName, name, draft }) =>
-    saveListDefinition({ originalName, name, draft });
+  const updateList = (definition) => saveListDefinition(definition);
+
+  const duplicateList = (name) => {
+    const source = slideshowState.lists[name];
+    if (!source) return { error: 'Không tìm thấy bộ bài hát.' };
+    const imported = { lists: { [`${name} (bản sao)`]: JSON.parse(JSON.stringify(source)) } };
+    setSlideshowState((current) => mergeSetlistBackup(current, imported));
+    return { error: '' };
+  };
+
+  const importLists = (text) => {
+    const imported = parseSetlistBackup(text);
+    setSlideshowState((current) => mergeSetlistBackup(current, imported));
+    return Object.keys(imported.lists).length;
+  };
 
   const deleteListByName = (listName) => {
     if (!slideshowState.lists[listName]) {
@@ -343,17 +375,32 @@ function HomePage({ songLibraryState }) {
     return { error: '' };
   };
 
-  const addSongToSlideshow = (songId) => {
+  const undoAddition = (targetListName, normalizedId) => {
+    let undone = false;
+    return () => {
+      if (undone) return;
+      undone = true;
+      updateListByName(targetListName, (currentList) => {
+        if (!currentList.ids.includes(normalizedId)) return currentList;
+        const chordPreferences = { ...currentList.chordPreferences };
+        const songNotes = { ...currentList.songNotes };
+        delete chordPreferences[normalizedId]; delete songNotes[normalizedId];
+        return { ...currentList, ids: currentList.ids.filter((id) => id !== normalizedId),
+          draft: parseSongCodes(currentList.draft).filter((id) => id !== normalizedId).join(', '), chordPreferences, songNotes };
+      });
+    };
+  };
+
+  const addSongToSlideshow = (songId, chosenListName) => {
     const normalizedId = songId.toUpperCase();
-    const targetListName = slideshowState.activeListName || newestListName;
-    let wasAdded = false;
+    const targetListName = chosenListName || slideshowState.activeListName || newestListName;
+    const targetList = slideshowState.lists[targetListName];
+    if (!targetList || targetList.ids.includes(normalizedId)) return { added: false };
 
     updateListByName(targetListName, (currentList) => {
       if (currentList.ids.includes(normalizedId)) {
         return currentList;
       }
-
-      wasAdded = true;
 
       const parsedCodes = parseSongCodes(currentList.draft);
       const nextDraft = parsedCodes.includes(normalizedId)
@@ -361,13 +408,14 @@ function HomePage({ songLibraryState }) {
         : [...parsedCodes, normalizedId].join(', ');
 
       return {
+        ...currentList,
         draft: nextDraft,
         ids: [...currentList.ids, normalizedId],
         chordPreferences: snapshotPreferences([...currentList.ids, normalizedId], currentList.chordPreferences),
       };
     });
 
-    return { added: wasAdded };
+    return { added: true, undo: undoAddition(targetListName, normalizedId) };
   };
 
   const openSlideshowForList = (listName, startId = '') => {
@@ -405,15 +453,47 @@ function HomePage({ songLibraryState }) {
     <>
       {!songLibraryState.isLoading && songLibraryState.source === 'fallback' ? (
         <div className="data-source-banner data-source-banner-warning">
-          Không tải được file Excel trên Drive ({songLibraryState.error}). Ứng dụng đang dùng dữ
-          liệu local.
-          {songLibraryState.resolvedWorkbookUrl
-            ? ` URL đã chuẩn hóa: ${songLibraryState.resolvedWorkbookUrl}`
-            : ''}
+          Không thể cập nhật thư viện. Bạn đang xem dữ liệu có sẵn trên thiết bị.
+          <button type="button" className="button-mode" onClick={() => window.location.reload()}>Thử tải lại</button>
         </div>
       ) : null}
 
+      <section className="discovery-hero discovery-standalone" id="library" aria-label="Tìm kiếm bài hát">
+        <label className="visually-hidden" htmlFor="global-song-search">Tìm theo tên, mã bài hoặc lời bài hát</label>
+        <form className="search discovery-search" role="search" onSubmit={(event) => {
+          event.preventDefault();
+          const heading = document.getElementById('song-results-heading');
+          heading?.focus({ preventScroll: true });
+          heading?.scrollIntoView({ behavior: window.matchMedia('(prefers-reduced-motion: reduce)').matches ? 'auto' : 'smooth', block: 'start' });
+        }}>
+          <input id="global-song-search" type="search" className="search-input" value={searchText}
+            placeholder="Nhập tên, mã bài hoặc lời bài hát…"
+            onChange={(event) => {
+              setSearchText(event.target.value);
+              if (event.target.value.trim() && !searchText.trim()) setActiveCollectionId(0);
+            }} />
+        </form>
+        <div className="discovery-bottom">
+          <div className="theme-discovery" role="group" aria-label="Khám phá theo chủ đề">
+            {['Ngợi khen', 'Cảm tạ', 'Giáng Sinh', 'Phục Sinh', 'Tiệc Thánh', 'Hôn nhân'].filter((theme) => allSongs.some((song) => normalizeSearch(song.category).includes(normalizeSearch(theme)))).map((theme) => (
+              <button type="button" className="button-mode" key={theme} aria-pressed={themeFilter === theme}
+                onClick={() => { setThemeFilter(themeFilter === theme ? '' : theme); setActiveCollectionId(0); }}>{theme}</button>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      <section id="sets" className="set-workspace" aria-label="Chuẩn bị bộ bài hát">
       <SlideshowBuilder
+        onOpenLyricsProjection={(name) => {
+          setPlaybackSongs(getSongsForListName(name));
+          setSlideshowState((current) => ({ ...current, activeListName: name }));
+          setIsProjectionOpen(true);
+        }}
+        onDuplicateList={duplicateList}
+        onExportLists={() => downloadSetlists(slideshowState)}
+        onImportLists={importLists}
+        songLibrary={allSongs}
         lists={listSummaries}
         newestListName={newestListName}
         onCreateList={createList}
@@ -422,6 +502,23 @@ function HomePage({ songLibraryState }) {
         onOpenSlideshow={openSlideshowForList}
         onOpenLyricsQueue={openLyricsQueueForList}
       />
+
+      <SongRecommendations
+        onRequestAddToSet={(id) => setPendingAddSongId(id.toUpperCase())}
+        songs={allSongs}
+        lists={listSummaries}
+        activeListName={slideshowState.activeListName}
+        isLoading={songLibraryState.isLoading}
+        onSelectList={(name) => setSlideshowState((current) => ({ ...current, activeListName: name }))}
+        onAdd={addSongToSlideshow}
+        onNotify={toast}
+        onPreview={(song) => {
+          setReaderSongId(song.id.toUpperCase());
+          setReaderInitialView(normalizeLyricText(song.lyric) ? 'chords' : 'sheet');
+        }}
+      />
+
+      </section>
 
       <div className="collection-menu-wrapper">
         <label className="collection-menu-mobile-label" htmlFor="collection-menu-mobile">
@@ -442,6 +539,7 @@ function HomePage({ songLibraryState }) {
         </select>
       </div>
 
+      <h2 id="song-results-heading" className="library-results-heading" tabIndex={-1}>{searchText ? 'Kết quả tìm kiếm' : 'Duyệt tuyển tập'}</h2>
       <div className="collection-menu" role="tablist" aria-label="Các tuyển tập bài hát">
         {collections.map((collection) => (
           <button
@@ -458,11 +556,48 @@ function HomePage({ songLibraryState }) {
       </div>
 
       <ActiveCollection
-        key={activeCollectionKey}
+        onRequestAddToSet={(id) => setPendingAddSongId(id.toUpperCase())}
+        onOpenReader={(id, view) => { setReaderSongId(id.toUpperCase()); setReaderInitialView(view); }}
+        key={`${activeCollectionKey}:${themeFilter}`}
+        hideSearch
+        searchText={searchText}
+        categoryFilter={themeFilter}
         songs={activeCollectionSongs}
         isLoading={songLibraryState.isLoading}
         onAddToSlideshow={addSongToSlideshow}
       />
+
+
+
+      <Popup2
+        {...songsById[readerSongId]}
+        songId={readerSongId}
+        librarySongs={allSongs}
+        trigger={Boolean(songsById[readerSongId])}
+        setTrigger={(open) => { if (!open) setReaderSongId(''); }}
+        initialView={readerInitialView}
+        onNotify={toast}
+        onNavigate={(id) => setReaderSongId(id.toUpperCase())}
+        onPrevious={allSongs.findIndex((song) => song.id.toUpperCase() === readerSongId) > 0 ? () => {
+          const index = allSongs.findIndex((song) => song.id.toUpperCase() === readerSongId); setReaderSongId(allSongs[index - 1].id.toUpperCase());
+        } : undefined}
+        onNext={allSongs.findIndex((song) => song.id.toUpperCase() === readerSongId) >= 0 && allSongs.findIndex((song) => song.id.toUpperCase() === readerSongId) < allSongs.length - 1 ? () => {
+          const index = allSongs.findIndex((song) => song.id.toUpperCase() === readerSongId); setReaderSongId(allSongs[index + 1].id.toUpperCase());
+        } : undefined}
+        onAdd={() => setPendingAddSongId(readerSongId)}
+      />
+      <SetPickerModal song={songsById[pendingAddSongId]} lists={listSummaries} activeListName={slideshowState.activeListName}
+        onNotify={toast} onClose={() => setPendingAddSongId('')}
+        onSelect={(name) => {
+          const result = addSongToSlideshow(pendingAddSongId, name);
+          if (result.added) setSlideshowState((current) => ({ ...current, activeListName: name }));
+          return result;
+        }}
+        onCreate={(name) => {
+          const result = createList({ name, draft: pendingAddSongId });
+          if (result.error) return result;
+          return { added: true, undo: undoAddition(name, pendingAddSongId) };
+        }} />
 
       <SheetSlideshowModal
         songs={playbackSongs}
@@ -475,6 +610,7 @@ function HomePage({ songLibraryState }) {
         trigger={isLyricsQueueOpen}
         setTrigger={setIsLyricsQueueOpen}
       />
+      <LyricsProjectionModal songs={playbackSongs} trigger={isProjectionOpen} setTrigger={setIsProjectionOpen} />
     </>
   );
 }
