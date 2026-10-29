@@ -30,7 +30,7 @@ Demo: https://anddoanf.github.io/App-Worship-songs-collection/
 - Trong bộ bài hát, chọn **Chỉnh sửa bộ bài hát** để đặt ngày, buổi nhóm, trạng thái, ghi chú từng bài, tông sử dụng và thứ tự. Tông riêng của bộ không thay đổi tông gốc trong thư viện.
 - **Nhân bản bộ** giữ nguyên bài hát, thứ tự, ghi chú và bản phối để chuẩn bị buổi nhóm tiếp theo.
 - **Sao lưu** tải toàn bộ bộ bài hát thành file JSON. **Khôi phục** thêm các bộ từ file, tự đổi tên khi trùng và giữ nguyên dữ liệu hiện có. Chưa có đồng bộ tài khoản hay chỉnh sửa chung giữa các thiết bị.
-- **Lời và hợp âm** dành cho ban hát; **Chiếu lời** là chế độ riêng cho hội chúng, không hiển thị hợp âm. Chuyển trang bằng phím mũi tên hoặc phím cách, **B** để bật/tắt màn hình đen, **H** để hiện/ẩn điều khiển, **Esc** để đóng. Góc nhìn điều khiển có trang tiếp theo và ghi chú của ban hát.
+- **Lời và hợp âm** dành cho ban hát; **Chiếu lời** là chế độ riêng cho hội chúng, không hiển thị hợp âm. Chuyển trang bằng phím mũi tên hoặc phím cách, **B** để bật/tắt Màn hình trống, **H** để hiện/ẩn điều khiển, **Esc** để đóng. Góc nhìn điều khiển có trang tiếp theo và ghi chú của ban hát.
 - Nội dung chưa có lời không được tự tạo lời thay thế khi trình chiếu. Hãy kiểm tra bản phối và các trang chiếu trước buổi nhóm.
 
 ## Gợi ý bài hát
