@@ -23,7 +23,9 @@ test('generates complete crawl paths, escaped lyrics, valid metadata, and resolv
     assert.equal(doc.querySelector('h1').textContent, songs[0].songName);
     assert.equal(doc.querySelector('link[rel="canonical"]').href, 'https://example.com/app/songs/T1/');
     assert.equal(doc.querySelector('img').src, 'https://example.com/app/static/media/T1_page0.hash.jpg');
-    assert.ok(doc.querySelector('.lyrics').textContent.includes('[C]Lời một\nLời hai\n<script>'));
+    assert.equal(doc.querySelector('.chord-symbol').textContent, 'C');
+    assert.ok(doc.querySelector('.lyrics').textContent.includes('Lời'));
+    assert.ok(doc.querySelector('.lyrics').textContent.includes('<script>'));
     assert.equal(doc.querySelectorAll('script').length, 1);
     const data = JSON.parse(doc.querySelector('script').textContent);
     assert.ok(!data['@graph'][0].composer);

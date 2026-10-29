@@ -22,6 +22,23 @@ function jsonLd(value) {
   return JSON.stringify(value).replace(/</g, '\\u003c');
 }
 
+function chordHtml(lyric) {
+  return lyric.split('\n').map((line) => {
+    let chord = '';
+    const parts = [];
+    for (const piece of line.split(/(\[[^\[\]]+\])/g)) {
+      if (/^\[[A-G][#b]?(?:(?:maj|min|dim|aug|sus|add|m|M)|[0-9#b(),+/A-G])*\]$/.test(piece)) {
+        chord += `${chord ? ' ' : ''}${piece.slice(1, -1)}`;
+      } else for (const text of piece.split(/(\s+)/).filter(Boolean)) {
+        parts.push(`<span class="chord-word"><span class="chord-symbol">${escapeHtml(chord) || '&#160;'}</span><span>${escapeHtml(text)}</span></span>`);
+        chord = '';
+      }
+    }
+    if (chord) parts.push(`<span class="chord-word"><span class="chord-symbol">${escapeHtml(chord)}</span><span>&#160;</span></span>`);
+    return `<p class="chord-line">${parts.join('') || '&#160;'}</p>`;
+  }).join('');
+}
+
 function known(value) {
   const text = String(value || '').trim();
   return text && !/^(Không rõ|KhÃ´ng rÃµ|KhÃƒÂ´ng rÃƒÂµ)$/i.test(text) ? text : '';
@@ -171,7 +188,7 @@ function generate({ songs, outputDir, baseUrl, assets = {} }) {
     const body = `<nav aria-label="Đường dẫn">${link('songs/', 'Thánh ca')} / ${link(`collections/${collection.key}/`, collection.label)}</nav>
 <article><h1>${escapeHtml(song.songName)}</h1><p class="song-code">${escapeHtml(song.id)}</p><dl>${details}</dl>
 <p>${link(`?song=${encodeURIComponent(song.id)}`, 'Mở bài hát trong ứng dụng')}</p>
-${song.lyric ? `<section><h2>Lời bài hát và hợp âm</h2><div class="lyrics">${escapeHtml(song.lyric)}</div></section>` : '<p>Chưa có lời bài hát dạng văn bản trong dữ liệu hiện tại.</p>'}
+${song.lyric ? `<section><h2>Lời bài hát và hợp âm</h2><div class="lyrics">${chordHtml(song.lyric)}</div></section>` : '<p>Chưa có lời bài hát dạng văn bản trong dữ liệu hiện tại.</p>'}
 ${images.length ? `<section><h2>Bản nhạc</h2>${images.map((src, i) => `<figure><a href="${escapeHtml(src)}"><img src="${escapeHtml(src)}" alt="${escapeHtml(song.songName)} (${song.id}) — bản nhạc trang ${i + 1}" loading="${i ? 'lazy' : 'eager'}" decoding="async"></a><figcaption>Trang ${i + 1} — nhấn để xem ảnh đầy đủ</figcaption></figure>`).join('')}</section>` : ''}
 </article><aside><h2>Cùng tuyển tập</h2><ul>${nearby.map((item) => `<li>${link(songPath(item), `${item.id}. ${item.songName}`)}</li>`).join('')}</ul>${link(`collections/${collection.key}/`, 'Xem toàn bộ tuyển tập')}</aside>`;
     write(`${relative}index.html`, document({ title: `${song.songName} (${song.id}) — Lời, hợp âm | ${SITE_NAME}`, description, relative, body, data }));

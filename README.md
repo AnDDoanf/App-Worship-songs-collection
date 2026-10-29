@@ -21,6 +21,42 @@ Demo: https://anddoanf.github.io/App-Worship-songs-collection/
 - Mobile: giao diện tối ưu cảm ứng, hỗ trợ vuốt để chuyển trang sheet.
 - Ghi nhớ trạng thái giao diện và danh sách trình chiếu bằng `localStorage`.
 - Hỗ trợ giao diện sáng/tối.
+- Bấm tên thư mục để xem tên bài hát, tông đã lưu và nhịp; chọn chỉnh sửa để sửa tên hoặc mã bài.
+
+## Không gian tra cứu và chuẩn bị thờ phượng
+
+- Ô tìm kiếm chính hỗ trợ tên, mã bài, lời và tên gọi khác (`aliases` trong workbook), có thể nhập không dấu. Bắt đầu tìm kiếm sẽ tra trên mọi tuyển tập; có thể giới hạn lại bằng nút tuyển tập hoặc chủ đề.
+- Bấm tên bài hoặc nút lời/bản nhạc để mở cùng một không gian đọc: **Lời bài hát**, **Hợp âm**, **Bản nhạc**. Hợp âm nằm trên lời; chế độ đọc được giữ khi chuyển bài. Chỉnh sửa và đổi tông ở đây chỉ lưu trên thiết bị.
+- Trong bộ bài hát, chọn **Chỉnh sửa bộ bài hát** để đặt ngày, buổi nhóm, trạng thái, ghi chú từng bài, tông sử dụng và thứ tự. Tông riêng của bộ không thay đổi tông gốc trong thư viện.
+- **Nhân bản bộ** giữ nguyên bài hát, thứ tự, ghi chú và bản phối để chuẩn bị buổi nhóm tiếp theo.
+- **Sao lưu** tải toàn bộ bộ bài hát thành file JSON. **Khôi phục** thêm các bộ từ file, tự đổi tên khi trùng và giữ nguyên dữ liệu hiện có. Chưa có đồng bộ tài khoản hay chỉnh sửa chung giữa các thiết bị.
+- **Lời và hợp âm** dành cho ban hát; **Chiếu lời** là chế độ riêng cho hội chúng, không hiển thị hợp âm. Chuyển trang bằng phím mũi tên hoặc phím cách, **B** để bật/tắt màn hình đen, **H** để hiện/ẩn điều khiển, **Esc** để đóng. Góc nhìn điều khiển có trang tiếp theo và ghi chú của ban hát.
+- Nội dung chưa có lời không được tự tạo lời thay thế khi trình chiếu. Hãy kiểm tra bản phối và các trang chiếu trước buổi nhóm.
+
+## Gợi ý bài hát
+
+Bảng bộ bài hát hiển thị cột **Nhịp** từ `timeSignature`, ví dụ `4/4`, `2/4` hoặc `6/8`.
+Nút dấu cộng trên thẻ bài hát mở danh sách bộ để chọn nơi thêm; có thể tạo bộ mới ngay tại đó.
+Ô tìm kiếm hoạt động trực tiếp khi gõ và đi kèm các thẻ chủ đề, không có nút tìm hoặc bộ chọn danh sách đích.
+
+Khung **Gợi ý bài hát** dưới thư mục bản nhạc mặc định thu gọn; bấm tiêu đề để mở hoặc đóng.
+Lựa chọn được giữ nguyên khi đóng/mở. Khung có hai chế độ:
+
+- **Theo bộ bài hát**: chọn bộ làm cơ sở; gợi ý cập nhật khi thêm hoặc sửa các bài trong bộ.
+- **Bài tương tự**: tìm tên hoặc mã bài (có thể nhập không dấu), chọn bài để nhận gợi ý.
+
+Mỗi gợi ý có lý do, nút xem trước và nút mở bộ chọn nơi thêm bài. Bài đã có trong bộ làm cơ sở
+được loại ra. Khi chưa đủ dữ liệu, ứng dụng hiển thị trạng thái trống thay vì chọn bài ngẫu nhiên.
+
+Engine chạy trong trình duyệt, không gửi lịch sử sử dụng ra ngoài. Nó dùng weighted KNN chính xác:
+cosine trên TF-IDF của tên/lời (50%), chủ đề (25%), khoảng cách tone theo vòng quãng năm (20%)
+và nhịp (5%). Các trọng số được chuẩn hóa lại khi thiếu dữ liệu; hợp âm không được tính là lời.
+K = 24 cho mỗi bài làm gốc, hiển thị tối đa 4 kết quả. Chế độ danh sách kết hợp các láng giềng và
+giảm nhẹ điểm các gợi ý quá giống nhau. Tone đã đổi trong danh sách được dùng khi so sánh.
+
+Đây là gợi ý theo nội dung, chưa có tempo hoặc vai trò trong buổi nhóm; không đảm bảo hai bài sẽ
+chuyển tiếp âm nhạc phù hợp. Có thể điều chỉnh trọng số trong
+`src/features/recommendations/recommendationEngine.js` sau khi nghe thử các đề xuất.
 
 ## Công nghệ sử dụng
 

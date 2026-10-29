@@ -12,8 +12,11 @@ h2 { line-height: 1.35; margin-top: 32px; }
 dl { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 12px; }
 dt { font-weight: 700; } dd { margin: 0; }
 .lyrics { white-space: pre-wrap; overflow-wrap: anywhere; font-size: 1.1rem; }
+.chord-line { margin: 0 0 14px; min-height: 1em; }
+.chord-word { display: inline-grid; grid-template-rows: 1.15em auto; vertical-align: bottom; max-width: 100%; }
+.chord-symbol { font-size: .82em; font-weight: 700; color: #185d99; }
 .catalogue { padding-left: 24px; } li { margin-block: 10px; }
 figure { margin: 24px 0; } img { display: block; max-width: 100%; height: auto; margin: auto; }
 figcaption { text-align: center; font-size: .9rem; }
-@media (prefers-color-scheme: dark) { :root { background: #15232b; color: #e4e9ec; } a { color: #91caff; } }
+@media (prefers-color-scheme: dark) { :root { background: #15232b; color: #e4e9ec; } a, .chord-symbol { color: #91caff; } }
 @media print { header, footer, aside, nav { display: none; } :root { background: white; color: black; } a { color: black; } }
