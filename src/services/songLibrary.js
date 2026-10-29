@@ -65,17 +65,17 @@ export function normalizeLyricText(value) {
 
   const normalizedValue = normalizeUnknownText(value);
 
-  if (!normalizedValue || normalizedValue === DEFAULT_UNKNOWN_VALUE) {
+  if (!normalizedValue || normalizedValue === DEFAULT_UNKNOWN_VALUE || /^\[\s*\]$/.test(normalizedValue)) {
     return '';
   }
 
   const parsedLines = lyricArrayStringToLines(normalizedValue);
 
   if (parsedLines) {
-    return parsedLines.join('\n');
+    return parsedLines.join('\n').replace(/<br\s*\/?>/gi, '\n').replace(/\[{2,}/g, '[');
   }
 
-  return normalizedValue;
+  return normalizedValue.replace(/<br\s*\/?>/gi, '\n').replace(/\[{2,}/g, '[');
 }
 
 function normalizeCollectionKey(value, fallbackCollectionKey) {
@@ -107,6 +107,9 @@ function normalizeCollectionKey(value, fallbackCollectionKey) {
 }
 
 function normalizeSongRecord(record, fallbackCollectionKey) {
+  const tempo = [record.tempo, record.bpm, record.BPM]
+    .map((value) => normalizeUnknownText(String(value || '')))
+    .find((value) => value && value !== DEFAULT_UNKNOWN_VALUE);
   const sourceCollectionKey = normalizeCollectionKey(
     record.sourceCollectionKey || record.sheetName || record.collectionKey,
     fallbackCollectionKey
@@ -120,8 +123,10 @@ function normalizeSongRecord(record, fallbackCollectionKey) {
   return {
     id: String(record.id || '').trim(),
     songName: String(record.songName || '').trim(),
+    aliases: Array.isArray(record.aliases) ? record.aliases : String(record.aliases || record.alternateNames || '').split(/[,;|]/).map((name) => name.trim()).filter(Boolean),
     tone: normalizeUnknownText(record.tone) || DEFAULT_UNKNOWN_VALUE,
     timeSignature: normalizeUnknownText(record.timeSignature) || DEFAULT_UNKNOWN_VALUE,
+    tempo: tempo || DEFAULT_UNKNOWN_VALUE,
     category: normalizeUnknownText(record.category) || DEFAULT_UNKNOWN_VALUE,
     lyricist: normalizeUnknownText(record.lyricist) || DEFAULT_UNKNOWN_VALUE,
     composer: normalizeUnknownText(record.composer) || DEFAULT_UNKNOWN_VALUE,

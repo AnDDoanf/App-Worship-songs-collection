@@ -89,8 +89,10 @@ function normalizeSong(song, collection) {
   return {
     id: String(song.id || '').trim(),
     songName: String(song.songName || '').trim(),
+    aliases: Array.isArray(song.aliases) ? song.aliases.join(', ') : String(song.aliases || ''),
     tone: normalizeUnknownText(song.tone) || UNKNOWN_VALUE,
     timeSignature: normalizeUnknownText(song.timeSignature) || UNKNOWN_VALUE,
+    tempo: normalizeUnknownText(String(song.tempo || song.bpm || song.BPM || '')) || UNKNOWN_VALUE,
     category: normalizeUnknownText(song.category) || UNKNOWN_VALUE,
     lyricist: normalizeUnknownText(song.lyricist) || UNKNOWN_VALUE,
     composer: normalizeUnknownText(song.composer) || UNKNOWN_VALUE,
