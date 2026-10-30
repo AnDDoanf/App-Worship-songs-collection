@@ -52,7 +52,7 @@ export default function ActionIconButton({ label, icon, onClick, className = '',
   };
 
   return <span className="icon-action" onMouseEnter={() => {
-    if (!window.matchMedia || window.matchMedia('(hover: hover) and (pointer: fine)').matches) showTooltip();
+    if (!touchPointerRef.current) showTooltip();
   }} onMouseLeave={scheduleHide}>
     <button ref={buttonRef} type="button" className={`button-mode action-icon-button ${className}`} aria-label={label}
       aria-describedby={visible ? id : undefined} aria-pressed={pressed} disabled={disabled} onClick={onClick}
