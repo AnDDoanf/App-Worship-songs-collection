@@ -147,7 +147,7 @@
 .workspace-song-navigation button:disabled { opacity: .4; }
 .popup-lyric.workspace-dialog.workspace-reading { width: 100%; height: 100%; border-radius: 0; }
 .popup.workspace-overlay-reading { inset: 0; width: 100vw; height: 100vh; height: 100dvh; min-height: 0; padding: 0; box-sizing: border-box; }
-.workspace-reading .workspace-song-header { position: fixed; top: max(12px, env(safe-area-inset-top)); left: 50%; z-index: 5; box-sizing: border-box; width: min(900px, calc(100% - 96px)); min-width: 0; padding: 8px 12px; transform: translateX(-50%); border-radius: 6px; background: color-mix(in srgb, var(--panel-strong) 88%, transparent); -webkit-backdrop-filter: blur(12px); backdrop-filter: blur(12px); }
+.workspace-reading .workspace-song-header { position: fixed; top: 0; right: 0; left: 0; z-index: 5; box-sizing: border-box; width: 100%; max-width: none; min-width: 0; padding: max(8px, env(safe-area-inset-top)) max(64px, env(safe-area-inset-right)) 8px max(64px, env(safe-area-inset-left)); border-radius: 0; background: var(--panel-strong); }
 .workspace-reading .workspace-song-header h2 { max-width: 100%; overflow-wrap: anywhere; }
 .workspace-reading .workspace-song-header .song-metadata-chips { flex-wrap: wrap; }
 .workspace-reading .workspace-song-header .song-metadata-chips span { max-width: 100%; }
