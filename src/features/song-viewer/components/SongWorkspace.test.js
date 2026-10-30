@@ -57,7 +57,7 @@ test('swipes horizontally to navigate pages and adjacent songs', () => {
   window.matchMedia = jest.fn((query) => ({ matches: query.includes('max-width: 560px'), addEventListener: jest.fn(), removeEventListener: jest.fn() }));
   const onPrevious = jest.fn(); const onNext = jest.fn();
   renderWorkspace({ initialView: 'sheet', image: 'https://example.com/one.png,https://example.com/two.png', onPrevious, onNext });
-  fireEvent.click(screen.getByRole('tab', { name: /Báº£n nháº¡c/i }));
+  fireEvent.click(screen.getAllByRole('tab')[2]);
   const panel = screen.getByRole('tabpanel');
   fireEvent.touchStart(panel, { touches: [{ clientX: 300, clientY: 120 }] });
   fireEvent.touchEnd(panel, { changedTouches: [{ clientX: 220, clientY: 125 }] });
