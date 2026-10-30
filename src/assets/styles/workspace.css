@@ -249,6 +249,9 @@
   .workspace-sheet-pair { display: none; }
   .workspace-sheet[data-dual='true'] .workspace-sheet-single { display: flex; }
   .workspace-sheet-help { display: none; }
+  .workspace-reading .workspace-song-header,
+  .workspace-reading .workspace-reader-bar { display: none; }
+  .workspace-reading .workspace-reader-content { padding-top: 0; }
   .projection-header { flex-wrap: wrap; padding: 8px; }
   .projection-header > div { width: 100%; }
   .projection-header .projection-header-pagination { left: 50%; order: 0; }
