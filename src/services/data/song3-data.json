@@ -23,7 +23,7 @@
         "collection": "Bài tự do",
         "audio": "Không rõ",
         "lyric": "Không rõ",
-        "image": "Không rõ"
+        "image": "TD2_page0"
     },
     {
         "id": "TD3",
@@ -127,7 +127,7 @@
         "collection": "Bài tự do",
         "audio": "Không rõ",
         "lyric": "Không rõ",
-        "image": "Không rõ"
+        "image": "TD10_page0, TD10_page1"
     },
     {
         "id": "TD11",
@@ -478,7 +478,7 @@
         "collection": "Bài tự do",
         "audio": "Không rõ",
         "lyric": "Không rõ",
-        "image": "Không rõ"
+        "image": "TD37_page0, TD37_page1"
     },
     {
         "id": "TD38",
@@ -1195,5 +1195,4 @@
         "lyric": "Không rõ",
         "image": "Không rõ"
     }
-
 ]
