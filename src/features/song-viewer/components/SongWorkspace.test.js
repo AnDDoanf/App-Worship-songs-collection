@@ -52,6 +52,27 @@ test('navigates sheet pages before adjacent songs and supports add, close, and e
   expect(setTrigger).toHaveBeenCalledWith(false);
 });
 
+test('swipes horizontally to navigate pages and adjacent songs', () => {
+  Object.defineProperty(window, 'innerWidth', { configurable: true, value: 400 });
+  window.matchMedia = jest.fn((query) => ({ matches: query.includes('max-width: 560px'), addEventListener: jest.fn(), removeEventListener: jest.fn() }));
+  const onPrevious = jest.fn(); const onNext = jest.fn();
+  renderWorkspace({ initialView: 'sheet', image: 'https://example.com/one.png,https://example.com/two.png', onPrevious, onNext });
+  fireEvent.click(screen.getByRole('tab', { name: /Báº£n nháº¡c/i }));
+  const panel = screen.getByRole('tabpanel');
+  fireEvent.touchStart(panel, { touches: [{ clientX: 300, clientY: 120 }] });
+  fireEvent.touchEnd(panel, { changedTouches: [{ clientX: 220, clientY: 125 }] });
+  expect(screen.getAllByRole('img', { name: /page 2/i }).length).toBeGreaterThan(0);
+  fireEvent.touchStart(panel, { touches: [{ clientX: 220, clientY: 120 }] });
+  fireEvent.touchEnd(panel, { changedTouches: [{ clientX: 150, clientY: 122 }] });
+  expect(onNext).toHaveBeenCalledTimes(1);
+  fireEvent.touchStart(panel, { touches: [{ clientX: 120, clientY: 120 }] });
+  fireEvent.touchEnd(panel, { changedTouches: [{ clientX: 200, clientY: 122 }] });
+  expect(screen.getAllByRole('img', { name: /page 1/i }).length).toBeGreaterThan(0);
+  fireEvent.touchStart(panel, { touches: [{ clientX: 200, clientY: 120 }] });
+  fireEvent.touchEnd(panel, { changedTouches: [{ clientX: 270, clientY: 121 }] });
+  expect(onPrevious).toHaveBeenCalledTimes(1);
+});
+
 test('supports paired sheet presentation and hides the subject in set view', () => {
   renderWorkspace({ initialView: 'sheet', image: 'https://example.com/one.png', category: 'Praise', isSetView: true,
     pairedSheetSong: { id: 'H19', songName: 'Second song', tone: 'D', lyric: '[D]Amen', timeSignature: '3/4' } });

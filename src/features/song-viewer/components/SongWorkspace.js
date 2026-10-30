@@ -35,6 +35,7 @@ export default function SongWorkspace({ lyric, tone, trigger, setTrigger, songId
   const overlayRef = useRef(null);
   const dialogRef = useRef(null);
   const gestureZoomStart = useRef(1);
+  const touchStart = useRef(null);
   const readerId = useId();
   useSheetViewport(overlayRef, trigger);
   useModalFocus(dialogRef, trigger);
@@ -140,6 +141,22 @@ export default function SongWorkspace({ lyric, tone, trigger, setTrigger, songId
     if (canNavigateSheetPages && sheetPage < sheetPageCount - 1) setSheetPage(sheetPage + 1);
     else onNext?.();
   };
+  const handleTouchStart = (event) => {
+    if (event.touches.length !== 1) { touchStart.current = null; return; }
+    const touch = event.touches[0];
+    touchStart.current = { x: touch.clientX, y: touch.clientY };
+  };
+  const handleTouchEnd = (event) => {
+    if (!touchStart.current || event.changedTouches.length !== 1) return;
+    const start = touchStart.current;
+    touchStart.current = null;
+    const touch = event.changedTouches[0];
+    const deltaX = touch.clientX - start.x;
+    const deltaY = touch.clientY - start.y;
+    if (Math.abs(deltaX) < 55 || Math.abs(deltaX) < Math.abs(deltaY) * 1.2) return;
+    if (deltaX < 0) navigateNext();
+    else navigatePrevious();
+  };
   const known = (value) => value && value !== 'Không rõ';
   const englishNavigation = document.documentElement.lang.toLowerCase().startsWith('en');
 
@@ -156,7 +173,7 @@ export default function SongWorkspace({ lyric, tone, trigger, setTrigger, songId
         </div>
       </div>
       <div className="workspace-content-expand"><ActionIconButton label={reading ? 'Thu gọn' : 'Toàn màn hình'} icon={reading ? <FiMinimize /> : <FiMaximize />} onClick={fullscreen} pressed={reading} /></div>
-      <div role="tabpanel" id={`${readerId}-panel`} aria-labelledby={`${readerId}-${view}`} tabIndex={0} className={`popup-lyric-body workspace-reader-content ${view === 'sheet' ? 'workspace-reader-sheet' : ''}`} style={{ zoom: reading ? readerZoom : 1 }}>
+      <div role="tabpanel" id={`${readerId}-panel`} aria-labelledby={`${readerId}-${view}`} tabIndex={0} className={`popup-lyric-body workspace-reader-content ${view === 'sheet' ? 'workspace-reader-sheet' : ''}`} style={{ zoom: reading ? readerZoom : 1 }} onTouchStart={handleTouchStart} onTouchEnd={handleTouchEnd}>
         {view === 'sheet' ? <SheetPages image={image} songName={songName} pairedSong={pairedSheetSong} page={sheetPage} onPageChange={setSheetPage} allowPageNavigation={canNavigateSheetPages} onPreviousSong={onPrevious} onNextSong={onNext} /> : editing ? <div className="workspace-local-editor"><p>Bản chỉnh sửa chỉ lưu trên thiết bị này; lời gốc trong thư viện được giữ nguyên.</p><textarea className="popup-lyric-editor" aria-label="Lời và hợp âm" value={displayed} onChange={(event) => { setDraft(event.target.value); setSourceKey(targetKey); persist(targetKey, targetKey, event.target.value); }} spellCheck="false" /></div> : <ChordLyrics lyric={displayed} showChords={view === 'chords'} />}
       {view !== 'sheet' ? <div className="workspace-musician-tools">
         {view === 'chords' ? <label><select className="dropdown" aria-label="Chuyển sang tông" value={targetKey} disabled={!sourceKey} onChange={(event) => { setTargetKey(event.target.value); persist(sourceKey, event.target.value); }}><option value={originalKey}>{englishNavigation ? 'Origin' : 'Gốc'} ({originalKey || 'Tone'})</option>{KEY_OPTIONS.filter((key) => key !== originalKey && key.endsWith('m') === sourceKey.endsWith('m')).map((key) => <option key={key}>{key}</option>)}</select></label> : null}
