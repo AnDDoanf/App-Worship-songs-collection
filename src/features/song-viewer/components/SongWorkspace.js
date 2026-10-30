@@ -143,7 +143,7 @@ export default function SongWorkspace({ lyric, tone, trigger, setTrigger, songId
   const known = (value) => value && value !== 'Không rõ';
   const englishNavigation = document.documentElement.lang.toLowerCase().startsWith('en');
 
-  return createPortal(<div ref={overlayRef} className="popup workspace-overlay" onClick={close}>
+  return createPortal(<div ref={overlayRef} className={`popup workspace-overlay ${reading ? 'workspace-overlay-reading' : ''}`} onClick={close}>
     <div ref={dialogRef} tabIndex={-1} className={`popup-lyric popup-lyric-dialog workspace-dialog ${view === 'sheet' ? 'workspace-sheet-mode' : ''} ${reading ? 'workspace-reading' : ''} ${isSetView ? 'workspace-set-view' : ''}`} role="dialog" aria-modal="true" aria-label="Lời bài hát" onClick={(event) => event.stopPropagation()} onWheel={handleReaderZoom} onGestureStart={handleGestureStart} onGestureChange={handleGestureChange}>
       {!reading ? <button type="button" className="popup-close-button" onClick={close} aria-label="Đóng phần lời bài hát"><FiXCircle /></button> : null}
       <header className="workspace-song-header">
