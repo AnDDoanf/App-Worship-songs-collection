@@ -63,8 +63,8 @@
 .action-icon-button { width: 44px; height: 44px; min-width: 44px; padding: 0; display: inline-flex; align-items: center; justify-content: center; border-radius: 6px; }
 .action-icon-button > span { display: inline-flex; font-size: 1.1rem; }
 .action-icon-button:focus-visible { outline: 2px solid var(--accent); outline-offset: 3px; }
-.action-tooltip { position: absolute; z-index: 20; bottom: calc(100% + 8px); left: 50%; transform: translateX(-50%); width: max-content; max-width: min(260px, calc(100vw - 32px)); padding: 7px 10px; border-radius: 6px; background: var(--control-active-bg); color: var(--control-active-fg); box-shadow: var(--shadow-soft); font-size: .8rem; font-weight: 500; line-height: 1.4; text-align: center; pointer-events: none; }
-.song-footer-col2 .icon-action:last-child .action-tooltip, .slideshow-list-actions .icon-action:last-child .action-tooltip { left: auto; right: 0; transform: none; }
+.action-tooltip { position: fixed; z-index: 10001; transform: translateY(-100%); width: max-content; max-width: min(260px, calc(100vw - 32px)); padding: 7px 10px; border-radius: 6px; background: var(--control-active-bg); color: var(--control-active-fg); box-shadow: var(--shadow-soft); font-size: .8rem; font-weight: 500; line-height: 1.4; text-align: center; user-select: none; }
+.action-tooltip-below { transform: none; }
 .slideshow-list-actions { grid-template-columns: repeat(3, 44px); justify-content: end; }
 .set-backup-actions { display: flex; gap: 8px; flex-wrap: wrap; }
 .set-backup-actions button, .popup-list-editor-actions button { display: inline-flex; align-items: center; gap: 7px; }
