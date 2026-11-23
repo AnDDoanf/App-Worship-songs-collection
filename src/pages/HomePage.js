@@ -176,14 +176,19 @@ function HomePage({ songLibraryState }) {
       return;
     }
 
-    const sharedSongs = validIds.map((id) => applyChordPreference(songsById[id], sharedList.chordPreferences?.[id]));
+    const compactPreferences = Object.fromEntries(validIds.filter((id) => sharedList.targetKeys?.[id]).map((id) => {
+      const sourceKey = inferKey(songsById[id]?.lyric, songsById[id]?.tone);
+      return [id, { sourceKey, targetKey: sharedList.targetKeys[id] }];
+    }));
+    const sharedPreferences = normalizePreferences({ ...sharedList.chordPreferences, ...compactPreferences }, validIds);
+    const sharedSongs = validIds.map((id) => applyChordPreference(songsById[id], sharedPreferences[id]));
     let importedListName = sharedList.name;
 
     setSlideshowState((currentState) => {
       const nextState = mergeSharedListIntoState(currentState, {
         name: sharedList.name,
         ids: validIds,
-        chordPreferences: sharedList.chordPreferences,
+        chordPreferences: sharedPreferences,
       });
 
       importedListName = nextState.activeListName;

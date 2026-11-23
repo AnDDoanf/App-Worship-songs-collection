@@ -167,13 +167,15 @@ test('shows loading and fallback states and updates active collection from searc
 
 test('imports valid songs from shared links, skips missing IDs, and opens the first sheet', () => {
   localStorage.clear();
-  window.history.replaceState({}, '', '/share?name=Shared&songs=H18%7CH19%7CNOPE%7CH18');
+  window.history.replaceState({}, '', '/share?name=Shared&songs=H18|Dm,H19|D,H999|C,H18|Dm');
   render(<HomePage songLibraryState={{ songs: [
     { id: 'H18', songName: 'One', tone: 'C', lyric: '[C]one', image: 'https://example.com/one.png', sourceCollectionKey: 'hosanna' },
     { id: 'H19', songName: 'Two', tone: 'D', lyric: '[D]two', image: 'https://example.com/two.png', sourceCollectionKey: 'hosanna' },
   ], isLoading: false }} />);
   const imported = JSON.parse(localStorage.getItem(STORAGE_KEY));
   expect(imported.lists.Shared.ids).toEqual(['H18', 'H19']);
+  expect(imported.lists.Shared.chordPreferences.H18).toEqual({ sourceKey: 'C', targetKey: 'Dm' });
+  expect(imported.lists.Shared.chordPreferences.H19).toEqual({ sourceKey: 'D', targetKey: 'D' });
   expect(document.querySelector('.workspace-reader-sheet')).toBeInTheDocument();
   expect(document.querySelector('.workspace-set-view')).toBeInTheDocument();
   expect(window.location.pathname).toBe('/');

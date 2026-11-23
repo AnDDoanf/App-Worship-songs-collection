@@ -1,5 +1,6 @@
 import { parseSongCodes } from './slideshow';
 import { normalizePreferences } from '../store/chordPreferences';
+import { isKey } from './chords';
 
 const PENDING_SHARE_STORAGE_KEY = 'song-collections-pending-share';
 const DEFAULT_SHARED_LIST_NAME = 'Danh sách được chia sẻ';
@@ -43,34 +44,50 @@ function parseCompactShareQuery(rawQuery) {
     return null;
   }
 
-  if (looksLikeSongCode(segments[0])) {
-    return {
-      name: DEFAULT_SHARED_LIST_NAME,
-      ids: normalizeShareIds(segments),
-      workbookUrl: '',
-    };
-  }
+  const firstCode = segments[0].split(':')[0];
+  const songSegments = looksLikeSongCode(firstCode) ? segments : segments.slice(1);
+  const entries = songSegments.map((segment) => {
+    const [id, targetKey = ''] = segment.split(':');
+    return { id: id.toUpperCase(), targetKey };
+  }).filter(({ id }) => looksLikeSongCode(id));
+  const ids = normalizeShareIds(entries.map(({ id }) => id));
+  const targetKeys = Object.fromEntries(entries
+    .filter(({ id, targetKey }) => ids.includes(id) && isKey(targetKey))
+    .map(({ id, targetKey }) => [id, targetKey]));
 
   return {
-    name: normalizeShareName(segments[0]),
-    ids: normalizeShareIds(segments.slice(1)),
+    name: looksLikeSongCode(firstCode) ? DEFAULT_SHARED_LIST_NAME : normalizeShareName(segments[0]),
+    ids,
     workbookUrl: '',
+    chordPreferences: {},
+    targetKeys,
   };
 }
 
 function parseNamedShareQuery(rawQuery) {
   const searchParams = new URLSearchParams(rawQuery);
+  const rawSongs = String(searchParams.get('songs') || '');
+  const songAndKeyEntries = rawSongs.split(',').map((entry) => entry.trim().split('|'));
+  const hasTargetKeys = songAndKeyEntries.length > 0 && songAndKeyEntries.every(([id, targetKey, extra]) =>
+    !extra && looksLikeSongCode(id) && isKey(targetKey));
+  const ids = normalizeShareIds(hasTargetKeys
+    ? songAndKeyEntries.map(([id]) => id)
+    : splitSongs(rawSongs));
+  const targetKeys = hasTargetKeys
+    ? Object.fromEntries(songAndKeyEntries.map(([id, targetKey]) => [id.toUpperCase(), targetKey]))
+    : {};
   let chordPreferences = {};
   try {
     chordPreferences = normalizePreferences(JSON.parse(searchParams.get('chords')),
-      normalizeShareIds(splitSongs(searchParams.get('songs'))));
+      ids);
   } catch (_error) { /* Older or malformed links still import their song IDs. */ }
 
   return {
     name: normalizeShareName(searchParams.get('name')),
-    ids: normalizeShareIds(splitSongs(searchParams.get('songs'))),
+    ids,
     workbookUrl: String(searchParams.get('workbookUrl') || '').trim(),
     chordPreferences,
+    targetKeys,
   };
 }
 
@@ -109,11 +126,12 @@ export function buildShareUrl({ name, ids, origin, chordPreferences }) {
   const normalizedIds = normalizeShareIds(ids);
   const normalizedOrigin = origin || (typeof window !== 'undefined' ? window.location.origin : '');
   const encodedName = encodeURIComponent(normalizeShareName(name));
-  const encodedSongs = normalizedIds.map((id) => encodeURIComponent(id)).join('|');
 
   const preferences = normalizePreferences(chordPreferences, normalizedIds);
+  const encodedSongs = normalizedIds.map((id) => `${encodeURIComponent(id)}${preferences[id] ? `|${encodeURIComponent(preferences[id].targetKey)}` : ''}`).join(',');
+  const hasCustomLyrics = Object.values(preferences).some((preference) => typeof preference.lyric === 'string');
   const chords = Object.keys(preferences).length ? `&chords=${encodeURIComponent(JSON.stringify(preferences))}` : '';
-  return `${normalizedOrigin}${getSharePath()}?name=${encodedName}&songs=${encodedSongs}${chords}`;
+  return `${normalizedOrigin}${getSharePath()}?name=${encodedName}&songs=${encodedSongs}${hasCustomLyrics ? chords : ''}`;
 }
 
 export function parseShareLocation(locationLike) {
