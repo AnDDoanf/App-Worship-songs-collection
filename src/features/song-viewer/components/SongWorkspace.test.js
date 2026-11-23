@@ -81,6 +81,22 @@ test('supports paired sheet presentation and hides the subject in set view', () 
   expect(document.querySelector('.workspace-set-view')).toBeInTheDocument();
 });
 
+test('uses adjacent-song navigation in lyrics and grouped navigation only in sheet view', () => {
+  const onNext = jest.fn();
+  const onNextSheet = jest.fn();
+  renderWorkspace({ initialView: 'sheet', image: 'https://example.com/one.png', onNext, onNextSheet,
+    pairedSheetSong: { id: 'H19', songName: 'Second song', lyric: '[D]Amen' } });
+
+  fireEvent.click(document.querySelector('.workspace-song-navigation button:last-child'));
+  expect(onNextSheet).toHaveBeenCalledTimes(1);
+  expect(onNext).not.toHaveBeenCalled();
+
+  fireEvent.click(document.querySelector('[role="tab"][id$="-lyrics"]'));
+  fireEvent.click(document.querySelector('.workspace-song-navigation button:last-child'));
+  expect(onNext).toHaveBeenCalledTimes(1);
+  expect(onNextSheet).toHaveBeenCalledTimes(1);
+});
+
 test('copies lyrics view without chords and reports empty content', async () => {
   const onNotify = jest.fn();
   const view = renderWorkspace({ initialView: 'lyrics', lyric: '[C]Praise', onNotify });

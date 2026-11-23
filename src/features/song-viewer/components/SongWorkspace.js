@@ -21,7 +21,8 @@ function preferredView() {
 }
 
 export default function SongWorkspace({ lyric, tone, trigger, setTrigger, songId = '', songName, image, category, collection,
-  timeSignature, tempo, initialView, onNotify, onAdd, onPrevious, onNext, pairedSheetSong, isSetView = false }) {
+  timeSignature, tempo, initialView, onNotify, onAdd, onPrevious, onNext, onPreviousSheet, onNextSheet,
+  pairedSheetSong, isSetView = false }) {
   const initialLyric = normalizeLyricText(lyric);
   const [draft, setDraft] = useState(initialLyric);
   const [sourceKey, setSourceKey] = useState('');
@@ -46,6 +47,8 @@ export default function SongWorkspace({ lyric, tone, trigger, setTrigger, songId
     : '';
   const sheetPageCount = parseSheetImageSources(image).length;
   const canNavigateSheetPages = view === 'sheet' && sheetPageCount > 1 && (sheetPageCount !== 2 || narrowSheetView);
+  const previousSheet = onPreviousSheet ?? onPrevious;
+  const nextSheet = onNextSheet ?? onNext;
 
   useEffect(() => {
     if (!trigger) return;
@@ -135,10 +138,12 @@ export default function SongWorkspace({ lyric, tone, trigger, setTrigger, songId
   };
   const navigatePrevious = () => {
     if (canNavigateSheetPages && sheetPage > 0) setSheetPage(sheetPage - 1);
+    else if (view === 'sheet') previousSheet?.();
     else onPrevious?.();
   };
   const navigateNext = () => {
     if (canNavigateSheetPages && sheetPage < sheetPageCount - 1) setSheetPage(sheetPage + 1);
+    else if (view === 'sheet') nextSheet?.();
     else onNext?.();
   };
   const handleTouchStart = (event) => {
@@ -174,7 +179,7 @@ export default function SongWorkspace({ lyric, tone, trigger, setTrigger, songId
       </div>
       <div className="workspace-content-expand"><ActionIconButton label={reading ? 'Thu gọn' : 'Toàn màn hình'} icon={reading ? <FiMinimize /> : <FiMaximize />} onClick={fullscreen} pressed={reading} /></div>
       <div role="tabpanel" id={`${readerId}-panel`} aria-labelledby={`${readerId}-${view}`} tabIndex={0} className={`popup-lyric-body workspace-reader-content ${view === 'sheet' ? 'workspace-reader-sheet' : ''}`} style={{ zoom: reading ? readerZoom : 1 }} onTouchStart={handleTouchStart} onTouchEnd={handleTouchEnd}>
-        {view === 'sheet' ? <SheetPages image={image} songName={songName} pairedSong={pairedSheetSong} page={sheetPage} onPageChange={setSheetPage} allowPageNavigation={canNavigateSheetPages} onPreviousSong={onPrevious} onNextSong={onNext} /> : editing ? <div className="workspace-local-editor"><p>Bản chỉnh sửa chỉ lưu trên thiết bị này; lời gốc trong thư viện được giữ nguyên.</p><textarea className="popup-lyric-editor" aria-label="Lời và hợp âm" value={displayed} onChange={(event) => { setDraft(event.target.value); setSourceKey(targetKey); persist(targetKey, targetKey, event.target.value); }} spellCheck="false" /></div> : <ChordLyrics lyric={displayed} showChords={view === 'chords'} />}
+        {view === 'sheet' ? <SheetPages image={image} songName={songName} pairedSong={pairedSheetSong} page={sheetPage} onPageChange={setSheetPage} allowPageNavigation={canNavigateSheetPages} onPreviousSong={previousSheet} onNextSong={nextSheet} /> : editing ? <div className="workspace-local-editor"><p>Bản chỉnh sửa chỉ lưu trên thiết bị này; lời gốc trong thư viện được giữ nguyên.</p><textarea className="popup-lyric-editor" aria-label="Lời và hợp âm" value={displayed} onChange={(event) => { setDraft(event.target.value); setSourceKey(targetKey); persist(targetKey, targetKey, event.target.value); }} spellCheck="false" /></div> : <ChordLyrics lyric={displayed} showChords={view === 'chords'} />}
       {view !== 'sheet' ? <div className="workspace-musician-tools">
         {view === 'chords' ? <label><select className="dropdown" aria-label="Chuyển sang tông" value={targetKey} disabled={!sourceKey} onChange={(event) => { setTargetKey(event.target.value); persist(sourceKey, event.target.value); }}><option value={originalKey}>{englishNavigation ? 'Origin' : 'Gốc'} ({originalKey || 'Tone'})</option>{KEY_OPTIONS.filter((key) => key !== originalKey && key.endsWith('m') === sourceKey.endsWith('m')).map((key) => <option key={key}>{key}</option>)}</select></label> : null}
         <ActionIconButton label="Sửa lời" icon={<FiEdit3 />} pressed={editing} onClick={() => setEditing(!editing)} />
@@ -183,7 +188,7 @@ export default function SongWorkspace({ lyric, tone, trigger, setTrigger, songId
         {onAdd ? <ActionIconButton label="Thêm vào bộ" icon={<FiPlus />} onClick={onAdd} /> : null}
       </div> : null}
       </div>
-      {(onPrevious || onNext) && !reading ? <footer className="workspace-navigation-footer"><nav className="workspace-song-navigation" aria-label={englishNavigation ? 'Song navigation' : 'Chuyển bài hát'}><button type="button" aria-label={canNavigateSheetPages && sheetPage > 0 ? 'Previous sheet page' : englishNavigation ? 'Previous song' : 'Bài trước'} disabled={canNavigateSheetPages && sheetPage > 0 ? false : !onPrevious} onClick={navigatePrevious}><FiChevronLeft aria-hidden="true" />{englishNavigation ? 'Prev' : 'Trước'}</button><span>{songId}</span><button type="button" aria-label={canNavigateSheetPages && sheetPage < sheetPageCount - 1 ? 'Next sheet page' : englishNavigation ? 'Next song' : 'Bài tiếp'} disabled={canNavigateSheetPages && sheetPage < sheetPageCount - 1 ? false : !onNext} onClick={navigateNext}>{englishNavigation ? 'Next' : 'Sau'}<FiChevronRight aria-hidden="true" /></button></nav></footer> : null}
+      {(onPrevious || onNext || previousSheet || nextSheet) && !reading ? <footer className="workspace-navigation-footer"><nav className="workspace-song-navigation" aria-label={englishNavigation ? 'Song navigation' : 'Chuyển bài hát'}><button type="button" aria-label={canNavigateSheetPages && sheetPage > 0 ? 'Previous sheet page' : englishNavigation ? 'Previous song' : 'Bài trước'} disabled={canNavigateSheetPages && sheetPage > 0 ? false : !(view === 'sheet' ? previousSheet : onPrevious)} onClick={navigatePrevious}><FiChevronLeft aria-hidden="true" />{englishNavigation ? 'Prev' : 'Trước'}</button><span>{songId}</span><button type="button" aria-label={canNavigateSheetPages && sheetPage < sheetPageCount - 1 ? 'Next sheet page' : englishNavigation ? 'Next song' : 'Bài tiếp'} disabled={canNavigateSheetPages && sheetPage < sheetPageCount - 1 ? false : !(view === 'sheet' ? nextSheet : onNext)} onClick={navigateNext}>{englishNavigation ? 'Next' : 'Sau'}<FiChevronRight aria-hidden="true" /></button></nav></footer> : null}
     </div>
   </div>, document.body);
 }

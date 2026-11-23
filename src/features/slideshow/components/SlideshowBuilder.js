@@ -149,7 +149,7 @@ function SlideshowBuilder({
                 <small>{[list.serviceDate, list.service, list.status === 'ready' ? 'Sẵn sàng' : 'Đang chuẩn bị'].filter(Boolean).join(' · ')}</small>
               </button>
               <div className="slideshow-list-actions">
-                {onOpenLyricsProjection ? <QuickActionButton label="Chiếu lời" icon={<FiMonitor />} onClick={() => list.songs.length ? onOpenLyricsProjection(list.name) : toast.warning('Bộ chưa có bài hát.')} /> : null}
+                {onOpenLyricsProjection ? <span className="lyrics-projection-action"><QuickActionButton label="Chiếu lời" icon={<FiMonitor />} onClick={() => list.songs.length ? onOpenLyricsProjection(list.name) : toast.warning('Bộ chưa có bài hát.')} /></span> : null}
                 <QuickActionButton
                   onClick={() => handleOpenSheet(list)}
                   label="Mở bản nhạc"

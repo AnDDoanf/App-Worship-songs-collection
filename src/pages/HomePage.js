@@ -588,8 +588,10 @@ function HomePage({ songLibraryState }) {
         onNotify={toast}
         pairedSheetSong={pairedSheetSong}
         isSetView={Boolean(readerScopeSongs)}
-        onPrevious={readerSongIndex > 0 ? () => setReaderSongId(readerSongs[previousReaderIndex].id.toUpperCase()) : undefined}
-        onNext={nextReaderIndex < readerSongs.length ? () => setReaderSongId(readerSongs[nextReaderIndex].id.toUpperCase()) : undefined}
+        onPrevious={readerSongIndex > 0 ? () => setReaderSongId(readerSongs[readerSongIndex - 1].id.toUpperCase()) : undefined}
+        onNext={readerSongIndex + 1 < readerSongs.length ? () => setReaderSongId(readerSongs[readerSongIndex + 1].id.toUpperCase()) : undefined}
+        onPreviousSheet={previousReaderIndex >= 0 ? () => setReaderSongId(readerSongs[previousReaderIndex].id.toUpperCase()) : undefined}
+        onNextSheet={nextReaderIndex < readerSongs.length ? () => setReaderSongId(readerSongs[nextReaderIndex].id.toUpperCase()) : undefined}
         onAdd={() => setPendingAddSongId(readerSongId)}
       />
       <SetPickerModal song={songsById[pendingAddSongId]} lists={listSummaries} activeListName={slideshowState.activeListName}

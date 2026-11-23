@@ -223,6 +223,7 @@
   .set-details-fields { grid-template-columns: 1fr; }
   .set-reorder-actions { flex-direction: column; }
   .slideshow-list-actions { grid-template-columns: repeat(2, 44px); }
+  .lyrics-projection-action { display: none; }
   .set-backup-actions button { font-size: .85rem; }
   .popup.workspace-overlay { padding: 0; }
   .popup-lyric.workspace-dialog { padding: 16px 14px; border-radius: 0; }
